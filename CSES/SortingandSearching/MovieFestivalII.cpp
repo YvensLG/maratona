@@ -24,7 +24,7 @@ void solve() {
  
     int total = 0;
     multiset<int> atual;
-
+ 
     for(auto x : v){
         int ini = x.second, ed = x.first;
         
@@ -33,7 +33,7 @@ void solve() {
             total ++;
             continue;
         }
-
+ 
         if(ini >= *atual.begin()){
             auto it = atual.lower_bound(ini);
             if(it == atual.end() || *it > ini) it = prev(it);

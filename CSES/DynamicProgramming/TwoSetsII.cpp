@@ -7,30 +7,31 @@ using namespace std;
  
 typedef long long int ll;
  
-const int maxn = 1e6 + 5, inf = 2e9, M = 1e9 + 7;
+const int maxn = 5e2 + 5, inf = 2e9, M = 1e9 + 7;
+
+// dp[i][j] é o número de sets de tamanho até i cuja soma é j
+ll dp[maxn][(ll)maxn * (maxn + 1) / 2];
  
 void solve() {
     int n; cin >> n;
-    vector<int>   v(n + 1);
-    vector<ll > acc(n + 1); 
+
+    for(int i = 0; i <= n; i++) dp[i][0] = 0;
+    for(int i = 0; i <= n * (n + 1) / 2; i++) dp[0][i] = 0;
+    dp[0][0] = 1;
 
     for(int i = 1; i <= n; i++){
-        cin >> v[i];
-        acc[i] = acc[i-1] + v[i];
-    }
-
-    ll dp[n + 1][n + 1];
-
-    for(int i = 0; i <= n; i++) dp[i][i] = v[i];
-
-    for(int k = 1; k < n; k++){
-        for(int i = 1; i <= n - k; i++){
-            int j = i + k; 
-            dp[i][j] = (acc[j] - acc[i-1]) - min(dp[i + 1][j], dp[i][j - 1]);
+        for(int j = 1; j <= n * (n + 1) / 2; j++){
+            dp[i][j] = (dp[i][j] + dp[i - 1][j] + dp[i - 1][max(j - i, 0)]) % M; 
         }
     }
 
-    cout << dp[1][n] << '\n';
+    if(n * (n + 1) % 4 != 0){
+        cout << "0\n";
+    }
+    else{
+        cout << dp[n][n * (n + 1) / 4] << '\n';
+    }
+
 }
  
 int main() {

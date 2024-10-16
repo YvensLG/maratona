@@ -31,18 +31,17 @@ void calcdp(){
                 dp[b][e] = dp[b - 1][e] + dp[1][e] - dp[b][e - 1] + dp[b - 1][e - 1] - dp[1][e - 2]; // remove "[60000, 60099]"
         }
     }  
-
-    // for(int e = 0; e <= 4; e++){
-    //     for(int b = 1; b <= maxbse; b++){
-    //         cout << "1 a " << b * pow(10, e) - 1 << " : " << dp[b][e] << '\n';
-    //     }
-    // }
 }
 
+
+// quantidade no range [0, x - 1]
 ll ans(ll x){
     if(x == 0) return 0;
+    // guarda todos os digitos
     vector<int> dig;
+    // guarda o expoente
     int e = -1;
+
     while(x > 0){
         dig.pb(x % 10);
         x /= 10;
@@ -50,18 +49,23 @@ ll ans(ll x){
     }
     reverse(all(dig));
 
+    // pega os numeros em [0, d00000 - 1]
     ll tot = dp[dig[0]][e] + 1;
-
-    // cout << tot << '\n';
 
     for(int i = 1; i < dig.size(); i++){
         e--;
+        // pega os numeros em [0, d0000 - 1]
         tot += dp[dig[i]][e];
-        if(e >= 2 && dig[i] > 0 && dig[i-1] > 0 ) tot -= dp[1][e - 1]; 
-        if(e == 0 && dig[i] > 0 && dig[i-1] != 0) tot++; //????
-        // cout << tot << '\n';
 
+        // remove os digitos que iniciam em 00
+        if(e >= 2 && dig[i] > 0 && dig[i-1] > 0) tot -= dp[1][e - 1]; 
+        // adiciona o 10
+        if(e == 0 && dig[i] > 0 && dig[i-1] > 0) tot++;
+
+        // se há dois digitos iguais consecutivos, podemos parar
         if(dig[i] == dig[i-1]) break;
+
+        // se o digito cresce, precisamos tirar os 'dd' contados
         if(dig[i] > dig[i-1]){
             tot += -dp[dig[i-1] + 1][e] + dp[dig[i-1]][e];
         }
@@ -72,9 +76,6 @@ ll ans(ll x){
 
 void solve() {
     calcdp();
-    // for(int i = 1; i < 110000; i++){
-    //     cout << i << " : " << ans(i) << '\n';
-    // }
     ll a, b; cin >> a >> b;
     cout << ans(b + 1) - ans(a) << '\n';
 }

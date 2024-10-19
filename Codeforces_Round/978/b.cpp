@@ -8,30 +8,23 @@
  
 using namespace std;
 typedef long long ll;
+typedef long double ld;
 typedef pair<int, int> pii;
 const int M = 1e9 + 7;
 const int inv2 = 5e8 + 4;
 const int maxn = 400005;
 
 void solve(){
-	int n; cin >> n;
-	string s; cin >> s;
-	if(s[0] == '1' or s[n-1] == '1'){
-		cout << "YES\n";
+	int n, x; cin >> n >> x;
+	int maximo = -1;
+	ll soma = 0;
+	for(int i = 0; i < n; i++){
+		int a; cin >> a;
+		maximo = max(a, maximo);
+		soma += a; 
 	}
-	else{
-		int at = 0;
-		bool flag = false;
-		for(int i = 0; i < n; i++){
-			if(s[i] == '1') at++;
-			else{
-				if(at == 2) flag = true;
-				at = 0;
-			}
-		}
-		if(flag) cout << "YES\n";
-		else cout << "NO\n";
-	}
+
+	cout << max((ll)maximo, (ll)ceil((ld)soma / x)) << '\n';
 }
 
 int main() {

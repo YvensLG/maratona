@@ -25,7 +25,7 @@ void solve(){
 		for(int i = 0; i < n; i++){
 			if(s[i] == '1') at++;
 			else{
-				if(at == 2) flag = true;
+				if(at >= 2) flag = true;
 				at = 0;
 			}
 		}

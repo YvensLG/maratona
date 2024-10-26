@@ -17,7 +17,20 @@ const int inv2 = 5e8 + 4;
 const int maxn = 400005;
 
 void solve(){
-	
+	int n; cin >> n;
+    vector<int> v(n);
+    for(int i = 0; i < n; i++) cin >> v[i];
+    int ans = LINF;
+
+    for(int i = 0; i < n; i++){
+        int tot = i;
+        for(int j = i + 1; j < n; j++){
+            if(v[j] > v[i]) tot++;
+        }
+        ans = min(ans, tot);
+    }
+
+    cout << ans << '\n';
 }
 
 signed main() { _

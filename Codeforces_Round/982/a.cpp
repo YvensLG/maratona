@@ -17,7 +17,14 @@ const int inv2 = 5e8 + 4;
 const int maxn = 400005;
 
 void solve(){
-	
+    int n; cin >> n;
+    int maxx = 0, maxy = 0;
+    for(int i = 0; i < n; i++){
+        int x, y; cin >> x >> y;
+        maxx = max(maxx, x);
+        maxy = max(maxy, y);
+    }
+    cout << (maxx + maxy) * 2 << '\n';
 }
 
 signed main() { _

@@ -18,16 +18,18 @@ void solve() {
         int a; cin >> a;
         v.pb(a);
     }
-
+ 
     map<int, int> rep;
-
+ 
     int p1 = 0, p2 = 0;
     ll cont = 0;
     int at = 0;
     int dis = 0;
-
+ 
     while(p1 < n || p2 < n){
+        // cout << p1 << ' ' << p2 << '\n';
         if(p2 == n || (rep[v[p2]] == 0 && dis >= k)){
+            // cout << "A\n";
             rep[v[p1]] --;
             if(rep[v[p1]] == 0) dis --;
             cont += at;
@@ -35,18 +37,20 @@ void solve() {
             p1 ++;
         }
         else if(rep[v[p2]] == 0 && dis < k){
+            // cout << "B\n";
             rep[v[p2]] = 1;
             dis ++;
             at ++;
             p2 ++;
         }
         else{
+            // cout << "C\n";
             rep[v[p2]] ++;
             at ++;
             p2 ++;
         }
     }
-
+ 
     cout << cont << '\n';
 }
  

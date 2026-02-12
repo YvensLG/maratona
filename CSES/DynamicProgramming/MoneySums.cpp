@@ -11,9 +11,8 @@ const int maxn = 1e6 + 5, inf = 2e9, M = 1e9 + 7;
  
 void solve() {
     int n; cin >> n;
-    vector<int> mark(maxn);
-    mark[0] = 1;
-
+    set<int> s; s.insert(0);
+ 
     for(int i = 0; i < n; i++){
         int a; cin >> a;
         vector<int> aux;
@@ -22,12 +21,12 @@ void solve() {
         for(auto x : aux)
             s.insert(x);
     }
-
+ 
     s.erase(0);
     cout << s.size() << '\n';
     for(auto x : s) cout << x << ' '; 
     cout << '\n';
-
+ 
 }
  
 int main() {

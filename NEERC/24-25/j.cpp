@@ -17,7 +17,16 @@ const int inv2 = (M + 1) / 2;
 const int maxn = 400005;
 
 void solve(){
-	
+	int n, m; cin >> n >> m; 
+    int cont = 0; 
+    for( int i = 0; i < m; i++ ){
+        int a, b; cin >> a >> b; 
+        if( a < b ) cont++; 
+    }
+
+    if( 2*cont < m ) for( int i = n; i >= 1; i-- ) cout << i << " "; 
+    else for( int i = 1; i<= n; i++ ) cout << i << " "; 
+    cout << endl; 
 }
 
 signed main() { _

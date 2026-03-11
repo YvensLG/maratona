@@ -21,27 +21,8 @@ void solve(){
 }
 
 signed main() { _
-    ll n;
-    cin>>n; 
-    ll k =0;
-    bool sim = false;
-    for(ll i=1; i<=n; i++){
-        string s;
-        cin>>s;
-                        sim=true;
+    // int t; cin >> t; while(t--)
+    solve();
 
-        if(s!="?"){
-            ll m = stoi(s);
-                k =  max(k,i*m - (i)/2);                     
-                   }
-    }
-        if(sim){
-        cout<<k<<endl;
-        }
-        else {
-            while(true){
-                k++;
-            }
-        }
     return 0;
 }

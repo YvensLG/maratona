@@ -17,11 +17,15 @@ const int inv2 = (M + 1) / 2;
 const int maxn = 400005;
 
 void solve(){
-	
+	int l,h; cin >> l >> h;
+    if(l%2) cout << h;
+    else if(h%2) cout << h-1;
+    else cout << h;
+    cout << endl;
 }
 
 signed main() { _
-    int t; cin >> t; while(t--)
+    // int t; cin >> t; while(t--)
     solve();
 
     return 0;

@@ -4,20 +4,20 @@
 #define pc __builtin_popcount
 #define F first
 #define S second
-
+ 
 #define int long long
  
 using namespace std;
  
 int n, m;
-
+ 
 struct dsu {
 	vector<int> id, sz;
-
+ 
 	dsu(int n) : id(n), sz(n, 1) { iota(id.begin(), id.end(), 0); }
-
+ 
 	int find(int a) { return a == id[a] ? a : id[a] = find(id[a]); }
-
+ 
 	void unite(int a, int b) {
 		a = find(a), b = find(b);
 		if (a == b) return;
@@ -25,11 +25,11 @@ struct dsu {
 		sz[a] += sz[b], id[b] = a;
 	}
 };
-
+ 
 void solve(){
     cin >> n >> m;    
 	dsu D(n);
-
+ 
 	int tot = n, maxi = 1;
     
     for(int i = 0; i < m; i++) {

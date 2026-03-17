@@ -7,57 +7,66 @@
 
 using namespace std;
  
-typedef long long int ll;
- 
-const int maxn = 1e6 + 5, inf = 2e9, P = 1e9 + 7;
-const ll  linf = 4e18, M = 2305843009213693951;
+typedef long long ll;
 
-ll pot[maxn];
+// Suffix Array - O(n log n)
+//
+// kasai recebe o suffix array e calcula lcp[i],
+// o lcp entre s[sa[i],...,n-1] e s[sa[i+1],..,n-1]
+//
+// Complexidades:
+// suffix_array - O(n log(n))
+// kasai - O(n)
 
-ll hsh(string s, int n){
-    ll h = 0;
-    for(int i = 0; i < n; i++){
-        h = (h + (__int128 (pot[n - 1 - i]) * s[i]) % M) % M;
-    }
-    
-    return h;
+vector<int> suffix_array(string s) {
+	s += "$";
+	int n = s.size(), N = max(n, 260LL);
+	vector<int> sa(n), ra(n);
+	for(int i = 0; i < n; i++) sa[i] = i, ra[i] = s[i];
+
+	for(int k = 0; k < n; k ? k *= 2 : k++) {
+		vector<int> nsa(sa), nra(n), cnt(N);
+
+		for(int i = 0; i < n; i++) nsa[i] = (nsa[i]-k+n)%n, cnt[ra[i]]++;
+		for(int i = 1; i < N; i++) cnt[i] += cnt[i-1];
+		for(int i = n-1; i+1; i--) sa[--cnt[ra[nsa[i]]]] = nsa[i];
+
+		for(int i = 1, r = 0; i < n; i++) nra[sa[i]] = r += ra[sa[i]] !=
+			ra[sa[i-1]] or ra[(sa[i]+k)%n] != ra[(sa[i-1]+k)%n];
+		ra = nra;
+		if (ra[sa[n-1]] == n-1) break;
+	}
+	return vector<int>(sa.begin()+1, sa.end());
 }
 
-void calcpot(){
-    pot[0] = 1;
-    for(int i = 1; i < maxn; i++){
-        pot[i] = (__int128 (pot[i - 1]) * P) % M;
-    }
-}
+vector<int> kasai(string s, vector<int> sa) {
+	int n = s.size(), k = 0;
+	vector<int> ra(n), lcp(n);
+	for (int i = 0; i < n; i++) ra[sa[i]] = i;
 
-// number of distinct differences in an array
-// 0, a1, a2, a3, a4, a5
-// a1, a2 - a1, a3 - a2, a4 - a3, a5 - a4
-// 
+	for (int i = 0; i < n; i++, k -= !!k) {
+		if (ra[i] == n-1) { k = 0; continue; }
+		int j = sa[ra[i]+1];
+		while (i+k < n and j+k < n and s[i+k] == s[j+k]) k++;
+		lcp[ra[i]] = k;
+	}
+	return lcp;
+}
 
 void solve() {
-    string s, t; cin >> s >> t;
-    int tot = 0;
-
-    if(t.size() > s.size()){
-        cout << "0\n";
-        return;
-    }
+    string s; cin >> s;
+    int n = s.size();
     
-    ll at = hsh(s, t.size()), h = hsh(t, t.size());
+    vector<int> sa = suffix_array(s);
+    vector<int> lcp = kasai(s, sa);
 
-    if(at == h) tot++;
-    for(int i = 0; i < (int)s.size() - (int)t.size(); i++){
-        at = ((__int128 (at) * pot[1] - __int128 (s[i]) * pot[t.size()] + s[i + t.size()]) % M + M) % M;
-        if(at == h) tot++;
-    }
-
-    cout << tot << '\n';
+    int ans = 0;
+    for(auto x : lcp) ans += x;
+    cout << n * (n + 1) / 2 - ans << '\n';
 }
  
-int main() {
+signed main() {
     ios_base::sync_with_stdio(0), cin.tie(0), cout.tie(0);
-    calcpot();
     solve();
     return 0;
 }

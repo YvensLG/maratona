@@ -13,7 +13,7 @@ typedef vector<int> vi;
 typedef vector<vi> graph;
  
 void solve(){
-    int n, m; cin >> n >> m;
+    ll n, m; cin >> n >> m;
     vi ans; 
     deque<int> list;
 
@@ -21,9 +21,9 @@ void solve(){
     
     for(int i = n; i >= 1; i--) {
         int add = 0;
-        if(m >= n - 1) {
+        if(m >= i - 1) {
             add = list.back(); list.pop_back();
-            m -= n - 1;
+            m -= i - 1;
         }
         else {
             add = list.front(); list.pop_front();

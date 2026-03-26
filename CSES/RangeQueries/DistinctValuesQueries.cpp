@@ -15,7 +15,7 @@ struct FT {
 		for (; pos < sz(s); pos |= pos + 1) s[pos] += dif;
 	}
 	int query(int pos) { // sum of values in [0, pos)
-		ll res = 0;
+		int res = 0;
 		for (; pos > 0; pos &= pos - 1) res += s[pos-1];
 		return res;
 	}

@@ -9,15 +9,11 @@ using namespace std;
 const int MAX = 2e5 + 5, LOG = 30;
  
 int n, q;
-int t[MAX];
-
-vector<int> g[MAX];
-vector<int> gi[MAX];
-int vis[MAX];
+vector<int> g[MAX], gi[MAX], comp_elem[MAX], comp_graph[MAX], comp_graph_inv[MAX];
+// root, dist_root, tin, tout 
+tuple<int, int, int, int> dist[MAX];
 stack<int> S;
-int comp[MAX];
-vector<int> comp_elem[MAX];
-vector<int> comp_graph[MAX];
+int vis[MAX], comp[MAX], comp_place[MAX];
 
 void dfs(int k) {
 	vis[k] = 1;
@@ -46,17 +42,15 @@ void kosaraju() {
 	}
 }
 
-// int tin[MAX], tout[MAX];
-// void dfs_time(int s) {
-//     tin[s] = ++timer;
+int t = 0;
+void dfs_calc(int s, int p) {
+	dist[s] = {get<0>(dist[p]), get<1>(dist[p]) + 1, t, -1}; t++;
+	if(get<1>(dist[s]) == 1) get<0>(dist[s]) = g[s][0];
 
-//     for (int u : gi[v]) {
-//         if (u != p)
-//             dfs(u, v);
-//     }
+	for(auto x : comp_graph_inv[s]) dfs_calc(x, s);
 
-//     tout[v] = ++timer;
-// }
+	get<3>(dist[s]) = t; t++;
+}
 
 signed main() {
     ios_base::sync_with_stdio(0), cin.tie(0), cout.tie(0);
@@ -69,26 +63,54 @@ signed main() {
     }
     
     kosaraju();
-
-
 	
-    for(int i = 0; i < n; i++) {
-		comp_elem[comp[i]].push_back(i);
-	}
+	for(int i = 0; i < n; i++) {
+        if (comp[i] == i) {
+            int at = i, pos = 0;
+            do {
+                comp_elem[i].push_back(at);
+                comp_place[at] = pos++;
+                at = g[at][0];
+            } while (at != i && comp[at] == i);
+        }
+    }
+
 	for(int i = 0; i < n; i++)
 		for(auto x : comp_elem[i]) 
-			for(auto u : gi[x])
-				if(comp[u] != i) comp_graph[i].push_back(u);
-
-	vector<int> root;
+			for(auto u : g[x])
+				if(comp[u] != i) {
+					comp_graph[i].push_back(comp[u]);
+					comp_graph_inv[comp[u]].push_back(i);
+				}
 
 	for(int i = 0; i < n; i++) {
-		if(comp_elem[i].size() > 1) root.push_back(i);
-		else if(comp_elem[i].size() == 1 && g[comp_elem[i][0]][0] == comp_elem[i][0]) root.push_back(i);
+		if((g[i].size() == 1 && g[i][0] == i) || (comp_elem[comp[i]].size() > 1 && comp[i] == i)) {
+			dist[i] = {i, -1, 0, 0};	
+			dfs_calc(i, i);
+		}
 	}
 
-	for(auto x : root) cout << x << '\n';
- 
- 
-    return 0;
+	for(int i = 0; i < q; i++) {
+		int a, b; cin >> a >> b; a--; b--;
+		auto da = dist[a], db = dist[b];
+		if(comp[a] == comp[b]) {
+			int ans = comp_place[b] - comp_place[a];
+			if(ans < 0) ans += comp_elem[comp[a]].size();
+			cout << ans << '\n';
+		}
+		else if(comp[get<0>(da)] == comp[b]) {
+			int ans = comp_place[b] - comp_place[get<0>(da)];
+			if(ans < 0) ans += comp_elem[comp[get<0>(da)]].size();
+			ans += get<1>(da);
+			cout << ans << '\n';
+		}
+		else if(get<0>(da) == get<0>(db) && get<2>(da) > get<2>(db) && get<3>(da) < get<3>(db)) {
+			cout << get<1>(da) - get<1>(db) << '\n';
+		}
+		else {
+			cout << -1 << '\n';
+		}
+	}
+	
+	return 0;
 }

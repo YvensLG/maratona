@@ -1,7 +1,7 @@
 #include <bits/stdc++.h>
 #define pb push_back
 #define all(x) x.begin(), x.end()
-#define sz(x) x.size()
+#define sz(x) (int)x.size()
 #define pc __builtin_popcount
  
 using namespace std;
@@ -36,7 +36,6 @@ void Z(const string& s) {
 void solve() {
     string s; cin >> s;
     Z(s); pi(s);
-
 }
  
 int main() {

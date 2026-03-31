@@ -5,55 +5,51 @@
 #define int long long
  
 using namespace std;
+
+const int INF = 10000000000000000;
  
 void solve(){
     int n; cin >> n;
     vector<int> x(n);
-    // num colisoes, diferenca, posicao
+
+    // diferenca, L, R
     set<tuple<int, int, int>> d;
+    // elementos com L = i, R = i
+    vector<tuple<int, int, int>> L(n - 1), R(n - 1);
+    
     for(int i = 0; i < n; i++) cin >> x[i];
     sort(all(x));
 
     for(int i = 0; i < n - 1; i++) {
-        d.insert({0, x[i + 1] - x[i], i});
+        d.insert({x[i + 1] - x[i], i, i});
+        L[i] = {x[i + 1] - x[i], i, i};
+        R[i] = {x[i + 1] - x[i], i, i};
     }
 
     int tot = 0;
+    
     for(int k = 1; k <= n / 2; k++) {
         auto top = *d.begin(); d.erase(d.begin());
-        int i = get<2>(top);
-
-        if(get<0>(top) == 0) {
-            tot += get<1>(top);
-
-            if(i + 1 < n - 1 && d.find({0, x[i + 2] - x[i + 1], i + 1}) != d.end()) {
-                d.erase({0, x[i + 2] - x[i + 1], i + 1});
-                d.insert({1, x[i + 2] - x[i + 1], i + 1});
-            } else if(i + 1 < n - 1 && d.find({1, x[i + 2] - x[i + 1], i + 1}) != d.end()) {
-                d.erase({1, x[i + 2] - x[i + 1], i + 1});
-                d.insert({2, x[i + 2] - x[i + 1], i + 1});
-            }
-
-            if(i - 1 >= 0 && d.find({0, x[i] - x[i - 1], i - 1}) != d.end()) {
-                d.erase({0, x[i] - x[i - 1], i - 1});
-                d.insert({1, x[i] - x[i - 1], i - 1});
-            } else if(i - 1 >= 0 && d.find({1, x[i] - x[i - 1], i - 1}) != d.end()) {
-                d.erase({1, x[i] - x[i - 1], i - 1});
-                d.insert({2, x[i] - x[i - 1], i - 1});
-            }
-
-            d.insert({2, x[i + 1] - x[i], i});
+        tot += get<0>(top);
         
-            cout << tot << '\n';
-        }
+        tuple<int, int, int> a, b;
+        // elemento tq R = top.L - 1
+        if(get<1>(top) == 0) a = {INF, 0, 2 * n}; // INF pq trocar as pontas so piora
+        else a = R[get<1>(top) - 1];
+        
+        // elemento tq L = top.R + 1
+        if(get<2>(top) == n - 2) b = {INF, 2 * n, n - 2};
+        else b = L[get<2>(top) + 1];
+        
+        d.insert({get<0>(a) + get<0>(b) - get<0>(top), get<1>(a), get<2>(b)});
+        L[get<1>(a)] = {get<0>(a) + get<0>(b) - get<0>(top), get<1>(a), get<2>(b)};
+        R[get<2>(b)] = {get<0>(a) + get<0>(b) - get<0>(top), get<1>(a), get<2>(b)};
+        d.erase(a); d.erase(b);
 
-        else if(get<1>(top) == 1) {
-
-            
-
-        }
-
+        cout << tot << ' ';
     }
+
+    cout << '\n';
 }
  
 signed main() {

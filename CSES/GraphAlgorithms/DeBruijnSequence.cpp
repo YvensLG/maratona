@@ -5,10 +5,8 @@
 #define int long long
  
 using namespace std;
-
-const int INF = 10000000000000000;
  
-vector<bool> mark(1 << 15);
+bool mark[1 << 15];
 string s;
 int mod;
 

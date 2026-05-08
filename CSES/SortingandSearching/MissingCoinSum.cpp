@@ -17,12 +17,12 @@ int32_t main(){
     }
     sort(p, p + n);
  
-    int at = 0;
+    int at = 1;
  
     for(int i = 0; i < n; i++){
-        if(at >= p[i] - 1) at += p[i];
-        else continue;
+        if(at >= p[i]) at += p[i];
+        else break;
     }
  
-    cout << at+1 << '\n';
+    cout << at << '\n';
 }

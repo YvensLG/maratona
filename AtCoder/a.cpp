@@ -6,47 +6,55 @@
 #define F first
 #define S second
 
+// presta atenção nessa linha
+#define int long long
+ 
 using namespace std;
 typedef long long ll;
 typedef pair<int, int> pii;
-
-const int MOD = 998244353;
-const int MAX = 2e5+5;
-
-int nxt[MAX][26];
+const int M = 1e9 + 7;
+const int inv2 = 5e8 + 4;
+const int maxn = 400005;
 
 void solve(){
-	string s; cin >> s;
-    string t; cin >> t;
-
-    int n = s.size(), m = t.size();
-
-    for(int j = 0; j < 26; j++) nxt[n][j] = -1;
-
-    for(int i = n - 1; i >= 0; i--) {
-        for(int j = 0; j < 26; j++) nxt[i][j] = nxt[i + 1][j];
-        nxt[i][s[i] - 'a'] = i;
-    }
-
-    ll tot = 0;
+    int n, m;
+    cin >> n >> m;
+    vector<int> a(n);
     for(int i = 0; i < n; i++) {
-        int at = nxt[i][t[0] - 'a'];
-        for(int j = 1; j < m; j++) {
-            if(at == -1) break;
-            at = nxt[at + 1][t[j] - 'a'];
-        }
-        if(at == -1) tot += n - i;
-        else tot += at - i;
+        cin >> a[i];
     }
 
-    cout << tot << '\n';
+    int k = n / 2;
+    if(k == 0){
+        cout << 0 << "\n";
+        return;
+    }
+
+    vector<int> x(k + 2, 0);
+    for(int i = 1; i <= k; i++){
+        x[i] = (a[i - 1] - a[n - i] + m) % m;
+    }
+
+    vector<int> y(k + 2, 0);
+    int s = 0;
+    for(int i = 1; i <= k + 1; i++){
+        y[i] = (x[i] - x[i - 1] + m) % m;
+        s += y[i];
+    }
+    s = s / m;
+    
+    sort(y.begin() + 1, y.end());
+
+    int ans = 0;
+    for(int i = 1; i < (int)y.size() - s; i++){
+        ans += y[i];
+    }
+
+    cout << ans << "\n";
 }
 
 signed main() { _
-    int t = 1;
-    // cin >> t;
-    while(t--)
-    solve();
-
+    int t; cin >> t;
+    while(t--) solve();
     return 0;
 }

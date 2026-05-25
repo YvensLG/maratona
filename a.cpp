@@ -1,59 +1,55 @@
 #include <bits/stdc++.h>
-#define _ ios_base::sync_with_stdio(0); cin.tie(0); cout.tie(0);
-#define INF 1000000000
-#define LINF 1000000000000000000 
-#define pb push_back
-#define F first
-#define S second
- 
-// presta atenção nessa linha
-#define int long long
- 
 using namespace std;
-typedef long long ll;
-typedef pair<int, int> pii;
-const int M = 1e9 + 7;
-const int inv2 = 5e8 + 4;
-const int maxn = 400005;
  
-void solve(){
-	int n, p, s; cin >> n >> p >> s;
-	vector<pair<int, int>> pneu(3);
-	for(int i = 0; i < 3; i++) cin >> pneu[i].first;
-	for(int i = 0; i < 3; i++) cin >> pneu[i].second;
+const int maxn = 1010;
+int n, p, s, memo[maxn][3][6], t[3], d[3], inf = 1e9;
  
-	int best = LINF;
- 
-	for(int i = 0; i <= s + 1; i++) {
-	for(int j = i; j <= s + 1; j++) {
-		int voltas = n, time = 0, mini, den;
- 
-		mini = min(voltas, pneu[0].second * (i)); den = pneu[0].second;
-		time += pneu[0].first * mini;
-		time += ((mini + den - 1) / den) * p; 
-		voltas -= mini;
- 
-		mini = min(voltas, pneu[1].second * (j - i)); den = pneu[1].second;
-		time += pneu[1].first * mini;
-		time += ((mini + den - 1) / den) * p; 
-		voltas -= mini;
- 
-		mini = min(voltas, pneu[2].second * (s + 1 - j)); den = pneu[2].second;
-		time += pneu[2].first * mini;
-		time += ((mini + den - 1) / den) * p; 
-		voltas -= mini;
- 
-		time -= p;
- 
-		if(voltas > 0) continue;
-		best = min(time, best);
-	}
-	}
- 
-	cout << best << '\n';
+// cálculo do estado da dp(i, j, k)
+// i -> a volta atual em que estamos (de 0 a n)
+// j -> o tipo de pneu que estamos usando no momento (0, 1 ou 2)
+// k -> a quantidade de pit-stops que já realizamos (0 a S)
+int dp(int i, int j, int k) {
+    if (i == n) return 0;      // Corrida finalizada com sucesso
+    if (memo[i][j][k] != -1)   // Retorna a dp já calculada
+		return memo[i][j][k];
+
+	// Se já usou todos os pitstops, checa se é possível terminar
+    if (k == s) {
+        if (i + d[j] < n) return inf;
+        return t[j] * (n - i);
+    }
+
+    int ans = inf;
+
+	// Checa se pode ir até o fim com o pneu atual
+    if (i + d[j] >= n)
+		ans = (n - i) * t[j];
+    
+	int sum = t[j];
+
+	// Testa todas as voltas possiveis onde podemos fazer o proximo pit-stop
+    for (int to = i + 1; to <= min(n, i + d[j]); to++) {
+		// Após parar na volta 'to', tentamos seguir com qualquer um dos 3 pneus
+        int menor = min({dp(to, 0, k + 1), dp(to, 1, k + 1), dp(to, 2, k + 1)});
+        ans = min(ans, sum + menor + p);
+        sum += t[j];
+    }
+
+	// retornamos e salvamos a melhor resposta
+    return memo[i][j][k] = ans;
 }
  
-signed main() { _
-    solve();
-    return 0;
+int main() {
+	// leitura e inicialização da dp
+    cin >> n >> p >> s;
+    for (int i = 0; i < 3; i++) cin >> t[i];
+    for (int i = 0; i < 3; i++) cin >> d[i];
+    memset(memo, -1, sizeof(memo));
+    int ans = inf;
+
+	// cálculo da dp
+    for (int i = 0; i < 3; i++) {
+        ans = min(ans, dp(0, i, 0));
+    }
+    cout << ans << '\n';
 }

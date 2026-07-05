@@ -1,55 +1,77 @@
 #include <bits/stdc++.h>
-using namespace std;
- 
-const int maxn = 1010;
-int n, p, s, memo[maxn][3][6], t[3], d[3], inf = 1e9;
- 
-// cálculo do estado da dp(i, j, k)
-// i -> a volta atual em que estamos (de 0 a n)
-// j -> o tipo de pneu que estamos usando no momento (0, 1 ou 2)
-// k -> a quantidade de pit-stops que já realizamos (0 a S)
-int dp(int i, int j, int k) {
-    if (i == n) return 0;      // Corrida finalizada com sucesso
-    if (memo[i][j][k] != -1)   // Retorna a dp já calculada
-		return memo[i][j][k];
+using namespace std; 
 
-	// Se já usou todos os pitstops, checa se é possível terminar
-    if (k == s) {
-        if (i + d[j] < n) return inf;
-        return t[j] * (n - i);
-    }
+#define int long long
 
-    int ans = inf;
+#define rep(i, a, b) for (int i = a; i < (b); ++i)
+#define sz(x) (int) (x).size()
+#define all(x) begin(x), end(x)
+typedef long long ll;
+typedef vector<int> vi;
+typedef pair<int, int> pii;
 
-	// Checa se pode ir até o fim com o pneu atual
-    if (i + d[j] >= n)
-		ans = (n - i) * t[j];
-    
-	int sum = t[j];
+const int mod = 1e9 + 7;
 
-	// Testa todas as voltas possiveis onde podemos fazer o proximo pit-stop
-    for (int to = i + 1; to <= min(n, i + d[j]); to++) {
-		// Após parar na volta 'to', tentamos seguir com qualquer um dos 3 pneus
-        int menor = min({dp(to, 0, k + 1), dp(to, 1, k + 1), dp(to, 2, k + 1)});
-        ans = min(ans, sum + menor + p);
-        sum += t[j];
-    }
-
-	// retornamos e salvamos a melhor resposta
-    return memo[i][j][k] = ans;
+ll modpow(ll b, ll e) {
+	ll ans = 1;
+	for (; e; b = b * b % mod, e /= 2)
+		if (e & 1) ans = ans * b % mod;
+	return ans;
 }
- 
-int main() {
-	// leitura e inicialização da dp
-    cin >> n >> p >> s;
-    for (int i = 0; i < 3; i++) cin >> t[i];
-    for (int i = 0; i < 3; i++) cin >> d[i];
-    memset(memo, -1, sizeof(memo));
-    int ans = inf;
 
-	// cálculo da dp
-    for (int i = 0; i < 3; i++) {
-        ans = min(ans, dp(0, i, 0));
+// seja wk = c1 * c2 * ... * ck o número de elementos de profundidade k (w0 = 1)
+
+// cada caminho valido tem duas partes
+// raiz -> f1 -> f2 -> ... -> fk
+// existe exatamente w_k desses 
+// 
+// pi -> p(i-1) -> ... -> p1 -> folha
+// existe exatamente w_n desses
+
+// se i + k < n : caminhos nunca se tocam
+//
+// (i, k) : ans += w_k * w_n
+// total  : ans += w_k * w_n * (n - k) 
+
+// senão: caminhos podem se tocar
+// (i, k) : ans += w_k * w_n - w_n * w_k / w_{n - i}
+// total  : ans += sum w_n * w_k * (1 - 1 / w_{n - i}) = w_n * w_k * (k - pref_inv_w[k])
+
+// casos com multiplicidade (sem teleportes)
+// ans -= w_n * (n - 1)
+
+void solve(){
+    int n; cin >> n;
+    vector<int> c(n);
+    for(auto &x : c) cin >> x;
+    vector<int> w(n + 1); w[0] = 1;
+    vector<int> pref_inv_w(n + 1); pref_inv_w[0] = 0;
+
+    for(int i = 1; i <= n; i++) {
+        w[i] = (c[i - 1] * w[i - 1]) % mod;
     }
+
+    for(int i = 1; i <= n; i++) {
+        pref_inv_w[i] = modpow(w[i], mod - 2);
+        pref_inv_w[i] = (pref_inv_w[i] + pref_inv_w[i - 1]) % mod;
+    }
+    
+    int ans = 0;
+
+    for(int k = 0; k <= n; k++) {
+        ans = (ans + (w[k] * w[n] % mod) * (n - k)) % mod;
+    }
+
+    for(int k = 0; k <= n; k++) {
+        ans = (ans + (w[k] * w[n] % mod) * (k + mod - pref_inv_w[k]) % mod) % mod;
+    }
+
+    ans = (ans - w[n] * (n - 1) % mod + mod) % mod;
+
     cout << ans << '\n';
+}
+
+signed main(){
+    ios::sync_with_stdio(false); cin.tie(NULL); 
+    solve(); 
 }

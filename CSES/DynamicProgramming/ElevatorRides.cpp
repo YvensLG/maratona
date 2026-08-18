@@ -11,7 +11,7 @@ typedef long long int ll;
  
 const int maxn = 1050000, maxm = 25, inf = 2e9, M = 1e9 + 7;
 
-// dp[X] = {k, W} -> com o bitset X, k é o menor numero de viagens, W é o peso total da menor viagem
+// dp[X] = {k, W} -> com o bitset X, k eh o menor numero de viagens, W eh o peso total da menor viagem
 pair<int, int> dp[maxn];
 bool tested[maxn];
 int pot[maxm];

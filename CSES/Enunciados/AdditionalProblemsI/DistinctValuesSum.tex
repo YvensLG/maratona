@@ -1,0 +1,16 @@
+You are given an array $x_1,x_2,\dots,x_n$. Let $d(a,b)$ denote the number of distinct values in the subarray $x_a,x_{a+1},\dots,x_b$.
+Your task is to calculate the sum $\sum_{a=1}^n \sum_{b=a}^n d(a,b)$, i.e., the sum of $d(a,b)$ for all subarrays.
+
+\vspace{0.3cm}\noindent\textbf{Input}
+
+The first line has an integer $n$: the array size.
+The next line has $n$ integers $x_1,x_2,\dots,x_n$: the array contents.
+
+\vspace{0.3cm}\noindent\textbf{Output}
+
+Print one integer: the required sum.
+
+\vspace{0.3cm}\noindent\textbf{Constraints}
+
+\textbullet\ $1 \le n \le 2 \cdot 10^5$
+\textbullet\ $1 \le x_i \le 10^9$

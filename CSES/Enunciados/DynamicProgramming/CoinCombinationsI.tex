@@ -1,0 +1,26 @@
+Consider a money system consisting of $n$ coins. Each coin has a positive integer value. Your task is to calculate the number of distinct ways you can produce a money sum $x$ using the available coins.
+For example, if the coins are $\{2,3,5\}$ and the desired sum is $9$, there are $8$ ways:
+
+\textbullet\ $2+2+5$
+\textbullet\ $2+5+2$
+\textbullet\ $5+2+2$
+\textbullet\ $3+3+3$
+\textbullet\ $2+2+2+3$
+\textbullet\ $2+2+3+2$
+\textbullet\ $2+3+2+2$
+\textbullet\ $3+2+2+2$
+
+\vspace{0.3cm}\noindent\textbf{Input}
+
+The first input line has two integers $n$ and $x$: the number of coins and the desired sum of money.
+The second line has $n$ distinct integers $c_1,c_2,\dots,c_n$: the value of each coin.
+
+\vspace{0.3cm}\noindent\textbf{Output}
+
+Print one integer: the number of ways modulo $10^9+7$.
+
+\vspace{0.3cm}\noindent\textbf{Constraints}
+
+\textbullet\ $1 \le n \le 100$
+\textbullet\ $1 \le x \le 10^6$
+\textbullet\ $1 \le c_i \le 10^6$

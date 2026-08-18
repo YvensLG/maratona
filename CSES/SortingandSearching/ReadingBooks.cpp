@@ -23,7 +23,7 @@ void solve(){
 
     ll soma = 0;
 
-    // se a soma > 2 * maior, tem como reorganizar para todo mundo ler o mais rápido possível
+    // se a soma > 2 * maior, tem como reorganizar para todo mundo ler o mais rapido possivel
 
     for(int i = 0; i < n; i++){
         soma += a[i];

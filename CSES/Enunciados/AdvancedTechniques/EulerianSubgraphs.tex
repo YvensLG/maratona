@@ -1,0 +1,18 @@
+You are given an undirected graph that has $n$ nodes and $m$ edges.
+We consider subgraphs that have all nodes of the original graph and some of its edges. A subgraph is called Eulerian if each node has even degree.
+Your task is to count the number of Eulerian subgraphs modulo $10^9+7$.
+
+\vspace{0.3cm}\noindent\textbf{Input}
+
+The first input line has two integers $n$ and $m$: the number of nodes and edges. The nodes are numbered $1,2,\dots,n$.
+After this, there are $m$ lines that describe the edges. Each line has two integers $a$ and $b$: there is an edge between nodes $a$ and $b$. There is at most one edge between two nodes, and each edge connects two distinct nodes.
+
+\vspace{0.3cm}\noindent\textbf{Output}
+
+Print the number of Eulerian subgraphs modulo $10^9+7$.
+
+\vspace{0.3cm}\noindent\textbf{Constraints}
+
+\textbullet\ $1 \le n \le 10^5$
+\textbullet\ $0 \le m \le 2 \cdot 10^5$
+\textbullet\ $1 \le a,b \le n$

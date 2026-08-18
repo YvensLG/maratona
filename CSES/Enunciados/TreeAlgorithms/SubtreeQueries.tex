@@ -1,0 +1,22 @@
+You are given a rooted tree consisting of $n$ nodes. The nodes are numbered $1,2,\ldots,n$, and node $1$ is the root. Each node has a value.
+Your task is to process following types of queries:
+
+change the value of node $s$ to $x$
+calculate the sum of values in the subtree of node $s$
+
+\vspace{0.3cm}\noindent\textbf{Input}
+
+The first input line contains two integers $n$ and $q$: the number of nodes and queries. The nodes are numbered $1,2,\ldots,n$.
+The next line has $n$ integers $v_1,v_2,\ldots,v_n$: the value of each node.
+Then there are $n-1$ lines describing the edges. Each line contans two integers $a$ and $b$: there is an edge between nodes $a$ and $b$.
+Finally, there are $q$ lines describing the queries. Each query is either of the form "1 $s$ $x$" or "2 $s$".
+
+\vspace{0.3cm}\noindent\textbf{Output}
+
+Print the answer to each query of type 2.
+
+\vspace{0.3cm}\noindent\textbf{Constraints}
+
+\textbullet\ $1 \le n, q \le 2 \cdot 10^5$
+\textbullet\ $1 \le a,b, s \le n$
+\textbullet\ $1 \le v_i, x \le 10^9$

@@ -9,7 +9,7 @@ typedef long long int ll;
  
 const int maxn = 5e2 + 5, inf = 2e9, M = 1e9 + 7;
 
-// dp[i][j] é o número de sets de tamanho até i cuja soma é j
+// dp[i][j] eh o numero de sets de tamanho ate i cuja soma eh j
 ll dp[maxn][(ll)maxn * (maxn + 1) / 2];
  
 void solve() {

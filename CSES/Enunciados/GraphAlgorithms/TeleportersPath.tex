@@ -1,0 +1,19 @@
+A game has $n$ levels and $m$ teleporters between them. You win the game if you move from level $1$ to level $n$ using every teleporter exactly once.
+Can you win the game, and what is a possible way to do it?
+
+\vspace{0.3cm}\noindent\textbf{Input}
+
+The first input line has two integers $n$ and $m$: the number of levels and teleporters. The levels are numbered $1,2,\dots,n$.
+Then, there are $m$ lines describing the teleporters. Each line has two integers $a$ and $b$: there is a teleporter from level $a$ to level $b$.
+You can assume that each pair $(a,b)$ in the input is distinct.
+
+\vspace{0.3cm}\noindent\textbf{Output}
+
+Print $m+1$ integers: the sequence in which you visit the levels during the game. You can print any valid solution.
+If there are no solutions, print "IMPOSSIBLE".
+
+\vspace{0.3cm}\noindent\textbf{Constraints}
+
+\textbullet\ $2 \le n \le 10^5$
+\textbullet\ $1 \le m \le 2 \cdot 10^5$
+\textbullet\ $1 \le a,b \le n$

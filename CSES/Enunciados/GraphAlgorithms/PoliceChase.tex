@@ -1,0 +1,17 @@
+Kaaleppi has just robbed a bank and is now heading to the harbor. However, the police wants to stop him by closing some streets of the city.
+What is the minimum number of streets that should be closed so that there is no route between the bank and the harbor?
+
+\vspace{0.3cm}\noindent\textbf{Input}
+
+The first input line has two integers $n$ and $m$: the number of crossings and streets. The crossings are numbered $1,2,\dots,n$. The bank is located at crossing $1$, and the harbor is located at crossing $n$.
+After this, there are $m$ lines that describing the streets. Each line has two integers $a$ and $b$: there is a street between crossings $a$ and $b$. All streets are two-way streets, and there is at most one street between two crossings.
+
+\vspace{0.3cm}\noindent\textbf{Output}
+
+First print an integer $k$: the minimum number of streets that should be closed. After this, print $k$ lines describing the streets. You can print any valid solution.
+
+\vspace{0.3cm}\noindent\textbf{Constraints}
+
+\textbullet\ $2 \le n \le 500$
+\textbullet\ $1 \le m \le 1000$
+\textbullet\ $1 \le a,b \le n$

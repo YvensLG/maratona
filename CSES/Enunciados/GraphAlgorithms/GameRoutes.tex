@@ -1,0 +1,16 @@
+A game has $n$ levels, connected by $m$ teleporters, and your task is to get from level $1$ to level $n$. The game has been designed so that there are no directed cycles in the underlying graph. In how many ways can you complete the game?
+
+\vspace{0.3cm}\noindent\textbf{Input}
+
+The first input line has two integers $n$ and $m$: the number of levels and teleporters. The levels are numbered $1,2,\dots,n$.
+After this, there are $m$ lines describing the teleporters. Each line has two integers $a$ and $b$: there is a teleporter from level $a$ to level $b$.
+
+\vspace{0.3cm}\noindent\textbf{Output}
+
+Print one integer: the number of ways you can complete the game. Since the result may be large, print it modulo $10^9+7$.
+
+\vspace{0.3cm}\noindent\textbf{Constraints}
+
+\textbullet\ $1 \le n \le 10^5$
+\textbullet\ $1 \le m \le 2 \cdot 10^5$
+\textbullet\ $1 \le a,b \le n$

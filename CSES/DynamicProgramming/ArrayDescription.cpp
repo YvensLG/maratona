@@ -9,7 +9,7 @@ typedef long long int ll;
  
 const int maxn = 1e5 + 5, maxm = 1e2 + 5, inf = 2e9, M = 1e9 + 7;
 
-// dp[i][j] = número de maneiras até a posição i e terminando em j
+// dp[i][j] = numero de maneiras ate a posicao i e terminando em j
 int dp[maxn][maxm];
 vector<int> x(maxn);
 

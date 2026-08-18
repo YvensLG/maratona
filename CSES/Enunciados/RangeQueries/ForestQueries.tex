@@ -1,0 +1,19 @@
+You are given an $n \times n$ grid representing the map of a forest. Each square is either empty or contains a tree. The upper-left square has coordinates $(1,1)$, and the lower-right square has coordinates $(n,n)$.
+Your task is to process $q$ queries of the form: how many trees are inside a given rectangle in the forest?
+
+\vspace{0.3cm}\noindent\textbf{Input}
+
+The first input line has two integers $n$ and $q$: the size of the forest and the number of queries.
+Then, there are $n$ lines describing the forest. Each line has $n$ characters: . is an empty square and * is a tree.
+Finally, there are $q$ lines describing the queries. Each line has four integers $y_1$, $x_1$, $y_2$, $x_2$ corresponding to the corners of a rectangle.
+
+\vspace{0.3cm}\noindent\textbf{Output}
+
+Print the number of trees inside each rectangle.
+
+\vspace{0.3cm}\noindent\textbf{Constraints}
+
+\textbullet\ $1 \le n \le 1000$
+\textbullet\ $1 \le q \le 2 \cdot 10^5$
+\textbullet\ $1 \le y_1 \le y_2 \le n$
+\textbullet\ $1 \le x_1 \le x_2 \le n$

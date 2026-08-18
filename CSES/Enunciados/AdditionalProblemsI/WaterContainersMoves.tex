@@ -1,0 +1,24 @@
+There are two water containers: container $A$ has volume $a$ and container $B$ has volume $b$. Your want to measure $x$ units of water using the containers.
+Initially both containers are empty. On each move, you can fill a container, empty a container or move water from a container to another container. When you move water, you must always fill or empty at least one container. After the moves, container $A$ must have $x$ units of water.
+Find a sequence of moves where the total amount of moved water is minimum or state that it is impossible to measure the water.
+
+\vspace{0.3cm}\noindent\textbf{Input}
+
+The only line has three integers $a$, $b$ and $x$.
+
+\vspace{0.3cm}\noindent\textbf{Output}
+
+First print two integers $n$ and $m$: the number of moves and the total amount of water moved. After that print a sequence of $n$ moves. Each move must move at least one unit of water and be one of the following:
+
+\textbullet\ FILL A: fill container $A$
+\textbullet\ FILL B: fill container $B$
+\textbullet\ EMPTY A: empty container $A$
+\textbullet\ EMPTY B: empty container $B$
+\textbullet\ MOVE A B: move water from container $A$ to container $B$
+\textbullet\ MOVE B A: move water from container $B$ to container $A$
+
+If it is not possible to measure the water, only print $-1$.
+
+\vspace{0.3cm}\noindent\textbf{Constraints}
+
+\textbullet\ $1 \le a, b, x \le 1000$

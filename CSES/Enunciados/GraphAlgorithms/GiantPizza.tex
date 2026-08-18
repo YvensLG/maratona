@@ -1,0 +1,17 @@
+Uolevi's family is going to order a large pizza and eat it together. A total of $n$ family members will join the order, and there are $m$ possible toppings. The pizza may have any number of toppings.
+Each family member gives two wishes concerning the toppings of the pizza. The wishes are of the form "topping $x$ is good/bad". Your task is to choose the toppings so that at least one wish from everybody becomes true (a good topping is included in the pizza or a bad topping is not included).
+
+\vspace{0.3cm}\noindent\textbf{Input}
+
+The first input line has two integers $n$ and $m$: the number of family members and toppings. The toppings are numbered $1,2,\dots,m$.
+After this, there are $n$ lines describing the wishes. Each line has two wishes of the form "+ $x$" (topping $x$ is good) or "- $x$" (topping $x$ is bad).
+
+\vspace{0.3cm}\noindent\textbf{Output}
+
+Print a line with $m$ symbols: for each topping "+" if it is included and "-" if it is not included. You can print any valid solution.
+If there are no valid solutions, print "IMPOSSIBLE".
+
+\vspace{0.3cm}\noindent\textbf{Constraints}
+
+\textbullet\ $1 \le n,m \le 10^5$
+\textbullet\ $1 \le x \le m$

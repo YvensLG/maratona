@@ -1,0 +1,18 @@
+Your task is to deliver mail to the inhabitants of a city. For this reason, you want to find a route whose starting and ending point are the post office, and that goes through every street exactly once.
+
+\vspace{0.3cm}\noindent\textbf{Input}
+
+The first input line has two integers $n$ and $m$: the number of crossings and streets. The crossings are numbered $1,\,2,\ldots,\,n$, and the post office is located at crossing $1$.
+After that, there are m lines describing the streets. Each line has two integers $a$ and $b$: there is a street between crossings $a$ and $b$. All streets are two-way streets.
+Every street is between two different crossings, and there is at most one street between two crossings.
+
+\vspace{0.3cm}\noindent\textbf{Output}
+
+Print all the crossings on the route in the order you will visit them. You can print any valid solution.
+If there are no solutions, print "IMPOSSIBLE".
+
+\vspace{0.3cm}\noindent\textbf{Constraints}
+
+$2\leq n\leq 10^5$
+$1\leq m\leq 2 \cdot 10^5$
+$1\leq a,\,b\leq n$

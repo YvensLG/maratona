@@ -1,0 +1,19 @@
+Consider an $n \times n$ grid whose top-left square is $(1,1)$ and bottom-right square is $(n,n)$.
+Your task is to move from the top-left square to the bottom-right square. On each step you may move one square right or down. In addition, there are $m$ traps in the grid. You cannot move to a square with a trap.
+What is the total number of possible paths?
+
+\vspace{0.3cm}\noindent\textbf{Input}
+
+The first input line contains two integers $n$ and $m$: the size of the grid and the number of traps.
+After this, there are $m$ lines describing the traps. Each such line contains two integers $y$ and $x$: the location of a trap.
+You can assume that there are no traps in the top-left and bottom-right square. You can also assume that each square has at most one trap.
+
+\vspace{0.3cm}\noindent\textbf{Output}
+
+Print the number of paths modulo $10^9+7$.
+
+\vspace{0.3cm}\noindent\textbf{Constraints}
+
+\textbullet\ $1 \le n \le 10^6$
+\textbullet\ $1 \le m \le 1000$
+\textbullet\ $1 \le y,x \le n$

@@ -1,0 +1,22 @@
+There are $n$ buildings on a street, numbered $1,2,\dots,n$. Each building has a pizzeria and an apartment.
+The pizza price in building $k$ is $p_k$. If you order a pizza from building $a$ to building $b$, its price (with delivery) is $p_a+|a-b|$.
+Your task is to process two types of queries:
+
+The pizza price $p_k$ in building $k$ becomes $x$.
+You are in building $k$ and want to order a pizza. What is the minimum price?
+
+\vspace{0.3cm}\noindent\textbf{Input}
+
+The first input line has two integers $n$ and $q$: the number of buildings and queries.
+The second line has $n$ integers $p_1,p_2,\dots,p_n$: the initial pizza price in each building.
+Finally, there are $q$ lines that describe the queries. Each line is either "1 $k$ $x$" or "2 $k$".
+
+\vspace{0.3cm}\noindent\textbf{Output}
+
+Print the answer for each query of type 2.
+
+\vspace{0.3cm}\noindent\textbf{Constraints}
+
+\textbullet\ $1 \le n,q \le 2 \cdot 10^5$
+\textbullet\ $1 \le p_i, x \le 10^9$
+\textbullet\ $1 \le k \le n$

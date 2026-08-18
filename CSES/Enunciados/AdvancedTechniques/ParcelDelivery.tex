@@ -1,0 +1,19 @@
+There are $n$ cities and $m$ routes through which parcels can be carried from one city to another city. For each route, you know the maximum number of parcels and the cost of a single parcel.
+You want to send $k$ parcels from Syrjälä to Lehmälä. What is the cheapest way to do that?
+
+\vspace{0.3cm}\noindent\textbf{Input}
+
+The first input line has three integers $n$, $m$ and $k$: the number of cities, routes and parcels. The cities are numbered $1,2,\dots,n$. City $1$ is Syrjälä and city $n$ is Lehmälä.
+After this, there are $m$ lines that describe the routes. Each line has four integers $a$, $b$, $r$ and $c$: there is a route from city $a$ to city $b$, at most $r$ parcels can be carried through the route, and the cost of each parcel is $c$.
+
+\vspace{0.3cm}\noindent\textbf{Output}
+
+Print one integer: the minimum total cost or $-1$ if there are no solutions.
+
+\vspace{0.3cm}\noindent\textbf{Constraints}
+
+\textbullet\ $2 \le n \le 500$
+\textbullet\ $1 \le m \le 1000$
+\textbullet\ $1 \le k \le 100$
+\textbullet\ $1 \le a,b \le n$
+\textbullet\ $1 \le r,c \le 1000$

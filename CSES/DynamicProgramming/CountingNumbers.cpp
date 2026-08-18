@@ -62,7 +62,7 @@ ll ans(ll x){
         // adiciona o 10
         if(e == 0 && dig[i] > 0 && dig[i-1] > 0) tot++;
 
-        // se há dois digitos iguais consecutivos, podemos parar
+        // se ha dois digitos iguais consecutivos, podemos parar
         if(dig[i] == dig[i-1]) break;
 
         // se o digito cresce, precisamos tirar os 'dd' contados

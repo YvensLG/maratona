@@ -27,7 +27,7 @@ int calc(int a, int b) {
     return fat[a] * (invfat[b] * invfat[a - b] % M) % M;
 }
  
-// inclusao - exclusao em Ai = {seq's tais que i não apareece}
+// inclusao - exclusao em Ai = {seq's tais que i nao aparece}
 void solve() {
     int n, k; cin >> n >> k;
 

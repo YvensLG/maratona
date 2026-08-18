@@ -1,0 +1,18 @@
+We consider a string of $n$ characters, indexed $1,2,\dots,n$. Your task is to calculate all values of the following functions:
+
+\textbullet\ $z(i)$ denotes the maximum length of a substring that begins at position $i$ and is a prefix of the string. In addition, $z(1)=0$.
+\textbullet\ $\pi(i)$ denotes the maximum length of a substring that ends at position $i$, is a prefix of the string, and whose length is at most $i-1$.
+
+Note that the function $z$ is used in the Z-algorithm, and the function $\pi$ is used in the KMP algorithm.
+
+\vspace{0.3cm}\noindent\textbf{Input}
+
+The only input line has a string of length $n$. Each character is between a–z.
+
+\vspace{0.3cm}\noindent\textbf{Output}
+
+Print two lines: first the values of the $z$ function, and then the values of the $\pi$ function.
+
+\vspace{0.3cm}\noindent\textbf{Constraints}
+
+\textbullet\ $1 \le n \le 10^6$

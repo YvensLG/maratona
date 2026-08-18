@@ -1,0 +1,22 @@
+A company has $n$ employees with certain salaries. Your task is to keep track of the salaries and process queries.
+
+\vspace{0.3cm}\noindent\textbf{Input}
+
+The first input line contains two integers $n$ and $q$: the number of employees and queries. The employees are numbered $1,2,\ldots,n$.
+The next line has $n$ integers $p_1,p_2,\ldots,p_n$: each employee's salary.
+After this, there are $q$ lines describing the queries. Each line has one of the following forms:
+
+\textbullet\ ! $k$ $x$: change the salary of employee $k$ to $x$
+\textbullet\ ? $a$ $b$: count the number of employees whose salary is between $a \ldots b$
+
+\vspace{0.3cm}\noindent\textbf{Output}
+
+Print the answer to each ? query.
+
+\vspace{0.3cm}\noindent\textbf{Constraints}
+
+\textbullet\ $1 \le n, q \le 2 \cdot 10^5$
+\textbullet\ $1 \le p_i \le 10^9$
+\textbullet\ $1 \le k \le n$
+\textbullet\ $1 \le x \le 10^9$
+\textbullet\ $1 \le a \le b \le 10^9$

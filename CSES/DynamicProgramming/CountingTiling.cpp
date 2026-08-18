@@ -10,7 +10,7 @@ typedef long long int ll;
 const int maxn = 10, maxpotn = 1030, maxm = 1005, inf = 2e9, M = 1e9 + 7;
 
 /*
-complete[n] são todos os possíveis bitsets de "proximos andares" dado que um andar tem n casas vazias
+complete[n] sao todos os possiveis bitsets de "proximos andares" dado que um andar tem n casas vazias
 exemplo: se n = 2, podemos completar de 3 possibilidades, {1 1 1}, {1 0 0}, {0 0 1}:
 | i | i | i |   | i |   |   |    |   |   | i |
 | i | i | i |   | i | - | - |    | - | - | i |
@@ -20,7 +20,7 @@ vector<int> complete[maxn + 1];
 // dp[n][m] quantidade de formas de fazer m-1 andares completos e o do topo representado pelo bitset n 
 ll dp[maxpotn][maxm];
 
-// a transicao[n] são todos os possíveis andares depois de receber um topo com o bitset n
+// a transicao[n] sao todos os possiveis andares depois de receber um topo com o bitset n
 vector<int> transicao[maxpotn];
 int n, m; 
 
@@ -29,11 +29,11 @@ void calcomplete(){
     complete[0].pb(0);
     complete[1].pb(1);
     for(int i = 2; i <= maxn; i++){
-        // completa o com i-1 e coloca um dominó em pé
+        // completa o com i-1 e coloca um domino em pe
         for(auto x : complete[i - 1]){
             complete[i].pb(x * 2 + 1);
         }
-        // completa o com i-2 e coloca um dominó deitado
+        // completa o com i-2 e coloca um domino deitado
         for(auto x : complete[i - 2]){
             complete[i].pb(x * 4 + 0);
         }
@@ -74,7 +74,7 @@ void calctransicao(){
         fila.push(0);
 
         while(!v.empty()){
-            // se estamos em uma seq de 1's o proximo é sempre 0
+            // se estamos em uma seq de 1's o proximo eh sempre 0
             int fsz = fila.size();
             for(int j = 0; j < fsz; j++){
                 int at = fila.front();
@@ -109,7 +109,7 @@ void solve() {
     cin >> n >> m;
     calcomplete();
     calctransicao();
-    // uma forma do primeiro andar ter 0 dominós
+    // uma forma do primeiro andar ter 0 dominos
     dp[0][1] = 1;
 
     // calcula dp
@@ -121,7 +121,7 @@ void solve() {
         }
     }
 
-    // quantidade de formas do andar m + 1 ter 0 peças e o resto estar completo
+    // quantidade de formas do andar m + 1 ter 0 pecas e o resto estar completo
     cout << dp[0][m + 1] << '\n';
 }
  

@@ -1,0 +1,18 @@
+A game consists of $n$ rooms and $m$ teleporters. At the beginning of each day, you start in room $1$ and you have to reach room $n$.
+You can use each teleporter at most once during the game. How many days can you play if you choose your routes optimally?
+
+\vspace{0.3cm}\noindent\textbf{Input}
+
+The first input line has two integers $n$ and $m$: the number of rooms and teleporters. The rooms are numbered $1,2,\dots,n$.
+After this, there are $m$ lines describing the teleporters. Each line has two integers $a$ and $b$: there is a teleporter from room $a$ to room $b$.
+There are no two teleporters whose starting and ending room are the same.
+
+\vspace{0.3cm}\noindent\textbf{Output}
+
+First print an integer $k$: the maximum number of days you can play the game. Then, print $k$ route descriptions according to the example. You can print any valid solution.
+
+\vspace{0.3cm}\noindent\textbf{Constraints}
+
+\textbullet\ $2 \le n \le 500$
+\textbullet\ $1 \le m \le 1000$
+\textbullet\ $1 \le a,b \le n$

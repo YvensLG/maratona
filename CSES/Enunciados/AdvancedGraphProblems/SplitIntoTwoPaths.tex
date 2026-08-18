@@ -1,0 +1,20 @@
+You are given an acyclic directed graph with $n$ nodes and $m$ edges.
+Determine whether two paths can be formed in the graph such that each node of the graph appears in exactly one of the paths. Note that all edges of the graph do not need to appear in the paths.
+
+\vspace{0.3cm}\noindent\textbf{Input}
+
+The first line has two integers $n$ and $m$: the number of nodes and the number of edges. The nodes are numbered $1, 2, \dots, n$.
+After this, there are $m$ lines which describe the edges.
+Each line has two integers $a$ and $b$: there is an edge in the graph from node $a$ to node $b$.
+
+\vspace{0.3cm}\noindent\textbf{Output}
+
+First print the line YES if the paths can be formed, or NO otherwise.
+If the paths can be formed, print them on the following two lines.
+At the beginning of both lines, print the amount of nodes in the path and then the nodes of the path in order. There must be an edge in the graph between subsequent nodes. One of the paths may contain zero nodes.
+If there exist multiple solutions, you can print any solution.
+
+\vspace{0.3cm}\noindent\textbf{Constraints}
+
+\textbullet\ $2 \le n \le 2\cdot10^5$
+\textbullet\ $0 \le m \le 5\cdot 10^5$

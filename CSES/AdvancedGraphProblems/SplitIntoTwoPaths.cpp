@@ -60,7 +60,10 @@ void solve(){
 
         for(auto x : Grev[v]) {
             auto it = S.find(x);
-            if(it != S.end()) q = *it;
+            if(it != S.end()) {
+                q = *it;
+                break;
+            }
         }
 
         if(!liga[i]) {

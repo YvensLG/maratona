@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2026.3.23)  18 AUG 2026 22:12
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2026.3.23)  19 AUG 2026 07:17
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -316,6 +316,364 @@ Package tocloft Info: The document has section divisions on input line 51.
 \cfttabindent=\skip84
 \cfttabnumwidth=\skip85
 )
+(/usr/share/texlive/texmf-dist/tex/latex/tcolorbox/tcolorbox.sty
+Package: tcolorbox 2024/01/10 version 6.2.0 text color boxes
+
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.tex
+\pgfutil@everybye=\toks27
+\pgfutil@tempdima=\dimen174
+\pgfutil@tempdimb=\dimen175
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfutil-latex.def
+\pgfutil@abb=\box101
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfrcs.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/pgf.revision.tex)
+Package: pgfrcs 2023-01-15 v3.1.10 (3.1.10)
+))
+Package: pgf 2023-01-15 v3.1.10 (3.1.10)
+
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/basiclayer/pgfcore.sty
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/systemlayer/pgfsys.sty
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsys.code.tex
+Package: pgfsys 2023-01-15 v3.1.10 (3.1.10)
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
+\pgfkeys@pathtoks=\toks28
+\pgfkeys@temptoks=\toks29
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfkeyslibraryfiltered
+.code.tex
+\pgfkeys@tmptoks=\toks30
+))
+\pgf@x=\dimen176
+\pgf@y=\dimen177
+\pgf@xa=\dimen178
+\pgf@ya=\dimen179
+\pgf@xb=\dimen180
+\pgf@yb=\dimen181
+\pgf@xc=\dimen182
+\pgf@yc=\dimen183
+\pgf@xd=\dimen184
+\pgf@yd=\dimen185
+\w@pgf@writea=\write3
+\r@pgf@reada=\read2
+\c@pgf@counta=\count296
+\c@pgf@countb=\count297
+\c@pgf@countc=\count298
+\c@pgf@countd=\count299
+\t@pgf@toka=\toks31
+\t@pgf@tokb=\toks32
+\t@pgf@tokc=\toks33
+\pgf@sys@id@count=\count300
+ (/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg
+File: pgf.cfg 2023-01-15 v3.1.10 (3.1.10)
+)
+Driver file for pgf: pgfsys-pdftex.def
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-pdftex.def
+File: pgfsys-pdftex.def 2023-01-15 v3.1.10 (3.1.10)
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-common-pdf.de
+f
+File: pgfsys-common-pdf.def 2023-01-15 v3.1.10 (3.1.10)
+)))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.code.
+tex
+File: pgfsyssoftpath.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfsyssoftpath@smallbuffer@items=\count301
+\pgfsyssoftpath@bigbuffer@items=\count302
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.code.
+tex
+File: pgfsysprotocol.code.tex 2023-01-15 v3.1.10 (3.1.10)
+))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcore.code.tex
+Package: pgfcore 2023-01-15 v3.1.10 (3.1.10)
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex
+\pgfmath@dimen=\dimen186
+\pgfmath@count=\count303
+\pgfmath@box=\box102
+\pgfmath@toks=\toks34
+\pgfmath@stack@operand=\toks35
+\pgfmath@stack@operation=\toks36
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.basic.code
+.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.trigonomet
+ric.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.random.cod
+e.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.comparison
+.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.base.code.
+tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.round.code
+.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.misc.code.
+tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.integerari
+thmetics.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathcalc.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex
+\c@pgfmathroundto@lastzeros=\count304
+))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfint.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.code.te
+x
+File: pgfcorepoints.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@picminx=\dimen187
+\pgf@picmaxx=\dimen188
+\pgf@picminy=\dimen189
+\pgf@picmaxy=\dimen190
+\pgf@pathminx=\dimen191
+\pgf@pathmaxx=\dimen192
+\pgf@pathminy=\dimen193
+\pgf@pathmaxy=\dimen194
+\pgf@xx=\dimen195
+\pgf@xy=\dimen196
+\pgf@yx=\dimen197
+\pgf@yy=\dimen198
+\pgf@zx=\dimen199
+\pgf@zy=\dimen256
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathconstruct.
+code.tex
+File: pgfcorepathconstruct.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@path@lastx=\dimen257
+\pgf@path@lasty=\dimen258
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathusage.code
+.tex
+File: pgfcorepathusage.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@shorten@end@additional=\dimen259
+\pgf@shorten@start@additional=\dimen260
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorescopes.code.te
+x
+File: pgfcorescopes.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfpic=\box103
+\pgf@hbox=\box104
+\pgf@layerbox@main=\box105
+\pgf@picture@serial@count=\count305
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicstate.c
+ode.tex
+File: pgfcoregraphicstate.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgflinewidth=\dimen261
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransformation
+s.code.tex
+File: pgfcoretransformations.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@pt@x=\dimen262
+\pgf@pt@y=\dimen263
+\pgf@pt@temp=\dimen264
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorequick.code.tex
+File: pgfcorequick.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreobjects.code.t
+ex
+File: pgfcoreobjects.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathprocessing
+.code.tex
+File: pgfcorepathprocessing.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorearrows.code.te
+x
+File: pgfcorearrows.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfarrowsep=\dimen265
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreshade.code.tex
+File: pgfcoreshade.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@max=\dimen266
+\pgf@sys@shading@range@num=\count306
+\pgf@shadingcount=\count307
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreimage.code.tex
+File: pgfcoreimage.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreexternal.code.
+tex
+File: pgfcoreexternal.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfexternal@startupbox=\box106
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorelayers.code.te
+x
+File: pgfcorelayers.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransparency.c
+ode.tex
+File: pgfcoretransparency.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepatterns.code.
+tex
+File: pgfcorepatterns.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorerdf.code.tex
+File: pgfcorerdf.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmoduleshapes.code.tex
+File: pgfmoduleshapes.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfnodeparttextbox=\box107
+) (/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmoduleplot.code.tex
+File: pgfmoduleplot.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-0-65
+.sty
+Package: pgfcomp-version-0-65 2023-01-15 v3.1.10 (3.1.10)
+\pgf@nodesepstart=\dimen267
+\pgf@nodesepend=\dimen268
+)
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-1-18
+.sty
+Package: pgfcomp-version-1-18 2023-01-15 v3.1.10 (3.1.10)
+)) (/usr/share/texlive/texmf-dist/tex/latex/tools/verbatim.sty
+Package: verbatim 2023-11-06 v1.5v LaTeX2e package for verbatim enhancements
+\every@verbatim=\toks37
+\verbatim@line=\toks38
+\verbatim@in@stream=\read3
+)
+(/usr/share/texlive/texmf-dist/tex/latex/environ/environ.sty
+Package: environ 2014/05/04 v0.3 A new way to define environments
+
+(/usr/share/texlive/texmf-dist/tex/latex/trimspaces/trimspaces.sty
+Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
+))
+(/usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count308
+)
+\tcb@titlebox=\box108
+\tcb@upperbox=\box109
+\tcb@lowerbox=\box110
+\tcb@phantombox=\box111
+\c@tcbbreakpart=\count309
+\c@tcblayer=\count310
+\c@tcolorbox@number=\count311
+\l__tcobox_tmpa_box=\box112
+\l__tcobox_tmpa_dim=\dimen269
+\tcb@temp=\box113
+\tcb@temp=\box114
+\tcb@temp=\box115
+\tcb@temp=\box116
+
+(/usr/share/texlive/texmf-dist/tex/latex/tcolorbox/tcbraster.code.tex
+Library (tcolorbox): 'tcbraster.code.tex' version '6.2.0'
+\c@tcbrastercolumn=\count312
+\c@tcbrasterrow=\count313
+\c@tcbrasternum=\count314
+\c@tcbraster=\count315
+) (/usr/share/texlive/texmf-dist/tex/latex/tcolorbox/tcbskins.code.tex
+Library (tcolorbox): 'tcbskins.code.tex' version '6.2.0'
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgffor.sty
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex))
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/math/pgfmath.sty
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgffor.code.tex
+Package: pgffor 2023-01-15 v3.1.10 (3.1.10)
+\pgffor@iter=\dimen270
+\pgffor@skip=\dimen271
+\pgffor@stack=\toks39
+\pgffor@toks=\toks40
+))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikz.code.tex
+Package: tikz 2023-01-15 v3.1.10 (3.1.10)
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothandlers
+.code.tex
+File: pgflibraryplothandlers.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@plot@mark@count=\count316
+\pgfplotmarksize=\dimen272
+)
+\tikz@lastx=\dimen273
+\tikz@lasty=\dimen274
+\tikz@lastxsaved=\dimen275
+\tikz@lastysaved=\dimen276
+\tikz@lastmovetox=\dimen277
+\tikz@lastmovetoy=\dimen278
+\tikzleveldistance=\dimen279
+\tikzsiblingdistance=\dimen280
+\tikz@figbox=\box117
+\tikz@figbox@bg=\box118
+\tikz@tempbox=\box119
+\tikz@tempbox@bg=\box120
+\tikztreelevel=\count317
+\tikznumberofchildren=\count318
+\tikznumberofcurrentchild=\count319
+\tikz@fig@count=\count320
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.code.tex
+File: pgfmodulematrix.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfmatrixcurrentrow=\count321
+\pgfmatrixcurrentcolumn=\count322
+\pgf@matrix@numberofcolumns=\count323
+)
+\tikz@expandcount=\count324
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibrarytopaths.code.tex
+File: tikzlibrarytopaths.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)))
+(/usr/share/texlive/texmf-dist/tex/latex/tikzfill/tikzfill.image.sty
+Package: tikzfill.image 2023/08/08 v1.0.1 Image filling library for TikZ
+
+(/usr/share/texlive/texmf-dist/tex/latex/tikzfill/tikzfill-common.sty
+Package: tikzfill-common 2023/08/08 v1.0.1 Auxiliary code for tikzfill
+)
+(/usr/share/texlive/texmf-dist/tex/latex/tikzfill/tikzlibraryfill.image.code.te
+x
+File: tikzlibraryfill.image.code.tex 2023/08/08 v1.0.1 Image filling library
+\l__tikzfill_img_box=\box121
+)) (/usr/share/texlive/texmf-dist/tex/latex/tcolorbox/tcbskinsjigsaw.code.tex
+Library (tcolorbox): 'tcbskinsjigsaw.code.tex' version '6.2.0'
+)) (/usr/share/texlive/texmf-dist/tex/latex/tcolorbox/tcbbreakable.code.tex
+Library (tcolorbox): 'tcbbreakable.code.tex' version '6.2.0'
+(/usr/share/texlive/texmf-dist/tex/latex/pdfcol/pdfcol.sty
+Package: pdfcol 2022-09-21 v1.7 Handle new color stacks for pdfTeX (HO)
+
+(/usr/share/texlive/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
+Package: ltxcmds 2023-12-04 v1.26 LaTeX kernel commands for general use (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/infwarerr/infwarerr.sty
+Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
+))
+Package pdfcol Info: New color stack `tcb@breakable' = 1 on input line 23.
+\tcb@testbox=\box122
+\tcb@totalupperbox=\box123
+\tcb@totallowerbox=\box124
+)
+(/usr/share/texlive/texmf-dist/tex/latex/tcolorbox/tcbhooks.code.tex
+Library (tcolorbox): 'tcbhooks.code.tex' version '6.2.0'
+) (/usr/share/texlive/texmf-dist/tex/latex/tcolorbox/tcbtheorems.code.tex
+Library (tcolorbox): 'tcbtheorems.code.tex' version '6.2.0'
+) (/usr/share/texlive/texmf-dist/tex/latex/tcolorbox/tcbfitting.code.tex
+Library (tcolorbox): 'tcbfitting.code.tex' version '6.2.0'
+\tcbfitdim=\dimen281
+\tcb@lowerfitdim=\dimen282
+\tcb@upperfitdim=\dimen283
+\tcb@cur@hbadness=\count325
+)) (/usr/share/texlive/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
+Package: fancyhdr 2022/11/09 v4.1 Extensive control of page headers and footers
+
+\f@nch@headwidth=\skip86
+\f@nch@O@elh=\skip87
+\f@nch@O@erh=\skip88
+\f@nch@O@olh=\skip89
+\f@nch@O@orh=\skip90
+\f@nch@O@elf=\skip91
+\f@nch@O@erf=\skip92
+\f@nch@O@olf=\skip93
+\f@nch@O@orf=\skip94
+)
 (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2023/02/27 1.9 listings language file
 )
@@ -327,40 +685,40 @@ File: lstmisc.sty 2023/02/27 1.9 (Carsten Heinz)
 )
 (/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2024-01-04 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count296
-\l__pdf_internal_box=\box101
+\l__color_backend_stack_int=\count326
+\l__pdf_internal_box=\box125
 )
 (./caderno_cses.aux)
 \openout1 = `caderno_cses.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 34.
-LaTeX Font Info:    ... okay on input line 34.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 34.
-LaTeX Font Info:    ... okay on input line 34.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 34.
-LaTeX Font Info:    ... okay on input line 34.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 34.
-LaTeX Font Info:    ... okay on input line 34.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 34.
-LaTeX Font Info:    ... okay on input line 34.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 34.
-LaTeX Font Info:    ... okay on input line 34.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 34.
-LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 59.
+LaTeX Font Info:    ... okay on input line 59.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 59.
+LaTeX Font Info:    ... okay on input line 59.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 59.
+LaTeX Font Info:    ... okay on input line 59.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 59.
+LaTeX Font Info:    ... okay on input line 59.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 59.
+LaTeX Font Info:    ... okay on input line 59.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 59.
+LaTeX Font Info:    ... okay on input line 59.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 59.
+LaTeX Font Info:    ... okay on input line 59.
 
 (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count297
-\scratchdimen=\dimen174
-\scratchbox=\box102
-\nofMPsegments=\count298
-\nofMParguments=\count299
-\everyMPshowfont=\toks27
-\MPscratchCnt=\count300
-\MPscratchDim=\dimen175
-\MPnumerator=\count301
-\makeMPintoPDFobject=\count302
-\everyMPtoPDFconversion=\toks28
+\scratchcounter=\count327
+\scratchdimen=\dimen284
+\scratchbox=\box126
+\nofMPsegments=\count328
+\nofMParguments=\count329
+\everyMPshowfont=\toks41
+\MPscratchCnt=\count330
+\MPscratchDim=\dimen285
+\MPnumerator=\count331
+\makeMPintoPDFobject=\count332
+\everyMPtoPDFconversion=\toks42
 ) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
@@ -370,7 +728,7 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-\c@lstlisting=\count303
+\c@lstlisting=\count333
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -381,15 +739,15 @@ e
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
 * modes: landscape 
 * h-part:(L,W,R)=(28.45274pt, 788.14136pt, 28.45274pt)
-* v-part:(T,H,B)=(28.45274pt, 540.60239pt, 28.45274pt)
+* v-part:(T,H,B)=(42.67912pt, 526.376pt, 28.45274pt)
 * \paperwidth=845.04684pt
 * \paperheight=597.50787pt
 * \textwidth=788.14136pt
-* \textheight=540.60239pt
+* \textheight=526.376pt
 * \oddsidemargin=-43.81725pt
 * \evensidemargin=-43.81725pt
-* \topmargin=-80.81725pt
-* \headheight=12.0pt
+* \topmargin=-69.59087pt
+* \headheight=15.0pt
 * \headsep=25.0pt
 * \topskip=9.0pt
 * \footskip=30.0pt
@@ -406,26 +764,26 @@ e
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-<unicamp.png, id=1, 1204.5pt x 1276.77pt>
+<unicamp.png, id=4, 1204.5pt x 1276.77pt>
 File: unicamp.png Graphic file (type png)
 <use unicamp.png>
-Package pdftex.def Info: unicamp.png  used on input line 38.
+Package pdftex.def Info: unicamp.png  used on input line 63.
 (pdftex.def)             Requested size: 128.0374pt x 135.71103pt.
 
 LaTeX Font Warning: Font shape `T1/cmr/m/n' in size <16> not available
-(Font)              size <17.28> substituted on input line 40.
+(Font)              size <17.28> substituted on input line 65.
 
 
 LaTeX Font Warning: Font shape `T1/cmr/m/n' in size <42> not available
-(Font)              size <42.99> substituted on input line 42.
+(Font)              size <42.99> substituted on input line 67.
 
 
 LaTeX Font Warning: Font shape `T1/cmr/m/n' in size <20> not available
-(Font)              size <20.74> substituted on input line 46.
+(Font)              size <20.74> substituted on input line 71.
 
 
 LaTeX Font Warning: Font shape `T1/cmr/bx/n' in size <20> not available
-(Font)              size <20.74> substituted on input line 46.
+(Font)              size <20.74> substituted on input line 71.
 
 [1
 
@@ -441,12 +799,12 @@ LaTeX Font Info:    Trying to load font information for U+msb on input line 1.
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [1])
-\tf@toc=\write3
-\openout3 = `caderno_cses.toc'.
+\tf@toc=\write4
+\openout4 = `caderno_cses.toc'.
 
-
+ [2]
 (./Enunciados/IntroductoryProblems/AppleDivision.tex)
-LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 6
+LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 9
 1.
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/t1cmtt.fd
@@ -454,275 +812,238 @@ File: t1cmtt.fd 2023/04/13 v2.5m Standard LaTeX font definitions
 )
 (./IntroductoryProblems/AppleDivision.cpp)
 (./Enunciados/IntroductoryProblems/BitStrings.tex)
-(./IntroductoryProblems/BitStrings.cpp [2{/usr/share/texmf/fonts/enc/dvips/cm-s
-uper/cm-super-ts1.enc}])
+(./IntroductoryProblems/BitStrings.cpp)
 (./Enunciados/IntroductoryProblems/ChessboardandQueens.tex)
-(./IntroductoryProblems/ChessboardandQueens.cpp)
+(./IntroductoryProblems/ChessboardandQueens.cpp) [3{/usr/share/texmf/fonts/enc/
+dvips/cm-super/cm-super-ts1.enc}]
 (./Enunciados/IntroductoryProblems/CoinPiles.tex)
 (./IntroductoryProblems/CoinPiles.cpp)
 (./Enunciados/IntroductoryProblems/CreatingStrings.tex)
-(./IntroductoryProblems/CreatingStrings.cpp [3])
-(./Enunciados/IntroductoryProblems/DigitQueries.tex)
-(./IntroductoryProblems/DigitQueries.cpp)
-(./Enunciados/IntroductoryProblems/GrayCode.tex)
+(./IntroductoryProblems/CreatingStrings.cpp)
+(./Enunciados/IntroductoryProblems/DigitQueries.tex
+Underfull \hbox (badness 10000) in paragraph at lines 1--4
+[]\T1/cmr/m/n/8 Consider an in-fi-nite string that con-sists
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1--4
+\T1/cmr/m/n/8 of all pos-i-tive in-te-gers in in-creas-ing or-der:
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1--4
+\T1/cmr/m/n/8 12345678910111213141516171819202122232425... Your
+ []
+
+) (./IntroductoryProblems/DigitQueries.cpp)
+(./Enunciados/IntroductoryProblems/GrayCode.tex) [4]
 (./IntroductoryProblems/GrayCode.cpp)
 (./Enunciados/IntroductoryProblems/GridColoringI.tex)
-(./IntroductoryProblems/GridColoringI.cpp [4])
+(./IntroductoryProblems/GridColoringI.cpp)
 (./Enunciados/IntroductoryProblems/GridPathDescription.tex)
-(./IntroductoryProblems/GridPathDescription.cpp)
+(./IntroductoryProblems/GridPathDescription.cpp [5])
 (./Enunciados/IntroductoryProblems/IncreasingArray.tex)
 (./IntroductoryProblems/IncreasingArray.cpp)
 (./Enunciados/IntroductoryProblems/KnightMovesGrid.tex)
-(./IntroductoryProblems/KnightMovesGrid.cpp [5])
-(./Enunciados/IntroductoryProblems/MexGridConstruction.tex)
+(./IntroductoryProblems/KnightMovesGrid.cpp)
+(./Enunciados/IntroductoryProblems/MexGridConstruction.tex) [6]
 (./IntroductoryProblems/MexGridConstruction.cpp)
 (./Enunciados/IntroductoryProblems/MissingNumber.tex)
 (./IntroductoryProblems/MissingNumber.cpp)
 (./Enunciados/IntroductoryProblems/NumberSpiral.tex)
 (./IntroductoryProblems/NumberSpiral.cpp)
-(./Enunciados/IntroductoryProblems/PalindromeReorder.tex [6])
-(./IntroductoryProblems/PalindromeReorder.cpp)
+(./Enunciados/IntroductoryProblems/PalindromeReorder.tex)
+(./IntroductoryProblems/PalindromeReorder.cpp [7])
 (./Enunciados/IntroductoryProblems/Permutations.tex)
 (./IntroductoryProblems/Permutations.cpp)
 (./Enunciados/IntroductoryProblems/RaabGameI.tex)
-(./IntroductoryProblems/RaabGameI.cpp [7])
+(./IntroductoryProblems/RaabGameI.cpp [8])
 (./Enunciados/IntroductoryProblems/Repetitions.tex)
 (./IntroductoryProblems/Repetitions.cpp)
 (./Enunciados/IntroductoryProblems/StringReorder.tex)
 (./IntroductoryProblems/StringReorder.cpp)
-(./Enunciados/IntroductoryProblems/TowerofHanoi.tex [8])
+(./Enunciados/IntroductoryProblems/TowerofHanoi.tex) [9]
 (./IntroductoryProblems/TowerofHanoi.cpp)
 (./Enunciados/IntroductoryProblems/TrailingZeros.tex)
 (./IntroductoryProblems/TrailingZeros.cpp)
 (./Enunciados/IntroductoryProblems/TwoKnights.tex)
 (./IntroductoryProblems/TwoKnights.cpp)
-(./Enunciados/IntroductoryProblems/TwoSets.tex)
-(./IntroductoryProblems/TwoSets.cpp [9])
+(./Enunciados/IntroductoryProblems/TwoSets.tex) [10]
+(./IntroductoryProblems/TwoSets.cpp)
 (./Enunciados/IntroductoryProblems/WeirdAlgorithm.tex)
-(./IntroductoryProblems/WeirdAlgorithm.cpp)
-(./Enunciados/SortingAndSearching/Apartments.tex)
-(./SortingAndSearching/Apartments.cpp)
-(./Enunciados/SortingAndSearching/ArrayDivision.tex)
-(./SortingAndSearching/ArrayDivision.cpp)
-(./Enunciados/SortingAndSearching/CollectingNumbers.tex [10])
-(./SortingAndSearching/CollectingNumbers.cpp)
-(./Enunciados/SortingAndSearching/CollectingNumbersII.tex)
-(./SortingAndSearching/CollectingNumbersII.cpp)
-(./Enunciados/SortingAndSearching/ConcertTickets.tex)
-(./SortingAndSearching/ConcertTickets.cpp)
-(./Enunciados/SortingAndSearching/DistinctNumbers.tex [11])
-(./SortingAndSearching/DistinctNumbers.cpp)
-(./Enunciados/SortingAndSearching/DistinctValuesSubarrays.tex)
-(./SortingAndSearching/DistinctValuesSubarrays.cpp)
-(./Enunciados/SortingAndSearching/DistinctValuesSubarraysII.tex)
-(./SortingAndSearching/DistinctValuesSubarraysII.cpp)
-(./Enunciados/SortingAndSearching/DistinctValuesSubsequences.tex)
-(./SortingAndSearching/DistinctValuesSubsequences.cpp [12])
-(./Enunciados/SortingAndSearching/FactoryMachines.tex)
-(./SortingAndSearching/FactoryMachines.cpp)
-(./Enunciados/SortingAndSearching/FerrisWheel.tex)
-(./SortingAndSearching/FerrisWheel.cpp)
-(./Enunciados/SortingAndSearching/JosephusProblemI.tex)
-(./SortingAndSearching/JosephusProblemI.cpp)
-(./Enunciados/SortingAndSearching/JosephusProblemII.tex [13])
-(./SortingAndSearching/JosephusProblemII.cpp)
-(./Enunciados/SortingAndSearching/MaximumSubarraySum.tex)
-(./SortingAndSearching/MaximumSubarraySum.cpp)
-(./Enunciados/SortingAndSearching/MaximumSubarraySumII.tex)
-(./SortingAndSearching/MaximumSubarraySumII.cpp)
-(./Enunciados/SortingAndSearching/MissingCoinSum.tex)
-(./SortingAndSearching/MissingCoinSum.cpp)
-(./Enunciados/SortingAndSearching/MovieFestival.tex [14])
-(./SortingAndSearching/MovieFestival.cpp)
-(./Enunciados/SortingAndSearching/MovieFestivalII.tex)
-(./SortingAndSearching/MovieFestivalII.cpp)
-(./Enunciados/SortingAndSearching/NearestSmallerValues.tex)
-(./SortingAndSearching/NearestSmallerValues.cpp)
-(./Enunciados/SortingAndSearching/NestedRangesCheck.tex [15])
-(./SortingAndSearching/NestedRangesCheck.cpp)
-(./Enunciados/SortingAndSearching/NestedRangesCount.tex)
-(./SortingAndSearching/NestedRangesCount.cpp)
-(./Enunciados/SortingAndSearching/Playlist.tex [16])
-(./SortingAndSearching/Playlist.cpp)
-(./Enunciados/SortingAndSearching/ReadingBooks.tex)
-(./SortingAndSearching/ReadingBooks.cpp)
-(./Enunciados/SortingAndSearching/RestaurantCustomers.tex)
-(./SortingAndSearching/RestaurantCustomers.cpp)
-(./SortingAndSearching/RoomAlocation.cpp [17])
-(./Enunciados/SortingAndSearching/StickLengths.tex)
-(./SortingAndSearching/StickLengths.cpp)
-(./Enunciados/SortingAndSearching/SubarrayDivisibility.tex)
-(./SortingAndSearching/SubarrayDivisibility.cpp)
-(./Enunciados/SortingAndSearching/SubarraySumsI.tex)
-(./SortingAndSearching/SubarraySumsI.cpp)
-(./Enunciados/SortingAndSearching/SubarraySumsII.tex [18])
-(./SortingAndSearching/SubarraySumsII.cpp)
-(./Enunciados/SortingAndSearching/SumofFourValues.tex)
-(./SortingAndSearching/SumofFourValues.cpp)
-(./Enunciados/SortingAndSearching/SumofThreeValues.tex)
-(./SortingAndSearching/SumofThreeValues.cpp [19])
-(./Enunciados/SortingAndSearching/SumofTwoValues.tex)
-(./SortingAndSearching/SumofTwoValues.cpp)
-(./Enunciados/SortingAndSearching/TasksandDeadlines.tex)
-(./SortingAndSearching/TasksandDeadlines.cpp)
-(./Enunciados/SortingAndSearching/Towers.tex) (./SortingAndSearching/Towers.cpp
-) (./Enunciados/SortingAndSearching/TrafficLights.tex [20])
-(./SortingAndSearching/TrafficLights.cpp)
+(./IntroductoryProblems/WeirdAlgorithm.cpp) [11]
 (./Enunciados/DynamicProgramming/ArrayDescription.tex)
 (./DynamicProgramming/ArrayDescription.cpp)
 (./Enunciados/DynamicProgramming/BookShop.tex)
 (./DynamicProgramming/BookShop.cpp)
-(./Enunciados/DynamicProgramming/CoinCombinationsI.tex [21])
-(./DynamicProgramming/CoinCombinationsI.cpp)
+(./Enunciados/DynamicProgramming/CoinCombinationsI.tex)
+(./DynamicProgramming/CoinCombinationsI.cpp [12])
 (./Enunciados/DynamicProgramming/CoinCombinationsII.tex)
 (./DynamicProgramming/CoinCombinationsII.cpp)
 (./Enunciados/DynamicProgramming/CountingNumbers.tex)
-(./DynamicProgramming/CountingNumbers.cpp [22])
+(./DynamicProgramming/CountingNumbers.cpp [13])
 (./DynamicProgramming/CountingTiling.cpp)
 (./Enunciados/DynamicProgramming/CountingTowers.tex)
-(./DynamicProgramming/CountingTowers.cpp [23])
-(./Enunciados/DynamicProgramming/DiceCombinations.tex)
+(./DynamicProgramming/CountingTowers.cpp)
+(./Enunciados/DynamicProgramming/DiceCombinations.tex) [14]
 (./DynamicProgramming/DiceCombinations.cpp)
 (./Enunciados/DynamicProgramming/EditDistance.tex)
 (./DynamicProgramming/EditDistance.cpp)
 (./Enunciados/DynamicProgramming/ElevatorRides.tex)
-(./DynamicProgramming/ElevatorRides.cpp [24])
+
+Package tcolorbox Warning: Using nobreak failed. Try to enlarge `lines before b
+reak' or set page breaks manually on input line 355.
+
+(./DynamicProgramming/ElevatorRides.cpp [15])
 (./Enunciados/DynamicProgramming/GridPathsI.tex)
 (./DynamicProgramming/GridPathsI.cpp)
 (./Enunciados/DynamicProgramming/IncreasingSubsequence.tex)
-(./DynamicProgramming/IncreasingSubsequence.cpp)
+(./DynamicProgramming/IncreasingSubsequence.cpp [16])
 (./Enunciados/DynamicProgramming/IncreasingSubsequenceII.tex)
-(./DynamicProgramming/IncreasingSubsequenceII.cpp [25])
+(./DynamicProgramming/IncreasingSubsequenceII.cpp)
 (./Enunciados/DynamicProgramming/LongestCommonSubsequence.tex)
 (./DynamicProgramming/LongestCommonSubsequence.cpp)
-(./Enunciados/DynamicProgramming/MinimalGridPath.tex)
+(./Enunciados/DynamicProgramming/MinimalGridPath.tex) [17]
 (./DynamicProgramming/MinimalGridPath.cpp)
 (./Enunciados/DynamicProgramming/MinimizingCoins.tex)
-(./DynamicProgramming/MinimizingCoins.cpp [26])
+(./DynamicProgramming/MinimizingCoins.cpp)
 (./Enunciados/DynamicProgramming/MoneySums.tex)
 (./DynamicProgramming/MoneySums.cpp)
-(./Enunciados/DynamicProgramming/MountainRange.tex)
+(./Enunciados/DynamicProgramming/MountainRange.tex) [18]
 (./DynamicProgramming/MountainRange.cpp)
-(./Enunciados/DynamicProgramming/Projects.tex [27])
+(./Enunciados/DynamicProgramming/Projects.tex)
 (./DynamicProgramming/Projects.cpp)
 (./Enunciados/DynamicProgramming/RectangleCutting.tex)
-(./DynamicProgramming/RectangleCutting.cpp)
+(./DynamicProgramming/RectangleCutting.cpp [19])
 (./Enunciados/DynamicProgramming/RemovalGame.tex)
 (./DynamicProgramming/RemovalGame.cpp)
 (./Enunciados/DynamicProgramming/RemovingDigits.tex)
-(./DynamicProgramming/RemovingDigits.cpp [28])
+(./DynamicProgramming/RemovingDigits.cpp)
 (./Enunciados/DynamicProgramming/TwoSetsII.tex)
-(./DynamicProgramming/TwoSetsII.cpp)
+(./DynamicProgramming/TwoSetsII.cpp [20]) [21]
 (./Enunciados/GraphAlgorithms/BuildingRoads.tex)
 (./GraphAlgorithms/BuildingRoads.cpp)
-(./Enunciados/GraphAlgorithms/BuildingTeams.tex [29])
+(./Enunciados/GraphAlgorithms/BuildingTeams.tex)
 (./GraphAlgorithms/BuildingTeams.cpp)
-(./Enunciados/GraphAlgorithms/CoinCollector.tex)
+(./Enunciados/GraphAlgorithms/CoinCollector.tex) [22]
 (./GraphAlgorithms/CoinCollector.cpp)
-(./Enunciados/GraphAlgorithms/CountingRooms.tex [30])
+(./Enunciados/GraphAlgorithms/CountingRooms.tex)
 (./GraphAlgorithms/CountingRooms.cpp)
-(./Enunciados/GraphAlgorithms/CourseSchedule.tex)
+(./Enunciados/GraphAlgorithms/CourseSchedule.tex) [23]
 (./GraphAlgorithms/CourseSchedule.cpp)
 (./Enunciados/GraphAlgorithms/CycleFinding.tex)
-(./GraphAlgorithms/CycleFinding.cpp [31])
+(./GraphAlgorithms/CycleFinding.cpp [24])
 (./Enunciados/GraphAlgorithms/DeBruijnSequence.tex)
 (./GraphAlgorithms/DeBruijnSequence.cpp)
 (./Enunciados/GraphAlgorithms/DistinctRoutes.tex)
-(./GraphAlgorithms/DistinctRoutes.cpp [32])
-(./Enunciados/GraphAlgorithms/DownloadSpeed.tex)
+(./GraphAlgorithms/DistinctRoutes.cpp)
+(./Enunciados/GraphAlgorithms/DownloadSpeed.tex) [25]
 (./GraphAlgorithms/DownloadSpeed.cpp)
 (./Enunciados/GraphAlgorithms/FlightDiscount.tex)
-(./GraphAlgorithms/FlightDiscount.cpp [33])
-(./Enunciados/GraphAlgorithms/FlightRoutes.tex)
+(./GraphAlgorithms/FlightDiscount.cpp)
+(./Enunciados/GraphAlgorithms/FlightRoutes.tex) [26]
 (./GraphAlgorithms/FlightRoutes.cpp)
 (./Enunciados/GraphAlgorithms/FlightRoutesCheck.tex)
-(./GraphAlgorithms/FlightRoutesCheck.cpp [34])
+(./GraphAlgorithms/FlightRoutesCheck.cpp [27])
 (./Enunciados/GraphAlgorithms/GameRoutes.tex) (./GraphAlgorithms/GameRoutes.cpp
 ) (./Enunciados/GraphAlgorithms/GiantPizza.tex)
-(./GraphAlgorithms/GiantPizza.cpp [35])
+(./GraphAlgorithms/GiantPizza.cpp [28])
 (./Enunciados/GraphAlgorithms/HamiltonianFlights.tex)
 (./GraphAlgorithms/HamiltonianFlights.cpp)
 (./Enunciados/GraphAlgorithms/HighScore.tex) (./GraphAlgorithms/HighScore.cpp)
-(./Enunciados/GraphAlgorithms/Investigation.tex [36])
+[29] (./Enunciados/GraphAlgorithms/Investigation.tex)
 (./GraphAlgorithms/Investigation.cpp)
 (./Enunciados/GraphAlgorithms/KnightsTour.tex)
 (./GraphAlgorithms/KnightsTour.cpp) (./Enunciados/GraphAlgorithms/Labyrinth.tex
-) (./GraphAlgorithms/Labyrinth.cpp [37])
+) (./GraphAlgorithms/Labyrinth.cpp [30])
 (./Enunciados/GraphAlgorithms/LongestFlightRoute.tex)
 (./GraphAlgorithms/LongestFlightRoute.cpp)
-(./Enunciados/GraphAlgorithms/MailDelivery.tex)
-(./GraphAlgorithms/MailDelivery.cpp [38])
+(./Enunciados/GraphAlgorithms/MailDelivery.tex) [31]
+(./GraphAlgorithms/MailDelivery.cpp)
 (./Enunciados/GraphAlgorithms/MessageRoute.tex)
-(./GraphAlgorithms/MessageRoute.cpp) (./Enunciados/GraphAlgorithms/Monsters.tex
-) (./GraphAlgorithms/Monsters.cpp [39])
-(./Enunciados/GraphAlgorithms/PlanetsCycles.tex)
-(./GraphAlgorithms/PlanetsCycles.cpp [40])
+(./GraphAlgorithms/MessageRoute.cpp [32])
+(./Enunciados/GraphAlgorithms/Monsters.tex) (./GraphAlgorithms/Monsters.cpp)
+(./Enunciados/GraphAlgorithms/PlanetsCycles.tex) [33]
+(./GraphAlgorithms/PlanetsCycles.cpp)
 (./Enunciados/GraphAlgorithms/PlanetsQueriesI.tex)
 (./GraphAlgorithms/PlanetsQueriesI.cpp)
-(./Enunciados/GraphAlgorithms/PlanetsQueriesII.tex)
+(./Enunciados/GraphAlgorithms/PlanetsQueriesII.tex) [34]
 (./GraphAlgorithms/PlanetsQueriesII.cpp)
-(./Enunciados/GraphAlgorithms/PlanetsandKingdoms.tex [41])
-(./GraphAlgorithms/PlanetsandKingdoms.cpp)
+(./Enunciados/GraphAlgorithms/PlanetsandKingdoms.tex)
+(./GraphAlgorithms/PlanetsandKingdoms.cpp [35])
 (./Enunciados/GraphAlgorithms/PoliceChase.tex)
-(./GraphAlgorithms/PoliceChase.cpp [42])
+(./GraphAlgorithms/PoliceChase.cpp)
 (./Enunciados/GraphAlgorithms/RoadConstruction.tex)
-(./GraphAlgorithms/RoadConstruction.cpp)
+(./GraphAlgorithms/RoadConstruction.cpp [36])
 (./Enunciados/GraphAlgorithms/RoadReparation.tex)
 (./GraphAlgorithms/RoadReparation.cpp)
 (./Enunciados/GraphAlgorithms/RoundTrip.tex) (./GraphAlgorithms/RoundTrip.cpp
-[43]) (./Enunciados/GraphAlgorithms/RoundTripII.tex)
+[37]) (./Enunciados/GraphAlgorithms/RoundTripII.tex)
 (./GraphAlgorithms/RoundTripII.cpp)
-(./Enunciados/GraphAlgorithms/SchoolDance.tex [44])
-(./GraphAlgorithms/SchoolDance.cpp)
+(./Enunciados/GraphAlgorithms/SchoolDance.tex)
+(./GraphAlgorithms/SchoolDance.cpp [38])
 (./Enunciados/GraphAlgorithms/ShortestRoutesI.tex)
 (./GraphAlgorithms/ShortestRoutesI.cpp)
 (./Enunciados/GraphAlgorithms/ShortestRoutesII.tex)
-(./GraphAlgorithms/ShortestRoutesII.cpp [45])
+(./GraphAlgorithms/ShortestRoutesII.cpp [39])
 (./Enunciados/GraphAlgorithms/TeleportersPath.tex)
-(./GraphAlgorithms/TeleportersPath.cpp)
+(./GraphAlgorithms/TeleportersPath.cpp) [40]
 (./Enunciados/RangeQueries/DistinctValuesQueries.tex)
-(./RangeQueries/DistinctValuesQueries.cpp [46])
+(./RangeQueries/DistinctValuesQueries.cpp)
 (./Enunciados/RangeQueries/DistinctValuesQueriesII.tex)
-(./RangeQueries/DistinctValuesQueriesII.cpp)
+(./RangeQueries/DistinctValuesQueriesII.cpp [41])
 (./Enunciados/RangeQueries/DynamicRangeMinimumQueries.tex)
-(./RangeQueries/DynamicRangeMinimumQueries.cpp [47])
+(./RangeQueries/DynamicRangeMinimumQueries.cpp)
 (./Enunciados/RangeQueries/DynamicRangeSumQueries.tex)
-(./RangeQueries/DynamicRangeSumQueries.cpp)
+(./RangeQueries/DynamicRangeSumQueries.cpp [42])
 (./Enunciados/RangeQueries/ForestQueries.tex) (./RangeQueries/ForestQueries.cpp
-) (./Enunciados/RangeQueries/HotelQueries.tex [48])
-(./RangeQueries/HotelQueries.cpp) (./Enunciados/RangeQueries/ListRemovals.tex)
+) (./Enunciados/RangeQueries/HotelQueries.tex) (./RangeQueries/HotelQueries.cpp
+) (./Enunciados/RangeQueries/ListRemovals.tex) [43]
 (./RangeQueries/ListRemovals.cpp)
 (./Enunciados/RangeQueries/PizzeriaQueries.tex)
-(./RangeQueries/PizzeriaQueries.cpp [49])
+
+Package tcolorbox Warning: Using nobreak failed. Try to enlarge `lines before b
+reak' or set page breaks manually on input line 821.
+
+(./RangeQueries/PizzeriaQueries.cpp)
 (./Enunciados/RangeQueries/PolynomialQueries.tex)
-(./RangeQueries/PolynomialQueries.cpp)
+(./RangeQueries/PolynomialQueries.cpp [44])
 (./Enunciados/RangeQueries/PrefixSumQueries.tex)
-(./RangeQueries/PrefixSumQueries.cpp [50])
+(./RangeQueries/PrefixSumQueries.cpp [45])
 (./Enunciados/RangeQueries/RangeUpdateQueries.tex)
+
+Package tcolorbox Warning: Using nobreak failed. Try to enlarge `lines before b
+reak' or set page breaks manually on input line 845.
+
 (./RangeQueries/RangeUpdateQueries.cpp)
 (./Enunciados/RangeQueries/RangeXorQueries.tex)
 (./RangeQueries/RangeXorQueries.cpp)
-(./Enunciados/RangeQueries/SalaryQueries.tex) (./RangeQueries/SalaryQueries.cpp
-[51]) (./Enunciados/RangeQueries/StaticRangeMinimumQueries.tex)
-(./RangeQueries/StaticRangeMinimumQueries.cpp)
+(./Enunciados/RangeQueries/SalaryQueries.tex) [46]
+(./RangeQueries/SalaryQueries.cpp)
+(./Enunciados/RangeQueries/StaticRangeMinimumQueries.tex)
+(./RangeQueries/StaticRangeMinimumQueries.cpp [47])
 (./Enunciados/RangeQueries/StaticRangeSumQueries.tex)
 (./RangeQueries/StaticRangeSumQueries.cpp)
-(./Enunciados/RangeQueries/SubarraySumQueries.tex [52])
-(./RangeQueries/SubarraySumQueries.cpp)
+(./Enunciados/RangeQueries/SubarraySumQueries.tex)
+(./RangeQueries/SubarraySumQueries.cpp [48])
 (./Enunciados/RangeQueries/SubarraySumQueriesII.tex)
 (./RangeQueries/SubarraySumQueriesII.cpp)
-(./Enunciados/RangeQueries/VisibleBuildingsQueries.tex [53])
-(./RangeQueries/VisibleBuildingsQueries.cpp)
+(./Enunciados/RangeQueries/VisibleBuildingsQueries.tex)
+(./RangeQueries/VisibleBuildingsQueries.cpp [49]) [50]
 (./Enunciados/TreeAlgorithms/CompanyQueriesI.tex)
 (./TreeAlgorithms/CompanyQueriesI.cpp)
-(./Enunciados/TreeAlgorithms/CompanyQueriesII.tex) [54]
+(./Enunciados/TreeAlgorithms/CompanyQueriesII.tex)
 (./TreeAlgorithms/CompanyQueriesII.cpp)
-(./Enunciados/TreeAlgorithms/CountingPaths.tex)
+(./Enunciados/TreeAlgorithms/CountingPaths.tex) [51]
 (./TreeAlgorithms/CountingPaths.cpp)
-(./Enunciados/TreeAlgorithms/DistanceQueries.tex [55])
-(./TreeAlgorithms/DistanceQueries.cpp)
+(./Enunciados/TreeAlgorithms/DistanceQueries.tex)
+
+Package tcolorbox Warning: Using nobreak failed. Try to enlarge `lines before b
+reak' or set page breaks manually on input line 938.
+
+(./TreeAlgorithms/DistanceQueries.cpp [52])
 (./Enunciados/TreeAlgorithms/DistinctColors.tex)
-(./TreeAlgorithms/DistinctColors.cpp [56])
+(./TreeAlgorithms/DistinctColors.cpp [53])
 (./Enunciados/TreeAlgorithms/FindingaCentroid.tex
 
 LaTeX Warning: Command \textellipsis invalid in math mode on input line 5.
@@ -730,53 +1051,58 @@ LaTeX Warning: Command \textellipsis invalid in math mode on input line 5.
 ) (./TreeAlgorithms/FindingaCentroid.cpp)
 (./Enunciados/TreeAlgorithms/Fixed-LengthPathsI.tex)
 (./TreeAlgorithms/Fixed-LengthPathsI.cpp)
-(./Enunciados/TreeAlgorithms/PathQueries.tex) (./TreeAlgorithms/PathQueries.cpp
-[57]) (./Enunciados/TreeAlgorithms/PathQueriesII.tex)
-(./TreeAlgorithms/PathQueriesII.cpp [58])
+(./Enunciados/TreeAlgorithms/PathQueries.tex)
+
+Package tcolorbox Warning: Using nobreak failed. Try to enlarge `lines before b
+reak' or set page breaks manually on input line 970.
+
+[54] (./TreeAlgorithms/PathQueries.cpp)
+(./Enunciados/TreeAlgorithms/PathQueriesII.tex)
+(./TreeAlgorithms/PathQueriesII.cpp [55])
 (./Enunciados/TreeAlgorithms/Subordinates.tex)
 (./TreeAlgorithms/Subordinates.cpp)
-(./Enunciados/TreeAlgorithms/SubtreeQueries.tex)
+(./Enunciados/TreeAlgorithms/SubtreeQueries.tex) [56]
 (./TreeAlgorithms/SubtreeQueries.cpp)
 (./Enunciados/TreeAlgorithms/TreeDiameter.tex)
-(./TreeAlgorithms/TreeDiameter.cpp [59])
+(./TreeAlgorithms/TreeDiameter.cpp)
 (./Enunciados/TreeAlgorithms/TreeDistancesI.tex)
-(./TreeAlgorithms/TreeDistancesI.cpp)
+(./TreeAlgorithms/TreeDistancesI.cpp [57])
 (./Enunciados/TreeAlgorithms/TreeDistancesII.tex)
-(./TreeAlgorithms/TreeDistancesII.cpp [60])
+(./TreeAlgorithms/TreeDistancesII.cpp)
 (./Enunciados/TreeAlgorithms/TreeMatching.tex)
-(./TreeAlgorithms/TreeMatching.cpp) (./Enunciados/Mathematics/CandyLottery.tex)
-(./Mathematics/CandyLottery.cpp)
-(./Enunciados/StringAlgorithms/CountingPatterns.tex)
-(./StringAlgorithms/CountingPatterns.cpp [61])
+(./TreeAlgorithms/TreeMatching.cpp [58]) [59]
+(./Enunciados/Mathematics/CandyLottery.tex) (./Mathematics/CandyLottery.cpp)
+[60] (./Enunciados/StringAlgorithms/CountingPatterns.tex)
+(./StringAlgorithms/CountingPatterns.cpp)
 (./Enunciados/StringAlgorithms/DistinctSubstrings.tex)
 (./StringAlgorithms/DistinctSubstrings.cpp)
 (./Enunciados/StringAlgorithms/FindingBorders.tex)
-(./StringAlgorithms/FindingBorders.cpp)
-(./Enunciados/StringAlgorithms/RepeatingSubstring.tex) [62]
+(./StringAlgorithms/FindingBorders.cpp [61])
+(./Enunciados/StringAlgorithms/RepeatingSubstring.tex)
 (./StringAlgorithms/RepeatingSubstring.cpp)
 (./Enunciados/StringAlgorithms/StringFunctions.tex)
-(./StringAlgorithms/StringFunctions.cpp)
+(./StringAlgorithms/StringFunctions.cpp [62])
 (./Enunciados/StringAlgorithms/StringMatching.tex)
 (./StringAlgorithms/StringMatching.cpp)
-(./Enunciados/StringAlgorithms/StringTransform.tex [63])
+(./Enunciados/StringAlgorithms/StringTransform.tex)
 (./StringAlgorithms/StringTransform.cpp)
 (./Enunciados/StringAlgorithms/SubstringOrderI.tex)
-(./StringAlgorithms/SubstringOrderI.cpp)
+(./StringAlgorithms/SubstringOrderI.cpp [63])
 (./Enunciados/StringAlgorithms/SubstringOrderII.tex)
-(./StringAlgorithms/SubstringOrderII.cpp [64])
+(./StringAlgorithms/SubstringOrderII.cpp) [64]
 (./Enunciados/AdvancedTechniques/DistinctRoutesII.tex)
-(./AdvancedTechniques/DistinctRoutesII.cpp [65])
+(./AdvancedTechniques/DistinctRoutesII.cpp)
 (./Enunciados/AdvancedTechniques/EulerianSubgraphs.tex)
-(./AdvancedTechniques/EulerianSubgraphs.cpp)
+(./AdvancedTechniques/EulerianSubgraphs.cpp [65])
 (./Enunciados/AdvancedTechniques/HousesandSchools.tex)
 (./AdvancedTechniques/HousesandSchools.cpp)
-(./Enunciados/AdvancedTechniques/LongestPalindrome.tex [66])
-(./AdvancedTechniques/LongestPalindrome.cpp)
+(./Enunciados/AdvancedTechniques/LongestPalindrome.tex)
+(./AdvancedTechniques/LongestPalindrome.cpp [66])
 (./AdvancedTechniques/MonsterGame.cpp)
 (./Enunciados/AdvancedTechniques/NecessaryCities.tex)
 (./AdvancedTechniques/NecessaryCities.cpp [67])
 (./Enunciados/AdvancedTechniques/NecessaryRoads.tex)
-(./AdvancedTechniques/NecessaryRoads.cpp [68])
+(./AdvancedTechniques/NecessaryRoads.cpp) [68]
 (./Enunciados/AdvancedTechniques/ParcelDelivery.tex)
 (./AdvancedTechniques/ParcelDelivery.cpp)
 (./Enunciados/AdvancedTechniques/SignalProcessing.tex)
@@ -784,113 +1110,202 @@ LaTeX Warning: Command \textellipsis invalid in math mode on input line 5.
 (./Enunciados/AdvancedTechniques/SubarraySquares.tex)
 (./AdvancedTechniques/SubarraySquares.cpp)
 (./Enunciados/AdvancedTechniques/SubstringReversals.tex)
-(./AdvancedTechniques/SubstringReversals.cpp [70])
-(./Enunciados/SlidingWindowProblems/SlidingWindowCost.tex)
-(./SlidingWindowProblems/SlidingWindowCost.cpp)
-(./Enunciados/SlidingWindowProblems/SlidingWindowMedian.tex)
-(./SlidingWindowProblems/SlidingWindowMedian.cpp [71])
-(./Enunciados/BitwiseOperations/AllSubarrayXors.tex)
-(./BitwiseOperations/AllSubarrayXors.cpp)
-(./Enunciados/BitwiseOperations/AndSubsetCount.tex)
-(./BitwiseOperations/AndSubsetCount.cpp [72])
-(./Enunciados/BitwiseOperations/CountingBits.tex)
-(./BitwiseOperations/CountingBits.cpp)
-(./Enunciados/BitwiseOperations/KSubsetXors.tex)
-(./BitwiseOperations/KSubsetXors.cpp)
-(./Enunciados/BitwiseOperations/MaximumXorSubarray.tex [73])
-(./BitwiseOperations/MaximumXorSubarray.cpp)
-(./Enunciados/BitwiseOperations/MaximumXorSubset.tex)
-(./BitwiseOperations/MaximumXorSubset.cpp)
-(./Enunciados/BitwiseOperations/NumberofSubsetXors.tex)
-(./BitwiseOperations/NumberofSubsetXors.cpp [74])
-(./Enunciados/BitwiseOperations/SOSBitProblem.tex)
-(./BitwiseOperations/SOSBitProblem.cpp)
-(./Enunciados/BitwiseOperations/XorPyramidDiagonal.tex)
-(./BitwiseOperations/XorPyramidDiagonal.cpp)
-(./Enunciados/BitwiseOperations/XorPyramidPeak.tex [75])
-(./BitwiseOperations/XorPyramidPeak.cpp)
-(./Enunciados/BitwiseOperations/XorPyramidRow.tex)
-(./BitwiseOperations/XorPyramidRow.cpp)
-(./Enunciados/ConstructionProblems/ChessTournament.tex)
-(./ConstructionProblems/ChessTournament.cpp)
-(./Enunciados/ConstructionProblems/InverseInversions.tex)
-(./ConstructionProblems/InverseInversions.cpp [76])
-(./Enunciados/AdvancedGraphProblems/AcyclicGraphEdges.tex)
-(./AdvancedGraphProblems/AcyclicGraphEdges.cpp)
-(./Enunciados/AdvancedGraphProblems/CourseScheduleII.tex)
-(./AdvancedGraphProblems/CourseScheduleII.cpp)
-(./Enunciados/AdvancedGraphProblems/EvenOutdegreeEdges.tex)
-(./AdvancedGraphProblems/EvenOutdegreeEdges.cpp [77])
-(./Enunciados/AdvancedGraphProblems/GraphColoring.tex)
-(./AdvancedGraphProblems/GraphColoring.cpp)
-(./Enunciados/AdvancedGraphProblems/SplitIntoTwoPaths.tex)
-(./AdvancedGraphProblems/SplitIntoTwoPaths.cpp [78])
-(./Enunciados/AdvancedGraphProblems/StronglyConnectedEdges.tex)
-(./AdvancedGraphProblems/StronglyConnectedEdges.cpp [79])
-(./Enunciados/AdvancedGraphProblems/TreeCoinCollectingI.tex)
-(./AdvancedGraphProblems/TreeCoinCollectingI.cpp)
-(./Enunciados/AdvancedGraphProblems/TreeCoinCollectingII.tex [80])
-(./AdvancedGraphProblems/TreeCoinCollectingII.cpp)
-(./Enunciados/AdvancedGraphProblems/TreeTraversals.tex)
-(./AdvancedGraphProblems/TreeTraversals.cpp [81])
-(./Enunciados/CountingProblems/AllLetterSubgridCountI.tex)
-(./CountingProblems/AllLetterSubgridCountI.cpp)
-(./Enunciados/CountingProblems/AllLetterSubgridCountII.tex)
-(./CountingProblems/AllLetterSubgridCountII.cpp [82])
-(./Enunciados/CountingProblems/CountingSequences.tex)
-(./CountingProblems/CountingSequences.cpp)
-(./Enunciados/CountingProblems/EmptyString.tex)
-(./CountingProblems/EmptyString.cpp)
-(./Enunciados/CountingProblems/GridPathsII.tex)
-(./CountingProblems/GridPathsII.cpp [83])
-(./Enunciados/CountingProblems/PermutationInversions.tex)
-(./CountingProblems/PermutationInversions.cpp)
+(./AdvancedTechniques/SubstringReversals.cpp [70]) [71]
 (./Enunciados/AdditionalProblemsI/BeautifulPermutationII.tex)
-(./AdditionalProblemsI/BeautifulPermutationII.cpp [84])
+(./AdditionalProblemsI/BeautifulPermutationII.cpp)
 (./Enunciados/AdditionalProblemsI/DistinctValuesSum.tex)
 (./AdditionalProblemsI/DistinctValuesSum.cpp)
-(./Enunciados/AdditionalProblemsI/MaximumAverageSubarrays.tex)
+(./Enunciados/AdditionalProblemsI/MaximumAverageSubarrays.tex) [72]
 (./AdditionalProblemsI/MaximumAverageSubarrays.cpp)
-(./Enunciados/AdditionalProblemsI/MaximumBuildingI.tex [85])
+(./Enunciados/AdditionalProblemsI/MaximumBuildingI.tex)
 (./AdditionalProblemsI/MaximumBuildingI.cpp)
 (./Enunciados/AdditionalProblemsI/NearestCampsitesI.tex)
-(./AdditionalProblemsI/NearestCampsitesI.cpp [86])
+
+Package tcolorbox Warning: Using nobreak failed. Try to enlarge `lines before b
+reak' or set page breaks manually on input line 1252.
+
+[73] (./AdditionalProblemsI/NearestCampsitesI.cpp)
 (./Enunciados/AdditionalProblemsI/NearestCampsitesII.tex)
-(./AdditionalProblemsI/NearestCampsitesII.cpp)
+(./AdditionalProblemsI/NearestCampsitesII.cpp [74])
 (./Enunciados/AdditionalProblemsI/SortingMethods.tex)
-(./AdditionalProblemsI/SortingMethods.cpp [87])
+(./AdditionalProblemsI/SortingMethods.cpp [75])
 (./Enunciados/AdditionalProblemsI/SwapGame.tex)
 (./AdditionalProblemsI/SwapGame.cpp)
 (./Enunciados/AdditionalProblemsI/WaterContainersMoves.tex)
-(./AdditionalProblemsI/WaterContainersMoves.cpp [88])
+(./AdditionalProblemsI/WaterContainersMoves.cpp [76])
 (./Enunciados/AdditionalProblemsI/WritingNumbers.tex)
-(./AdditionalProblemsI/WritingNumbers.cpp [89])
+(./AdditionalProblemsI/WritingNumbers.cpp [77]) [78]
 (./Enunciados/AdditionalProblemsII/BookShopII.tex)
 (./AdditionalProblemsII/BookShopII.cpp)
 (./Enunciados/AdditionalProblemsII/FoodDivision.tex)
 (./AdditionalProblemsII/FoodDivision.cpp)
 (./Enunciados/AdditionalProblemsII/GCDSubsets.tex)
-(./AdditionalProblemsII/GCDSubsets.cpp [90])
-(./Enunciados/AdditionalProblemsII/GridColoringII.tex)
+(./AdditionalProblemsII/GCDSubsets.cpp)
+(./Enunciados/AdditionalProblemsII/GridColoringII.tex) [79]
 (./AdditionalProblemsII/GridColoringII.cpp)
-(./Enunciados/AdditionalProblemsII/IncreasingArrayII.tex [91])
-(./AdditionalProblemsII/IncreasingArrayII.cpp)
+(./Enunciados/AdditionalProblemsII/IncreasingArrayII.tex)
+(./AdditionalProblemsII/IncreasingArrayII.cpp [80])
 (./Enunciados/AdditionalProblemsII/KSubsetSumsI.tex)
 (./AdditionalProblemsII/KSubsetSumsI.cpp)
 (./Enunciados/AdditionalProblemsII/KSubsetSumsII.tex)
 (./AdditionalProblemsII/KSubsetSumsII.cpp)
-(./Enunciados/AdditionalProblemsII/KnightMovesQueries.tex)
-(./AdditionalProblemsII/KnightMovesQueries.cpp [92])
+(./Enunciados/AdditionalProblemsII/KnightMovesQueries.tex) [81]
+(./AdditionalProblemsII/KnightMovesQueries.cpp)
 (./Enunciados/AdditionalProblemsII/MaximumBuildingII.tex)
-(./AdditionalProblemsII/MaximumBuildingII.cpp) [93]
+(./AdditionalProblemsII/MaximumBuildingII.cpp [82])
 (./Enunciados/AdditionalProblemsII/MexGridQueries.tex)
 (./AdditionalProblemsII/MexGridQueries.cpp)
 (./Enunciados/AdditionalProblemsII/MinimumCostPairs.tex)
 (./AdditionalProblemsII/MinimumCostPairs.cpp)
 (./Enunciados/AdditionalProblemsII/ProgrammersandArtists.tex)
-(./AdditionalProblemsII/ProgrammersandArtists.cpp [94])
+(./AdditionalProblemsII/ProgrammersandArtists.cpp [83])
 (./Enunciados/AdditionalProblemsII/SchoolExcursion.tex)
-(./AdditionalProblemsII/SchoolExcursion.cpp) [95] (./caderno_cses.aux)
+(./AdditionalProblemsII/SchoolExcursion.cpp) [84] [85]
+(./Enunciados/AdvancedGraphProblems/AcyclicGraphEdges.tex)
+(./AdvancedGraphProblems/AcyclicGraphEdges.cpp)
+(./Enunciados/AdvancedGraphProblems/CourseScheduleII.tex)
+(./AdvancedGraphProblems/CourseScheduleII.cpp)
+(./Enunciados/AdvancedGraphProblems/EvenOutdegreeEdges.tex)
+(./AdvancedGraphProblems/EvenOutdegreeEdges.cpp [86])
+(./Enunciados/AdvancedGraphProblems/GraphColoring.tex)
+(./AdvancedGraphProblems/GraphColoring.cpp)
+(./Enunciados/AdvancedGraphProblems/SplitIntoTwoPaths.tex)
+(./AdvancedGraphProblems/SplitIntoTwoPaths.cpp [87])
+(./Enunciados/AdvancedGraphProblems/StronglyConnectedEdges.tex)
+(./AdvancedGraphProblems/StronglyConnectedEdges.cpp [88])
+(./Enunciados/AdvancedGraphProblems/TreeCoinCollectingI.tex)
+(./AdvancedGraphProblems/TreeCoinCollectingI.cpp [89])
+(./Enunciados/AdvancedGraphProblems/TreeCoinCollectingII.tex)
+(./AdvancedGraphProblems/TreeCoinCollectingII.cpp)
+(./Enunciados/AdvancedGraphProblems/TreeTraversals.tex)
+(./AdvancedGraphProblems/TreeTraversals.cpp [90]) [91]
+(./Enunciados/BitwiseOperations/AllSubarrayXors.tex)
+(./BitwiseOperations/AllSubarrayXors.cpp)
+(./Enunciados/BitwiseOperations/AndSubsetCount.tex)
+(./BitwiseOperations/AndSubsetCount.cpp)
+(./Enunciados/BitwiseOperations/CountingBits.tex)
+
+Package tcolorbox Warning: Using nobreak failed. Try to enlarge `lines before b
+reak' or set page breaks manually on input line 1507.
+
+[92] (./BitwiseOperations/CountingBits.cpp)
+(./Enunciados/BitwiseOperations/KSubsetXors.tex)
+
+Package tcolorbox Warning: Using nobreak failed. Try to enlarge `lines before b
+reak' or set page breaks manually on input line 1515.
+
+(./BitwiseOperations/KSubsetXors.cpp)
+(./Enunciados/BitwiseOperations/MaximumXorSubarray.tex) [93]
+
+Package tcolorbox Warning: Using nobreak failed. Try to enlarge `lines before b
+reak' or set page breaks manually on input line 1523.
+
+(./BitwiseOperations/MaximumXorSubarray.cpp [94])
+(./Enunciados/BitwiseOperations/MaximumXorSubset.tex)
+(./BitwiseOperations/MaximumXorSubset.cpp)
+(./Enunciados/BitwiseOperations/NumberofSubsetXors.tex) [95]
+(./BitwiseOperations/NumberofSubsetXors.cpp)
+(./Enunciados/BitwiseOperations/SOSBitProblem.tex)
+(./BitwiseOperations/SOSBitProblem.cpp)
+(./Enunciados/BitwiseOperations/XorPyramidDiagonal.tex)
+(./BitwiseOperations/XorPyramidDiagonal.cpp [96])
+(./Enunciados/BitwiseOperations/XorPyramidPeak.tex)
+(./BitwiseOperations/XorPyramidPeak.cpp)
+(./Enunciados/BitwiseOperations/XorPyramidRow.tex)
+(./BitwiseOperations/XorPyramidRow.cpp) [97]
+(./Enunciados/ConstructionProblems/ChessTournament.tex)
+(./ConstructionProblems/ChessTournament.cpp)
+(./Enunciados/ConstructionProblems/InverseInversions.tex)
+(./ConstructionProblems/InverseInversions.cpp) [98]
+(./Enunciados/CountingProblems/AllLetterSubgridCountI.tex)
+(./CountingProblems/AllLetterSubgridCountI.cpp)
+(./Enunciados/CountingProblems/AllLetterSubgridCountII.tex)
+(./CountingProblems/AllLetterSubgridCountII.cpp [99])
+(./Enunciados/CountingProblems/CountingSequences.tex)
+(./CountingProblems/CountingSequences.cpp)
+(./Enunciados/CountingProblems/EmptyString.tex)
+(./CountingProblems/EmptyString.cpp)
+(./Enunciados/CountingProblems/GridPathsII.tex) [100]
+(./CountingProblems/GridPathsII.cpp)
+(./Enunciados/CountingProblems/PermutationInversions.tex)
+(./CountingProblems/PermutationInversions.cpp) [101]
+(./Enunciados/SlidingWindowProblems/SlidingWindowCost.tex)
+(./SlidingWindowProblems/SlidingWindowCost.cpp)
+(./Enunciados/SlidingWindowProblems/SlidingWindowMedian.tex)
+(./SlidingWindowProblems/SlidingWindowMedian.cpp [102]) [103]
+(./Enunciados/SortingAndSearching/Apartments.tex)
+(./SortingAndSearching/Apartments.cpp)
+(./Enunciados/SortingAndSearching/ArrayDivision.tex)
+(./SortingAndSearching/ArrayDivision.cpp)
+(./Enunciados/SortingAndSearching/CollectingNumbers.tex)
+(./SortingAndSearching/CollectingNumbers.cpp [104])
+(./Enunciados/SortingAndSearching/CollectingNumbersII.tex)
+(./SortingAndSearching/CollectingNumbersII.cpp)
+(./Enunciados/SortingAndSearching/ConcertTickets.tex)
+(./SortingAndSearching/ConcertTickets.cpp)
+(./Enunciados/SortingAndSearching/DistinctNumbers.tex)
+(./SortingAndSearching/DistinctNumbers.cpp) [105]
+(./Enunciados/SortingAndSearching/DistinctValuesSubarrays.tex)
+(./SortingAndSearching/DistinctValuesSubarrays.cpp)
+(./Enunciados/SortingAndSearching/DistinctValuesSubarraysII.tex)
+(./SortingAndSearching/DistinctValuesSubarraysII.cpp)
+(./Enunciados/SortingAndSearching/DistinctValuesSubsequences.tex)
+(./SortingAndSearching/DistinctValuesSubsequences.cpp)
+(./Enunciados/SortingAndSearching/FactoryMachines.tex) [106]
+(./SortingAndSearching/FactoryMachines.cpp)
+(./Enunciados/SortingAndSearching/FerrisWheel.tex)
+(./SortingAndSearching/FerrisWheel.cpp)
+(./Enunciados/SortingAndSearching/JosephusProblemI.tex)
+(./SortingAndSearching/JosephusProblemI.cpp)
+(./Enunciados/SortingAndSearching/JosephusProblemII.tex) [107]
+(./SortingAndSearching/JosephusProblemII.cpp)
+(./Enunciados/SortingAndSearching/MaximumSubarraySum.tex)
+(./SortingAndSearching/MaximumSubarraySum.cpp)
+(./Enunciados/SortingAndSearching/MaximumSubarraySumII.tex)
+(./SortingAndSearching/MaximumSubarraySumII.cpp)
+(./Enunciados/SortingAndSearching/MissingCoinSum.tex)
+(./SortingAndSearching/MissingCoinSum.cpp [108])
+(./Enunciados/SortingAndSearching/MovieFestival.tex)
+(./SortingAndSearching/MovieFestival.cpp)
+(./Enunciados/SortingAndSearching/MovieFestivalII.tex)
+(./SortingAndSearching/MovieFestivalII.cpp)
+(./Enunciados/SortingAndSearching/NearestSmallerValues.tex)
+(./SortingAndSearching/NearestSmallerValues.cpp [109])
+(./Enunciados/SortingAndSearching/NestedRangesCheck.tex)
+(./SortingAndSearching/NestedRangesCheck.cpp)
+(./Enunciados/SortingAndSearching/NestedRangesCount.tex)
+(./SortingAndSearching/NestedRangesCount.cpp [110])
+(./Enunciados/SortingAndSearching/Playlist.tex)
+(./SortingAndSearching/Playlist.cpp)
+(./Enunciados/SortingAndSearching/ReadingBooks.tex)
+(./SortingAndSearching/ReadingBooks.cpp)
+(./Enunciados/SortingAndSearching/RestaurantCustomers.tex) [111]
+(./SortingAndSearching/RestaurantCustomers.cpp)
+(./SortingAndSearching/RoomAlocation.cpp)
+(./Enunciados/SortingAndSearching/StickLengths.tex)
+(./SortingAndSearching/StickLengths.cpp)
+(./Enunciados/SortingAndSearching/SubarrayDivisibility.tex)
+(./SortingAndSearching/SubarrayDivisibility.cpp [112])
+(./Enunciados/SortingAndSearching/SubarraySumsI.tex)
+(./SortingAndSearching/SubarraySumsI.cpp)
+(./Enunciados/SortingAndSearching/SubarraySumsII.tex)
+(./SortingAndSearching/SubarraySumsII.cpp)
+(./Enunciados/SortingAndSearching/SumofFourValues.tex)
+(./SortingAndSearching/SumofFourValues.cpp [113])
+(./Enunciados/SortingAndSearching/SumofThreeValues.tex)
+(./SortingAndSearching/SumofThreeValues.cpp)
+(./Enunciados/SortingAndSearching/SumofTwoValues.tex)
+(./SortingAndSearching/SumofTwoValues.cpp)
+(./Enunciados/SortingAndSearching/TasksandDeadlines.tex) [114]
+(./SortingAndSearching/TasksandDeadlines.cpp)
+(./Enunciados/SortingAndSearching/Towers.tex)
+
+Package tcolorbox Warning: Using nobreak failed. Try to enlarge `lines before b
+reak' or set page breaks manually on input line 1941.
+
+(./SortingAndSearching/Towers.cpp)
+(./Enunciados/SortingAndSearching/TrafficLights.tex)
+(./SortingAndSearching/TrafficLights.cpp) [115] [116] (./caderno_cses.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-22>
@@ -902,13 +1317,13 @@ LaTeX Font Warning: Size substitutions with differences
 
  ) 
 Here is how much of TeX's memory you used:
- 10061 strings out of 474222
- 214055 string characters out of 5748733
- 3026975 words of memory out of 5000000
- 31090 multiletter control sequences out of 15000+600000
+ 25285 strings out of 474222
+ 568347 string characters out of 5748733
+ 2982975 words of memory out of 5000000
+ 46046 multiletter control sequences out of 15000+600000
  573559 words of font info for 68 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 57i,7n,65p,430b,2264s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 89i,12n,94p,446b,1948s stack positions out of 10000i,1000n,20000p,200000b,200000s
  </home/yvens/.texlive2023/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm4299.600
 pk></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex8.pfb
 ></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/
@@ -924,10 +1339,10 @@ r/sfrm0500.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm0800.pfb></usr
 /share/texmf/fonts/type1/public/cm-super/sfrm1200.pfb></usr/share/texmf/fonts/t
 ype1/public/cm-super/sfrm1440.pfb></usr/share/texmf/fonts/type1/public/cm-super
 /sfrm1728.pfb></usr/share/texmf/fonts/type1/public/cm-super/sftt0800.pfb>
-Output written on caderno_cses.pdf (96 pages, 977011 bytes).
+Output written on caderno_cses.pdf (117 pages, 1075722 bytes).
 PDF statistics:
- 438 PDF objects out of 1000 (max. 8388607)
- 273 compressed objects within 3 object streams
+ 510 PDF objects out of 1000 (max. 8388607)
+ 323 compressed objects within 4 object streams
  0 named destinations out of 1000 (max. 500000)
- 6 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 18 words of extra memory for PDF output out of 10000 (max. 10000000)
 

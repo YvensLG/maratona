@@ -39,24 +39,77 @@ for lista_tarefas in soup.find_all('ul', class_='task-list'):
         url = "https://cses.fi" + link['href']
         mapa_problemas[normalizar_nome(titulo)] = {'titulo': titulo, 'url': url}
 
-# ==============================================================
-# CABEÇALHO LATEX MODO KACTL (Paisagem, 3 Colunas, Article)
-# ==============================================================
+ORDEM_CSES = [
+    "IntroductoryProblems",
+    "SortingandSearching",
+    "DynamicProgramming",
+    "GraphAlgorithms",
+    "RangeQueries",
+    "TreeAlgorithms",
+    "Mathematics",
+    "StringAlgorithms",
+    "AdvancedTechniques",
+    "AdditionalProblemsI",
+    "AdditionalProblemsII",
+    "AdvancedGraphProblems",
+    "BitwiseOperations",
+    "ConstructionProblems",
+    "CountingProblems",
+    "SlidingWindowProblems"
+]
+
+def obter_ordem(nome):
+    try:
+        return ORDEM_CSES.index(nome)
+    except ValueError:
+        return 999 
+
 latex = [
     r"\documentclass[8pt]{extarticle}",
     r"\usepackage[utf8]{inputenc}",
     r"\usepackage[T1]{fontenc}",
     r"\usepackage{amsmath, amssymb}",
-    r"\usepackage{graphicx}",                     # <-- NOVO: Pacote para carregar a logo
+    r"\usepackage{graphicx}",
     r"\usepackage{listings}",
     r"\usepackage{xcolor}",
-    r"\usepackage[a4paper, landscape, margin=1cm]{geometry}",
+    # 1. Ajuste da margem do topo para dar espaço ao cabeçalho
+    r"\usepackage[a4paper, landscape, left=1cm, right=1cm, top=1.5cm, bottom=1cm, headheight=15pt]{geometry}",
     r"\usepackage{multicol}",
-    r"\usepackage{tocloft}",                      
+    r"\usepackage{tocloft}",
+    r"\usepackage[many]{tcolorbox}",
+    
+    # 2. Configuração do cabeçalho com número da página no topo
+    r"\usepackage{fancyhdr}",
+    r"\pagestyle{fancy}",
+    r"\fancyhf{}", 
+    r"\fancyhead[L]{\textbf{CSES Problem Set - UNICAMP}}", 
+    r"\fancyhead[R]{\textbf{Página \thepage}}",            
+    r"\renewcommand{\headrulewidth}{0.4pt}",               
+    r"\renewcommand{\footrulewidth}{0pt}",
+    
+    r"\fancypagestyle{plain}{",
+    r"    \fancyhf{}",
+    r"    \fancyhead[L]{\textbf{CSES Problem Set - UNICAMP}}",
+    r"    \fancyhead[R]{\textbf{Página \thepage}}",
+    r"    \renewcommand{\headrulewidth}{0.4pt}",
+    r"}",
+    # ----------------------------------------------------
+
     r"\addtolength{\cftsecnumwidth}{0.5em}",      
     r"\addtolength{\cftsubsecnumwidth}{1.2em}",   
     r"\setlength{\columnseprule}{0.4pt}", 
     r"\setlength{\columnsep}{25pt}",      
+    r"",
+    r"% --- CONFIGURAÇÃO DA CAIXA DO ENUNCIADO ---",
+    r"\newtcolorbox{caixaenunciado}{",
+    r"    colback=gray!5, % Fundo cinza bem claro e elegante",
+    r"    colframe=gray!40, % Borda cinza um pouco mais escura",
+    r"    arc=2pt, % Cantos levemente arredondados",
+    r"    boxrule=0.5pt, % Espessura da borda",
+    r"    left=4pt, right=4pt, top=4pt, bottom=4pt,",
+    r"    breakable, % Essencial: permite que a caixa se divida em colunas",
+    r"    before skip=0.2cm, after skip=0.2cm",
+    r"}",
     r"",
     r"\lstset{",
     r"    language=C++,",
@@ -77,8 +130,6 @@ latex = [
     r"}",
     r"",
     r"\begin{document}",
-    
-    # --- COMEÇO DA CAPA VIBE KACTL ---
     r"\begin{titlepage}",
     r"    \centering",
     r"    \vspace*{1.5cm}",
@@ -96,54 +147,36 @@ latex = [
     r"    \vfill",
     r"    {\fontsize{12}{14}\selectfont 2026-08-18 \par}",
     r"\end{titlepage}",
-    # --- FIM DA CAPA ---
-
+    
     r"\begin{multicols*}{3}",
     r"\tableofcontents",
-    r"\vspace{0.5cm}\noindent\rule{\linewidth}{0.4pt}\vspace{0.5cm}",
+    r"\end{multicols*}",         # <-- Fecha as colunas do sumário
+    r"\pagebreak",               # <-- Força a quebra de página
+    r"\begin{multicols*}{3}",    # <-- Reabre as colunas para o resto do caderno
 ]
-
-# A ordem exata que você quer que apareça no Sumário e no PDF
-ORDEM_CSES = [
-    "IntroductoryProblems",
-    "SortingAndSearching",
-    "DynamicProgramming",
-    "GraphAlgorithms",
-    "RangeQueries",
-    "TreeAlgorithms",
-    "Mathematics",
-    "StringAlgorithms",
-    "Geometry",
-    "AdvancedTechniques",
-    "SlidingWindowProblems",
-    "InteractiveProblems",
-    "BitwiseOperations",
-    "ConstructionProblems",
-    "AdvancedGraphProblems",
-    "CountingProblems",
-    "AdditionalProblemsI",
-    "AdditionalProblemsII",
-]
-
-def obter_ordem(nome):
-    try:
-        return ORDEM_CSES.index(nome)
-    except ValueError:
-        return 999 # Se criar uma pasta nova, ela vai pro final do PDF
 
 try:
     pastas_locais = os.listdir(DIRETORIO_CSES)
-    # Ordena as pastas primeiro pela nossa lista VIP, depois por ordem alfabética
     pastas_ordenadas = sorted(pastas_locais, key=lambda x: (obter_ordem(x), x))
+
+    # Variável para controlar a quebra de página
+    primeira_secao = True
 
     for nome_pasta in pastas_ordenadas:
         caminho_pasta = os.path.join(DIRETORIO_CSES, nome_pasta)
         
         if not os.path.isdir(caminho_pasta) or nome_pasta.startswith('.') or nome_pasta in ['__pycache__', DIRETORIO_ENUNCIADOS]:
             continue
+        
+        # 3. Fecha as colunas, pula a página e reabre as colunas (exceto na primeira vez)
+        if not primeira_secao:
+            latex.append(r"\end{multicols*}")
+            latex.append(r"\pagebreak")
+            latex.append(r"\begin{multicols*}{3}")
+        primeira_secao = False
             
         titulo_capitulo = re.sub(r'([a-z])([A-Z])', r'\1 \2', nome_pasta)
-        latex.append(f"\n\\section{{{titulo_capitulo}}}") # Capítulos viram Seções
+        latex.append(f"\n\\section{{{titulo_capitulo}}}") 
         
         pasta_destino_enunciado = os.path.join(DIRETORIO_ENUNCIADOS, nome_pasta)
         os.makedirs(pasta_destino_enunciado, exist_ok=True)
@@ -160,12 +193,14 @@ try:
                 
                 caminho_arquivo_enunciado = os.path.join(pasta_destino_enunciado, f"{nome_base}.tex")
                 
-                latex.append(f"\n\\subsection{{{titulo_exibicao}}}") # Seções viram Subseções
+                latex.append(f"\n\\subsection{{{titulo_exibicao}}}") 
                 
                 if os.path.exists(caminho_arquivo_enunciado) and os.path.getsize(caminho_arquivo_enunciado) > 0:
                     print(f"  [Cache] Lendo enunciado salvo: {titulo_bruto}")
                     caminho_latex_enunciado = caminho_arquivo_enunciado.replace('\\', '/')
+                    latex.append(r"\begin{caixaenunciado}")
                     latex.append(f"\\input{{{caminho_latex_enunciado}}}")
+                    latex.append(r"\end{caixaenunciado}")
                     
                 elif nome_normalizado in mapa_problemas:
                     dados = mapa_problemas[nome_normalizado]
@@ -219,7 +254,9 @@ try:
                                     f_enunc.write(enunciado_escapado)
                                     
                                 caminho_latex_enunciado = caminho_arquivo_enunciado.replace('\\', '/')
+                                latex.append(r"\begin{caixaenunciado}")
                                 latex.append(f"\\input{{{caminho_latex_enunciado}}}")
+                                latex.append(r"\end{caixaenunciado}")
                             else:
                                 latex.append("Texto indisponível.")
                         else:
@@ -233,7 +270,7 @@ try:
                     latex.append("Enunciado não encontrado no site.")
 
                 latex.append(r"\vspace{0.3cm}")
-                #latex.append(r"\noindent\textbf{Código-fonte:}")
+                latex.append(r"\noindent\textbf{Código-fonte:}")
                 caminho_relativo_cpp = f"{nome_pasta}/{nome_arquivo}"
                 latex.append(f"\\lstinputlisting{{{caminho_relativo_cpp}}}")
 
@@ -241,7 +278,7 @@ except KeyboardInterrupt:
     print("\n\n[!] Interrompido (Ctrl+C)!")
 
 finally:
-    latex.append(r"\end{multicols*}") # Encerra as 3 colunas aqui!
+    latex.append(r"\end{multicols*}")
     latex.append(r"\end{document}")
     with open(ARQUIVO_SAIDA, 'w', encoding='utf-8') as f:
         f.write("\n".join(latex))

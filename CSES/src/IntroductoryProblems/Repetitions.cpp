@@ -13,17 +13,16 @@ int v[maxn];
  
 int main() {
     ios_base::sync_with_stdio(0), cin.tie(0), cout.tie(0);
-    // int t; cin >> t; while (t--)
     string s; cin >> s;
     s.pb('Z');
     int atual = 1, maxi = 0;
     char ant = 'z';
  
-    for(char c : s){
-        if(c == ant){
+    for(char c : s) {
+        if(c == ant) {
             atual ++;
         }
-        else{
+        else {
             ant = c;
             maxi = max(maxi, atual);
             atual = 1;

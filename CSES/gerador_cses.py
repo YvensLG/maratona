@@ -4,7 +4,7 @@ import time
 import requests
 from bs4 import BeautifulSoup
 
-# --- CONFIGURAÇÕES DO NOVO SISTEMA DE PASTAS ---
+# --- CONFIGURAÇÕES ---
 DIRETORIO_CSES = "src" 
 DIRETORIO_ENUNCIADOS = "enunciados"
 ARQUIVO_SAIDA = "latex/caderno_cses.tex"
@@ -23,6 +23,67 @@ def escapar_latex(texto):
         texto = texto.replace(char, escaped)
     texto = texto.replace('<', '$<$').replace('>', '$>$')
     return texto
+
+# --- NOVA FUNÇÃO: O LIXEIRO DE BOILERPLATE INTELIGENTE ---
+def limpar_codigo_cpp(caminho_original, caminho_novo):
+    with open(caminho_original, 'r', encoding='utf-8') as f:
+        texto = f.read()
+    
+    # 1. Limpeza linha por linha (includes, defines, etc)
+    linhas = texto.split('\n')
+    linhas_limpas = []
+    for linha in linhas:
+        stripped = linha.strip()
+        if stripped.startswith('#include'): continue
+        if stripped.startswith('#define'): continue
+        if stripped.startswith('typedef'): continue
+        if stripped.startswith('using namespace'): continue
+        if stripped.startswith('#pragma'): continue
+        if 'ios_base::sync_with_stdio' in stripped: continue
+        if 'cin.tie' in stripped: continue
+        linhas_limpas.append(linha.rstrip())
+        
+    texto = '\n'.join(linhas_limpas)
+    
+    # 2. A MÁGICA: Encontrar e deletar a main inútil lendo as chaves {}
+    match = re.search(r"(?:int|int32_t|signed)\s+main\s*\(\s*\)\s*\{", texto)
+    if match:
+        start_idx = match.start()
+        body_start = match.end()
+        
+        open_braces = 1
+        end_idx = -1
+        # Rastreia as chaves para achar exatamente onde a main termina
+        for i in range(body_start, len(texto)):
+            if texto[i] == '{':
+                open_braces += 1
+            elif texto[i] == '}':
+                open_braces -= 1
+                if open_braces == 0:
+                    end_idx = i
+                    break
+                    
+        if end_idx != -1:
+            miolo = texto[body_start:end_idx]
+            
+            # Simulamos a limpeza do miolo para ver se ele é inútil
+            miolo_limpo = re.sub(r'//.*', '', miolo) # Tira os comentários
+            # Tira os loops de test cases (seja for ou while)
+            miolo_limpo = re.sub(r'int\s+t\s*;\s*cin\s*>>\s*t\s*;\s*(?:for|while)\s*\([^)]+\)', '', miolo_limpo)
+            miolo_limpo = re.sub(r'solve\(\)\s*;', '', miolo_limpo) # Tira a chamada do solve
+            miolo_limpo = re.sub(r'return\s+0\s*;', '', miolo_limpo) # Tira o return 0
+            miolo_limpo = miolo_limpo.replace('{', '').replace('}', '') # Tira chaves órfãs
+            
+            # Se não sobrou nada além de espaço e tabulação, a main inteira é deletada!
+            if miolo_limpo.strip() == "":
+                texto = texto[:start_idx] + texto[end_idx+1:]
+    
+    # 3. Remove excesso de linhas em branco e salva
+    texto = re.sub(r'\n{3,}', '\n\n', texto).strip()
+    
+    os.makedirs(os.path.dirname(caminho_novo), exist_ok=True)
+    with open(caminho_novo, 'w', encoding='utf-8') as f:
+        f.write(texto + '\n')
 
 print("Obtendo lista de problemas do site CSES...")
 try:
@@ -123,11 +184,13 @@ latex = [
     r"    literate={á}{{\'a}}1 {ã}{{\~a}}1 {é}{{\'e}}1 {í}{{\'i}}1 {ó}{{\'o}}1 {õ}{{\~o}}1 {ú}{{\'u}}1 {ç}{{\c{c}}}1 {Á}{{\'A}}1 {É}{{\'E}}1 {Í}{{\'I}}1 {Ó}{{\'O}}1 {Ú}{{\'U}}1 {Ç}{{\c{C}}}1 {Ã}{{\~A}}1 {Õ}{{\~O}}1",
     r"}",
     r"",
+    r"\usepackage[hidelinks]{hyperref}", # <-- PACOTE MÁGICO ADICIONADO AQUI
+    r"",
     r"\begin{document}",
     r"\begin{titlepage}",
     r"    \centering",
     r"    \vspace*{1.5cm}",
-    r"    \includegraphics[width=4.5cm]{../assets/unicamp.png} \par", # Caminho ajustado
+    r"    \includegraphics[width=4.5cm]{../assets/unicamp.png} \par", 
     r"    \vspace{0.4cm}",
     r"    {\fontsize{16}{20}\selectfont Universidade Estadual de Campinas \par}",
     r"    \vspace{1.2cm}",
@@ -191,7 +254,6 @@ try:
                 if os.path.exists(caminho_arquivo_enunciado) and os.path.getsize(caminho_arquivo_enunciado) > 0:
                     print(f"  [Cache] Lendo enunciado salvo: {titulo_bruto}")
                     caminho_latex_enunciado = caminho_arquivo_enunciado.replace('\\', '/')
-                    # Caminho ajustado:
                     latex.append(r"\begin{caixaenunciado}")
                     latex.append(f"\\input{{../{caminho_latex_enunciado}}}")
                     latex.append(r"\end{caixaenunciado}")
@@ -248,7 +310,6 @@ try:
                                     f_enunc.write(enunciado_escapado)
                                     
                                 caminho_latex_enunciado = caminho_arquivo_enunciado.replace('\\', '/')
-                                # Caminho ajustado:
                                 latex.append(r"\begin{caixaenunciado}")
                                 latex.append(f"\\input{{../{caminho_latex_enunciado}}}")
                                 latex.append(r"\end{caixaenunciado}")
@@ -265,10 +326,16 @@ try:
                     latex.append("Enunciado não encontrado no site.")
 
                 latex.append(r"\vspace{0.3cm}")
-                latex.append(r"\noindent\textbf{Código-fonte:}")
-                # Caminho ajustado:
-                caminho_relativo_cpp = f"{DIRETORIO_CSES}/{nome_pasta}/{nome_arquivo}"
-                latex.append(f"\\lstinputlisting{{../{caminho_relativo_cpp}}}")
+                # latex.append(r"\noindent\textbf{Código-fonte:}")
+                
+                # --- A MÁGICA ACONTECE AQUI ---
+                caminho_original_cpp = f"{DIRETORIO_CSES}/{nome_pasta}/{nome_arquivo}"
+                caminho_cpp_limpo = f"latex/src_limpo/{nome_pasta}/{nome_arquivo}"
+                
+                limpar_codigo_cpp(caminho_original_cpp, caminho_cpp_limpo)
+                
+                # O LaTeX lê o código limpo ao invés do original
+                latex.append(f"\\lstinputlisting{{src_limpo/{nome_pasta}/{nome_arquivo}}}")
 
 except KeyboardInterrupt:
     print("\n\n[!] Interrompido (Ctrl+C)!")

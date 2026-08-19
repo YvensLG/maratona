@@ -24,10 +24,8 @@ void completar(int x, int y, int soma, char ant){
     if(x == 1 && y == n && soma != n2) return;
     if(soma == n2){
         total ++;
-        //seqs.pb(s);
         return;
     }
- 
  
     if(fimv + fimh == 0) return;
         
@@ -63,11 +61,7 @@ void solve(){
     }
  
     cin >> s;
- 
     completar(1, 1, 1, 'S');
- 
- 
-    //sort(all(seqs));
     cout << total << '\n';
 }
  

@@ -3,9 +3,11 @@ caderno:
 	@mkdir -p latex
 	@echo "==> Rodando o script Python..."
 	@python3 gerador_cses.py
-	@echo "==> Compilando o LaTeX (Passo 1/2)..."
+	@echo "==> Compilando o LaTeX (Passo 1/3)..."
 	@cd latex && pdflatex -interaction=nonstopmode caderno_cses.tex > /dev/null
-	@echo "==> Compilando o LaTeX (Passo 2/2)..."
+	@echo "==> Compilando o LaTeX (Passo 2/3)..."
+	@cd latex && pdflatex -interaction=nonstopmode caderno_cses.tex > /dev/null
+	@echo "==> Compilando o LaTeX (Passo 3/3)..."
 	@cd latex && pdflatex -interaction=nonstopmode caderno_cses.tex > /dev/null
 	@echo "==> Trazendo o PDF para a raiz..."
 	@mv latex/caderno_cses.pdf .

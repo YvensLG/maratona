@@ -1,241 +1,241 @@
-\contentsline {section}{\numberline {1}Introductory Problems}{3}{}%
-\contentsline {subsection}{\numberline {1.1}Apple Division}{3}{}%
-\contentsline {subsection}{\numberline {1.2}Bit Strings}{3}{}%
-\contentsline {subsection}{\numberline {1.3}Chessboardand Queens}{3}{}%
-\contentsline {subsection}{\numberline {1.4}Coin Piles}{4}{}%
-\contentsline {subsection}{\numberline {1.5}Creating Strings}{4}{}%
-\contentsline {subsection}{\numberline {1.6}Digit Queries}{4}{}%
-\contentsline {subsection}{\numberline {1.7}Gray Code}{5}{}%
-\contentsline {subsection}{\numberline {1.8}Grid Coloring I}{5}{}%
-\contentsline {subsection}{\numberline {1.9}Grid Path Description}{5}{}%
-\contentsline {subsection}{\numberline {1.10}Increasing Array}{6}{}%
-\contentsline {subsection}{\numberline {1.11}Knight Moves Grid}{6}{}%
-\contentsline {subsection}{\numberline {1.12}Mex Grid Construction}{6}{}%
-\contentsline {subsection}{\numberline {1.13}Missing Number}{7}{}%
-\contentsline {subsection}{\numberline {1.14}Number Spiral}{7}{}%
-\contentsline {subsection}{\numberline {1.15}Palindrome Reorder}{7}{}%
-\contentsline {subsection}{\numberline {1.16}Permutations}{8}{}%
-\contentsline {subsection}{\numberline {1.17}Raab Game I}{8}{}%
-\contentsline {subsection}{\numberline {1.18}Repetitions}{9}{}%
-\contentsline {subsection}{\numberline {1.19}String Reorder}{9}{}%
-\contentsline {subsection}{\numberline {1.20}Towerof Hanoi}{10}{}%
-\contentsline {subsection}{\numberline {1.21}Trailing Zeros}{10}{}%
-\contentsline {subsection}{\numberline {1.22}Two Knights}{10}{}%
-\contentsline {subsection}{\numberline {1.23}Two Sets}{10}{}%
-\contentsline {subsection}{\numberline {1.24}Weird Algorithm}{11}{}%
-\contentsline {section}{\numberline {2}Dynamic Programming}{12}{}%
-\contentsline {subsection}{\numberline {2.1}Array Description}{12}{}%
-\contentsline {subsection}{\numberline {2.2}Book Shop}{12}{}%
-\contentsline {subsection}{\numberline {2.3}Coin Combinations I}{12}{}%
-\contentsline {subsection}{\numberline {2.4}Coin Combinations II}{13}{}%
-\contentsline {subsection}{\numberline {2.5}Counting Numbers}{13}{}%
-\contentsline {subsection}{\numberline {2.6}Counting Tiling}{14}{}%
-\contentsline {subsection}{\numberline {2.7}Counting Towers}{14}{}%
-\contentsline {subsection}{\numberline {2.8}Dice Combinations}{15}{}%
-\contentsline {subsection}{\numberline {2.9}Edit Distance}{15}{}%
-\contentsline {subsection}{\numberline {2.10}Elevator Rides}{15}{}%
-\contentsline {subsection}{\numberline {2.11}Grid Paths I}{16}{}%
-\contentsline {subsection}{\numberline {2.12}Increasing Subsequence}{16}{}%
-\contentsline {subsection}{\numberline {2.13}Increasing Subsequence II}{17}{}%
-\contentsline {subsection}{\numberline {2.14}Longest Common Subsequence}{17}{}%
-\contentsline {subsection}{\numberline {2.15}Minimal Grid Path}{17}{}%
-\contentsline {subsection}{\numberline {2.16}Minimizing Coins}{18}{}%
-\contentsline {subsection}{\numberline {2.17}Money Sums}{18}{}%
-\contentsline {subsection}{\numberline {2.18}Mountain Range}{18}{}%
-\contentsline {subsection}{\numberline {2.19}Projects}{19}{}%
-\contentsline {subsection}{\numberline {2.20}Rectangle Cutting}{19}{}%
-\contentsline {subsection}{\numberline {2.21}Removal Game}{20}{}%
-\contentsline {subsection}{\numberline {2.22}Removing Digits}{20}{}%
-\contentsline {subsection}{\numberline {2.23}Two Sets II}{20}{}%
-\contentsline {section}{\numberline {3}Graph Algorithms}{22}{}%
-\contentsline {subsection}{\numberline {3.1}Building Roads}{22}{}%
-\contentsline {subsection}{\numberline {3.2}Building Teams}{22}{}%
-\contentsline {subsection}{\numberline {3.3}Coin Collector}{22}{}%
-\contentsline {subsection}{\numberline {3.4}Counting Rooms}{23}{}%
-\contentsline {subsection}{\numberline {3.5}Course Schedule}{24}{}%
-\contentsline {subsection}{\numberline {3.6}Cycle Finding}{24}{}%
-\contentsline {subsection}{\numberline {3.7}De Bruijn Sequence}{25}{}%
-\contentsline {subsection}{\numberline {3.8}Distinct Routes}{25}{}%
-\contentsline {subsection}{\numberline {3.9}Download Speed}{26}{}%
-\contentsline {subsection}{\numberline {3.10}Flight Discount}{26}{}%
-\contentsline {subsection}{\numberline {3.11}Flight Routes}{27}{}%
-\contentsline {subsection}{\numberline {3.12}Flight Routes Check}{27}{}%
-\contentsline {subsection}{\numberline {3.13}Game Routes}{28}{}%
-\contentsline {subsection}{\numberline {3.14}Giant Pizza}{28}{}%
-\contentsline {subsection}{\numberline {3.15}Hamiltonian Flights}{29}{}%
-\contentsline {subsection}{\numberline {3.16}High Score}{29}{}%
-\contentsline {subsection}{\numberline {3.17}Investigation}{30}{}%
-\contentsline {subsection}{\numberline {3.18}Knights Tour}{30}{}%
-\contentsline {subsection}{\numberline {3.19}Labyrinth}{30}{}%
-\contentsline {subsection}{\numberline {3.20}Longest Flight Route}{31}{}%
-\contentsline {subsection}{\numberline {3.21}Mail Delivery}{32}{}%
-\contentsline {subsection}{\numberline {3.22}Message Route}{32}{}%
-\contentsline {subsection}{\numberline {3.23}Monsters}{33}{}%
-\contentsline {subsection}{\numberline {3.24}Planets Cycles}{33}{}%
-\contentsline {subsection}{\numberline {3.25}Planets Queries I}{34}{}%
-\contentsline {subsection}{\numberline {3.26}Planets Queries II}{34}{}%
-\contentsline {subsection}{\numberline {3.27}Planetsand Kingdoms}{35}{}%
-\contentsline {subsection}{\numberline {3.28}Police Chase}{36}{}%
-\contentsline {subsection}{\numberline {3.29}Road Construction}{36}{}%
-\contentsline {subsection}{\numberline {3.30}Road Reparation}{37}{}%
-\contentsline {subsection}{\numberline {3.31}Round Trip}{37}{}%
-\contentsline {subsection}{\numberline {3.32}Round Trip II}{38}{}%
-\contentsline {subsection}{\numberline {3.33}School Dance}{38}{}%
-\contentsline {subsection}{\numberline {3.34}Shortest Routes I}{39}{}%
-\contentsline {subsection}{\numberline {3.35}Shortest Routes II}{39}{}%
-\contentsline {subsection}{\numberline {3.36}Teleporters Path}{40}{}%
-\contentsline {section}{\numberline {4}Range Queries}{41}{}%
-\contentsline {subsection}{\numberline {4.1}Distinct Values Queries}{41}{}%
-\contentsline {subsection}{\numberline {4.2}Distinct Values Queries II}{41}{}%
-\contentsline {subsection}{\numberline {4.3}Dynamic Range Minimum Queries}{42}{}%
-\contentsline {subsection}{\numberline {4.4}Dynamic Range Sum Queries}{42}{}%
-\contentsline {subsection}{\numberline {4.5}Forest Queries}{43}{}%
-\contentsline {subsection}{\numberline {4.6}Hotel Queries}{43}{}%
-\contentsline {subsection}{\numberline {4.7}List Removals}{43}{}%
-\contentsline {subsection}{\numberline {4.8}Pizzeria Queries}{44}{}%
-\contentsline {subsection}{\numberline {4.9}Polynomial Queries}{45}{}%
-\contentsline {subsection}{\numberline {4.10}Prefix Sum Queries}{45}{}%
-\contentsline {subsection}{\numberline {4.11}Range Update Queries}{46}{}%
-\contentsline {subsection}{\numberline {4.12}Range Xor Queries}{47}{}%
-\contentsline {subsection}{\numberline {4.13}Salary Queries}{47}{}%
-\contentsline {subsection}{\numberline {4.14}Static Range Minimum Queries}{47}{}%
-\contentsline {subsection}{\numberline {4.15}Static Range Sum Queries}{48}{}%
-\contentsline {subsection}{\numberline {4.16}Subarray Sum Queries}{48}{}%
-\contentsline {subsection}{\numberline {4.17}Subarray Sum Queries II}{49}{}%
-\contentsline {subsection}{\numberline {4.18}Visible Buildings Queries}{49}{}%
-\contentsline {section}{\numberline {5}Tree Algorithms}{51}{}%
-\contentsline {subsection}{\numberline {5.1}Company Queries I}{51}{}%
-\contentsline {subsection}{\numberline {5.2}Company Queries II}{51}{}%
-\contentsline {subsection}{\numberline {5.3}Counting Paths}{52}{}%
-\contentsline {subsection}{\numberline {5.4}Distance Queries}{52}{}%
-\contentsline {subsection}{\numberline {5.5}Distinct Colors}{53}{}%
-\contentsline {subsection}{\numberline {5.6}Findinga Centroid}{54}{}%
-\contentsline {subsection}{\numberline {5.7}Fixed-Length Paths I}{54}{}%
-\contentsline {subsection}{\numberline {5.8}Path Queries}{55}{}%
-\contentsline {subsection}{\numberline {5.9}Path Queries II}{55}{}%
-\contentsline {subsection}{\numberline {5.10}Subordinates}{56}{}%
-\contentsline {subsection}{\numberline {5.11}Subtree Queries}{56}{}%
-\contentsline {subsection}{\numberline {5.12}Tree Diameter}{57}{}%
-\contentsline {subsection}{\numberline {5.13}Tree Distances I}{57}{}%
-\contentsline {subsection}{\numberline {5.14}Tree Distances II}{58}{}%
-\contentsline {subsection}{\numberline {5.15}Tree Matching}{58}{}%
-\contentsline {section}{\numberline {6}Mathematics}{60}{}%
-\contentsline {subsection}{\numberline {6.1}Candy Lottery}{60}{}%
-\contentsline {section}{\numberline {7}String Algorithms}{61}{}%
-\contentsline {subsection}{\numberline {7.1}Counting Patterns}{61}{}%
-\contentsline {subsection}{\numberline {7.2}Distinct Substrings}{61}{}%
-\contentsline {subsection}{\numberline {7.3}Finding Borders}{61}{}%
-\contentsline {subsection}{\numberline {7.4}Repeating Substring}{62}{}%
-\contentsline {subsection}{\numberline {7.5}String Functions}{62}{}%
-\contentsline {subsection}{\numberline {7.6}String Matching}{63}{}%
-\contentsline {subsection}{\numberline {7.7}String Transform}{63}{}%
-\contentsline {subsection}{\numberline {7.8}Substring Order I}{63}{}%
-\contentsline {subsection}{\numberline {7.9}Substring Order II}{64}{}%
-\contentsline {section}{\numberline {8}Advanced Techniques}{65}{}%
-\contentsline {subsection}{\numberline {8.1}Distinct Routes II}{65}{}%
-\contentsline {subsection}{\numberline {8.2}Eulerian Subgraphs}{65}{}%
-\contentsline {subsection}{\numberline {8.3}Housesand Schools}{66}{}%
-\contentsline {subsection}{\numberline {8.4}Longest Palindrome}{66}{}%
-\contentsline {subsection}{\numberline {8.5}Monster Game}{67}{}%
-\contentsline {subsection}{\numberline {8.6}Necessary Cities}{67}{}%
-\contentsline {subsection}{\numberline {8.7}Necessary Roads}{68}{}%
-\contentsline {subsection}{\numberline {8.8}Parcel Delivery}{69}{}%
-\contentsline {subsection}{\numberline {8.9}Signal Processing}{69}{}%
-\contentsline {subsection}{\numberline {8.10}Subarray Squares}{70}{}%
-\contentsline {subsection}{\numberline {8.11}Substring Reversals}{70}{}%
-\contentsline {section}{\numberline {9}Additional Problems I}{72}{}%
-\contentsline {subsection}{\numberline {9.1}Beautiful Permutation II}{72}{}%
-\contentsline {subsection}{\numberline {9.2}Distinct Values Sum}{72}{}%
-\contentsline {subsection}{\numberline {9.3}Maximum Average Subarrays}{73}{}%
-\contentsline {subsection}{\numberline {9.4}Maximum Building I}{73}{}%
-\contentsline {subsection}{\numberline {9.5}Nearest Campsites I}{74}{}%
-\contentsline {subsection}{\numberline {9.6}Nearest Campsites II}{75}{}%
-\contentsline {subsection}{\numberline {9.7}Sorting Methods}{75}{}%
-\contentsline {subsection}{\numberline {9.8}Swap Game}{76}{}%
-\contentsline {subsection}{\numberline {9.9}Water Containers Moves}{76}{}%
-\contentsline {subsection}{\numberline {9.10}Writing Numbers}{77}{}%
-\contentsline {section}{\numberline {10}Additional Problems II}{79}{}%
-\contentsline {subsection}{\numberline {10.1}Book Shop II}{79}{}%
-\contentsline {subsection}{\numberline {10.2}Food Division}{79}{}%
-\contentsline {subsection}{\numberline {10.3}GCDSubsets}{79}{}%
-\contentsline {subsection}{\numberline {10.4}Grid Coloring II}{79}{}%
-\contentsline {subsection}{\numberline {10.5}Increasing Array II}{80}{}%
-\contentsline {subsection}{\numberline {10.6}KSubset Sums I}{81}{}%
-\contentsline {subsection}{\numberline {10.7}KSubset Sums II}{81}{}%
-\contentsline {subsection}{\numberline {10.8}Knight Moves Queries}{81}{}%
-\contentsline {subsection}{\numberline {10.9}Maximum Building II}{82}{}%
-\contentsline {subsection}{\numberline {10.10}Mex Grid Queries}{83}{}%
-\contentsline {subsection}{\numberline {10.11}Minimum Cost Pairs}{83}{}%
-\contentsline {subsection}{\numberline {10.12}Programmersand Artists}{83}{}%
-\contentsline {subsection}{\numberline {10.13}School Excursion}{84}{}%
-\contentsline {section}{\numberline {11}Advanced Graph Problems}{86}{}%
-\contentsline {subsection}{\numberline {11.1}Acyclic Graph Edges}{86}{}%
-\contentsline {subsection}{\numberline {11.2}Course Schedule II}{86}{}%
-\contentsline {subsection}{\numberline {11.3}Even Outdegree Edges}{86}{}%
-\contentsline {subsection}{\numberline {11.4}Graph Coloring}{87}{}%
-\contentsline {subsection}{\numberline {11.5}Split Into Two Paths}{87}{}%
-\contentsline {subsection}{\numberline {11.6}Strongly Connected Edges}{88}{}%
-\contentsline {subsection}{\numberline {11.7}Tree Coin Collecting I}{89}{}%
-\contentsline {subsection}{\numberline {11.8}Tree Coin Collecting II}{90}{}%
-\contentsline {subsection}{\numberline {11.9}Tree Traversals}{90}{}%
-\contentsline {section}{\numberline {12}Bitwise Operations}{92}{}%
-\contentsline {subsection}{\numberline {12.1}All Subarray Xors}{92}{}%
-\contentsline {subsection}{\numberline {12.2}And Subset Count}{92}{}%
-\contentsline {subsection}{\numberline {12.3}Counting Bits}{93}{}%
-\contentsline {subsection}{\numberline {12.4}KSubset Xors}{93}{}%
-\contentsline {subsection}{\numberline {12.5}Maximum Xor Subarray}{94}{}%
-\contentsline {subsection}{\numberline {12.6}Maximum Xor Subset}{95}{}%
-\contentsline {subsection}{\numberline {12.7}Numberof Subset Xors}{96}{}%
-\contentsline {subsection}{\numberline {12.8}SOSBit Problem}{96}{}%
-\contentsline {subsection}{\numberline {12.9}Xor Pyramid Diagonal}{96}{}%
-\contentsline {subsection}{\numberline {12.10}Xor Pyramid Peak}{97}{}%
-\contentsline {subsection}{\numberline {12.11}Xor Pyramid Row}{97}{}%
-\contentsline {section}{\numberline {13}Construction Problems}{98}{}%
-\contentsline {subsection}{\numberline {13.1}Chess Tournament}{98}{}%
-\contentsline {subsection}{\numberline {13.2}Inverse Inversions}{98}{}%
-\contentsline {section}{\numberline {14}Counting Problems}{99}{}%
-\contentsline {subsection}{\numberline {14.1}All Letter Subgrid Count I}{99}{}%
-\contentsline {subsection}{\numberline {14.2}All Letter Subgrid Count II}{99}{}%
-\contentsline {subsection}{\numberline {14.3}Counting Sequences}{100}{}%
-\contentsline {subsection}{\numberline {14.4}Empty String}{100}{}%
-\contentsline {subsection}{\numberline {14.5}Grid Paths II}{100}{}%
-\contentsline {subsection}{\numberline {14.6}Permutation Inversions}{101}{}%
-\contentsline {section}{\numberline {15}Sliding Window Problems}{102}{}%
-\contentsline {subsection}{\numberline {15.1}Sliding Window Cost}{102}{}%
-\contentsline {subsection}{\numberline {15.2}Sliding Window Median}{102}{}%
-\contentsline {section}{\numberline {16}Sorting And Searching}{104}{}%
-\contentsline {subsection}{\numberline {16.1}Apartments}{104}{}%
-\contentsline {subsection}{\numberline {16.2}Array Division}{104}{}%
-\contentsline {subsection}{\numberline {16.3}Collecting Numbers}{104}{}%
-\contentsline {subsection}{\numberline {16.4}Collecting Numbers II}{105}{}%
-\contentsline {subsection}{\numberline {16.5}Concert Tickets}{105}{}%
-\contentsline {subsection}{\numberline {16.6}Distinct Numbers}{105}{}%
-\contentsline {subsection}{\numberline {16.7}Distinct Values Subarrays}{106}{}%
-\contentsline {subsection}{\numberline {16.8}Distinct Values Subarrays II}{106}{}%
-\contentsline {subsection}{\numberline {16.9}Distinct Values Subsequences}{106}{}%
-\contentsline {subsection}{\numberline {16.10}Factory Machines}{107}{}%
-\contentsline {subsection}{\numberline {16.11}Ferris Wheel}{107}{}%
-\contentsline {subsection}{\numberline {16.12}Josephus Problem I}{107}{}%
-\contentsline {subsection}{\numberline {16.13}Josephus Problem II}{108}{}%
-\contentsline {subsection}{\numberline {16.14}Maximum Subarray Sum}{108}{}%
-\contentsline {subsection}{\numberline {16.15}Maximum Subarray Sum II}{108}{}%
-\contentsline {subsection}{\numberline {16.16}Missing Coin Sum}{108}{}%
-\contentsline {subsection}{\numberline {16.17}Movie Festival}{109}{}%
-\contentsline {subsection}{\numberline {16.18}Movie Festival II}{109}{}%
-\contentsline {subsection}{\numberline {16.19}Nearest Smaller Values}{109}{}%
-\contentsline {subsection}{\numberline {16.20}Nested Ranges Check}{110}{}%
-\contentsline {subsection}{\numberline {16.21}Nested Ranges Count}{110}{}%
-\contentsline {subsection}{\numberline {16.22}Playlist}{111}{}%
-\contentsline {subsection}{\numberline {16.23}Reading Books}{111}{}%
-\contentsline {subsection}{\numberline {16.24}Restaurant Customers}{111}{}%
-\contentsline {subsection}{\numberline {16.25}Room Alocation}{112}{}%
-\contentsline {subsection}{\numberline {16.26}Stick Lengths}{112}{}%
-\contentsline {subsection}{\numberline {16.27}Subarray Divisibility}{112}{}%
-\contentsline {subsection}{\numberline {16.28}Subarray Sums I}{113}{}%
-\contentsline {subsection}{\numberline {16.29}Subarray Sums II}{113}{}%
-\contentsline {subsection}{\numberline {16.30}Sumof Four Values}{113}{}%
-\contentsline {subsection}{\numberline {16.31}Sumof Three Values}{114}{}%
-\contentsline {subsection}{\numberline {16.32}Sumof Two Values}{114}{}%
-\contentsline {subsection}{\numberline {16.33}Tasksand Deadlines}{115}{}%
-\contentsline {subsection}{\numberline {16.34}Towers}{115}{}%
-\contentsline {subsection}{\numberline {16.35}Traffic Lights}{115}{}%
+\contentsline {section}{\numberline {1}Introductory Problems}{3}{section.1}%
+\contentsline {subsection}{\numberline {1.1}Apple Division}{3}{subsection.1.1}%
+\contentsline {subsection}{\numberline {1.2}Bit Strings}{3}{subsection.1.2}%
+\contentsline {subsection}{\numberline {1.3}Chessboardand Queens}{3}{subsection.1.3}%
+\contentsline {subsection}{\numberline {1.4}Coin Piles}{3}{subsection.1.4}%
+\contentsline {subsection}{\numberline {1.5}Creating Strings}{4}{subsection.1.5}%
+\contentsline {subsection}{\numberline {1.6}Digit Queries}{4}{subsection.1.6}%
+\contentsline {subsection}{\numberline {1.7}Gray Code}{4}{subsection.1.7}%
+\contentsline {subsection}{\numberline {1.8}Grid Coloring I}{4}{subsection.1.8}%
+\contentsline {subsection}{\numberline {1.9}Grid Path Description}{5}{subsection.1.9}%
+\contentsline {subsection}{\numberline {1.10}Increasing Array}{5}{subsection.1.10}%
+\contentsline {subsection}{\numberline {1.11}Knight Moves Grid}{5}{subsection.1.11}%
+\contentsline {subsection}{\numberline {1.12}Mex Grid Construction}{6}{subsection.1.12}%
+\contentsline {subsection}{\numberline {1.13}Missing Number}{6}{subsection.1.13}%
+\contentsline {subsection}{\numberline {1.14}Number Spiral}{6}{subsection.1.14}%
+\contentsline {subsection}{\numberline {1.15}Palindrome Reorder}{6}{subsection.1.15}%
+\contentsline {subsection}{\numberline {1.16}Permutations}{7}{subsection.1.16}%
+\contentsline {subsection}{\numberline {1.17}Raab Game I}{7}{subsection.1.17}%
+\contentsline {subsection}{\numberline {1.18}Repetitions}{8}{subsection.1.18}%
+\contentsline {subsection}{\numberline {1.19}String Reorder}{8}{subsection.1.19}%
+\contentsline {subsection}{\numberline {1.20}Towerof Hanoi}{8}{subsection.1.20}%
+\contentsline {subsection}{\numberline {1.21}Trailing Zeros}{8}{subsection.1.21}%
+\contentsline {subsection}{\numberline {1.22}Two Knights}{9}{subsection.1.22}%
+\contentsline {subsection}{\numberline {1.23}Two Sets}{9}{subsection.1.23}%
+\contentsline {subsection}{\numberline {1.24}Weird Algorithm}{9}{subsection.1.24}%
+\contentsline {section}{\numberline {2}Dynamic Programming}{10}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Array Description}{10}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}Book Shop}{10}{subsection.2.2}%
+\contentsline {subsection}{\numberline {2.3}Coin Combinations I}{10}{subsection.2.3}%
+\contentsline {subsection}{\numberline {2.4}Coin Combinations II}{10}{subsection.2.4}%
+\contentsline {subsection}{\numberline {2.5}Counting Numbers}{11}{subsection.2.5}%
+\contentsline {subsection}{\numberline {2.6}Counting Tiling}{11}{subsection.2.6}%
+\contentsline {subsection}{\numberline {2.7}Counting Towers}{12}{subsection.2.7}%
+\contentsline {subsection}{\numberline {2.8}Dice Combinations}{12}{subsection.2.8}%
+\contentsline {subsection}{\numberline {2.9}Edit Distance}{12}{subsection.2.9}%
+\contentsline {subsection}{\numberline {2.10}Elevator Rides}{13}{subsection.2.10}%
+\contentsline {subsection}{\numberline {2.11}Grid Paths I}{13}{subsection.2.11}%
+\contentsline {subsection}{\numberline {2.12}Increasing Subsequence}{13}{subsection.2.12}%
+\contentsline {subsection}{\numberline {2.13}Increasing Subsequence II}{13}{subsection.2.13}%
+\contentsline {subsection}{\numberline {2.14}Longest Common Subsequence}{14}{subsection.2.14}%
+\contentsline {subsection}{\numberline {2.15}Minimal Grid Path}{14}{subsection.2.15}%
+\contentsline {subsection}{\numberline {2.16}Minimizing Coins}{14}{subsection.2.16}%
+\contentsline {subsection}{\numberline {2.17}Money Sums}{15}{subsection.2.17}%
+\contentsline {subsection}{\numberline {2.18}Mountain Range}{15}{subsection.2.18}%
+\contentsline {subsection}{\numberline {2.19}Projects}{16}{subsection.2.19}%
+\contentsline {subsection}{\numberline {2.20}Rectangle Cutting}{16}{subsection.2.20}%
+\contentsline {subsection}{\numberline {2.21}Removal Game}{16}{subsection.2.21}%
+\contentsline {subsection}{\numberline {2.22}Removing Digits}{17}{subsection.2.22}%
+\contentsline {subsection}{\numberline {2.23}Two Sets II}{17}{subsection.2.23}%
+\contentsline {section}{\numberline {3}Graph Algorithms}{18}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Building Roads}{18}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}Building Teams}{18}{subsection.3.2}%
+\contentsline {subsection}{\numberline {3.3}Coin Collector}{18}{subsection.3.3}%
+\contentsline {subsection}{\numberline {3.4}Counting Rooms}{19}{subsection.3.4}%
+\contentsline {subsection}{\numberline {3.5}Course Schedule}{19}{subsection.3.5}%
+\contentsline {subsection}{\numberline {3.6}Cycle Finding}{19}{subsection.3.6}%
+\contentsline {subsection}{\numberline {3.7}De Bruijn Sequence}{20}{subsection.3.7}%
+\contentsline {subsection}{\numberline {3.8}Distinct Routes}{20}{subsection.3.8}%
+\contentsline {subsection}{\numberline {3.9}Download Speed}{21}{subsection.3.9}%
+\contentsline {subsection}{\numberline {3.10}Flight Discount}{21}{subsection.3.10}%
+\contentsline {subsection}{\numberline {3.11}Flight Routes}{22}{subsection.3.11}%
+\contentsline {subsection}{\numberline {3.12}Flight Routes Check}{22}{subsection.3.12}%
+\contentsline {subsection}{\numberline {3.13}Game Routes}{23}{subsection.3.13}%
+\contentsline {subsection}{\numberline {3.14}Giant Pizza}{23}{subsection.3.14}%
+\contentsline {subsection}{\numberline {3.15}Hamiltonian Flights}{24}{subsection.3.15}%
+\contentsline {subsection}{\numberline {3.16}High Score}{24}{subsection.3.16}%
+\contentsline {subsection}{\numberline {3.17}Investigation}{24}{subsection.3.17}%
+\contentsline {subsection}{\numberline {3.18}Knights Tour}{25}{subsection.3.18}%
+\contentsline {subsection}{\numberline {3.19}Labyrinth}{25}{subsection.3.19}%
+\contentsline {subsection}{\numberline {3.20}Longest Flight Route}{25}{subsection.3.20}%
+\contentsline {subsection}{\numberline {3.21}Mail Delivery}{26}{subsection.3.21}%
+\contentsline {subsection}{\numberline {3.22}Message Route}{26}{subsection.3.22}%
+\contentsline {subsection}{\numberline {3.23}Monsters}{27}{subsection.3.23}%
+\contentsline {subsection}{\numberline {3.24}Planets Cycles}{28}{subsection.3.24}%
+\contentsline {subsection}{\numberline {3.25}Planets Queries I}{28}{subsection.3.25}%
+\contentsline {subsection}{\numberline {3.26}Planets Queries II}{28}{subsection.3.26}%
+\contentsline {subsection}{\numberline {3.27}Planetsand Kingdoms}{29}{subsection.3.27}%
+\contentsline {subsection}{\numberline {3.28}Police Chase}{30}{subsection.3.28}%
+\contentsline {subsection}{\numberline {3.29}Road Construction}{30}{subsection.3.29}%
+\contentsline {subsection}{\numberline {3.30}Road Reparation}{30}{subsection.3.30}%
+\contentsline {subsection}{\numberline {3.31}Round Trip}{31}{subsection.3.31}%
+\contentsline {subsection}{\numberline {3.32}Round Trip II}{31}{subsection.3.32}%
+\contentsline {subsection}{\numberline {3.33}School Dance}{32}{subsection.3.33}%
+\contentsline {subsection}{\numberline {3.34}Shortest Routes I}{32}{subsection.3.34}%
+\contentsline {subsection}{\numberline {3.35}Shortest Routes II}{33}{subsection.3.35}%
+\contentsline {subsection}{\numberline {3.36}Teleporters Path}{33}{subsection.3.36}%
+\contentsline {section}{\numberline {4}Range Queries}{34}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Distinct Values Queries}{34}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Distinct Values Queries II}{34}{subsection.4.2}%
+\contentsline {subsection}{\numberline {4.3}Dynamic Range Minimum Queries}{35}{subsection.4.3}%
+\contentsline {subsection}{\numberline {4.4}Dynamic Range Sum Queries}{35}{subsection.4.4}%
+\contentsline {subsection}{\numberline {4.5}Forest Queries}{35}{subsection.4.5}%
+\contentsline {subsection}{\numberline {4.6}Hotel Queries}{36}{subsection.4.6}%
+\contentsline {subsection}{\numberline {4.7}List Removals}{36}{subsection.4.7}%
+\contentsline {subsection}{\numberline {4.8}Pizzeria Queries}{36}{subsection.4.8}%
+\contentsline {subsection}{\numberline {4.9}Polynomial Queries}{37}{subsection.4.9}%
+\contentsline {subsection}{\numberline {4.10}Prefix Sum Queries}{37}{subsection.4.10}%
+\contentsline {subsection}{\numberline {4.11}Range Update Queries}{38}{subsection.4.11}%
+\contentsline {subsection}{\numberline {4.12}Range Xor Queries}{38}{subsection.4.12}%
+\contentsline {subsection}{\numberline {4.13}Salary Queries}{38}{subsection.4.13}%
+\contentsline {subsection}{\numberline {4.14}Static Range Minimum Queries}{39}{subsection.4.14}%
+\contentsline {subsection}{\numberline {4.15}Static Range Sum Queries}{39}{subsection.4.15}%
+\contentsline {subsection}{\numberline {4.16}Subarray Sum Queries}{39}{subsection.4.16}%
+\contentsline {subsection}{\numberline {4.17}Subarray Sum Queries II}{40}{subsection.4.17}%
+\contentsline {subsection}{\numberline {4.18}Visible Buildings Queries}{40}{subsection.4.18}%
+\contentsline {section}{\numberline {5}Tree Algorithms}{42}{section.5}%
+\contentsline {subsection}{\numberline {5.1}Company Queries I}{42}{subsection.5.1}%
+\contentsline {subsection}{\numberline {5.2}Company Queries II}{42}{subsection.5.2}%
+\contentsline {subsection}{\numberline {5.3}Counting Paths}{42}{subsection.5.3}%
+\contentsline {subsection}{\numberline {5.4}Distance Queries}{43}{subsection.5.4}%
+\contentsline {subsection}{\numberline {5.5}Distinct Colors}{43}{subsection.5.5}%
+\contentsline {subsection}{\numberline {5.6}Finding ACentroid}{44}{subsection.5.6}%
+\contentsline {subsection}{\numberline {5.7}Fixed-Length Paths I}{45}{subsection.5.7}%
+\contentsline {subsection}{\numberline {5.8}Path Queries}{45}{subsection.5.8}%
+\contentsline {subsection}{\numberline {5.9}Path Queries II}{46}{subsection.5.9}%
+\contentsline {subsection}{\numberline {5.10}Subordinates}{47}{subsection.5.10}%
+\contentsline {subsection}{\numberline {5.11}Subtree Queries}{47}{subsection.5.11}%
+\contentsline {subsection}{\numberline {5.12}Tree Diameter}{47}{subsection.5.12}%
+\contentsline {subsection}{\numberline {5.13}Tree Distances I}{48}{subsection.5.13}%
+\contentsline {subsection}{\numberline {5.14}Tree Distances II}{48}{subsection.5.14}%
+\contentsline {subsection}{\numberline {5.15}Tree Matching}{48}{subsection.5.15}%
+\contentsline {section}{\numberline {6}Mathematics}{50}{section.6}%
+\contentsline {subsection}{\numberline {6.1}Candy Lottery}{50}{subsection.6.1}%
+\contentsline {section}{\numberline {7}String Algorithms}{51}{section.7}%
+\contentsline {subsection}{\numberline {7.1}Counting Patterns}{51}{subsection.7.1}%
+\contentsline {subsection}{\numberline {7.2}Distinct Substrings}{51}{subsection.7.2}%
+\contentsline {subsection}{\numberline {7.3}Finding Borders}{51}{subsection.7.3}%
+\contentsline {subsection}{\numberline {7.4}Repeating Substring}{52}{subsection.7.4}%
+\contentsline {subsection}{\numberline {7.5}String Functions}{52}{subsection.7.5}%
+\contentsline {subsection}{\numberline {7.6}String Matching}{52}{subsection.7.6}%
+\contentsline {subsection}{\numberline {7.7}String Transform}{52}{subsection.7.7}%
+\contentsline {subsection}{\numberline {7.8}Substring Order I}{53}{subsection.7.8}%
+\contentsline {subsection}{\numberline {7.9}Substring Order II}{53}{subsection.7.9}%
+\contentsline {section}{\numberline {8}Advanced Techniques}{55}{section.8}%
+\contentsline {subsection}{\numberline {8.1}Distinct Routes II}{55}{subsection.8.1}%
+\contentsline {subsection}{\numberline {8.2}Eulerian Subgraphs}{55}{subsection.8.2}%
+\contentsline {subsection}{\numberline {8.3}Housesand Schools}{56}{subsection.8.3}%
+\contentsline {subsection}{\numberline {8.4}Longest Palindrome}{56}{subsection.8.4}%
+\contentsline {subsection}{\numberline {8.5}Monster Game}{56}{subsection.8.5}%
+\contentsline {subsection}{\numberline {8.6}Necessary Cities}{57}{subsection.8.6}%
+\contentsline {subsection}{\numberline {8.7}Necessary Roads}{57}{subsection.8.7}%
+\contentsline {subsection}{\numberline {8.8}Parcel Delivery}{58}{subsection.8.8}%
+\contentsline {subsection}{\numberline {8.9}Signal Processing}{59}{subsection.8.9}%
+\contentsline {subsection}{\numberline {8.10}Subarray Squares}{59}{subsection.8.10}%
+\contentsline {subsection}{\numberline {8.11}Substring Reversals}{59}{subsection.8.11}%
+\contentsline {section}{\numberline {9}Additional Problems I}{61}{section.9}%
+\contentsline {subsection}{\numberline {9.1}Beautiful Permutation II}{61}{subsection.9.1}%
+\contentsline {subsection}{\numberline {9.2}Distinct Values Sum}{61}{subsection.9.2}%
+\contentsline {subsection}{\numberline {9.3}Maximum Average Subarrays}{61}{subsection.9.3}%
+\contentsline {subsection}{\numberline {9.4}Maximum Building I}{62}{subsection.9.4}%
+\contentsline {subsection}{\numberline {9.5}Nearest Campsites I}{62}{subsection.9.5}%
+\contentsline {subsection}{\numberline {9.6}Nearest Campsites II}{63}{subsection.9.6}%
+\contentsline {subsection}{\numberline {9.7}Sorting Methods}{63}{subsection.9.7}%
+\contentsline {subsection}{\numberline {9.8}Swap Game}{64}{subsection.9.8}%
+\contentsline {subsection}{\numberline {9.9}Water Containers Moves}{64}{subsection.9.9}%
+\contentsline {subsection}{\numberline {9.10}Writing Numbers}{65}{subsection.9.10}%
+\contentsline {section}{\numberline {10}Additional Problems II}{67}{section.10}%
+\contentsline {subsection}{\numberline {10.1}Book Shop II}{67}{subsection.10.1}%
+\contentsline {subsection}{\numberline {10.2}Food Division}{67}{subsection.10.2}%
+\contentsline {subsection}{\numberline {10.3}GCDSubsets}{67}{subsection.10.3}%
+\contentsline {subsection}{\numberline {10.4}Grid Coloring II}{68}{subsection.10.4}%
+\contentsline {subsection}{\numberline {10.5}Increasing Array II}{68}{subsection.10.5}%
+\contentsline {subsection}{\numberline {10.6}KSubset Sums I}{69}{subsection.10.6}%
+\contentsline {subsection}{\numberline {10.7}KSubset Sums II}{69}{subsection.10.7}%
+\contentsline {subsection}{\numberline {10.8}Knight Moves Queries}{69}{subsection.10.8}%
+\contentsline {subsection}{\numberline {10.9}Maximum Building II}{70}{subsection.10.9}%
+\contentsline {subsection}{\numberline {10.10}Mex Grid Queries}{71}{subsection.10.10}%
+\contentsline {subsection}{\numberline {10.11}Minimum Cost Pairs}{71}{subsection.10.11}%
+\contentsline {subsection}{\numberline {10.12}Programmersand Artists}{71}{subsection.10.12}%
+\contentsline {subsection}{\numberline {10.13}School Excursion}{72}{subsection.10.13}%
+\contentsline {section}{\numberline {11}Advanced Graph Problems}{73}{section.11}%
+\contentsline {subsection}{\numberline {11.1}Acyclic Graph Edges}{73}{subsection.11.1}%
+\contentsline {subsection}{\numberline {11.2}Course Schedule II}{73}{subsection.11.2}%
+\contentsline {subsection}{\numberline {11.3}Even Outdegree Edges}{73}{subsection.11.3}%
+\contentsline {subsection}{\numberline {11.4}Graph Coloring}{73}{subsection.11.4}%
+\contentsline {subsection}{\numberline {11.5}Split Into Two Paths}{74}{subsection.11.5}%
+\contentsline {subsection}{\numberline {11.6}Strongly Connected Edges}{75}{subsection.11.6}%
+\contentsline {subsection}{\numberline {11.7}Tree Coin Collecting I}{75}{subsection.11.7}%
+\contentsline {subsection}{\numberline {11.8}Tree Coin Collecting II}{76}{subsection.11.8}%
+\contentsline {subsection}{\numberline {11.9}Tree Traversals}{77}{subsection.11.9}%
+\contentsline {section}{\numberline {12}Bitwise Operations}{78}{section.12}%
+\contentsline {subsection}{\numberline {12.1}All Subarray Xors}{78}{subsection.12.1}%
+\contentsline {subsection}{\numberline {12.2}And Subset Count}{78}{subsection.12.2}%
+\contentsline {subsection}{\numberline {12.3}Counting Bits}{78}{subsection.12.3}%
+\contentsline {subsection}{\numberline {12.4}KSubset Xors}{79}{subsection.12.4}%
+\contentsline {subsection}{\numberline {12.5}Maximum Xor Subarray}{79}{subsection.12.5}%
+\contentsline {subsection}{\numberline {12.6}Maximum Xor Subset}{80}{subsection.12.6}%
+\contentsline {subsection}{\numberline {12.7}Numberof Subset Xors}{80}{subsection.12.7}%
+\contentsline {subsection}{\numberline {12.8}SOSBit Problem}{81}{subsection.12.8}%
+\contentsline {subsection}{\numberline {12.9}Xor Pyramid Diagonal}{81}{subsection.12.9}%
+\contentsline {subsection}{\numberline {12.10}Xor Pyramid Peak}{81}{subsection.12.10}%
+\contentsline {subsection}{\numberline {12.11}Xor Pyramid Row}{81}{subsection.12.11}%
+\contentsline {section}{\numberline {13}Construction Problems}{83}{section.13}%
+\contentsline {subsection}{\numberline {13.1}Chess Tournament}{83}{subsection.13.1}%
+\contentsline {subsection}{\numberline {13.2}Inverse Inversions}{83}{subsection.13.2}%
+\contentsline {section}{\numberline {14}Counting Problems}{84}{section.14}%
+\contentsline {subsection}{\numberline {14.1}All Letter Subgrid Count I}{84}{subsection.14.1}%
+\contentsline {subsection}{\numberline {14.2}All Letter Subgrid Count II}{84}{subsection.14.2}%
+\contentsline {subsection}{\numberline {14.3}Counting Sequences}{84}{subsection.14.3}%
+\contentsline {subsection}{\numberline {14.4}Empty String}{85}{subsection.14.4}%
+\contentsline {subsection}{\numberline {14.5}Grid Paths II}{85}{subsection.14.5}%
+\contentsline {subsection}{\numberline {14.6}Permutation Inversions}{86}{subsection.14.6}%
+\contentsline {section}{\numberline {15}Sliding Window Problems}{87}{section.15}%
+\contentsline {subsection}{\numberline {15.1}Sliding Window Cost}{87}{subsection.15.1}%
+\contentsline {subsection}{\numberline {15.2}Sliding Window Median}{87}{subsection.15.2}%
+\contentsline {section}{\numberline {16}Sorting And Searching}{88}{section.16}%
+\contentsline {subsection}{\numberline {16.1}Apartments}{88}{subsection.16.1}%
+\contentsline {subsection}{\numberline {16.2}Array Division}{88}{subsection.16.2}%
+\contentsline {subsection}{\numberline {16.3}Collecting Numbers}{89}{subsection.16.3}%
+\contentsline {subsection}{\numberline {16.4}Collecting Numbers II}{89}{subsection.16.4}%
+\contentsline {subsection}{\numberline {16.5}Concert Tickets}{89}{subsection.16.5}%
+\contentsline {subsection}{\numberline {16.6}Distinct Numbers}{89}{subsection.16.6}%
+\contentsline {subsection}{\numberline {16.7}Distinct Values Subarrays}{90}{subsection.16.7}%
+\contentsline {subsection}{\numberline {16.8}Distinct Values Subarrays II}{90}{subsection.16.8}%
+\contentsline {subsection}{\numberline {16.9}Distinct Values Subsequences}{90}{subsection.16.9}%
+\contentsline {subsection}{\numberline {16.10}Factory Machines}{90}{subsection.16.10}%
+\contentsline {subsection}{\numberline {16.11}Ferris Wheel}{91}{subsection.16.11}%
+\contentsline {subsection}{\numberline {16.12}Josephus Problem I}{91}{subsection.16.12}%
+\contentsline {subsection}{\numberline {16.13}Josephus Problem II}{91}{subsection.16.13}%
+\contentsline {subsection}{\numberline {16.14}Maximum Subarray Sum}{92}{subsection.16.14}%
+\contentsline {subsection}{\numberline {16.15}Maximum Subarray Sum II}{92}{subsection.16.15}%
+\contentsline {subsection}{\numberline {16.16}Missing Coin Sum}{92}{subsection.16.16}%
+\contentsline {subsection}{\numberline {16.17}Movie Festival}{92}{subsection.16.17}%
+\contentsline {subsection}{\numberline {16.18}Movie Festival II}{93}{subsection.16.18}%
+\contentsline {subsection}{\numberline {16.19}Nearest Smaller Values}{93}{subsection.16.19}%
+\contentsline {subsection}{\numberline {16.20}Nested Ranges Check}{93}{subsection.16.20}%
+\contentsline {subsection}{\numberline {16.21}Nested Ranges Count}{94}{subsection.16.21}%
+\contentsline {subsection}{\numberline {16.22}Playlist}{94}{subsection.16.22}%
+\contentsline {subsection}{\numberline {16.23}Reading Books}{95}{subsection.16.23}%
+\contentsline {subsection}{\numberline {16.24}Restaurant Customers}{95}{subsection.16.24}%
+\contentsline {subsection}{\numberline {16.25}Room Alocation}{95}{subsection.16.25}%
+\contentsline {subsection}{\numberline {16.26}Stick Lengths}{95}{subsection.16.26}%
+\contentsline {subsection}{\numberline {16.27}Subarray Divisibility}{96}{subsection.16.27}%
+\contentsline {subsection}{\numberline {16.28}Subarray Sums I}{96}{subsection.16.28}%
+\contentsline {subsection}{\numberline {16.29}Subarray Sums II}{96}{subsection.16.29}%
+\contentsline {subsection}{\numberline {16.30}Sumof Four Values}{96}{subsection.16.30}%
+\contentsline {subsection}{\numberline {16.31}Sumof Three Values}{97}{subsection.16.31}%
+\contentsline {subsection}{\numberline {16.32}Sumof Two Values}{97}{subsection.16.32}%
+\contentsline {subsection}{\numberline {16.33}Tasksand Deadlines}{97}{subsection.16.33}%
+\contentsline {subsection}{\numberline {16.34}Towers}{97}{subsection.16.34}%
+\contentsline {subsection}{\numberline {16.35}Traffic Lights}{98}{subsection.16.35}%

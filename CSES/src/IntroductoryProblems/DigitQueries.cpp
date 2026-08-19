@@ -25,12 +25,6 @@ void solve(){
     pot /= 10;
     copia -= ant + 1;
  
-    //cout << dig << '\n';
-    //cout << pot << '\n';
-    //cout << copia << '\n';
- 
-    //cout << copia + pot << '\n';
- 
     string s = to_string(copia/dig + pot);
  
     cout << s[copia % dig] << '\n';

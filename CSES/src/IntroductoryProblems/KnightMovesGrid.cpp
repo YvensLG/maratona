@@ -13,8 +13,7 @@ int M[MAX][MAX];
 vector<pair<int, int>> horse = {{+1, +2}, {-1, +2}, {+1, -2}, {-1, -2},
                                 {+2, +1}, {-2, +1}, {+2, -1}, {-2, -1}};
  
-bool check(int x)
-{
+bool check(int x) {
     return (x >= 0 && x < n);
 }
  
@@ -42,21 +41,13 @@ void solve(){
     cin >> n;
  
     for(int i = 0; i < n; i++)
-    {
         for(int j = 0; j < n; j++)
-        {
            M[i][j] = -1;
-        }
-    }
  
     bfs(0,0);
  
-    for(int i = 0; i < n; i++)
-    {
-        for(int j = 0; j < n; j++)
-        {
-            cout << M[i][j] << ' ';
-        }
+    for(int i = 0; i < n; i++) {
+        for(int j = 0; j < n; j++) cout << M[i][j] << ' ';
         cout << '\n';
     }
 }

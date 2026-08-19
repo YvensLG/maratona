@@ -4,15 +4,11 @@ using namespace std;
 #define _ ios_base::sync_with_stdio(0); cin.tie(0); cout.tie(0);
 #define all(v) (v).begin(), (v).end()
  
-bool comparator(int a, int b)
-{
+bool comparator(int a, int b) {
 	cout << "? " << a << ' ' << b << endl;
-	string ans;
-    cin >> ans;
-    if(ans == "YES")
-        return true;
-    else
-        return false;
+	string ans; cin >> ans;
+    if(ans == "YES") return true;
+    else return false;
 }
  
 void solve() {

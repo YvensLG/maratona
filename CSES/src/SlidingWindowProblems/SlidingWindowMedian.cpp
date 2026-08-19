@@ -8,7 +8,7 @@ using namespace std;
 typedef long long int ll;
  
 const int maxn = 1010, inf = 2e9, M = 1e9 + 7;
-
+ 
 void fix(multiset<int>* m, multiset<int>* M){
     if((*m).size() < (*M).size()){
         (*m).insert(*(*M).begin());
@@ -26,16 +26,16 @@ void solve() {
     vector<int> v(n);
     
     for(int i = 0; i < n; i++) cin >> v[i];
-
+ 
     multiset<int> m, M;
-
+ 
     vector<int> aux(k);
     for(int i = 0; i < k; i++) aux[i] = v[i];
     sort(all(aux));
-
+ 
     for(int i = 0; i < (k + 1) / 2; i++) m.insert(aux[i]);
     for(int i = (k + 1) / 2; i < k; i++) M.insert(aux[i]);
-
+ 
     for(int i = 0; i < n - k + 1; i++){
         int rem = v[i];
         int add = v[i + k];
@@ -45,7 +45,7 @@ void solve() {
         if(rem <= a) m.erase(m.find(rem));
         else M.erase(M.find(rem));
         fix(&m, &M);
-
+ 
         if(M.empty()) m.insert(add);
         else{
             a = *M.begin();
@@ -56,7 +56,7 @@ void solve() {
         
     }
     cout << '\n';
-
+ 
 }
  
 int main() {

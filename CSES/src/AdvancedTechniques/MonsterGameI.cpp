@@ -17,24 +17,24 @@ typedef pair<int, int> pii;
 typedef vector<int> vi;
 typedef vector<ll> vl;
 typedef pair<ll, ll> pll;
-
+ 
 const int MAX = 2e5+1;
-
+ 
 // matar custa s_i * f tempo e vc recebe a forca f_i
 // dp[i] = resposta matando o monstro i
 // dp[n] = 0
 // dp[k] = min(s[l] * f[k] + dp[l]); k + 1 <= l <= n.
 // CHT em s[l] * x + dp[l]
-
+ 
 int dp[MAX], s[MAX], f[MAX];
 int n, x;
-
+ 
 struct Line {
 	mutable ll k, m, p;
 	bool operator<(const Line& o) const { return k < o.k; }
 	bool operator<(ll x) const { return p < x; }
 };
-
+ 
 struct LineContainer : multiset<Line, less<>> {
 	// (for doubles, use inf = 1/.0, div(a,b) = a/b)
 	static const ll inf = LLONG_MAX;
@@ -59,20 +59,20 @@ struct LineContainer : multiset<Line, less<>> {
 		return l.k * x + l.m;
 	}
 };
-
+ 
 void solve(){
     cin >> n >> x; dp[n] = 0;
     for(int i = 1; i <= n; i++) cin >> s[i]; s[0] = 0;
     for(int i = 1; i <= n; i++) cin >> f[i]; f[0] = x;
-
+ 
     LineContainer cht;
     cht.add(-s[n], -dp[n]);
-
+ 
     for(int at = n - 1; at >= 0; at--) {
         dp[at] = -cht.query(f[at]);
         cht.add(-s[at], -dp[at]);
     }
-
+ 
     cout << dp[0] << '\n';
 }
  

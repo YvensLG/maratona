@@ -1,6 +1,6 @@
 const int maxn = 1010, inf = 2e9, M = 1e9 + 7;
 
-const int INF = 1000000000000000000;
+const int INF = 1'000'000'000'000'000'000;
 vector<vector<pair<int, int>>> adj;
 
 void dijkstra(int s, vector<int> & d, vector<int> & p) {

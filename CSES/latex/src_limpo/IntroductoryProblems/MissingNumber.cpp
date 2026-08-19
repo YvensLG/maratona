@@ -3,7 +3,6 @@ const int maxn = 2e5 + 5, inf = 2e9, M = 1e9 + 7;
 int v[maxn];
 
 int main() {
-    // int t; cin >> t; while (t--)
     int n; cin >> n;
     v[0] = 1;
     for(int i = 0; i < n; i++){

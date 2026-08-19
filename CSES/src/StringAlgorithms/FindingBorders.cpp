@@ -9,14 +9,6 @@ using namespace std;
  
 typedef long long ll;
 
-// Z
-// 
-// z[i] = lcp(s, s[i..n))
-//
-// Complexidades:
-// z - O(|s|)
-// match - O(|s| + |p|)
-
 vector<int> get_z(string s) {
 	int n = s.size();
 	vector<int> z(n, 0);

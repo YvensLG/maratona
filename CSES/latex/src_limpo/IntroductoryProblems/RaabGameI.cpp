@@ -1,12 +1,8 @@
-bool comparator(int a, int b)
-{
+bool comparator(int a, int b) {
 	cout << "? " << a << ' ' << b << endl;
-	string ans;
-    cin >> ans;
-    if(ans == "YES")
-        return true;
-    else
-        return false;
+	string ans; cin >> ans;
+    if(ans == "YES") return true;
+    else return false;
 }
 
 void solve() {

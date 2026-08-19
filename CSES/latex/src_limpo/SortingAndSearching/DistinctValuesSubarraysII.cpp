@@ -17,9 +17,7 @@ void solve() {
     int dis = 0;
 
     while(p1 < n || p2 < n){
-        // cout << p1 << ' ' << p2 << '\n';
         if(p2 == n || (rep[v[p2]] == 0 && dis >= k)){
-            // cout << "A\n";
             rep[v[p1]] --;
             if(rep[v[p1]] == 0) dis --;
             cont += at;
@@ -27,14 +25,12 @@ void solve() {
             p1 ++;
         }
         else if(rep[v[p2]] == 0 && dis < k){
-            // cout << "B\n";
             rep[v[p2]] = 1;
             dis ++;
             at ++;
             p2 ++;
         }
         else{
-            // cout << "C\n";
             rep[v[p2]] ++;
             at ++;
             p2 ++;

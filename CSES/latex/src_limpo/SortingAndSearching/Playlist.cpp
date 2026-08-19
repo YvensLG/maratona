@@ -16,8 +16,6 @@ int main () { _
         k[i] = mp[x];
     }
 
-    // for(int x : k) cout << x << ' '; cout << '\n';
-
     vector<int> f(cnt+1);
     for(int i=0; i<=cnt; i++){
         f[i] = -1;

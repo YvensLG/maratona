@@ -1,7 +1,6 @@
 const int maxn = 2e5 + 5, inf = 2e9, M = 1e9 + 7;
 
 int main() {
-    // int t; cin >> t; while (t--)
     ll n; cin >> n;
     ll a = 0, total = 0;
 

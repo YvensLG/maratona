@@ -19,8 +19,6 @@ int main () { _
         dist.insert(y-m);
 
         p.insert(y);
-        // for(auto x : dist) cout << x << ' ';
-        // cout << '\n';
         cout << *dist.crbegin() << '\n';
     }
 

@@ -1,0 +1,20 @@
+Let $p(n,k)$ denote the $k$th permutation (in lexicographical order) of $1 \dots n$. For example, $p(4,1)=[1,2,3,4]$ and $p(4,2)=[1,2,4,3]$.
+Your task is to process two types of tests:
+
+Given $n$ and $k$, find $p(n,k)$
+Given $n$ and $p(n,k)$, find $k$
+
+\vspace{0.3cm}\noindent\textbf{Input}
+
+The first line has an integer $t$: the number of tests.
+Each test is either "1 $n$ $k$" or "2 $n$ $p(n,k)$".
+
+\vspace{0.3cm}\noindent\textbf{Output}
+
+For each test, print the answer according to the example.
+
+\vspace{0.3cm}\noindent\textbf{Constraints}
+
+\textbullet\ $1 \le t \le 1000$
+\textbullet\ $1 \le n \le 20$
+\textbullet\ $1 \le k \le n!$

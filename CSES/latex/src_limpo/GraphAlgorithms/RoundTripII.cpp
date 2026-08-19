@@ -1,4 +1,4 @@
-const int INF = 1000000000000000000;
+const int INF = 1'000'000'000'000'000'000;
 
 vector<vector<int>> adj;
 vector<int> vis, pai;

@@ -17,7 +17,6 @@ void solve(){
             if(k%2 == 1){
                 soma += p[num];
             }
-            //cout << "num: " << num << '\n';
             k /= 2;
             num ++;
         }

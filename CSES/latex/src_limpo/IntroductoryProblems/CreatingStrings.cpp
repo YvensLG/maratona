@@ -30,8 +30,3 @@ void solve(){
         cout << s << '\n';
     }
 }
-
-int main() {
-    //int t; cin >> t; for(int i = 1; i <= t; i++)
-    solve();
-    return 0;

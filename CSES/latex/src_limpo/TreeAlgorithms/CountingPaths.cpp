@@ -39,7 +39,6 @@ struct LCA {
 		tie(a, b) = minmax(time[a], time[b]);
 		return path[rmq.query(a, b)];
 	}
-	//dist(a,b){return depth[a] + depth[b] - 2*depth[lca(a,b)];}
 };
 
 void dfs(int v, int p) {

@@ -4,7 +4,6 @@ vi sz, down, up;
 int ans = 0;
 
 // queremos contar pra cima e pra baixo
-
 void dfs_down(int s, int p){
     sz[s] = 1;
     down[s] = 0;

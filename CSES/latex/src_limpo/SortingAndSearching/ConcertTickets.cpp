@@ -9,9 +9,6 @@ void solve() {
         h.insert(-a);
     }
 
-    // for(auto x : h) cout << -x << ' ';
-    // cout << '\n';
-
     for(int i=0; i<m; i++){
         int t; cin >> t;
         auto lwb = h.lower_bound(-t);
@@ -21,9 +18,5 @@ void solve() {
             cout << -*lwb << '\n';
             h.erase(lwb);
         }
-
-        // for(auto x : h) cout << -x << ' ';
-        // cout << '\n';
-
     }
 }

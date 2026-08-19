@@ -18,7 +18,6 @@ int d[MAX], par[MAX];
 int df, c1, c2 = -1;
 
 // queremos contar pra cima e pra baixo
-
 void center(){
     int f;
     function<void(int)> dfs = [&] (int v) {

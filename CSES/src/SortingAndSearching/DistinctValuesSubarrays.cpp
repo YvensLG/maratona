@@ -13,18 +13,14 @@ void solve(){
     int n; cin >> n;
     vector<int> x(n);
     
-    for(int i = 0; i < n; i++)
-        cin >> x[i];
+    for(int i = 0; i < n; i++) cin >> x[i];
  
     set<int> at;
     ll p1 = 0, p2 = 0;
- 
     ll ans = 0;
  
-    for(p1 = 0; p1 < n; p1++)
-    {
-        while(p2 < n && at.find(x[p2]) == at.end())
-        {
+    for(p1 = 0; p1 < n; p1++) {
+        while(p2 < n && at.find(x[p2]) == at.end()) {
             at.insert(x[p2]);
             p2++;
         }    

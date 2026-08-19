@@ -13,7 +13,6 @@ const int M = 1e9 + 7;
  
 int main () { _
 	int n; cin >> n;
- 
     multiset<int> s;
  
     for(int i = 0; i < n; i++){
@@ -24,7 +23,7 @@ int main () { _
             s.insert(x);
         }
     }
-        cout << s.size() << '\n';
+    cout << s.size() << '\n';
  
 	return 0;
 }

@@ -9,7 +9,6 @@ typedef long long int ll;
  
 const int maxn = 1010, inf = 2e9, M = 1e9 + 7;
  
- 
 void solve() {
     int n; cin >> n;
     vector<pair<int, int>> v;

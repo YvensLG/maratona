@@ -1,25 +1,16 @@
-# Nomes dos arquivos
-SCRIPT = gerador_cses.py
-TEX_FILE = caderno_cses.tex
-PDF_FILE = caderno_cses.pdf
-
-# Avisa o Make que essas palavras não são nomes de arquivos
-.PHONY: all caderno clean
-
-# Ação padrão se você digitar apenas "make"
-all: caderno
-
-# Comando principal: make caderno
 caderno:
-	@echo "==> Rodando o script Python (baixando enunciados)..."
-	python3 $(SCRIPT)
+	@echo "==> Preparando as pastas..."
+	@mkdir -p latex
+	@echo "==> Rodando o script Python..."
+	@python3 gerador_cses.py
 	@echo "==> Compilando o LaTeX (Passo 1/2)..."
-	pdflatex -interaction=nonstopmode $(TEX_FILE) > /dev/null
-	@echo "==> Compilando o LaTeX (Passo 2/2 para o sumário)..."
-	pdflatex -interaction=nonstopmode $(TEX_FILE) > /dev/null
-	@echo "==> Sucesso! $(PDF_FILE) gerado."
+	@cd latex && pdflatex -interaction=nonstopmode caderno_cses.tex > /dev/null
+	@echo "==> Compilando o LaTeX (Passo 2/2)..."
+	@cd latex && pdflatex -interaction=nonstopmode caderno_cses.tex > /dev/null
+	@echo "==> Trazendo o PDF para a raiz..."
+	@mv latex/caderno_cses.pdf .
+	@echo "Pronto! 'caderno_cses.pdf' gerado com sucesso."
 
-# Comando extra: make clean (para limpar o lixo do LaTeX)
 clean:
-	@echo "==> Limpando arquivos auxiliares..."
-	rm -f *.aux *.log *.toc *.out $(TEX_FILE)
+	@echo "==> Limpando os arquivos de compilação..."
+	@rm -rf latex caderno_cses.pdf

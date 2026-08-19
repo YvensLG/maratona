@@ -4,10 +4,10 @@ import time
 import requests
 from bs4 import BeautifulSoup
 
-# Configurações
-DIRETORIO_CSES = "." 
-DIRETORIO_ENUNCIADOS = "Enunciados"
-ARQUIVO_SAIDA = "caderno_cses.tex"
+# --- CONFIGURAÇÕES DO NOVO SISTEMA DE PASTAS ---
+DIRETORIO_CSES = "src" 
+DIRETORIO_ENUNCIADOS = "enunciados"
+ARQUIVO_SAIDA = "latex/caderno_cses.tex"
 
 HEADERS = {
     'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'
@@ -72,13 +72,10 @@ latex = [
     r"\usepackage{graphicx}",
     r"\usepackage{listings}",
     r"\usepackage{xcolor}",
-    # 1. Ajuste da margem do topo para dar espaço ao cabeçalho
     r"\usepackage[a4paper, landscape, left=1cm, right=1cm, top=1.5cm, bottom=1cm, headheight=15pt]{geometry}",
     r"\usepackage{multicol}",
     r"\usepackage{tocloft}",
     r"\usepackage[many]{tcolorbox}",
-    
-    # 2. Configuração do cabeçalho com número da página no topo
     r"\usepackage{fancyhdr}",
     r"\pagestyle{fancy}",
     r"\fancyhf{}", 
@@ -93,21 +90,18 @@ latex = [
     r"    \fancyhead[R]{\textbf{Página \thepage}}",
     r"    \renewcommand{\headrulewidth}{0.4pt}",
     r"}",
-    # ----------------------------------------------------
-
     r"\addtolength{\cftsecnumwidth}{0.5em}",      
     r"\addtolength{\cftsubsecnumwidth}{1.2em}",   
     r"\setlength{\columnseprule}{0.4pt}", 
     r"\setlength{\columnsep}{25pt}",      
     r"",
-    r"% --- CONFIGURAÇÃO DA CAIXA DO ENUNCIADO ---",
     r"\newtcolorbox{caixaenunciado}{",
-    r"    colback=gray!5, % Fundo cinza bem claro e elegante",
-    r"    colframe=gray!40, % Borda cinza um pouco mais escura",
-    r"    arc=2pt, % Cantos levemente arredondados",
-    r"    boxrule=0.5pt, % Espessura da borda",
+    r"    colback=gray!5,",
+    r"    colframe=gray!40,",
+    r"    arc=2pt,",
+    r"    boxrule=0.5pt,",
     r"    left=4pt, right=4pt, top=4pt, bottom=4pt,",
-    r"    breakable, % Essencial: permite que a caixa se divida em colunas",
+    r"    breakable,",
     r"    before skip=0.2cm, after skip=0.2cm",
     r"}",
     r"",
@@ -133,7 +127,7 @@ latex = [
     r"\begin{titlepage}",
     r"    \centering",
     r"    \vspace*{1.5cm}",
-    r"    \includegraphics[width=4.5cm]{unicamp.png} \par",
+    r"    \includegraphics[width=4.5cm]{../assets/unicamp.png} \par", # Caminho ajustado
     r"    \vspace{0.4cm}",
     r"    {\fontsize{16}{20}\selectfont Universidade Estadual de Campinas \par}",
     r"    \vspace{1.2cm}",
@@ -150,25 +144,24 @@ latex = [
     
     r"\begin{multicols*}{3}",
     r"\tableofcontents",
-    r"\end{multicols*}",         # <-- Fecha as colunas do sumário
-    r"\pagebreak",               # <-- Força a quebra de página
-    r"\begin{multicols*}{3}",    # <-- Reabre as colunas para o resto do caderno
+    r"\end{multicols*}",         
+    r"\pagebreak",               
+    r"\begin{multicols*}{3}", 
 ]
 
 try:
+    os.makedirs(os.path.dirname(ARQUIVO_SAIDA), exist_ok=True)
     pastas_locais = os.listdir(DIRETORIO_CSES)
     pastas_ordenadas = sorted(pastas_locais, key=lambda x: (obter_ordem(x), x))
 
-    # Variável para controlar a quebra de página
     primeira_secao = True
 
     for nome_pasta in pastas_ordenadas:
         caminho_pasta = os.path.join(DIRETORIO_CSES, nome_pasta)
         
-        if not os.path.isdir(caminho_pasta) or nome_pasta.startswith('.') or nome_pasta in ['__pycache__', DIRETORIO_ENUNCIADOS]:
+        if not os.path.isdir(caminho_pasta) or nome_pasta.startswith('.') or nome_pasta in ['__pycache__']:
             continue
         
-        # 3. Fecha as colunas, pula a página e reabre as colunas (exceto na primeira vez)
         if not primeira_secao:
             latex.append(r"\end{multicols*}")
             latex.append(r"\pagebreak")
@@ -198,8 +191,9 @@ try:
                 if os.path.exists(caminho_arquivo_enunciado) and os.path.getsize(caminho_arquivo_enunciado) > 0:
                     print(f"  [Cache] Lendo enunciado salvo: {titulo_bruto}")
                     caminho_latex_enunciado = caminho_arquivo_enunciado.replace('\\', '/')
+                    # Caminho ajustado:
                     latex.append(r"\begin{caixaenunciado}")
-                    latex.append(f"\\input{{{caminho_latex_enunciado}}}")
+                    latex.append(f"\\input{{../{caminho_latex_enunciado}}}")
                     latex.append(r"\end{caixaenunciado}")
                     
                 elif nome_normalizado in mapa_problemas:
@@ -254,8 +248,9 @@ try:
                                     f_enunc.write(enunciado_escapado)
                                     
                                 caminho_latex_enunciado = caminho_arquivo_enunciado.replace('\\', '/')
+                                # Caminho ajustado:
                                 latex.append(r"\begin{caixaenunciado}")
-                                latex.append(f"\\input{{{caminho_latex_enunciado}}}")
+                                latex.append(f"\\input{{../{caminho_latex_enunciado}}}")
                                 latex.append(r"\end{caixaenunciado}")
                             else:
                                 latex.append("Texto indisponível.")
@@ -271,8 +266,9 @@ try:
 
                 latex.append(r"\vspace{0.3cm}")
                 latex.append(r"\noindent\textbf{Código-fonte:}")
-                caminho_relativo_cpp = f"{nome_pasta}/{nome_arquivo}"
-                latex.append(f"\\lstinputlisting{{{caminho_relativo_cpp}}}")
+                # Caminho ajustado:
+                caminho_relativo_cpp = f"{DIRETORIO_CSES}/{nome_pasta}/{nome_arquivo}"
+                latex.append(f"\\lstinputlisting{{../{caminho_relativo_cpp}}}")
 
 except KeyboardInterrupt:
     print("\n\n[!] Interrompido (Ctrl+C)!")
@@ -282,4 +278,4 @@ finally:
     latex.append(r"\end{document}")
     with open(ARQUIVO_SAIDA, 'w', encoding='utf-8') as f:
         f.write("\n".join(latex))
-    print(f"\nPronto! Arquivo '{ARQUIVO_SAIDA}' gerado e salvo.")
+    print(f"\nPronto! Arquivo '{ARQUIVO_SAIDA}' gerado e salvo na pasta latex.")

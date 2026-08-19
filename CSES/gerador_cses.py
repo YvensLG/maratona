@@ -17,7 +17,6 @@ def normalizar_nome(texto):
     return re.sub(r'[^a-zA-Z0-9]', '', texto).lower()
 
 def escapar_latex(texto):
-    # Previne escape duplo
     texto = texto.replace('\\%', '%').replace('\\#', '#').replace('\\&', '&')
     caracteres = {'%': '\\%', '#': '\\#', '&': '\\&'}
     for char, escaped in caracteres.items():
@@ -40,28 +39,37 @@ for lista_tarefas in soup.find_all('ul', class_='task-list'):
         url = "https://cses.fi" + link['href']
         mapa_problemas[normalizar_nome(titulo)] = {'titulo': titulo, 'url': url}
 
+# ==============================================================
+# CABEÇALHO LATEX MODO KACTL (Paisagem, 3 Colunas, Article)
+# ==============================================================
 latex = [
-    r"\documentclass[a4paper,10pt,twocolumn]{report}",
+    r"\documentclass[8pt]{extarticle}",
     r"\usepackage[utf8]{inputenc}",
     r"\usepackage[T1]{fontenc}",
     r"\usepackage{amsmath, amssymb}",
+    r"\usepackage{graphicx}",                     # <-- NOVO: Pacote para carregar a logo
     r"\usepackage{listings}",
     r"\usepackage{xcolor}",
-    r"\usepackage[margin=1.5cm]{geometry}",
-    r"\setlength{\columnseprule}{0.4pt}",  # <-- Linha vertical separando as colunas
-    r"\setlength{\columnsep}{20pt}",       # <-- Mais espaço para o texto respirar
+    r"\usepackage[a4paper, landscape, margin=1cm]{geometry}",
+    r"\usepackage{multicol}",
+    r"\usepackage{tocloft}",                      
+    r"\addtolength{\cftsecnumwidth}{0.5em}",      
+    r"\addtolength{\cftsubsecnumwidth}{1.2em}",   
+    r"\setlength{\columnseprule}{0.4pt}", 
+    r"\setlength{\columnsep}{25pt}",      
     r"",
     r"\lstset{",
     r"    language=C++,",
-    r"    basicstyle=\ttfamily\scriptsize,",
+    r"    basicstyle=\ttfamily\footnotesize,", 
     r"    keywordstyle=\color{blue},",
     r"    commentstyle=\color{green!50!black},",
     r"    stringstyle=\color{red},",
     r"    numbers=left,",
     r"    numberstyle=\tiny,",
+    r"    numbersep=5pt,",                 
     r"    stepnumber=1,",
-    r"    xleftmargin=1.8em,",            # <-- Impede que os números da linha invadam o texto
-    r"    framexleftmargin=1.5em,",
+    r"    xleftmargin=2.0em,",             
+    r"    framexleftmargin=2.0em,",
     r"    breaklines=true,",
     r"    tabsize=4,",
     r"    extendedchars=true,",
@@ -69,19 +77,73 @@ latex = [
     r"}",
     r"",
     r"\begin{document}",
+    
+    # --- COMEÇO DA CAPA VIBE KACTL ---
+    r"\begin{titlepage}",
+    r"    \centering",
+    r"    \vspace*{1.5cm}",
+    r"    \includegraphics[width=4.5cm]{unicamp.png} \par",
+    r"    \vspace{0.4cm}",
+    r"    {\fontsize{16}{20}\selectfont Universidade Estadual de Campinas \par}",
+    r"    \vspace{1.2cm}",
+    r"    {\fontsize{42}{50}\selectfont Enemy Leo used Appeal! It's \par}",
+    r"    \vspace{0.2cm}",
+    r"    {\fontsize{42}{50}\selectfont super effective! Pikachu fainted! \par}",
+    r"    \vspace{1.5cm}",
+    r"    {\fontsize{20}{24}\selectfont \textbf{CSES Problem Set} \par}",
+    r"    \vspace{1cm}",
+    r"    {\fontsize{14}{18}\selectfont Pedro Assunção, Pedro Mesquita, Yvens Porto \par}",
+    r"    \vfill",
+    r"    {\fontsize{12}{14}\selectfont 2026-08-18 \par}",
+    r"\end{titlepage}",
+    # --- FIM DA CAPA ---
+
+    r"\begin{multicols*}{3}",
     r"\tableofcontents",
-    r"\newpage"
+    r"\vspace{0.5cm}\noindent\rule{\linewidth}{0.4pt}\vspace{0.5cm}",
 ]
 
+# A ordem exata que você quer que apareça no Sumário e no PDF
+ORDEM_CSES = [
+    "IntroductoryProblems",
+    "SortingAndSearching",
+    "DynamicProgramming",
+    "GraphAlgorithms",
+    "RangeQueries",
+    "TreeAlgorithms",
+    "Mathematics",
+    "StringAlgorithms",
+    "Geometry",
+    "AdvancedTechniques",
+    "SlidingWindowProblems",
+    "InteractiveProblems",
+    "BitwiseOperations",
+    "ConstructionProblems",
+    "AdvancedGraphProblems",
+    "CountingProblems",
+    "AdditionalProblemsI",
+    "AdditionalProblemsII",
+]
+
+def obter_ordem(nome):
+    try:
+        return ORDEM_CSES.index(nome)
+    except ValueError:
+        return 999 # Se criar uma pasta nova, ela vai pro final do PDF
+
 try:
-    for nome_pasta in sorted(os.listdir(DIRETORIO_CSES)):
+    pastas_locais = os.listdir(DIRETORIO_CSES)
+    # Ordena as pastas primeiro pela nossa lista VIP, depois por ordem alfabética
+    pastas_ordenadas = sorted(pastas_locais, key=lambda x: (obter_ordem(x), x))
+
+    for nome_pasta in pastas_ordenadas:
         caminho_pasta = os.path.join(DIRETORIO_CSES, nome_pasta)
         
         if not os.path.isdir(caminho_pasta) or nome_pasta.startswith('.') or nome_pasta in ['__pycache__', DIRETORIO_ENUNCIADOS]:
             continue
             
         titulo_capitulo = re.sub(r'([a-z])([A-Z])', r'\1 \2', nome_pasta)
-        latex.append(f"\n\\chapter{{{titulo_capitulo}}}")
+        latex.append(f"\n\\section{{{titulo_capitulo}}}") # Capítulos viram Seções
         
         pasta_destino_enunciado = os.path.join(DIRETORIO_ENUNCIADOS, nome_pasta)
         os.makedirs(pasta_destino_enunciado, exist_ok=True)
@@ -98,7 +160,7 @@ try:
                 
                 caminho_arquivo_enunciado = os.path.join(pasta_destino_enunciado, f"{nome_base}.tex")
                 
-                latex.append(f"\n\\section{{{titulo_exibicao}}}")
+                latex.append(f"\n\\subsection{{{titulo_exibicao}}}") # Seções viram Subseções
                 
                 if os.path.exists(caminho_arquivo_enunciado) and os.path.getsize(caminho_arquivo_enunciado) > 0:
                     print(f"  [Cache] Lendo enunciado salvo: {titulo_bruto}")
@@ -123,29 +185,24 @@ try:
                         div_conteudo = soup_prob.find('div', class_='content')
                         
                         if div_conteudo:
-                            # 1. ARRANCAR OS EXEMPLOS PELA RAIZ DO HTML
                             for header in div_conteudo.find_all(['h1', 'h2', 'h3', 'h4', 'b', 'strong']):
                                 texto_header = header.get_text().lower()
                                 if 'example' in texto_header or 'exemplo' in texto_header:
                                     curr = header
-                                    # Poda a partir do Example até o fim do div
                                     while curr:
                                         nxt = curr.next_sibling
                                         curr.extract()
                                         curr = nxt
                                     break
                             
-                            # 2. Proteger a Matemática
                             for math_span in div_conteudo.find_all('span', class_='math'):
                                 delimiter = "$$" if 'display' in math_span.get('class', []) else "$"
                                 math_span.replace_with(soup_prob.new_string(f"{delimiter}{math_span.get_text()}{delimiter}"))
                             
-                            # 3. Formatar Títulos (Input/Output/Constraints) com espaços no LaTeX
                             for header in div_conteudo.find_all(['h1', 'h2', 'h3']):
                                 txt = header.get_text().strip()
                                 header.replace_with(soup_prob.new_string(f"\n\n\\vspace{{0.3cm}}\\noindent\\textbf{{{txt}}}\n\n"))
                                 
-                            # 4. Formatar Listas em Bullet Points
                             for ul in div_conteudo.find_all('ul'):
                                 if 'task-constraints' in ul.get('class', []):
                                     ul.extract()
@@ -154,7 +211,6 @@ try:
                                 ul.replace_with(soup_prob.new_string("\n\n" + "\n".join(itens) + "\n\n"))
                                 
                             texto_extraido = div_conteudo.get_text()
-                            # Garante que os parágrafos tenham uma quebra dupla (exigência do LaTeX)
                             texto_extraido = re.sub(r'\n{3,}', '\n\n', texto_extraido).strip()
                             
                             if texto_extraido:
@@ -176,9 +232,8 @@ try:
                 else:
                     latex.append("Enunciado não encontrado no site.")
 
-                # Inserindo o código-fonte perfeitamente alinhado
                 latex.append(r"\vspace{0.3cm}")
-                latex.append(r"\noindent\textbf{Código-fonte:}")
+                #latex.append(r"\noindent\textbf{Código-fonte:}")
                 caminho_relativo_cpp = f"{nome_pasta}/{nome_arquivo}"
                 latex.append(f"\\lstinputlisting{{{caminho_relativo_cpp}}}")
 
@@ -186,6 +241,7 @@ except KeyboardInterrupt:
     print("\n\n[!] Interrompido (Ctrl+C)!")
 
 finally:
+    latex.append(r"\end{multicols*}") # Encerra as 3 colunas aqui!
     latex.append(r"\end{document}")
     with open(ARQUIVO_SAIDA, 'w', encoding='utf-8') as f:
         f.write("\n".join(latex))

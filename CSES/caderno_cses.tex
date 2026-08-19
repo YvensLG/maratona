@@ -1,24 +1,30 @@
-\documentclass[a4paper,10pt,twocolumn]{report}
+\documentclass[8pt]{extarticle}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
 \usepackage{amsmath, amssymb}
+\usepackage{graphicx}
 \usepackage{listings}
 \usepackage{xcolor}
-\usepackage[margin=1.5cm]{geometry}
+\usepackage[a4paper, landscape, margin=1cm]{geometry}
+\usepackage{multicol}
+\usepackage{tocloft}
+\addtolength{\cftsecnumwidth}{0.5em}
+\addtolength{\cftsubsecnumwidth}{1.2em}
 \setlength{\columnseprule}{0.4pt}
-\setlength{\columnsep}{20pt}
+\setlength{\columnsep}{25pt}
 
 \lstset{
     language=C++,
-    basicstyle=\ttfamily\scriptsize,
+    basicstyle=\ttfamily\footnotesize,
     keywordstyle=\color{blue},
     commentstyle=\color{green!50!black},
     stringstyle=\color{red},
     numbers=left,
     numberstyle=\tiny,
+    numbersep=5pt,
     stepnumber=1,
-    xleftmargin=1.8em,
-    framexleftmargin=1.5em,
+    xleftmargin=2.0em,
+    framexleftmargin=2.0em,
     breaklines=true,
     tabsize=4,
     extendedchars=true,
@@ -26,1394 +32,1182 @@
 }
 
 \begin{document}
+\begin{titlepage}
+    \centering
+    \vspace*{1.5cm}
+    \includegraphics[width=4.5cm]{unicamp.png} \par
+    \vspace{0.4cm}
+    {\fontsize{16}{20}\selectfont Universidade Estadual de Campinas \par}
+    \vspace{1.2cm}
+    {\fontsize{42}{50}\selectfont Enemy Leo used Appeal! It's \par}
+    \vspace{0.2cm}
+    {\fontsize{42}{50}\selectfont super effective! Pikachu fainted! \par}
+    \vspace{1.5cm}
+    {\fontsize{20}{24}\selectfont \textbf{CSES Problem Set} \par}
+    \vspace{1cm}
+    {\fontsize{14}{18}\selectfont Pedro Assunção, Pedro Mesquita, Yvens Porto \par}
+    \vfill
+    {\fontsize{12}{14}\selectfont 2026-08-18 \par}
+\end{titlepage}
+\begin{multicols*}{3}
 \tableofcontents
-\newpage
+\vspace{0.5cm}\noindent\rule{\linewidth}{0.4pt}\vspace{0.5cm}
 
-\chapter{Additional Problems I}
+\section{Introductory Problems}
 
-\section{Beautiful Permutation II}
-\input{Enunciados/AdditionalProblemsI/BeautifulPermutationII.tex}
-\vspace{0.3cm}
-\noindent\textbf{Código-fonte:}
-\lstinputlisting{AdditionalProblemsI/BeautifulPermutationII.cpp}
-
-\section{Distinct Values Sum}
-\input{Enunciados/AdditionalProblemsI/DistinctValuesSum.tex}
-\vspace{0.3cm}
-\noindent\textbf{Código-fonte:}
-\lstinputlisting{AdditionalProblemsI/DistinctValuesSum.cpp}
-
-\section{Maximum Average Subarrays}
-\input{Enunciados/AdditionalProblemsI/MaximumAverageSubarrays.tex}
-\vspace{0.3cm}
-\noindent\textbf{Código-fonte:}
-\lstinputlisting{AdditionalProblemsI/MaximumAverageSubarrays.cpp}
-
-\section{Maximum Building I}
-\input{Enunciados/AdditionalProblemsI/MaximumBuildingI.tex}
-\vspace{0.3cm}
-\noindent\textbf{Código-fonte:}
-\lstinputlisting{AdditionalProblemsI/MaximumBuildingI.cpp}
-
-\section{Nearest Campsites I}
-\input{Enunciados/AdditionalProblemsI/NearestCampsitesI.tex}
-\vspace{0.3cm}
-\noindent\textbf{Código-fonte:}
-\lstinputlisting{AdditionalProblemsI/NearestCampsitesI.cpp}
-
-\section{Nearest Campsites II}
-\input{Enunciados/AdditionalProblemsI/NearestCampsitesII.tex}
-\vspace{0.3cm}
-\noindent\textbf{Código-fonte:}
-\lstinputlisting{AdditionalProblemsI/NearestCampsitesII.cpp}
-
-\section{Sorting Methods}
-\input{Enunciados/AdditionalProblemsI/SortingMethods.tex}
-\vspace{0.3cm}
-\noindent\textbf{Código-fonte:}
-\lstinputlisting{AdditionalProblemsI/SortingMethods.cpp}
-
-\section{Swap Game}
-\input{Enunciados/AdditionalProblemsI/SwapGame.tex}
-\vspace{0.3cm}
-\noindent\textbf{Código-fonte:}
-\lstinputlisting{AdditionalProblemsI/SwapGame.cpp}
-
-\section{Water Containers Moves}
-\input{Enunciados/AdditionalProblemsI/WaterContainersMoves.tex}
-\vspace{0.3cm}
-\noindent\textbf{Código-fonte:}
-\lstinputlisting{AdditionalProblemsI/WaterContainersMoves.cpp}
-
-\section{Writing Numbers}
-\input{Enunciados/AdditionalProblemsI/WritingNumbers.tex}
-\vspace{0.3cm}
-\noindent\textbf{Código-fonte:}
-\lstinputlisting{AdditionalProblemsI/WritingNumbers.cpp}
-
-\chapter{Additional Problems II}
-
-\section{Book Shop II}
-\input{Enunciados/AdditionalProblemsII/BookShopII.tex}
-\vspace{0.3cm}
-\noindent\textbf{Código-fonte:}
-\lstinputlisting{AdditionalProblemsII/BookShopII.cpp}
-
-\section{Food Division}
-\input{Enunciados/AdditionalProblemsII/FoodDivision.tex}
-\vspace{0.3cm}
-\noindent\textbf{Código-fonte:}
-\lstinputlisting{AdditionalProblemsII/FoodDivision.cpp}
-
-\section{GCDSubsets}
-\input{Enunciados/AdditionalProblemsII/GCDSubsets.tex}
-\vspace{0.3cm}
-\noindent\textbf{Código-fonte:}
-\lstinputlisting{AdditionalProblemsII/GCDSubsets.cpp}
-
-\section{Grid Coloring II}
-\input{Enunciados/AdditionalProblemsII/GridColoringII.tex}
-\vspace{0.3cm}
-\noindent\textbf{Código-fonte:}
-\lstinputlisting{AdditionalProblemsII/GridColoringII.cpp}
-
-\section{Increasing Array II}
-\input{Enunciados/AdditionalProblemsII/IncreasingArrayII.tex}
-\vspace{0.3cm}
-\noindent\textbf{Código-fonte:}
-\lstinputlisting{AdditionalProblemsII/IncreasingArrayII.cpp}
-
-\section{KSubset Sums I}
-\input{Enunciados/AdditionalProblemsII/KSubsetSumsI.tex}
-\vspace{0.3cm}
-\noindent\textbf{Código-fonte:}
-\lstinputlisting{AdditionalProblemsII/KSubsetSumsI.cpp}
-
-\section{KSubset Sums II}
-\input{Enunciados/AdditionalProblemsII/KSubsetSumsII.tex}
-\vspace{0.3cm}
-\noindent\textbf{Código-fonte:}
-\lstinputlisting{AdditionalProblemsII/KSubsetSumsII.cpp}
-
-\section{Knight Moves Queries}
-\input{Enunciados/AdditionalProblemsII/KnightMovesQueries.tex}
-\vspace{0.3cm}
-\noindent\textbf{Código-fonte:}
-\lstinputlisting{AdditionalProblemsII/KnightMovesQueries.cpp}
-
-\section{Maximum Building II}
-\input{Enunciados/AdditionalProblemsII/MaximumBuildingII.tex}
-\vspace{0.3cm}
-\noindent\textbf{Código-fonte:}
-\lstinputlisting{AdditionalProblemsII/MaximumBuildingII.cpp}
-
-\section{Mex Grid Queries}
-\input{Enunciados/AdditionalProblemsII/MexGridQueries.tex}
-\vspace{0.3cm}
-\noindent\textbf{Código-fonte:}
-\lstinputlisting{AdditionalProblemsII/MexGridQueries.cpp}
-
-\section{Minimum Cost Pairs}
-\input{Enunciados/AdditionalProblemsII/MinimumCostPairs.tex}
-\vspace{0.3cm}
-\noindent\textbf{Código-fonte:}
-\lstinputlisting{AdditionalProblemsII/MinimumCostPairs.cpp}
-
-\section{Programmersand Artists}
-\input{Enunciados/AdditionalProblemsII/ProgrammersandArtists.tex}
-\vspace{0.3cm}
-\noindent\textbf{Código-fonte:}
-\lstinputlisting{AdditionalProblemsII/ProgrammersandArtists.cpp}
-
-\section{School Excursion}
-\input{Enunciados/AdditionalProblemsII/SchoolExcursion.tex}
-\vspace{0.3cm}
-\noindent\textbf{Código-fonte:}
-\lstinputlisting{AdditionalProblemsII/SchoolExcursion.cpp}
-
-\chapter{Advanced Graph Problems}
-
-\section{Acyclic Graph Edges}
-\input{Enunciados/AdvancedGraphProblems/AcyclicGraphEdges.tex}
-\vspace{0.3cm}
-\noindent\textbf{Código-fonte:}
-\lstinputlisting{AdvancedGraphProblems/AcyclicGraphEdges.cpp}
-
-\section{Course Schedule II}
-\input{Enunciados/AdvancedGraphProblems/CourseScheduleII.tex}
-\vspace{0.3cm}
-\noindent\textbf{Código-fonte:}
-\lstinputlisting{AdvancedGraphProblems/CourseScheduleII.cpp}
-
-\section{Even Outdegree Edges}
-\input{Enunciados/AdvancedGraphProblems/EvenOutdegreeEdges.tex}
-\vspace{0.3cm}
-\noindent\textbf{Código-fonte:}
-\lstinputlisting{AdvancedGraphProblems/EvenOutdegreeEdges.cpp}
-
-\section{Graph Coloring}
-\input{Enunciados/AdvancedGraphProblems/GraphColoring.tex}
-\vspace{0.3cm}
-\noindent\textbf{Código-fonte:}
-\lstinputlisting{AdvancedGraphProblems/GraphColoring.cpp}
-
-\section{Split Into Two Paths}
-\input{Enunciados/AdvancedGraphProblems/SplitIntoTwoPaths.tex}
-\vspace{0.3cm}
-\noindent\textbf{Código-fonte:}
-\lstinputlisting{AdvancedGraphProblems/SplitIntoTwoPaths.cpp}
-
-\section{Splitinto Two Paths}
-\input{Enunciados/AdvancedGraphProblems/SplitintoTwoPaths.tex}
-\vspace{0.3cm}
-\noindent\textbf{Código-fonte:}
-\lstinputlisting{AdvancedGraphProblems/SplitintoTwoPaths.cpp}
-
-\section{Strongly Connected Edges}
-\input{Enunciados/AdvancedGraphProblems/StronglyConnectedEdges.tex}
-\vspace{0.3cm}
-\noindent\textbf{Código-fonte:}
-\lstinputlisting{AdvancedGraphProblems/StronglyConnectedEdges.cpp}
-
-\section{Tree Coin Collecting I}
-\input{Enunciados/AdvancedGraphProblems/TreeCoinCollectingI.tex}
-\vspace{0.3cm}
-\noindent\textbf{Código-fonte:}
-\lstinputlisting{AdvancedGraphProblems/TreeCoinCollectingI.cpp}
-
-\section{Tree Coin Collecting II}
-\input{Enunciados/AdvancedGraphProblems/TreeCoinCollectingII.tex}
-\vspace{0.3cm}
-\noindent\textbf{Código-fonte:}
-\lstinputlisting{AdvancedGraphProblems/TreeCoinCollectingII.cpp}
-
-\section{Tree Traversals}
-\input{Enunciados/AdvancedGraphProblems/TreeTraversals.tex}
-\vspace{0.3cm}
-\noindent\textbf{Código-fonte:}
-\lstinputlisting{AdvancedGraphProblems/TreeTraversals.cpp}
-
-\chapter{Advanced Techniques}
-
-\section{Distinct Routes II}
-\input{Enunciados/AdvancedTechniques/DistinctRoutesII.tex}
-\vspace{0.3cm}
-\noindent\textbf{Código-fonte:}
-\lstinputlisting{AdvancedTechniques/DistinctRoutesII.cpp}
-
-\section{Eulerian Subgraphs}
-\input{Enunciados/AdvancedTechniques/EulerianSubgraphs.tex}
-\vspace{0.3cm}
-\noindent\textbf{Código-fonte:}
-\lstinputlisting{AdvancedTechniques/EulerianSubgraphs.cpp}
-
-\section{Housesand Schools}
-\input{Enunciados/AdvancedTechniques/HousesandSchools.tex}
-\vspace{0.3cm}
-\noindent\textbf{Código-fonte:}
-\lstinputlisting{AdvancedTechniques/HousesandSchools.cpp}
-
-\section{Longest Palindrome}
-\input{Enunciados/AdvancedTechniques/LongestPalindrome.tex}
-\vspace{0.3cm}
-\noindent\textbf{Código-fonte:}
-\lstinputlisting{AdvancedTechniques/LongestPalindrome.cpp}
-
-\section{Monster Game}
-Enunciado não encontrado no site.
-\vspace{0.3cm}
-\noindent\textbf{Código-fonte:}
-\lstinputlisting{AdvancedTechniques/MonsterGame.cpp}
-
-\section{Necessary Cities}
-\input{Enunciados/AdvancedTechniques/NecessaryCities.tex}
-\vspace{0.3cm}
-\noindent\textbf{Código-fonte:}
-\lstinputlisting{AdvancedTechniques/NecessaryCities.cpp}
-
-\section{Necessary Roads}
-\input{Enunciados/AdvancedTechniques/NecessaryRoads.tex}
-\vspace{0.3cm}
-\noindent\textbf{Código-fonte:}
-\lstinputlisting{AdvancedTechniques/NecessaryRoads.cpp}
-
-\section{Parcel Delivery}
-\input{Enunciados/AdvancedTechniques/ParcelDelivery.tex}
-\vspace{0.3cm}
-\noindent\textbf{Código-fonte:}
-\lstinputlisting{AdvancedTechniques/ParcelDelivery.cpp}
-
-\section{Signal Processing}
-\input{Enunciados/AdvancedTechniques/SignalProcessing.tex}
-\vspace{0.3cm}
-\noindent\textbf{Código-fonte:}
-\lstinputlisting{AdvancedTechniques/SignalProcessing.cpp}
-
-\section{Subarray Squares}
-\input{Enunciados/AdvancedTechniques/SubarraySquares.tex}
-\vspace{0.3cm}
-\noindent\textbf{Código-fonte:}
-\lstinputlisting{AdvancedTechniques/SubarraySquares.cpp}
-
-\section{Substring Reversals}
-\input{Enunciados/AdvancedTechniques/SubstringReversals.tex}
-\vspace{0.3cm}
-\noindent\textbf{Código-fonte:}
-\lstinputlisting{AdvancedTechniques/SubstringReversals.cpp}
-
-\chapter{Bitwise Operations}
-
-\section{All Subarray Xors}
-\input{Enunciados/BitwiseOperations/AllSubarrayXors.tex}
-\vspace{0.3cm}
-\noindent\textbf{Código-fonte:}
-\lstinputlisting{BitwiseOperations/AllSubarrayXors.cpp}
-
-\section{And Subset Count}
-\input{Enunciados/BitwiseOperations/AndSubsetCount.tex}
-\vspace{0.3cm}
-\noindent\textbf{Código-fonte:}
-\lstinputlisting{BitwiseOperations/AndSubsetCount.cpp}
-
-\section{Counting Bits}
-\input{Enunciados/BitwiseOperations/CountingBits.tex}
-\vspace{0.3cm}
-\noindent\textbf{Código-fonte:}
-\lstinputlisting{BitwiseOperations/CountingBits.cpp}
-
-\section{KSubset Xors}
-\input{Enunciados/BitwiseOperations/KSubsetXors.tex}
-\vspace{0.3cm}
-\noindent\textbf{Código-fonte:}
-\lstinputlisting{BitwiseOperations/KSubsetXors.cpp}
-
-\section{Maximum Xor Subarray}
-\input{Enunciados/BitwiseOperations/MaximumXorSubarray.tex}
-\vspace{0.3cm}
-\noindent\textbf{Código-fonte:}
-\lstinputlisting{BitwiseOperations/MaximumXorSubarray.cpp}
-
-\section{Maximum Xor Subset}
-\input{Enunciados/BitwiseOperations/MaximumXorSubset.tex}
-\vspace{0.3cm}
-\noindent\textbf{Código-fonte:}
-\lstinputlisting{BitwiseOperations/MaximumXorSubset.cpp}
-
-\section{Numberof Subset Xors}
-\input{Enunciados/BitwiseOperations/NumberofSubsetXors.tex}
-\vspace{0.3cm}
-\noindent\textbf{Código-fonte:}
-\lstinputlisting{BitwiseOperations/NumberofSubsetXors.cpp}
-
-\section{SOSBit Problem}
-\input{Enunciados/BitwiseOperations/SOSBitProblem.tex}
-\vspace{0.3cm}
-\noindent\textbf{Código-fonte:}
-\lstinputlisting{BitwiseOperations/SOSBitProblem.cpp}
-
-\section{Xor Pyramid Diagonal}
-\input{Enunciados/BitwiseOperations/XorPyramidDiagonal.tex}
-\vspace{0.3cm}
-\noindent\textbf{Código-fonte:}
-\lstinputlisting{BitwiseOperations/XorPyramidDiagonal.cpp}
-
-\section{Xor Pyramid Peak}
-\input{Enunciados/BitwiseOperations/XorPyramidPeak.tex}
-\vspace{0.3cm}
-\noindent\textbf{Código-fonte:}
-\lstinputlisting{BitwiseOperations/XorPyramidPeak.cpp}
-
-\section{Xor Pyramid Row}
-\input{Enunciados/BitwiseOperations/XorPyramidRow.tex}
-\vspace{0.3cm}
-\noindent\textbf{Código-fonte:}
-\lstinputlisting{BitwiseOperations/XorPyramidRow.cpp}
-
-\chapter{Construction Problems}
-
-\section{Chess Tournament}
-\input{Enunciados/ConstructionProblems/ChessTournament.tex}
-\vspace{0.3cm}
-\noindent\textbf{Código-fonte:}
-\lstinputlisting{ConstructionProblems/ChessTournament.cpp}
-
-\section{Inverse Inversions}
-\input{Enunciados/ConstructionProblems/InverseInversions.tex}
-\vspace{0.3cm}
-\noindent\textbf{Código-fonte:}
-\lstinputlisting{ConstructionProblems/InverseInversions.cpp}
-
-\chapter{Counting Problems}
-
-\section{All Letter Subgrid Count I}
-\input{Enunciados/CountingProblems/AllLetterSubgridCountI.tex}
-\vspace{0.3cm}
-\noindent\textbf{Código-fonte:}
-\lstinputlisting{CountingProblems/AllLetterSubgridCountI.cpp}
-
-\section{All Letter Subgrid Count II}
-\input{Enunciados/CountingProblems/AllLetterSubgridCountII.tex}
-\vspace{0.3cm}
-\noindent\textbf{Código-fonte:}
-\lstinputlisting{CountingProblems/AllLetterSubgridCountII.cpp}
-
-\section{Counting Sequences}
-\input{Enunciados/CountingProblems/CountingSequences.tex}
-\vspace{0.3cm}
-\noindent\textbf{Código-fonte:}
-\lstinputlisting{CountingProblems/CountingSequences.cpp}
-
-\section{Empty String}
-\input{Enunciados/CountingProblems/EmptyString.tex}
-\vspace{0.3cm}
-\noindent\textbf{Código-fonte:}
-\lstinputlisting{CountingProblems/EmptyString.cpp}
-
-\section{Grid Paths II}
-\input{Enunciados/CountingProblems/GridPathsII.tex}
-\vspace{0.3cm}
-\noindent\textbf{Código-fonte:}
-\lstinputlisting{CountingProblems/GridPathsII.cpp}
-
-\section{Permutation Inversions}
-\input{Enunciados/CountingProblems/PermutationInversions.tex}
-\vspace{0.3cm}
-\noindent\textbf{Código-fonte:}
-\lstinputlisting{CountingProblems/PermutationInversions.cpp}
-
-\chapter{Dynamic Programming}
-
-\section{Array Description}
-\input{Enunciados/DynamicProgramming/ArrayDescription.tex}
-\vspace{0.3cm}
-\noindent\textbf{Código-fonte:}
-\lstinputlisting{DynamicProgramming/ArrayDescription.cpp}
-
-\section{Book Shop}
-\input{Enunciados/DynamicProgramming/BookShop.tex}
-\vspace{0.3cm}
-\noindent\textbf{Código-fonte:}
-\lstinputlisting{DynamicProgramming/BookShop.cpp}
-
-\section{Coin Combinations I}
-\input{Enunciados/DynamicProgramming/CoinCombinationsI.tex}
-\vspace{0.3cm}
-\noindent\textbf{Código-fonte:}
-\lstinputlisting{DynamicProgramming/CoinCombinationsI.cpp}
-
-\section{Coin Combinations II}
-\input{Enunciados/DynamicProgramming/CoinCombinationsII.tex}
-\vspace{0.3cm}
-\noindent\textbf{Código-fonte:}
-\lstinputlisting{DynamicProgramming/CoinCombinationsII.cpp}
-
-\section{Counting Numbers}
-\input{Enunciados/DynamicProgramming/CountingNumbers.tex}
-\vspace{0.3cm}
-\noindent\textbf{Código-fonte:}
-\lstinputlisting{DynamicProgramming/CountingNumbers.cpp}
-
-\section{Counting Tiling}
-Enunciado não encontrado no site.
-\vspace{0.3cm}
-\noindent\textbf{Código-fonte:}
-\lstinputlisting{DynamicProgramming/CountingTiling.cpp}
-
-\section{Counting Towers}
-\input{Enunciados/DynamicProgramming/CountingTowers.tex}
-\vspace{0.3cm}
-\noindent\textbf{Código-fonte:}
-\lstinputlisting{DynamicProgramming/CountingTowers.cpp}
-
-\section{Dice Combinations}
-\input{Enunciados/DynamicProgramming/DiceCombinations.tex}
-\vspace{0.3cm}
-\noindent\textbf{Código-fonte:}
-\lstinputlisting{DynamicProgramming/DiceCombinations.cpp}
-
-\section{Edit Distance}
-\input{Enunciados/DynamicProgramming/EditDistance.tex}
-\vspace{0.3cm}
-\noindent\textbf{Código-fonte:}
-\lstinputlisting{DynamicProgramming/EditDistance.cpp}
-
-\section{Elevator Rides}
-\input{Enunciados/DynamicProgramming/ElevatorRides.tex}
-\vspace{0.3cm}
-\noindent\textbf{Código-fonte:}
-\lstinputlisting{DynamicProgramming/ElevatorRides.cpp}
-
-\section{Grid Paths I}
-\input{Enunciados/DynamicProgramming/GridPathsI.tex}
-\vspace{0.3cm}
-\noindent\textbf{Código-fonte:}
-\lstinputlisting{DynamicProgramming/GridPathsI.cpp}
-
-\section{Increasing Subsequence}
-\input{Enunciados/DynamicProgramming/IncreasingSubsequence.tex}
-\vspace{0.3cm}
-\noindent\textbf{Código-fonte:}
-\lstinputlisting{DynamicProgramming/IncreasingSubsequence.cpp}
-
-\section{Increasing Subsequence II}
-\input{Enunciados/DynamicProgramming/IncreasingSubsequenceII.tex}
-\vspace{0.3cm}
-\noindent\textbf{Código-fonte:}
-\lstinputlisting{DynamicProgramming/IncreasingSubsequenceII.cpp}
-
-\section{Longest Common Subsequence}
-\input{Enunciados/DynamicProgramming/LongestCommonSubsequence.tex}
-\vspace{0.3cm}
-\noindent\textbf{Código-fonte:}
-\lstinputlisting{DynamicProgramming/LongestCommonSubsequence.cpp}
-
-\section{Minimal Grid Path}
-\input{Enunciados/DynamicProgramming/MinimalGridPath.tex}
-\vspace{0.3cm}
-\noindent\textbf{Código-fonte:}
-\lstinputlisting{DynamicProgramming/MinimalGridPath.cpp}
-
-\section{Minimizing Coins}
-\input{Enunciados/DynamicProgramming/MinimizingCoins.tex}
-\vspace{0.3cm}
-\noindent\textbf{Código-fonte:}
-\lstinputlisting{DynamicProgramming/MinimizingCoins.cpp}
-
-\section{Money Sums}
-\input{Enunciados/DynamicProgramming/MoneySums.tex}
-\vspace{0.3cm}
-\noindent\textbf{Código-fonte:}
-\lstinputlisting{DynamicProgramming/MoneySums.cpp}
-
-\section{Mountain Range}
-\input{Enunciados/DynamicProgramming/MountainRange.tex}
-\vspace{0.3cm}
-\noindent\textbf{Código-fonte:}
-\lstinputlisting{DynamicProgramming/MountainRange.cpp}
-
-\section{Projects}
-\input{Enunciados/DynamicProgramming/Projects.tex}
-\vspace{0.3cm}
-\noindent\textbf{Código-fonte:}
-\lstinputlisting{DynamicProgramming/Projects.cpp}
-
-\section{Rectangle Cutting}
-\input{Enunciados/DynamicProgramming/RectangleCutting.tex}
-\vspace{0.3cm}
-\noindent\textbf{Código-fonte:}
-\lstinputlisting{DynamicProgramming/RectangleCutting.cpp}
-
-\section{Removal Game}
-\input{Enunciados/DynamicProgramming/RemovalGame.tex}
-\vspace{0.3cm}
-\noindent\textbf{Código-fonte:}
-\lstinputlisting{DynamicProgramming/RemovalGame.cpp}
-
-\section{Removing Digits}
-\input{Enunciados/DynamicProgramming/RemovingDigits.tex}
-\vspace{0.3cm}
-\noindent\textbf{Código-fonte:}
-\lstinputlisting{DynamicProgramming/RemovingDigits.cpp}
-
-\section{Two Sets II}
-\input{Enunciados/DynamicProgramming/TwoSetsII.tex}
-\vspace{0.3cm}
-\noindent\textbf{Código-fonte:}
-\lstinputlisting{DynamicProgramming/TwoSetsII.cpp}
-
-\chapter{Graph Algorithms}
-
-\section{Building Roads}
-\input{Enunciados/GraphAlgorithms/BuildingRoads.tex}
-\vspace{0.3cm}
-\noindent\textbf{Código-fonte:}
-\lstinputlisting{GraphAlgorithms/BuildingRoads.cpp}
-
-\section{Building Teams}
-\input{Enunciados/GraphAlgorithms/BuildingTeams.tex}
-\vspace{0.3cm}
-\noindent\textbf{Código-fonte:}
-\lstinputlisting{GraphAlgorithms/BuildingTeams.cpp}
-
-\section{Coin Collector}
-\input{Enunciados/GraphAlgorithms/CoinCollector.tex}
-\vspace{0.3cm}
-\noindent\textbf{Código-fonte:}
-\lstinputlisting{GraphAlgorithms/CoinCollector.cpp}
-
-\section{Counting Rooms}
-\input{Enunciados/GraphAlgorithms/CountingRooms.tex}
-\vspace{0.3cm}
-\noindent\textbf{Código-fonte:}
-\lstinputlisting{GraphAlgorithms/CountingRooms.cpp}
-
-\section{Course Schedule}
-\input{Enunciados/GraphAlgorithms/CourseSchedule.tex}
-\vspace{0.3cm}
-\noindent\textbf{Código-fonte:}
-\lstinputlisting{GraphAlgorithms/CourseSchedule.cpp}
-
-\section{Cycle Finding}
-\input{Enunciados/GraphAlgorithms/CycleFinding.tex}
-\vspace{0.3cm}
-\noindent\textbf{Código-fonte:}
-\lstinputlisting{GraphAlgorithms/CycleFinding.cpp}
-
-\section{De Bruijn Sequence}
-\input{Enunciados/GraphAlgorithms/DeBruijnSequence.tex}
-\vspace{0.3cm}
-\noindent\textbf{Código-fonte:}
-\lstinputlisting{GraphAlgorithms/DeBruijnSequence.cpp}
-
-\section{Distinct Routes}
-\input{Enunciados/GraphAlgorithms/DistinctRoutes.tex}
-\vspace{0.3cm}
-\noindent\textbf{Código-fonte:}
-\lstinputlisting{GraphAlgorithms/DistinctRoutes.cpp}
-
-\section{Download Speed}
-\input{Enunciados/GraphAlgorithms/DownloadSpeed.tex}
-\vspace{0.3cm}
-\noindent\textbf{Código-fonte:}
-\lstinputlisting{GraphAlgorithms/DownloadSpeed.cpp}
-
-\section{Flight Discount}
-\input{Enunciados/GraphAlgorithms/FlightDiscount.tex}
-\vspace{0.3cm}
-\noindent\textbf{Código-fonte:}
-\lstinputlisting{GraphAlgorithms/FlightDiscount.cpp}
-
-\section{Flight Routes}
-\input{Enunciados/GraphAlgorithms/FlightRoutes.tex}
-\vspace{0.3cm}
-\noindent\textbf{Código-fonte:}
-\lstinputlisting{GraphAlgorithms/FlightRoutes.cpp}
-
-\section{Flight Routes Check}
-\input{Enunciados/GraphAlgorithms/FlightRoutesCheck.tex}
-\vspace{0.3cm}
-\noindent\textbf{Código-fonte:}
-\lstinputlisting{GraphAlgorithms/FlightRoutesCheck.cpp}
-
-\section{Game Routes}
-\input{Enunciados/GraphAlgorithms/GameRoutes.tex}
-\vspace{0.3cm}
-\noindent\textbf{Código-fonte:}
-\lstinputlisting{GraphAlgorithms/GameRoutes.cpp}
-
-\section{Giant Pizza}
-\input{Enunciados/GraphAlgorithms/GiantPizza.tex}
-\vspace{0.3cm}
-\noindent\textbf{Código-fonte:}
-\lstinputlisting{GraphAlgorithms/GiantPizza.cpp}
-
-\section{Hamiltonian Flights}
-\input{Enunciados/GraphAlgorithms/HamiltonianFlights.tex}
-\vspace{0.3cm}
-\noindent\textbf{Código-fonte:}
-\lstinputlisting{GraphAlgorithms/HamiltonianFlights.cpp}
-
-\section{High Score}
-\input{Enunciados/GraphAlgorithms/HighScore.tex}
-\vspace{0.3cm}
-\noindent\textbf{Código-fonte:}
-\lstinputlisting{GraphAlgorithms/HighScore.cpp}
-
-\section{Investigation}
-\input{Enunciados/GraphAlgorithms/Investigation.tex}
-\vspace{0.3cm}
-\noindent\textbf{Código-fonte:}
-\lstinputlisting{GraphAlgorithms/Investigation.cpp}
-
-\section{Knights Tour}
-\input{Enunciados/GraphAlgorithms/KnightsTour.tex}
-\vspace{0.3cm}
-\noindent\textbf{Código-fonte:}
-\lstinputlisting{GraphAlgorithms/KnightsTour.cpp}
-
-\section{Labyrinth}
-\input{Enunciados/GraphAlgorithms/Labyrinth.tex}
-\vspace{0.3cm}
-\noindent\textbf{Código-fonte:}
-\lstinputlisting{GraphAlgorithms/Labyrinth.cpp}
-
-\section{Longest Flight Route}
-\input{Enunciados/GraphAlgorithms/LongestFlightRoute.tex}
-\vspace{0.3cm}
-\noindent\textbf{Código-fonte:}
-\lstinputlisting{GraphAlgorithms/LongestFlightRoute.cpp}
-
-\section{Mail Delivery}
-\input{Enunciados/GraphAlgorithms/MailDelivery.tex}
-\vspace{0.3cm}
-\noindent\textbf{Código-fonte:}
-\lstinputlisting{GraphAlgorithms/MailDelivery.cpp}
-
-\section{Message Route}
-\input{Enunciados/GraphAlgorithms/MessageRoute.tex}
-\vspace{0.3cm}
-\noindent\textbf{Código-fonte:}
-\lstinputlisting{GraphAlgorithms/MessageRoute.cpp}
-
-\section{Monsters}
-\input{Enunciados/GraphAlgorithms/Monsters.tex}
-\vspace{0.3cm}
-\noindent\textbf{Código-fonte:}
-\lstinputlisting{GraphAlgorithms/Monsters.cpp}
-
-\section{Planets Cycles}
-\input{Enunciados/GraphAlgorithms/PlanetsCycles.tex}
-\vspace{0.3cm}
-\noindent\textbf{Código-fonte:}
-\lstinputlisting{GraphAlgorithms/PlanetsCycles.cpp}
-
-\section{Planets Queries I}
-\input{Enunciados/GraphAlgorithms/PlanetsQueriesI.tex}
-\vspace{0.3cm}
-\noindent\textbf{Código-fonte:}
-\lstinputlisting{GraphAlgorithms/PlanetsQueriesI.cpp}
-
-\section{Planets Queries II}
-\input{Enunciados/GraphAlgorithms/PlanetsQueriesII.tex}
-\vspace{0.3cm}
-\noindent\textbf{Código-fonte:}
-\lstinputlisting{GraphAlgorithms/PlanetsQueriesII.cpp}
-
-\section{Planetsand Kingdoms}
-\input{Enunciados/GraphAlgorithms/PlanetsandKingdoms.tex}
-\vspace{0.3cm}
-\noindent\textbf{Código-fonte:}
-\lstinputlisting{GraphAlgorithms/PlanetsandKingdoms.cpp}
-
-\section{Police Chase}
-\input{Enunciados/GraphAlgorithms/PoliceChase.tex}
-\vspace{0.3cm}
-\noindent\textbf{Código-fonte:}
-\lstinputlisting{GraphAlgorithms/PoliceChase.cpp}
-
-\section{Road Construction}
-\input{Enunciados/GraphAlgorithms/RoadConstruction.tex}
-\vspace{0.3cm}
-\noindent\textbf{Código-fonte:}
-\lstinputlisting{GraphAlgorithms/RoadConstruction.cpp}
-
-\section{Road Reparation}
-\input{Enunciados/GraphAlgorithms/RoadReparation.tex}
-\vspace{0.3cm}
-\noindent\textbf{Código-fonte:}
-\lstinputlisting{GraphAlgorithms/RoadReparation.cpp}
-
-\section{Round Trip}
-\input{Enunciados/GraphAlgorithms/RoundTrip.tex}
-\vspace{0.3cm}
-\noindent\textbf{Código-fonte:}
-\lstinputlisting{GraphAlgorithms/RoundTrip.cpp}
-
-\section{Round Trip II}
-\input{Enunciados/GraphAlgorithms/RoundTripII.tex}
-\vspace{0.3cm}
-\noindent\textbf{Código-fonte:}
-\lstinputlisting{GraphAlgorithms/RoundTripII.cpp}
-
-\section{School Dance}
-\input{Enunciados/GraphAlgorithms/SchoolDance.tex}
-\vspace{0.3cm}
-\noindent\textbf{Código-fonte:}
-\lstinputlisting{GraphAlgorithms/SchoolDance.cpp}
-
-\section{Shortest Routes I}
-\input{Enunciados/GraphAlgorithms/ShortestRoutesI.tex}
-\vspace{0.3cm}
-\noindent\textbf{Código-fonte:}
-\lstinputlisting{GraphAlgorithms/ShortestRoutesI.cpp}
-
-\section{Shortest Routes II}
-\input{Enunciados/GraphAlgorithms/ShortestRoutesII.tex}
-\vspace{0.3cm}
-\noindent\textbf{Código-fonte:}
-\lstinputlisting{GraphAlgorithms/ShortestRoutesII.cpp}
-
-\section{Teleporters Path}
-\input{Enunciados/GraphAlgorithms/TeleportersPath.tex}
-\vspace{0.3cm}
-\noindent\textbf{Código-fonte:}
-\lstinputlisting{GraphAlgorithms/TeleportersPath.cpp}
-
-\chapter{Introductory Problems}
-
-\section{Apple Division}
+\subsection{Apple Division}
 \input{Enunciados/IntroductoryProblems/AppleDivision.tex}
 \vspace{0.3cm}
-\noindent\textbf{Código-fonte:}
 \lstinputlisting{IntroductoryProblems/AppleDivision.cpp}
 
-\section{Bit Strings}
+\subsection{Bit Strings}
 \input{Enunciados/IntroductoryProblems/BitStrings.tex}
 \vspace{0.3cm}
-\noindent\textbf{Código-fonte:}
 \lstinputlisting{IntroductoryProblems/BitStrings.cpp}
 
-\section{Chessboardand Queens}
+\subsection{Chessboardand Queens}
 \input{Enunciados/IntroductoryProblems/ChessboardandQueens.tex}
 \vspace{0.3cm}
-\noindent\textbf{Código-fonte:}
 \lstinputlisting{IntroductoryProblems/ChessboardandQueens.cpp}
 
-\section{Coin Piles}
+\subsection{Coin Piles}
 \input{Enunciados/IntroductoryProblems/CoinPiles.tex}
 \vspace{0.3cm}
-\noindent\textbf{Código-fonte:}
 \lstinputlisting{IntroductoryProblems/CoinPiles.cpp}
 
-\section{Creating Strings}
+\subsection{Creating Strings}
 \input{Enunciados/IntroductoryProblems/CreatingStrings.tex}
 \vspace{0.3cm}
-\noindent\textbf{Código-fonte:}
 \lstinputlisting{IntroductoryProblems/CreatingStrings.cpp}
 
-\section{Digit Queries}
+\subsection{Digit Queries}
 \input{Enunciados/IntroductoryProblems/DigitQueries.tex}
 \vspace{0.3cm}
-\noindent\textbf{Código-fonte:}
 \lstinputlisting{IntroductoryProblems/DigitQueries.cpp}
 
-\section{Gray Code}
+\subsection{Gray Code}
 \input{Enunciados/IntroductoryProblems/GrayCode.tex}
 \vspace{0.3cm}
-\noindent\textbf{Código-fonte:}
 \lstinputlisting{IntroductoryProblems/GrayCode.cpp}
 
-\section{Grid Coloring I}
+\subsection{Grid Coloring I}
 \input{Enunciados/IntroductoryProblems/GridColoringI.tex}
 \vspace{0.3cm}
-\noindent\textbf{Código-fonte:}
 \lstinputlisting{IntroductoryProblems/GridColoringI.cpp}
 
-\section{Grid Path Description}
+\subsection{Grid Path Description}
 \input{Enunciados/IntroductoryProblems/GridPathDescription.tex}
 \vspace{0.3cm}
-\noindent\textbf{Código-fonte:}
 \lstinputlisting{IntroductoryProblems/GridPathDescription.cpp}
 
-\section{Increasing Array}
+\subsection{Increasing Array}
 \input{Enunciados/IntroductoryProblems/IncreasingArray.tex}
 \vspace{0.3cm}
-\noindent\textbf{Código-fonte:}
 \lstinputlisting{IntroductoryProblems/IncreasingArray.cpp}
 
-\section{Knight Moves Grid}
+\subsection{Knight Moves Grid}
 \input{Enunciados/IntroductoryProblems/KnightMovesGrid.tex}
 \vspace{0.3cm}
-\noindent\textbf{Código-fonte:}
 \lstinputlisting{IntroductoryProblems/KnightMovesGrid.cpp}
 
-\section{Mex Grid Construction}
+\subsection{Mex Grid Construction}
 \input{Enunciados/IntroductoryProblems/MexGridConstruction.tex}
 \vspace{0.3cm}
-\noindent\textbf{Código-fonte:}
 \lstinputlisting{IntroductoryProblems/MexGridConstruction.cpp}
 
-\section{Missing Number}
+\subsection{Missing Number}
 \input{Enunciados/IntroductoryProblems/MissingNumber.tex}
 \vspace{0.3cm}
-\noindent\textbf{Código-fonte:}
 \lstinputlisting{IntroductoryProblems/MissingNumber.cpp}
 
-\section{Number Spiral}
+\subsection{Number Spiral}
 \input{Enunciados/IntroductoryProblems/NumberSpiral.tex}
 \vspace{0.3cm}
-\noindent\textbf{Código-fonte:}
 \lstinputlisting{IntroductoryProblems/NumberSpiral.cpp}
 
-\section{Palindrome Reorder}
+\subsection{Palindrome Reorder}
 \input{Enunciados/IntroductoryProblems/PalindromeReorder.tex}
 \vspace{0.3cm}
-\noindent\textbf{Código-fonte:}
 \lstinputlisting{IntroductoryProblems/PalindromeReorder.cpp}
 
-\section{Permutations}
+\subsection{Permutations}
 \input{Enunciados/IntroductoryProblems/Permutations.tex}
 \vspace{0.3cm}
-\noindent\textbf{Código-fonte:}
 \lstinputlisting{IntroductoryProblems/Permutations.cpp}
 
-\section{Raab Game I}
+\subsection{Raab Game I}
 \input{Enunciados/IntroductoryProblems/RaabGameI.tex}
 \vspace{0.3cm}
-\noindent\textbf{Código-fonte:}
 \lstinputlisting{IntroductoryProblems/RaabGameI.cpp}
 
-\section{Repetitions}
+\subsection{Repetitions}
 \input{Enunciados/IntroductoryProblems/Repetitions.tex}
 \vspace{0.3cm}
-\noindent\textbf{Código-fonte:}
 \lstinputlisting{IntroductoryProblems/Repetitions.cpp}
 
-\section{String Reorder}
+\subsection{String Reorder}
 \input{Enunciados/IntroductoryProblems/StringReorder.tex}
 \vspace{0.3cm}
-\noindent\textbf{Código-fonte:}
 \lstinputlisting{IntroductoryProblems/StringReorder.cpp}
 
-\section{Towerof Hanoi}
+\subsection{Towerof Hanoi}
 \input{Enunciados/IntroductoryProblems/TowerofHanoi.tex}
 \vspace{0.3cm}
-\noindent\textbf{Código-fonte:}
 \lstinputlisting{IntroductoryProblems/TowerofHanoi.cpp}
 
-\section{Trailing Zeros}
+\subsection{Trailing Zeros}
 \input{Enunciados/IntroductoryProblems/TrailingZeros.tex}
 \vspace{0.3cm}
-\noindent\textbf{Código-fonte:}
 \lstinputlisting{IntroductoryProblems/TrailingZeros.cpp}
 
-\section{Two Knights}
+\subsection{Two Knights}
 \input{Enunciados/IntroductoryProblems/TwoKnights.tex}
 \vspace{0.3cm}
-\noindent\textbf{Código-fonte:}
 \lstinputlisting{IntroductoryProblems/TwoKnights.cpp}
 
-\section{Two Sets}
+\subsection{Two Sets}
 \input{Enunciados/IntroductoryProblems/TwoSets.tex}
 \vspace{0.3cm}
-\noindent\textbf{Código-fonte:}
 \lstinputlisting{IntroductoryProblems/TwoSets.cpp}
 
-\section{Weird Algorithm}
+\subsection{Weird Algorithm}
 \input{Enunciados/IntroductoryProblems/WeirdAlgorithm.tex}
 \vspace{0.3cm}
-\noindent\textbf{Código-fonte:}
 \lstinputlisting{IntroductoryProblems/WeirdAlgorithm.cpp}
 
-\chapter{Mathematics}
+\section{Sorting And Searching}
 
-\section{Candy Lottery}
-\input{Enunciados/Mathematics/CandyLottery.tex}
+\subsection{Apartments}
+\input{Enunciados/SortingAndSearching/Apartments.tex}
 \vspace{0.3cm}
-\noindent\textbf{Código-fonte:}
-\lstinputlisting{Mathematics/CandyLottery.cpp}
+\lstinputlisting{SortingAndSearching/Apartments.cpp}
 
-\chapter{Range Queries}
-
-\section{Distinct Values Queries}
-\input{Enunciados/RangeQueries/DistinctValuesQueries.tex}
+\subsection{Array Division}
+\input{Enunciados/SortingAndSearching/ArrayDivision.tex}
 \vspace{0.3cm}
-\noindent\textbf{Código-fonte:}
-\lstinputlisting{RangeQueries/DistinctValuesQueries.cpp}
+\lstinputlisting{SortingAndSearching/ArrayDivision.cpp}
 
-\section{Distinct Values Queries II}
-\input{Enunciados/RangeQueries/DistinctValuesQueriesII.tex}
+\subsection{Collecting Numbers}
+\input{Enunciados/SortingAndSearching/CollectingNumbers.tex}
 \vspace{0.3cm}
-\noindent\textbf{Código-fonte:}
-\lstinputlisting{RangeQueries/DistinctValuesQueriesII.cpp}
+\lstinputlisting{SortingAndSearching/CollectingNumbers.cpp}
 
-\section{Dynamic Range Minimum Queries}
-\input{Enunciados/RangeQueries/DynamicRangeMinimumQueries.tex}
+\subsection{Collecting Numbers II}
+\input{Enunciados/SortingAndSearching/CollectingNumbersII.tex}
 \vspace{0.3cm}
-\noindent\textbf{Código-fonte:}
-\lstinputlisting{RangeQueries/DynamicRangeMinimumQueries.cpp}
+\lstinputlisting{SortingAndSearching/CollectingNumbersII.cpp}
 
-\section{Dynamic Range Sum Queries}
-\input{Enunciados/RangeQueries/DynamicRangeSumQueries.tex}
+\subsection{Concert Tickets}
+\input{Enunciados/SortingAndSearching/ConcertTickets.tex}
 \vspace{0.3cm}
-\noindent\textbf{Código-fonte:}
-\lstinputlisting{RangeQueries/DynamicRangeSumQueries.cpp}
+\lstinputlisting{SortingAndSearching/ConcertTickets.cpp}
 
-\section{Forest Queries}
-\input{Enunciados/RangeQueries/ForestQueries.tex}
+\subsection{Distinct Numbers}
+\input{Enunciados/SortingAndSearching/DistinctNumbers.tex}
 \vspace{0.3cm}
-\noindent\textbf{Código-fonte:}
-\lstinputlisting{RangeQueries/ForestQueries.cpp}
+\lstinputlisting{SortingAndSearching/DistinctNumbers.cpp}
 
-\section{Hotel Queries}
-\input{Enunciados/RangeQueries/HotelQueries.tex}
+\subsection{Distinct Values Subarrays}
+\input{Enunciados/SortingAndSearching/DistinctValuesSubarrays.tex}
 \vspace{0.3cm}
-\noindent\textbf{Código-fonte:}
-\lstinputlisting{RangeQueries/HotelQueries.cpp}
+\lstinputlisting{SortingAndSearching/DistinctValuesSubarrays.cpp}
 
-\section{List Removals}
-\input{Enunciados/RangeQueries/ListRemovals.tex}
+\subsection{Distinct Values Subarrays II}
+\input{Enunciados/SortingAndSearching/DistinctValuesSubarraysII.tex}
 \vspace{0.3cm}
-\noindent\textbf{Código-fonte:}
-\lstinputlisting{RangeQueries/ListRemovals.cpp}
+\lstinputlisting{SortingAndSearching/DistinctValuesSubarraysII.cpp}
 
-\section{Pizzeria Queries}
-\input{Enunciados/RangeQueries/PizzeriaQueries.tex}
+\subsection{Distinct Values Subsequences}
+\input{Enunciados/SortingAndSearching/DistinctValuesSubsequences.tex}
 \vspace{0.3cm}
-\noindent\textbf{Código-fonte:}
-\lstinputlisting{RangeQueries/PizzeriaQueries.cpp}
+\lstinputlisting{SortingAndSearching/DistinctValuesSubsequences.cpp}
 
-\section{Polynomial Queries}
-\input{Enunciados/RangeQueries/PolynomialQueries.tex}
+\subsection{Factory Machines}
+\input{Enunciados/SortingAndSearching/FactoryMachines.tex}
 \vspace{0.3cm}
-\noindent\textbf{Código-fonte:}
-\lstinputlisting{RangeQueries/PolynomialQueries.cpp}
+\lstinputlisting{SortingAndSearching/FactoryMachines.cpp}
 
-\section{Prefix Sum Queries}
-\input{Enunciados/RangeQueries/PrefixSumQueries.tex}
+\subsection{Ferris Wheel}
+\input{Enunciados/SortingAndSearching/FerrisWheel.tex}
 \vspace{0.3cm}
-\noindent\textbf{Código-fonte:}
-\lstinputlisting{RangeQueries/PrefixSumQueries.cpp}
+\lstinputlisting{SortingAndSearching/FerrisWheel.cpp}
 
-\section{Range Update Queries}
-\input{Enunciados/RangeQueries/RangeUpdateQueries.tex}
+\subsection{Josephus Problem I}
+\input{Enunciados/SortingAndSearching/JosephusProblemI.tex}
 \vspace{0.3cm}
-\noindent\textbf{Código-fonte:}
-\lstinputlisting{RangeQueries/RangeUpdateQueries.cpp}
+\lstinputlisting{SortingAndSearching/JosephusProblemI.cpp}
 
-\section{Range Xor Queries}
-\input{Enunciados/RangeQueries/RangeXorQueries.tex}
+\subsection{Josephus Problem II}
+\input{Enunciados/SortingAndSearching/JosephusProblemII.tex}
 \vspace{0.3cm}
-\noindent\textbf{Código-fonte:}
-\lstinputlisting{RangeQueries/RangeXorQueries.cpp}
+\lstinputlisting{SortingAndSearching/JosephusProblemII.cpp}
 
-\section{Salary Queries}
-\input{Enunciados/RangeQueries/SalaryQueries.tex}
+\subsection{Maximum Subarray Sum}
+\input{Enunciados/SortingAndSearching/MaximumSubarraySum.tex}
 \vspace{0.3cm}
-\noindent\textbf{Código-fonte:}
-\lstinputlisting{RangeQueries/SalaryQueries.cpp}
+\lstinputlisting{SortingAndSearching/MaximumSubarraySum.cpp}
 
-\section{Static Range Minimum Queries}
-\input{Enunciados/RangeQueries/StaticRangeMinimumQueries.tex}
+\subsection{Maximum Subarray Sum II}
+\input{Enunciados/SortingAndSearching/MaximumSubarraySumII.tex}
 \vspace{0.3cm}
-\noindent\textbf{Código-fonte:}
-\lstinputlisting{RangeQueries/StaticRangeMinimumQueries.cpp}
+\lstinputlisting{SortingAndSearching/MaximumSubarraySumII.cpp}
 
-\section{Static Range Sum Queries}
-\input{Enunciados/RangeQueries/StaticRangeSumQueries.tex}
+\subsection{Missing Coin Sum}
+\input{Enunciados/SortingAndSearching/MissingCoinSum.tex}
 \vspace{0.3cm}
-\noindent\textbf{Código-fonte:}
-\lstinputlisting{RangeQueries/StaticRangeSumQueries.cpp}
+\lstinputlisting{SortingAndSearching/MissingCoinSum.cpp}
 
-\section{Subarray Sum Queries}
-\input{Enunciados/RangeQueries/SubarraySumQueries.tex}
+\subsection{Movie Festival}
+\input{Enunciados/SortingAndSearching/MovieFestival.tex}
 \vspace{0.3cm}
-\noindent\textbf{Código-fonte:}
-\lstinputlisting{RangeQueries/SubarraySumQueries.cpp}
+\lstinputlisting{SortingAndSearching/MovieFestival.cpp}
 
-\section{Subarray Sum Queries II}
-\input{Enunciados/RangeQueries/SubarraySumQueriesII.tex}
+\subsection{Movie Festival II}
+\input{Enunciados/SortingAndSearching/MovieFestivalII.tex}
 \vspace{0.3cm}
-\noindent\textbf{Código-fonte:}
-\lstinputlisting{RangeQueries/SubarraySumQueriesII.cpp}
+\lstinputlisting{SortingAndSearching/MovieFestivalII.cpp}
 
-\section{Visible Buildings Queries}
-\input{Enunciados/RangeQueries/VisibleBuildingsQueries.tex}
+\subsection{Nearest Smaller Values}
+\input{Enunciados/SortingAndSearching/NearestSmallerValues.tex}
 \vspace{0.3cm}
-\noindent\textbf{Código-fonte:}
-\lstinputlisting{RangeQueries/VisibleBuildingsQueries.cpp}
+\lstinputlisting{SortingAndSearching/NearestSmallerValues.cpp}
 
-\chapter{Sliding Window Problems}
-
-\section{Sliding Window Cost}
-\input{Enunciados/SlidingWindowProblems/SlidingWindowCost.tex}
+\subsection{Nested Ranges Check}
+\input{Enunciados/SortingAndSearching/NestedRangesCheck.tex}
 \vspace{0.3cm}
-\noindent\textbf{Código-fonte:}
-\lstinputlisting{SlidingWindowProblems/SlidingWindowCost.cpp}
+\lstinputlisting{SortingAndSearching/NestedRangesCheck.cpp}
 
-\section{Sliding Window Median}
-\input{Enunciados/SlidingWindowProblems/SlidingWindowMedian.tex}
+\subsection{Nested Ranges Count}
+\input{Enunciados/SortingAndSearching/NestedRangesCount.tex}
 \vspace{0.3cm}
-\noindent\textbf{Código-fonte:}
-\lstinputlisting{SlidingWindowProblems/SlidingWindowMedian.cpp}
+\lstinputlisting{SortingAndSearching/NestedRangesCount.cpp}
 
-\chapter{Sortingand Searching}
-
-\section{Apartments}
-\input{Enunciados/SortingandSearching/Apartments.tex}
+\subsection{Playlist}
+\input{Enunciados/SortingAndSearching/Playlist.tex}
 \vspace{0.3cm}
-\noindent\textbf{Código-fonte:}
-\lstinputlisting{SortingandSearching/Apartments.cpp}
+\lstinputlisting{SortingAndSearching/Playlist.cpp}
 
-\section{Array Division}
-\input{Enunciados/SortingandSearching/ArrayDivision.tex}
+\subsection{Reading Books}
+\input{Enunciados/SortingAndSearching/ReadingBooks.tex}
 \vspace{0.3cm}
-\noindent\textbf{Código-fonte:}
-\lstinputlisting{SortingandSearching/ArrayDivision.cpp}
+\lstinputlisting{SortingAndSearching/ReadingBooks.cpp}
 
-\section{Collecting Numbers}
-\input{Enunciados/SortingandSearching/CollectingNumbers.tex}
+\subsection{Restaurant Customers}
+\input{Enunciados/SortingAndSearching/RestaurantCustomers.tex}
 \vspace{0.3cm}
-\noindent\textbf{Código-fonte:}
-\lstinputlisting{SortingandSearching/CollectingNumbers.cpp}
+\lstinputlisting{SortingAndSearching/RestaurantCustomers.cpp}
 
-\section{Collecting Numbers II}
-\input{Enunciados/SortingandSearching/CollectingNumbersII.tex}
-\vspace{0.3cm}
-\noindent\textbf{Código-fonte:}
-\lstinputlisting{SortingandSearching/CollectingNumbersII.cpp}
-
-\section{Concert Tickets}
-\input{Enunciados/SortingandSearching/ConcertTickets.tex}
-\vspace{0.3cm}
-\noindent\textbf{Código-fonte:}
-\lstinputlisting{SortingandSearching/ConcertTickets.cpp}
-
-\section{Distinct Numbers}
-\input{Enunciados/SortingandSearching/DistinctNumbers.tex}
-\vspace{0.3cm}
-\noindent\textbf{Código-fonte:}
-\lstinputlisting{SortingandSearching/DistinctNumbers.cpp}
-
-\section{Distinct Values Subarrays}
-\input{Enunciados/SortingandSearching/DistinctValuesSubarrays.tex}
-\vspace{0.3cm}
-\noindent\textbf{Código-fonte:}
-\lstinputlisting{SortingandSearching/DistinctValuesSubarrays.cpp}
-
-\section{Distinct Values Subarrays II}
-\input{Enunciados/SortingandSearching/DistinctValuesSubarraysII.tex}
-\vspace{0.3cm}
-\noindent\textbf{Código-fonte:}
-\lstinputlisting{SortingandSearching/DistinctValuesSubarraysII.cpp}
-
-\section{Distinct Values Subsequences}
-\input{Enunciados/SortingandSearching/DistinctValuesSubsequences.tex}
-\vspace{0.3cm}
-\noindent\textbf{Código-fonte:}
-\lstinputlisting{SortingandSearching/DistinctValuesSubsequences.cpp}
-
-\section{Factory Machines}
-\input{Enunciados/SortingandSearching/FactoryMachines.tex}
-\vspace{0.3cm}
-\noindent\textbf{Código-fonte:}
-\lstinputlisting{SortingandSearching/FactoryMachines.cpp}
-
-\section{Ferris Wheel}
-\input{Enunciados/SortingandSearching/FerrisWheel.tex}
-\vspace{0.3cm}
-\noindent\textbf{Código-fonte:}
-\lstinputlisting{SortingandSearching/FerrisWheel.cpp}
-
-\section{Josephus Problem I}
-\input{Enunciados/SortingandSearching/JosephusProblemI.tex}
-\vspace{0.3cm}
-\noindent\textbf{Código-fonte:}
-\lstinputlisting{SortingandSearching/JosephusProblemI.cpp}
-
-\section{Josephus Problem II}
-\input{Enunciados/SortingandSearching/JosephusProblemII.tex}
-\vspace{0.3cm}
-\noindent\textbf{Código-fonte:}
-\lstinputlisting{SortingandSearching/JosephusProblemII.cpp}
-
-\section{Maximum Subarray Sum}
-\input{Enunciados/SortingandSearching/MaximumSubarraySum.tex}
-\vspace{0.3cm}
-\noindent\textbf{Código-fonte:}
-\lstinputlisting{SortingandSearching/MaximumSubarraySum.cpp}
-
-\section{Maximum Subarray Sum II}
-\input{Enunciados/SortingandSearching/MaximumSubarraySumII.tex}
-\vspace{0.3cm}
-\noindent\textbf{Código-fonte:}
-\lstinputlisting{SortingandSearching/MaximumSubarraySumII.cpp}
-
-\section{Missing Coin Sum}
-\input{Enunciados/SortingandSearching/MissingCoinSum.tex}
-\vspace{0.3cm}
-\noindent\textbf{Código-fonte:}
-\lstinputlisting{SortingandSearching/MissingCoinSum.cpp}
-
-\section{Movie Festival}
-\input{Enunciados/SortingandSearching/MovieFestival.tex}
-\vspace{0.3cm}
-\noindent\textbf{Código-fonte:}
-\lstinputlisting{SortingandSearching/MovieFestival.cpp}
-
-\section{Movie Festival II}
-\input{Enunciados/SortingandSearching/MovieFestivalII.tex}
-\vspace{0.3cm}
-\noindent\textbf{Código-fonte:}
-\lstinputlisting{SortingandSearching/MovieFestivalII.cpp}
-
-\section{Nearest Smaller Values}
-\input{Enunciados/SortingandSearching/NearestSmallerValues.tex}
-\vspace{0.3cm}
-\noindent\textbf{Código-fonte:}
-\lstinputlisting{SortingandSearching/NearestSmallerValues.cpp}
-
-\section{Nested Ranges Check}
-\input{Enunciados/SortingandSearching/NestedRangesCheck.tex}
-\vspace{0.3cm}
-\noindent\textbf{Código-fonte:}
-\lstinputlisting{SortingandSearching/NestedRangesCheck.cpp}
-
-\section{Nested Ranges Count}
-\input{Enunciados/SortingandSearching/NestedRangesCount.tex}
-\vspace{0.3cm}
-\noindent\textbf{Código-fonte:}
-\lstinputlisting{SortingandSearching/NestedRangesCount.cpp}
-
-\section{Playlist}
-\input{Enunciados/SortingandSearching/Playlist.tex}
-\vspace{0.3cm}
-\noindent\textbf{Código-fonte:}
-\lstinputlisting{SortingandSearching/Playlist.cpp}
-
-\section{Reading Books}
-\input{Enunciados/SortingandSearching/ReadingBooks.tex}
-\vspace{0.3cm}
-\noindent\textbf{Código-fonte:}
-\lstinputlisting{SortingandSearching/ReadingBooks.cpp}
-
-\section{Restaurant Customers}
-\input{Enunciados/SortingandSearching/RestaurantCustomers.tex}
-\vspace{0.3cm}
-\noindent\textbf{Código-fonte:}
-\lstinputlisting{SortingandSearching/RestaurantCustomers.cpp}
-
-\section{Room Alocation}
+\subsection{Room Alocation}
 Enunciado não encontrado no site.
 \vspace{0.3cm}
-\noindent\textbf{Código-fonte:}
-\lstinputlisting{SortingandSearching/RoomAlocation.cpp}
+\lstinputlisting{SortingAndSearching/RoomAlocation.cpp}
 
-\section{Stick Lengths}
-\input{Enunciados/SortingandSearching/StickLengths.tex}
+\subsection{Stick Lengths}
+\input{Enunciados/SortingAndSearching/StickLengths.tex}
 \vspace{0.3cm}
-\noindent\textbf{Código-fonte:}
-\lstinputlisting{SortingandSearching/StickLengths.cpp}
+\lstinputlisting{SortingAndSearching/StickLengths.cpp}
 
-\section{Subarray Divisibility}
-\input{Enunciados/SortingandSearching/SubarrayDivisibility.tex}
+\subsection{Subarray Divisibility}
+\input{Enunciados/SortingAndSearching/SubarrayDivisibility.tex}
 \vspace{0.3cm}
-\noindent\textbf{Código-fonte:}
-\lstinputlisting{SortingandSearching/SubarrayDivisibility.cpp}
+\lstinputlisting{SortingAndSearching/SubarrayDivisibility.cpp}
 
-\section{Subarray Sums I}
-\input{Enunciados/SortingandSearching/SubarraySumsI.tex}
+\subsection{Subarray Sums I}
+\input{Enunciados/SortingAndSearching/SubarraySumsI.tex}
 \vspace{0.3cm}
-\noindent\textbf{Código-fonte:}
-\lstinputlisting{SortingandSearching/SubarraySumsI.cpp}
+\lstinputlisting{SortingAndSearching/SubarraySumsI.cpp}
 
-\section{Subarray Sums II}
-\input{Enunciados/SortingandSearching/SubarraySumsII.tex}
+\subsection{Subarray Sums II}
+\input{Enunciados/SortingAndSearching/SubarraySumsII.tex}
 \vspace{0.3cm}
-\noindent\textbf{Código-fonte:}
-\lstinputlisting{SortingandSearching/SubarraySumsII.cpp}
+\lstinputlisting{SortingAndSearching/SubarraySumsII.cpp}
 
-\section{Sumof Four Values}
-\input{Enunciados/SortingandSearching/SumofFourValues.tex}
+\subsection{Sumof Four Values}
+\input{Enunciados/SortingAndSearching/SumofFourValues.tex}
 \vspace{0.3cm}
-\noindent\textbf{Código-fonte:}
-\lstinputlisting{SortingandSearching/SumofFourValues.cpp}
+\lstinputlisting{SortingAndSearching/SumofFourValues.cpp}
 
-\section{Sumof Three Values}
-\input{Enunciados/SortingandSearching/SumofThreeValues.tex}
+\subsection{Sumof Three Values}
+\input{Enunciados/SortingAndSearching/SumofThreeValues.tex}
 \vspace{0.3cm}
-\noindent\textbf{Código-fonte:}
-\lstinputlisting{SortingandSearching/SumofThreeValues.cpp}
+\lstinputlisting{SortingAndSearching/SumofThreeValues.cpp}
 
-\section{Sumof Two Values}
-\input{Enunciados/SortingandSearching/SumofTwoValues.tex}
+\subsection{Sumof Two Values}
+\input{Enunciados/SortingAndSearching/SumofTwoValues.tex}
 \vspace{0.3cm}
-\noindent\textbf{Código-fonte:}
-\lstinputlisting{SortingandSearching/SumofTwoValues.cpp}
+\lstinputlisting{SortingAndSearching/SumofTwoValues.cpp}
 
-\section{Tasksand Deadlines}
-\input{Enunciados/SortingandSearching/TasksandDeadlines.tex}
+\subsection{Tasksand Deadlines}
+\input{Enunciados/SortingAndSearching/TasksandDeadlines.tex}
 \vspace{0.3cm}
-\noindent\textbf{Código-fonte:}
-\lstinputlisting{SortingandSearching/TasksandDeadlines.cpp}
+\lstinputlisting{SortingAndSearching/TasksandDeadlines.cpp}
 
-\section{Towers}
-\input{Enunciados/SortingandSearching/Towers.tex}
+\subsection{Towers}
+\input{Enunciados/SortingAndSearching/Towers.tex}
 \vspace{0.3cm}
-\noindent\textbf{Código-fonte:}
-\lstinputlisting{SortingandSearching/Towers.cpp}
+\lstinputlisting{SortingAndSearching/Towers.cpp}
 
-\section{Traffic Lights}
-\input{Enunciados/SortingandSearching/TrafficLights.tex}
+\subsection{Traffic Lights}
+\input{Enunciados/SortingAndSearching/TrafficLights.tex}
 \vspace{0.3cm}
-\noindent\textbf{Código-fonte:}
-\lstinputlisting{SortingandSearching/TrafficLights.cpp}
+\lstinputlisting{SortingAndSearching/TrafficLights.cpp}
 
-\chapter{String Algorithms}
+\section{Dynamic Programming}
 
-\section{Counting Patterns}
-\input{Enunciados/StringAlgorithms/CountingPatterns.tex}
+\subsection{Array Description}
+\input{Enunciados/DynamicProgramming/ArrayDescription.tex}
 \vspace{0.3cm}
-\noindent\textbf{Código-fonte:}
-\lstinputlisting{StringAlgorithms/CountingPatterns.cpp}
+\lstinputlisting{DynamicProgramming/ArrayDescription.cpp}
 
-\section{Distinct Substrings}
-\input{Enunciados/StringAlgorithms/DistinctSubstrings.tex}
+\subsection{Book Shop}
+\input{Enunciados/DynamicProgramming/BookShop.tex}
 \vspace{0.3cm}
-\noindent\textbf{Código-fonte:}
-\lstinputlisting{StringAlgorithms/DistinctSubstrings.cpp}
+\lstinputlisting{DynamicProgramming/BookShop.cpp}
 
-\section{Finding Borders}
-\input{Enunciados/StringAlgorithms/FindingBorders.tex}
+\subsection{Coin Combinations I}
+\input{Enunciados/DynamicProgramming/CoinCombinationsI.tex}
 \vspace{0.3cm}
-\noindent\textbf{Código-fonte:}
-\lstinputlisting{StringAlgorithms/FindingBorders.cpp}
+\lstinputlisting{DynamicProgramming/CoinCombinationsI.cpp}
 
-\section{Repeating Substring}
-\input{Enunciados/StringAlgorithms/RepeatingSubstring.tex}
+\subsection{Coin Combinations II}
+\input{Enunciados/DynamicProgramming/CoinCombinationsII.tex}
 \vspace{0.3cm}
-\noindent\textbf{Código-fonte:}
-\lstinputlisting{StringAlgorithms/RepeatingSubstring.cpp}
+\lstinputlisting{DynamicProgramming/CoinCombinationsII.cpp}
 
-\section{String Functions}
-\input{Enunciados/StringAlgorithms/StringFunctions.tex}
+\subsection{Counting Numbers}
+\input{Enunciados/DynamicProgramming/CountingNumbers.tex}
 \vspace{0.3cm}
-\noindent\textbf{Código-fonte:}
-\lstinputlisting{StringAlgorithms/StringFunctions.cpp}
+\lstinputlisting{DynamicProgramming/CountingNumbers.cpp}
 
-\section{String Matching}
-\input{Enunciados/StringAlgorithms/StringMatching.tex}
+\subsection{Counting Tiling}
+Enunciado não encontrado no site.
 \vspace{0.3cm}
-\noindent\textbf{Código-fonte:}
-\lstinputlisting{StringAlgorithms/StringMatching.cpp}
+\lstinputlisting{DynamicProgramming/CountingTiling.cpp}
 
-\section{String Transform}
-\input{Enunciados/StringAlgorithms/StringTransform.tex}
+\subsection{Counting Towers}
+\input{Enunciados/DynamicProgramming/CountingTowers.tex}
 \vspace{0.3cm}
-\noindent\textbf{Código-fonte:}
-\lstinputlisting{StringAlgorithms/StringTransform.cpp}
+\lstinputlisting{DynamicProgramming/CountingTowers.cpp}
 
-\section{Substring Order I}
-\input{Enunciados/StringAlgorithms/SubstringOrderI.tex}
+\subsection{Dice Combinations}
+\input{Enunciados/DynamicProgramming/DiceCombinations.tex}
 \vspace{0.3cm}
-\noindent\textbf{Código-fonte:}
-\lstinputlisting{StringAlgorithms/SubstringOrderI.cpp}
+\lstinputlisting{DynamicProgramming/DiceCombinations.cpp}
 
-\section{Substring Order II}
-\input{Enunciados/StringAlgorithms/SubstringOrderII.tex}
+\subsection{Edit Distance}
+\input{Enunciados/DynamicProgramming/EditDistance.tex}
 \vspace{0.3cm}
-\noindent\textbf{Código-fonte:}
-\lstinputlisting{StringAlgorithms/SubstringOrderII.cpp}
+\lstinputlisting{DynamicProgramming/EditDistance.cpp}
 
-\chapter{Tree Algorithms}
+\subsection{Elevator Rides}
+\input{Enunciados/DynamicProgramming/ElevatorRides.tex}
+\vspace{0.3cm}
+\lstinputlisting{DynamicProgramming/ElevatorRides.cpp}
 
-\section{Company Queries I}
+\subsection{Grid Paths I}
+\input{Enunciados/DynamicProgramming/GridPathsI.tex}
+\vspace{0.3cm}
+\lstinputlisting{DynamicProgramming/GridPathsI.cpp}
+
+\subsection{Increasing Subsequence}
+\input{Enunciados/DynamicProgramming/IncreasingSubsequence.tex}
+\vspace{0.3cm}
+\lstinputlisting{DynamicProgramming/IncreasingSubsequence.cpp}
+
+\subsection{Increasing Subsequence II}
+\input{Enunciados/DynamicProgramming/IncreasingSubsequenceII.tex}
+\vspace{0.3cm}
+\lstinputlisting{DynamicProgramming/IncreasingSubsequenceII.cpp}
+
+\subsection{Longest Common Subsequence}
+\input{Enunciados/DynamicProgramming/LongestCommonSubsequence.tex}
+\vspace{0.3cm}
+\lstinputlisting{DynamicProgramming/LongestCommonSubsequence.cpp}
+
+\subsection{Minimal Grid Path}
+\input{Enunciados/DynamicProgramming/MinimalGridPath.tex}
+\vspace{0.3cm}
+\lstinputlisting{DynamicProgramming/MinimalGridPath.cpp}
+
+\subsection{Minimizing Coins}
+\input{Enunciados/DynamicProgramming/MinimizingCoins.tex}
+\vspace{0.3cm}
+\lstinputlisting{DynamicProgramming/MinimizingCoins.cpp}
+
+\subsection{Money Sums}
+\input{Enunciados/DynamicProgramming/MoneySums.tex}
+\vspace{0.3cm}
+\lstinputlisting{DynamicProgramming/MoneySums.cpp}
+
+\subsection{Mountain Range}
+\input{Enunciados/DynamicProgramming/MountainRange.tex}
+\vspace{0.3cm}
+\lstinputlisting{DynamicProgramming/MountainRange.cpp}
+
+\subsection{Projects}
+\input{Enunciados/DynamicProgramming/Projects.tex}
+\vspace{0.3cm}
+\lstinputlisting{DynamicProgramming/Projects.cpp}
+
+\subsection{Rectangle Cutting}
+\input{Enunciados/DynamicProgramming/RectangleCutting.tex}
+\vspace{0.3cm}
+\lstinputlisting{DynamicProgramming/RectangleCutting.cpp}
+
+\subsection{Removal Game}
+\input{Enunciados/DynamicProgramming/RemovalGame.tex}
+\vspace{0.3cm}
+\lstinputlisting{DynamicProgramming/RemovalGame.cpp}
+
+\subsection{Removing Digits}
+\input{Enunciados/DynamicProgramming/RemovingDigits.tex}
+\vspace{0.3cm}
+\lstinputlisting{DynamicProgramming/RemovingDigits.cpp}
+
+\subsection{Two Sets II}
+\input{Enunciados/DynamicProgramming/TwoSetsII.tex}
+\vspace{0.3cm}
+\lstinputlisting{DynamicProgramming/TwoSetsII.cpp}
+
+\section{Graph Algorithms}
+
+\subsection{Building Roads}
+\input{Enunciados/GraphAlgorithms/BuildingRoads.tex}
+\vspace{0.3cm}
+\lstinputlisting{GraphAlgorithms/BuildingRoads.cpp}
+
+\subsection{Building Teams}
+\input{Enunciados/GraphAlgorithms/BuildingTeams.tex}
+\vspace{0.3cm}
+\lstinputlisting{GraphAlgorithms/BuildingTeams.cpp}
+
+\subsection{Coin Collector}
+\input{Enunciados/GraphAlgorithms/CoinCollector.tex}
+\vspace{0.3cm}
+\lstinputlisting{GraphAlgorithms/CoinCollector.cpp}
+
+\subsection{Counting Rooms}
+\input{Enunciados/GraphAlgorithms/CountingRooms.tex}
+\vspace{0.3cm}
+\lstinputlisting{GraphAlgorithms/CountingRooms.cpp}
+
+\subsection{Course Schedule}
+\input{Enunciados/GraphAlgorithms/CourseSchedule.tex}
+\vspace{0.3cm}
+\lstinputlisting{GraphAlgorithms/CourseSchedule.cpp}
+
+\subsection{Cycle Finding}
+\input{Enunciados/GraphAlgorithms/CycleFinding.tex}
+\vspace{0.3cm}
+\lstinputlisting{GraphAlgorithms/CycleFinding.cpp}
+
+\subsection{De Bruijn Sequence}
+\input{Enunciados/GraphAlgorithms/DeBruijnSequence.tex}
+\vspace{0.3cm}
+\lstinputlisting{GraphAlgorithms/DeBruijnSequence.cpp}
+
+\subsection{Distinct Routes}
+\input{Enunciados/GraphAlgorithms/DistinctRoutes.tex}
+\vspace{0.3cm}
+\lstinputlisting{GraphAlgorithms/DistinctRoutes.cpp}
+
+\subsection{Download Speed}
+\input{Enunciados/GraphAlgorithms/DownloadSpeed.tex}
+\vspace{0.3cm}
+\lstinputlisting{GraphAlgorithms/DownloadSpeed.cpp}
+
+\subsection{Flight Discount}
+\input{Enunciados/GraphAlgorithms/FlightDiscount.tex}
+\vspace{0.3cm}
+\lstinputlisting{GraphAlgorithms/FlightDiscount.cpp}
+
+\subsection{Flight Routes}
+\input{Enunciados/GraphAlgorithms/FlightRoutes.tex}
+\vspace{0.3cm}
+\lstinputlisting{GraphAlgorithms/FlightRoutes.cpp}
+
+\subsection{Flight Routes Check}
+\input{Enunciados/GraphAlgorithms/FlightRoutesCheck.tex}
+\vspace{0.3cm}
+\lstinputlisting{GraphAlgorithms/FlightRoutesCheck.cpp}
+
+\subsection{Game Routes}
+\input{Enunciados/GraphAlgorithms/GameRoutes.tex}
+\vspace{0.3cm}
+\lstinputlisting{GraphAlgorithms/GameRoutes.cpp}
+
+\subsection{Giant Pizza}
+\input{Enunciados/GraphAlgorithms/GiantPizza.tex}
+\vspace{0.3cm}
+\lstinputlisting{GraphAlgorithms/GiantPizza.cpp}
+
+\subsection{Hamiltonian Flights}
+\input{Enunciados/GraphAlgorithms/HamiltonianFlights.tex}
+\vspace{0.3cm}
+\lstinputlisting{GraphAlgorithms/HamiltonianFlights.cpp}
+
+\subsection{High Score}
+\input{Enunciados/GraphAlgorithms/HighScore.tex}
+\vspace{0.3cm}
+\lstinputlisting{GraphAlgorithms/HighScore.cpp}
+
+\subsection{Investigation}
+\input{Enunciados/GraphAlgorithms/Investigation.tex}
+\vspace{0.3cm}
+\lstinputlisting{GraphAlgorithms/Investigation.cpp}
+
+\subsection{Knights Tour}
+\input{Enunciados/GraphAlgorithms/KnightsTour.tex}
+\vspace{0.3cm}
+\lstinputlisting{GraphAlgorithms/KnightsTour.cpp}
+
+\subsection{Labyrinth}
+\input{Enunciados/GraphAlgorithms/Labyrinth.tex}
+\vspace{0.3cm}
+\lstinputlisting{GraphAlgorithms/Labyrinth.cpp}
+
+\subsection{Longest Flight Route}
+\input{Enunciados/GraphAlgorithms/LongestFlightRoute.tex}
+\vspace{0.3cm}
+\lstinputlisting{GraphAlgorithms/LongestFlightRoute.cpp}
+
+\subsection{Mail Delivery}
+\input{Enunciados/GraphAlgorithms/MailDelivery.tex}
+\vspace{0.3cm}
+\lstinputlisting{GraphAlgorithms/MailDelivery.cpp}
+
+\subsection{Message Route}
+\input{Enunciados/GraphAlgorithms/MessageRoute.tex}
+\vspace{0.3cm}
+\lstinputlisting{GraphAlgorithms/MessageRoute.cpp}
+
+\subsection{Monsters}
+\input{Enunciados/GraphAlgorithms/Monsters.tex}
+\vspace{0.3cm}
+\lstinputlisting{GraphAlgorithms/Monsters.cpp}
+
+\subsection{Planets Cycles}
+\input{Enunciados/GraphAlgorithms/PlanetsCycles.tex}
+\vspace{0.3cm}
+\lstinputlisting{GraphAlgorithms/PlanetsCycles.cpp}
+
+\subsection{Planets Queries I}
+\input{Enunciados/GraphAlgorithms/PlanetsQueriesI.tex}
+\vspace{0.3cm}
+\lstinputlisting{GraphAlgorithms/PlanetsQueriesI.cpp}
+
+\subsection{Planets Queries II}
+\input{Enunciados/GraphAlgorithms/PlanetsQueriesII.tex}
+\vspace{0.3cm}
+\lstinputlisting{GraphAlgorithms/PlanetsQueriesII.cpp}
+
+\subsection{Planetsand Kingdoms}
+\input{Enunciados/GraphAlgorithms/PlanetsandKingdoms.tex}
+\vspace{0.3cm}
+\lstinputlisting{GraphAlgorithms/PlanetsandKingdoms.cpp}
+
+\subsection{Police Chase}
+\input{Enunciados/GraphAlgorithms/PoliceChase.tex}
+\vspace{0.3cm}
+\lstinputlisting{GraphAlgorithms/PoliceChase.cpp}
+
+\subsection{Road Construction}
+\input{Enunciados/GraphAlgorithms/RoadConstruction.tex}
+\vspace{0.3cm}
+\lstinputlisting{GraphAlgorithms/RoadConstruction.cpp}
+
+\subsection{Road Reparation}
+\input{Enunciados/GraphAlgorithms/RoadReparation.tex}
+\vspace{0.3cm}
+\lstinputlisting{GraphAlgorithms/RoadReparation.cpp}
+
+\subsection{Round Trip}
+\input{Enunciados/GraphAlgorithms/RoundTrip.tex}
+\vspace{0.3cm}
+\lstinputlisting{GraphAlgorithms/RoundTrip.cpp}
+
+\subsection{Round Trip II}
+\input{Enunciados/GraphAlgorithms/RoundTripII.tex}
+\vspace{0.3cm}
+\lstinputlisting{GraphAlgorithms/RoundTripII.cpp}
+
+\subsection{School Dance}
+\input{Enunciados/GraphAlgorithms/SchoolDance.tex}
+\vspace{0.3cm}
+\lstinputlisting{GraphAlgorithms/SchoolDance.cpp}
+
+\subsection{Shortest Routes I}
+\input{Enunciados/GraphAlgorithms/ShortestRoutesI.tex}
+\vspace{0.3cm}
+\lstinputlisting{GraphAlgorithms/ShortestRoutesI.cpp}
+
+\subsection{Shortest Routes II}
+\input{Enunciados/GraphAlgorithms/ShortestRoutesII.tex}
+\vspace{0.3cm}
+\lstinputlisting{GraphAlgorithms/ShortestRoutesII.cpp}
+
+\subsection{Teleporters Path}
+\input{Enunciados/GraphAlgorithms/TeleportersPath.tex}
+\vspace{0.3cm}
+\lstinputlisting{GraphAlgorithms/TeleportersPath.cpp}
+
+\section{Range Queries}
+
+\subsection{Distinct Values Queries}
+\input{Enunciados/RangeQueries/DistinctValuesQueries.tex}
+\vspace{0.3cm}
+\lstinputlisting{RangeQueries/DistinctValuesQueries.cpp}
+
+\subsection{Distinct Values Queries II}
+\input{Enunciados/RangeQueries/DistinctValuesQueriesII.tex}
+\vspace{0.3cm}
+\lstinputlisting{RangeQueries/DistinctValuesQueriesII.cpp}
+
+\subsection{Dynamic Range Minimum Queries}
+\input{Enunciados/RangeQueries/DynamicRangeMinimumQueries.tex}
+\vspace{0.3cm}
+\lstinputlisting{RangeQueries/DynamicRangeMinimumQueries.cpp}
+
+\subsection{Dynamic Range Sum Queries}
+\input{Enunciados/RangeQueries/DynamicRangeSumQueries.tex}
+\vspace{0.3cm}
+\lstinputlisting{RangeQueries/DynamicRangeSumQueries.cpp}
+
+\subsection{Forest Queries}
+\input{Enunciados/RangeQueries/ForestQueries.tex}
+\vspace{0.3cm}
+\lstinputlisting{RangeQueries/ForestQueries.cpp}
+
+\subsection{Hotel Queries}
+\input{Enunciados/RangeQueries/HotelQueries.tex}
+\vspace{0.3cm}
+\lstinputlisting{RangeQueries/HotelQueries.cpp}
+
+\subsection{List Removals}
+\input{Enunciados/RangeQueries/ListRemovals.tex}
+\vspace{0.3cm}
+\lstinputlisting{RangeQueries/ListRemovals.cpp}
+
+\subsection{Pizzeria Queries}
+\input{Enunciados/RangeQueries/PizzeriaQueries.tex}
+\vspace{0.3cm}
+\lstinputlisting{RangeQueries/PizzeriaQueries.cpp}
+
+\subsection{Polynomial Queries}
+\input{Enunciados/RangeQueries/PolynomialQueries.tex}
+\vspace{0.3cm}
+\lstinputlisting{RangeQueries/PolynomialQueries.cpp}
+
+\subsection{Prefix Sum Queries}
+\input{Enunciados/RangeQueries/PrefixSumQueries.tex}
+\vspace{0.3cm}
+\lstinputlisting{RangeQueries/PrefixSumQueries.cpp}
+
+\subsection{Range Update Queries}
+\input{Enunciados/RangeQueries/RangeUpdateQueries.tex}
+\vspace{0.3cm}
+\lstinputlisting{RangeQueries/RangeUpdateQueries.cpp}
+
+\subsection{Range Xor Queries}
+\input{Enunciados/RangeQueries/RangeXorQueries.tex}
+\vspace{0.3cm}
+\lstinputlisting{RangeQueries/RangeXorQueries.cpp}
+
+\subsection{Salary Queries}
+\input{Enunciados/RangeQueries/SalaryQueries.tex}
+\vspace{0.3cm}
+\lstinputlisting{RangeQueries/SalaryQueries.cpp}
+
+\subsection{Static Range Minimum Queries}
+\input{Enunciados/RangeQueries/StaticRangeMinimumQueries.tex}
+\vspace{0.3cm}
+\lstinputlisting{RangeQueries/StaticRangeMinimumQueries.cpp}
+
+\subsection{Static Range Sum Queries}
+\input{Enunciados/RangeQueries/StaticRangeSumQueries.tex}
+\vspace{0.3cm}
+\lstinputlisting{RangeQueries/StaticRangeSumQueries.cpp}
+
+\subsection{Subarray Sum Queries}
+\input{Enunciados/RangeQueries/SubarraySumQueries.tex}
+\vspace{0.3cm}
+\lstinputlisting{RangeQueries/SubarraySumQueries.cpp}
+
+\subsection{Subarray Sum Queries II}
+\input{Enunciados/RangeQueries/SubarraySumQueriesII.tex}
+\vspace{0.3cm}
+\lstinputlisting{RangeQueries/SubarraySumQueriesII.cpp}
+
+\subsection{Visible Buildings Queries}
+\input{Enunciados/RangeQueries/VisibleBuildingsQueries.tex}
+\vspace{0.3cm}
+\lstinputlisting{RangeQueries/VisibleBuildingsQueries.cpp}
+
+\section{Tree Algorithms}
+
+\subsection{Company Queries I}
 \input{Enunciados/TreeAlgorithms/CompanyQueriesI.tex}
 \vspace{0.3cm}
-\noindent\textbf{Código-fonte:}
 \lstinputlisting{TreeAlgorithms/CompanyQueriesI.cpp}
 
-\section{Company Queries II}
+\subsection{Company Queries II}
 \input{Enunciados/TreeAlgorithms/CompanyQueriesII.tex}
 \vspace{0.3cm}
-\noindent\textbf{Código-fonte:}
 \lstinputlisting{TreeAlgorithms/CompanyQueriesII.cpp}
 
-\section{Counting Paths}
+\subsection{Counting Paths}
 \input{Enunciados/TreeAlgorithms/CountingPaths.tex}
 \vspace{0.3cm}
-\noindent\textbf{Código-fonte:}
 \lstinputlisting{TreeAlgorithms/CountingPaths.cpp}
 
-\section{Distance Queries}
+\subsection{Distance Queries}
 \input{Enunciados/TreeAlgorithms/DistanceQueries.tex}
 \vspace{0.3cm}
-\noindent\textbf{Código-fonte:}
 \lstinputlisting{TreeAlgorithms/DistanceQueries.cpp}
 
-\section{Distinct Colors}
+\subsection{Distinct Colors}
 \input{Enunciados/TreeAlgorithms/DistinctColors.tex}
 \vspace{0.3cm}
-\noindent\textbf{Código-fonte:}
 \lstinputlisting{TreeAlgorithms/DistinctColors.cpp}
 
-\section{Findinga Centroid}
+\subsection{Findinga Centroid}
 \input{Enunciados/TreeAlgorithms/FindingaCentroid.tex}
 \vspace{0.3cm}
-\noindent\textbf{Código-fonte:}
 \lstinputlisting{TreeAlgorithms/FindingaCentroid.cpp}
 
-\section{Fixed-Length Paths I}
+\subsection{Fixed-Length Paths I}
 \input{Enunciados/TreeAlgorithms/Fixed-LengthPathsI.tex}
 \vspace{0.3cm}
-\noindent\textbf{Código-fonte:}
 \lstinputlisting{TreeAlgorithms/Fixed-LengthPathsI.cpp}
 
-\section{Path Queries}
+\subsection{Path Queries}
 \input{Enunciados/TreeAlgorithms/PathQueries.tex}
 \vspace{0.3cm}
-\noindent\textbf{Código-fonte:}
 \lstinputlisting{TreeAlgorithms/PathQueries.cpp}
 
-\section{Path Queries II}
+\subsection{Path Queries II}
 \input{Enunciados/TreeAlgorithms/PathQueriesII.tex}
 \vspace{0.3cm}
-\noindent\textbf{Código-fonte:}
 \lstinputlisting{TreeAlgorithms/PathQueriesII.cpp}
 
-\section{Subordinates}
+\subsection{Subordinates}
 \input{Enunciados/TreeAlgorithms/Subordinates.tex}
 \vspace{0.3cm}
-\noindent\textbf{Código-fonte:}
 \lstinputlisting{TreeAlgorithms/Subordinates.cpp}
 
-\section{Subtree Queries}
+\subsection{Subtree Queries}
 \input{Enunciados/TreeAlgorithms/SubtreeQueries.tex}
 \vspace{0.3cm}
-\noindent\textbf{Código-fonte:}
 \lstinputlisting{TreeAlgorithms/SubtreeQueries.cpp}
 
-\section{Tree Diameter}
+\subsection{Tree Diameter}
 \input{Enunciados/TreeAlgorithms/TreeDiameter.tex}
 \vspace{0.3cm}
-\noindent\textbf{Código-fonte:}
 \lstinputlisting{TreeAlgorithms/TreeDiameter.cpp}
 
-\section{Tree Distances I}
+\subsection{Tree Distances I}
 \input{Enunciados/TreeAlgorithms/TreeDistancesI.tex}
 \vspace{0.3cm}
-\noindent\textbf{Código-fonte:}
 \lstinputlisting{TreeAlgorithms/TreeDistancesI.cpp}
 
-\section{Tree Distances II}
+\subsection{Tree Distances II}
 \input{Enunciados/TreeAlgorithms/TreeDistancesII.tex}
 \vspace{0.3cm}
-\noindent\textbf{Código-fonte:}
 \lstinputlisting{TreeAlgorithms/TreeDistancesII.cpp}
 
-\section{Tree Matching}
+\subsection{Tree Matching}
 \input{Enunciados/TreeAlgorithms/TreeMatching.tex}
 \vspace{0.3cm}
-\noindent\textbf{Código-fonte:}
 \lstinputlisting{TreeAlgorithms/TreeMatching.cpp}
+
+\section{Mathematics}
+
+\subsection{Candy Lottery}
+\input{Enunciados/Mathematics/CandyLottery.tex}
+\vspace{0.3cm}
+\lstinputlisting{Mathematics/CandyLottery.cpp}
+
+\section{String Algorithms}
+
+\subsection{Counting Patterns}
+\input{Enunciados/StringAlgorithms/CountingPatterns.tex}
+\vspace{0.3cm}
+\lstinputlisting{StringAlgorithms/CountingPatterns.cpp}
+
+\subsection{Distinct Substrings}
+\input{Enunciados/StringAlgorithms/DistinctSubstrings.tex}
+\vspace{0.3cm}
+\lstinputlisting{StringAlgorithms/DistinctSubstrings.cpp}
+
+\subsection{Finding Borders}
+\input{Enunciados/StringAlgorithms/FindingBorders.tex}
+\vspace{0.3cm}
+\lstinputlisting{StringAlgorithms/FindingBorders.cpp}
+
+\subsection{Repeating Substring}
+\input{Enunciados/StringAlgorithms/RepeatingSubstring.tex}
+\vspace{0.3cm}
+\lstinputlisting{StringAlgorithms/RepeatingSubstring.cpp}
+
+\subsection{String Functions}
+\input{Enunciados/StringAlgorithms/StringFunctions.tex}
+\vspace{0.3cm}
+\lstinputlisting{StringAlgorithms/StringFunctions.cpp}
+
+\subsection{String Matching}
+\input{Enunciados/StringAlgorithms/StringMatching.tex}
+\vspace{0.3cm}
+\lstinputlisting{StringAlgorithms/StringMatching.cpp}
+
+\subsection{String Transform}
+\input{Enunciados/StringAlgorithms/StringTransform.tex}
+\vspace{0.3cm}
+\lstinputlisting{StringAlgorithms/StringTransform.cpp}
+
+\subsection{Substring Order I}
+\input{Enunciados/StringAlgorithms/SubstringOrderI.tex}
+\vspace{0.3cm}
+\lstinputlisting{StringAlgorithms/SubstringOrderI.cpp}
+
+\subsection{Substring Order II}
+\input{Enunciados/StringAlgorithms/SubstringOrderII.tex}
+\vspace{0.3cm}
+\lstinputlisting{StringAlgorithms/SubstringOrderII.cpp}
+
+\section{Advanced Techniques}
+
+\subsection{Distinct Routes II}
+\input{Enunciados/AdvancedTechniques/DistinctRoutesII.tex}
+\vspace{0.3cm}
+\lstinputlisting{AdvancedTechniques/DistinctRoutesII.cpp}
+
+\subsection{Eulerian Subgraphs}
+\input{Enunciados/AdvancedTechniques/EulerianSubgraphs.tex}
+\vspace{0.3cm}
+\lstinputlisting{AdvancedTechniques/EulerianSubgraphs.cpp}
+
+\subsection{Housesand Schools}
+\input{Enunciados/AdvancedTechniques/HousesandSchools.tex}
+\vspace{0.3cm}
+\lstinputlisting{AdvancedTechniques/HousesandSchools.cpp}
+
+\subsection{Longest Palindrome}
+\input{Enunciados/AdvancedTechniques/LongestPalindrome.tex}
+\vspace{0.3cm}
+\lstinputlisting{AdvancedTechniques/LongestPalindrome.cpp}
+
+\subsection{Monster Game}
+Enunciado não encontrado no site.
+\vspace{0.3cm}
+\lstinputlisting{AdvancedTechniques/MonsterGame.cpp}
+
+\subsection{Necessary Cities}
+\input{Enunciados/AdvancedTechniques/NecessaryCities.tex}
+\vspace{0.3cm}
+\lstinputlisting{AdvancedTechniques/NecessaryCities.cpp}
+
+\subsection{Necessary Roads}
+\input{Enunciados/AdvancedTechniques/NecessaryRoads.tex}
+\vspace{0.3cm}
+\lstinputlisting{AdvancedTechniques/NecessaryRoads.cpp}
+
+\subsection{Parcel Delivery}
+\input{Enunciados/AdvancedTechniques/ParcelDelivery.tex}
+\vspace{0.3cm}
+\lstinputlisting{AdvancedTechniques/ParcelDelivery.cpp}
+
+\subsection{Signal Processing}
+\input{Enunciados/AdvancedTechniques/SignalProcessing.tex}
+\vspace{0.3cm}
+\lstinputlisting{AdvancedTechniques/SignalProcessing.cpp}
+
+\subsection{Subarray Squares}
+\input{Enunciados/AdvancedTechniques/SubarraySquares.tex}
+\vspace{0.3cm}
+\lstinputlisting{AdvancedTechniques/SubarraySquares.cpp}
+
+\subsection{Substring Reversals}
+\input{Enunciados/AdvancedTechniques/SubstringReversals.tex}
+\vspace{0.3cm}
+\lstinputlisting{AdvancedTechniques/SubstringReversals.cpp}
+
+\section{Sliding Window Problems}
+
+\subsection{Sliding Window Cost}
+\input{Enunciados/SlidingWindowProblems/SlidingWindowCost.tex}
+\vspace{0.3cm}
+\lstinputlisting{SlidingWindowProblems/SlidingWindowCost.cpp}
+
+\subsection{Sliding Window Median}
+\input{Enunciados/SlidingWindowProblems/SlidingWindowMedian.tex}
+\vspace{0.3cm}
+\lstinputlisting{SlidingWindowProblems/SlidingWindowMedian.cpp}
+
+\section{Bitwise Operations}
+
+\subsection{All Subarray Xors}
+\input{Enunciados/BitwiseOperations/AllSubarrayXors.tex}
+\vspace{0.3cm}
+\lstinputlisting{BitwiseOperations/AllSubarrayXors.cpp}
+
+\subsection{And Subset Count}
+\input{Enunciados/BitwiseOperations/AndSubsetCount.tex}
+\vspace{0.3cm}
+\lstinputlisting{BitwiseOperations/AndSubsetCount.cpp}
+
+\subsection{Counting Bits}
+\input{Enunciados/BitwiseOperations/CountingBits.tex}
+\vspace{0.3cm}
+\lstinputlisting{BitwiseOperations/CountingBits.cpp}
+
+\subsection{KSubset Xors}
+\input{Enunciados/BitwiseOperations/KSubsetXors.tex}
+\vspace{0.3cm}
+\lstinputlisting{BitwiseOperations/KSubsetXors.cpp}
+
+\subsection{Maximum Xor Subarray}
+\input{Enunciados/BitwiseOperations/MaximumXorSubarray.tex}
+\vspace{0.3cm}
+\lstinputlisting{BitwiseOperations/MaximumXorSubarray.cpp}
+
+\subsection{Maximum Xor Subset}
+\input{Enunciados/BitwiseOperations/MaximumXorSubset.tex}
+\vspace{0.3cm}
+\lstinputlisting{BitwiseOperations/MaximumXorSubset.cpp}
+
+\subsection{Numberof Subset Xors}
+\input{Enunciados/BitwiseOperations/NumberofSubsetXors.tex}
+\vspace{0.3cm}
+\lstinputlisting{BitwiseOperations/NumberofSubsetXors.cpp}
+
+\subsection{SOSBit Problem}
+\input{Enunciados/BitwiseOperations/SOSBitProblem.tex}
+\vspace{0.3cm}
+\lstinputlisting{BitwiseOperations/SOSBitProblem.cpp}
+
+\subsection{Xor Pyramid Diagonal}
+\input{Enunciados/BitwiseOperations/XorPyramidDiagonal.tex}
+\vspace{0.3cm}
+\lstinputlisting{BitwiseOperations/XorPyramidDiagonal.cpp}
+
+\subsection{Xor Pyramid Peak}
+\input{Enunciados/BitwiseOperations/XorPyramidPeak.tex}
+\vspace{0.3cm}
+\lstinputlisting{BitwiseOperations/XorPyramidPeak.cpp}
+
+\subsection{Xor Pyramid Row}
+\input{Enunciados/BitwiseOperations/XorPyramidRow.tex}
+\vspace{0.3cm}
+\lstinputlisting{BitwiseOperations/XorPyramidRow.cpp}
+
+\section{Construction Problems}
+
+\subsection{Chess Tournament}
+\input{Enunciados/ConstructionProblems/ChessTournament.tex}
+\vspace{0.3cm}
+\lstinputlisting{ConstructionProblems/ChessTournament.cpp}
+
+\subsection{Inverse Inversions}
+\input{Enunciados/ConstructionProblems/InverseInversions.tex}
+\vspace{0.3cm}
+\lstinputlisting{ConstructionProblems/InverseInversions.cpp}
+
+\section{Advanced Graph Problems}
+
+\subsection{Acyclic Graph Edges}
+\input{Enunciados/AdvancedGraphProblems/AcyclicGraphEdges.tex}
+\vspace{0.3cm}
+\lstinputlisting{AdvancedGraphProblems/AcyclicGraphEdges.cpp}
+
+\subsection{Course Schedule II}
+\input{Enunciados/AdvancedGraphProblems/CourseScheduleII.tex}
+\vspace{0.3cm}
+\lstinputlisting{AdvancedGraphProblems/CourseScheduleII.cpp}
+
+\subsection{Even Outdegree Edges}
+\input{Enunciados/AdvancedGraphProblems/EvenOutdegreeEdges.tex}
+\vspace{0.3cm}
+\lstinputlisting{AdvancedGraphProblems/EvenOutdegreeEdges.cpp}
+
+\subsection{Graph Coloring}
+\input{Enunciados/AdvancedGraphProblems/GraphColoring.tex}
+\vspace{0.3cm}
+\lstinputlisting{AdvancedGraphProblems/GraphColoring.cpp}
+
+\subsection{Split Into Two Paths}
+\input{Enunciados/AdvancedGraphProblems/SplitIntoTwoPaths.tex}
+\vspace{0.3cm}
+\lstinputlisting{AdvancedGraphProblems/SplitIntoTwoPaths.cpp}
+
+\subsection{Strongly Connected Edges}
+\input{Enunciados/AdvancedGraphProblems/StronglyConnectedEdges.tex}
+\vspace{0.3cm}
+\lstinputlisting{AdvancedGraphProblems/StronglyConnectedEdges.cpp}
+
+\subsection{Tree Coin Collecting I}
+\input{Enunciados/AdvancedGraphProblems/TreeCoinCollectingI.tex}
+\vspace{0.3cm}
+\lstinputlisting{AdvancedGraphProblems/TreeCoinCollectingI.cpp}
+
+\subsection{Tree Coin Collecting II}
+\input{Enunciados/AdvancedGraphProblems/TreeCoinCollectingII.tex}
+\vspace{0.3cm}
+\lstinputlisting{AdvancedGraphProblems/TreeCoinCollectingII.cpp}
+
+\subsection{Tree Traversals}
+\input{Enunciados/AdvancedGraphProblems/TreeTraversals.tex}
+\vspace{0.3cm}
+\lstinputlisting{AdvancedGraphProblems/TreeTraversals.cpp}
+
+\section{Counting Problems}
+
+\subsection{All Letter Subgrid Count I}
+\input{Enunciados/CountingProblems/AllLetterSubgridCountI.tex}
+\vspace{0.3cm}
+\lstinputlisting{CountingProblems/AllLetterSubgridCountI.cpp}
+
+\subsection{All Letter Subgrid Count II}
+\input{Enunciados/CountingProblems/AllLetterSubgridCountII.tex}
+\vspace{0.3cm}
+\lstinputlisting{CountingProblems/AllLetterSubgridCountII.cpp}
+
+\subsection{Counting Sequences}
+\input{Enunciados/CountingProblems/CountingSequences.tex}
+\vspace{0.3cm}
+\lstinputlisting{CountingProblems/CountingSequences.cpp}
+
+\subsection{Empty String}
+\input{Enunciados/CountingProblems/EmptyString.tex}
+\vspace{0.3cm}
+\lstinputlisting{CountingProblems/EmptyString.cpp}
+
+\subsection{Grid Paths II}
+\input{Enunciados/CountingProblems/GridPathsII.tex}
+\vspace{0.3cm}
+\lstinputlisting{CountingProblems/GridPathsII.cpp}
+
+\subsection{Permutation Inversions}
+\input{Enunciados/CountingProblems/PermutationInversions.tex}
+\vspace{0.3cm}
+\lstinputlisting{CountingProblems/PermutationInversions.cpp}
+
+\section{Additional Problems I}
+
+\subsection{Beautiful Permutation II}
+\input{Enunciados/AdditionalProblemsI/BeautifulPermutationII.tex}
+\vspace{0.3cm}
+\lstinputlisting{AdditionalProblemsI/BeautifulPermutationII.cpp}
+
+\subsection{Distinct Values Sum}
+\input{Enunciados/AdditionalProblemsI/DistinctValuesSum.tex}
+\vspace{0.3cm}
+\lstinputlisting{AdditionalProblemsI/DistinctValuesSum.cpp}
+
+\subsection{Maximum Average Subarrays}
+\input{Enunciados/AdditionalProblemsI/MaximumAverageSubarrays.tex}
+\vspace{0.3cm}
+\lstinputlisting{AdditionalProblemsI/MaximumAverageSubarrays.cpp}
+
+\subsection{Maximum Building I}
+\input{Enunciados/AdditionalProblemsI/MaximumBuildingI.tex}
+\vspace{0.3cm}
+\lstinputlisting{AdditionalProblemsI/MaximumBuildingI.cpp}
+
+\subsection{Nearest Campsites I}
+\input{Enunciados/AdditionalProblemsI/NearestCampsitesI.tex}
+\vspace{0.3cm}
+\lstinputlisting{AdditionalProblemsI/NearestCampsitesI.cpp}
+
+\subsection{Nearest Campsites II}
+\input{Enunciados/AdditionalProblemsI/NearestCampsitesII.tex}
+\vspace{0.3cm}
+\lstinputlisting{AdditionalProblemsI/NearestCampsitesII.cpp}
+
+\subsection{Sorting Methods}
+\input{Enunciados/AdditionalProblemsI/SortingMethods.tex}
+\vspace{0.3cm}
+\lstinputlisting{AdditionalProblemsI/SortingMethods.cpp}
+
+\subsection{Swap Game}
+\input{Enunciados/AdditionalProblemsI/SwapGame.tex}
+\vspace{0.3cm}
+\lstinputlisting{AdditionalProblemsI/SwapGame.cpp}
+
+\subsection{Water Containers Moves}
+\input{Enunciados/AdditionalProblemsI/WaterContainersMoves.tex}
+\vspace{0.3cm}
+\lstinputlisting{AdditionalProblemsI/WaterContainersMoves.cpp}
+
+\subsection{Writing Numbers}
+\input{Enunciados/AdditionalProblemsI/WritingNumbers.tex}
+\vspace{0.3cm}
+\lstinputlisting{AdditionalProblemsI/WritingNumbers.cpp}
+
+\section{Additional Problems II}
+
+\subsection{Book Shop II}
+\input{Enunciados/AdditionalProblemsII/BookShopII.tex}
+\vspace{0.3cm}
+\lstinputlisting{AdditionalProblemsII/BookShopII.cpp}
+
+\subsection{Food Division}
+\input{Enunciados/AdditionalProblemsII/FoodDivision.tex}
+\vspace{0.3cm}
+\lstinputlisting{AdditionalProblemsII/FoodDivision.cpp}
+
+\subsection{GCDSubsets}
+\input{Enunciados/AdditionalProblemsII/GCDSubsets.tex}
+\vspace{0.3cm}
+\lstinputlisting{AdditionalProblemsII/GCDSubsets.cpp}
+
+\subsection{Grid Coloring II}
+\input{Enunciados/AdditionalProblemsII/GridColoringII.tex}
+\vspace{0.3cm}
+\lstinputlisting{AdditionalProblemsII/GridColoringII.cpp}
+
+\subsection{Increasing Array II}
+\input{Enunciados/AdditionalProblemsII/IncreasingArrayII.tex}
+\vspace{0.3cm}
+\lstinputlisting{AdditionalProblemsII/IncreasingArrayII.cpp}
+
+\subsection{KSubset Sums I}
+\input{Enunciados/AdditionalProblemsII/KSubsetSumsI.tex}
+\vspace{0.3cm}
+\lstinputlisting{AdditionalProblemsII/KSubsetSumsI.cpp}
+
+\subsection{KSubset Sums II}
+\input{Enunciados/AdditionalProblemsII/KSubsetSumsII.tex}
+\vspace{0.3cm}
+\lstinputlisting{AdditionalProblemsII/KSubsetSumsII.cpp}
+
+\subsection{Knight Moves Queries}
+\input{Enunciados/AdditionalProblemsII/KnightMovesQueries.tex}
+\vspace{0.3cm}
+\lstinputlisting{AdditionalProblemsII/KnightMovesQueries.cpp}
+
+\subsection{Maximum Building II}
+\input{Enunciados/AdditionalProblemsII/MaximumBuildingII.tex}
+\vspace{0.3cm}
+\lstinputlisting{AdditionalProblemsII/MaximumBuildingII.cpp}
+
+\subsection{Mex Grid Queries}
+\input{Enunciados/AdditionalProblemsII/MexGridQueries.tex}
+\vspace{0.3cm}
+\lstinputlisting{AdditionalProblemsII/MexGridQueries.cpp}
+
+\subsection{Minimum Cost Pairs}
+\input{Enunciados/AdditionalProblemsII/MinimumCostPairs.tex}
+\vspace{0.3cm}
+\lstinputlisting{AdditionalProblemsII/MinimumCostPairs.cpp}
+
+\subsection{Programmersand Artists}
+\input{Enunciados/AdditionalProblemsII/ProgrammersandArtists.tex}
+\vspace{0.3cm}
+\lstinputlisting{AdditionalProblemsII/ProgrammersandArtists.cpp}
+
+\subsection{School Excursion}
+\input{Enunciados/AdditionalProblemsII/SchoolExcursion.tex}
+\vspace{0.3cm}
+\lstinputlisting{AdditionalProblemsII/SchoolExcursion.cpp}
+\end{multicols*}
 \end{document}

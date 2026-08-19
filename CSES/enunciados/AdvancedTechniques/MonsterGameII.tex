@@ -1,0 +1,18 @@
+You are playing a game that consists of $n$ levels. Each level has a monster. On levels $1,2,\dots,n-1$, you can either kill or escape the monster. However, on level $n$ you must kill the final monster to win the game.
+Killing a monster takes $sf$ time where $s$ is the monster's strength and $f$ is your skill factor. After killing a monster, you get a new skill factor  (lower skill factor is better). What is the minimum total time in which you can win the game?
+
+\vspace{0.3cm}\noindent\textbf{Input}
+
+The first input line has two integers $n$ and $x$: the number of levels and your initial skill factor.
+The second line has $n$ integers $s_1,s_2,\dots,s_n$: each monster's strength.
+The third line has $n$ integers $f_1,f_2,\dots,f_n$: your new skill factor after killing a monster.
+
+\vspace{0.3cm}\noindent\textbf{Output}
+
+Print one integer: the minimum total time to win the game.
+
+\vspace{0.3cm}\noindent\textbf{Constraints}
+
+\textbullet\ $1 \le n \le 2 \cdot 10^5$
+\textbullet\ $1 \le x \le 10^6$
+\textbullet\ $1 \le s_i, f_i \le 10^6$

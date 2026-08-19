@@ -1,0 +1,20 @@
+You are given an array of $n$ integers. Your task is to calculate the minimum of each window of $k$ elements, from left to right.
+In this problem the input data is large and it is created using a generator.
+
+\vspace{0.3cm}\noindent\textbf{Input}
+
+The first line contains two integers $n$ and $k$: the number of elements and the size of the window.
+The next line contains four integers $x$, $a$, $b$ and $c$: the input generator parameters. The input is generated as follows:
+
+\textbullet\ $x_1=x$
+\textbullet\ $x_i=(ax_{i-1}+b) \bmod c$ for $i=2,3,\dots,n$
+
+\vspace{0.3cm}\noindent\textbf{Output}
+
+Print the xor of all window minimums.
+
+\vspace{0.3cm}\noindent\textbf{Constraints}
+
+\textbullet\ $1 \le k \le n \le 10^7$
+\textbullet\ $0 \le x, a, b \le 10^9$
+\textbullet\ $1 \le c \le 10^9$

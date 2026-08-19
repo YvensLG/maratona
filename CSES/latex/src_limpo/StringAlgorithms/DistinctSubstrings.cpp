@@ -1,12 +1,3 @@
-// Suffix Array - O(n log n)
-//
-// kasai recebe o suffix array e calcula lcp[i],
-// o lcp entre s[sa[i],...,n-1] e s[sa[i+1],..,n-1]
-//
-// Complexidades:
-// suffix_array - O(n log(n))
-// kasai - O(n)
-
 vector<int> suffix_array(string s) {
 	s += "$";
 	int n = s.size(), N = max(n, 260LL);

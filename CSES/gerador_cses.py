@@ -24,12 +24,10 @@ def escapar_latex(texto):
     texto = texto.replace('<', '$<$').replace('>', '$>$')
     return texto
 
-# --- NOVA FUNÇÃO: O LIXEIRO DE BOILERPLATE INTELIGENTE ---
 def limpar_codigo_cpp(caminho_original, caminho_novo):
     with open(caminho_original, 'r', encoding='utf-8') as f:
         texto = f.read()
     
-    # 1. Limpeza linha por linha (includes, defines, etc)
     linhas = texto.split('\n')
     linhas_limpas = []
     for linha in linhas:
@@ -45,7 +43,6 @@ def limpar_codigo_cpp(caminho_original, caminho_novo):
         
     texto = '\n'.join(linhas_limpas)
     
-    # 2. A MÁGICA: Encontrar e deletar a main inútil lendo as chaves {}
     match = re.search(r"(?:int|int32_t|signed)\s+main\s*\(\s*\)\s*\{", texto)
     if match:
         start_idx = match.start()
@@ -53,7 +50,6 @@ def limpar_codigo_cpp(caminho_original, caminho_novo):
         
         open_braces = 1
         end_idx = -1
-        # Rastreia as chaves para achar exatamente onde a main termina
         for i in range(body_start, len(texto)):
             if texto[i] == '{':
                 open_braces += 1
@@ -65,20 +61,17 @@ def limpar_codigo_cpp(caminho_original, caminho_novo):
                     
         if end_idx != -1:
             miolo = texto[body_start:end_idx]
-            
-            # Simulamos a limpeza do miolo para ver se ele é inútil
-            miolo_limpo = re.sub(r'//.*', '', miolo) # Tira os comentários
-            # Tira os loops de test cases (seja for ou while)
+            miolo_limpo = re.sub(r'//.*', '', miolo) 
             miolo_limpo = re.sub(r'int\s+t\s*;\s*cin\s*>>\s*t\s*;\s*(?:for|while)\s*\([^)]+\)', '', miolo_limpo)
-            miolo_limpo = re.sub(r'solve\(\)\s*;', '', miolo_limpo) # Tira a chamada do solve
-            miolo_limpo = re.sub(r'return\s+0\s*;', '', miolo_limpo) # Tira o return 0
-            miolo_limpo = miolo_limpo.replace('{', '').replace('}', '') # Tira chaves órfãs
+            miolo_limpo = re.sub(r'solve\(\)\s*;', '', miolo_limpo) 
+            miolo_limpo = re.sub(r'return\s+0\s*;', '', miolo_limpo) 
+            # --- NOVO: Remove a macro de fast I/O isolada (com ou sem ponto e vírgula) ---
+            miolo_limpo = re.sub(r'\b_\b\s*;?', '', miolo_limpo) 
+            miolo_limpo = miolo_limpo.replace('{', '').replace('}', '') 
             
-            # Se não sobrou nada além de espaço e tabulação, a main inteira é deletada!
             if miolo_limpo.strip() == "":
                 texto = texto[:start_idx] + texto[end_idx+1:]
     
-    # 3. Remove excesso de linhas em branco e salva
     texto = re.sub(r'\n{3,}', '\n\n', texto).strip()
     
     os.makedirs(os.path.dirname(caminho_novo), exist_ok=True)
@@ -187,6 +180,7 @@ latex = [
     r"\usepackage[hidelinks]{hyperref}", # <-- PACOTE MÁGICO ADICIONADO AQUI
     r"",
     r"\begin{document}",
+    r"\raggedbottom",
     r"\begin{titlepage}",
     r"    \centering",
     r"    \vspace*{1.5cm}",

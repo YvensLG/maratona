@@ -1,0 +1,17 @@
+There is a hidden permutation $a_1, a_2,\dots, a_n$ of integers $1, 2,\dots, n$. Your task is to find this permutation.
+To do this, you can ask questions: you can choose a binary string $b_1b_2\dots b_n$ and you will receive the binary string $b_{a_1}b_{a_2}\dots b_{a_n}$.
+
+\vspace{0.3cm}\noindent\textbf{Interaction}
+
+This is an interactive problem. Your code will interact with the grader using standard input and output. You should start by reading a single integer $n$: the length of the permutation.
+On your turn, you can print one of the following:
+
+\textbullet\ "$?\ b_1b_2\dots b_n$", where $b_i\in\{0, 1\}$: The grader will return the binary string $b_{a_1}b_{a_2}\dots b_{a_n}$.
+\textbullet\ "$!\ a_1\ a_2 \dots a_n$": report that the hidden permutation is $a_1, a_2,\dots, a_n$. Your program must terminate after this.
+
+Each line should be followed by a line break. You must make sure the output gets flushed after printing each line.
+
+\vspace{0.3cm}\noindent\textbf{Constraints}
+
+\textbullet\ $1 \le n \le 1000$
+\textbullet\ you can ask at most $10$ questions of type $?$

@@ -1,0 +1,21 @@
+There were $n$ coders from Finland and $n$ coders from Sweden in a programming contest. It turned out that after the contest, each coder had a distinct score.
+Your task is to find the $k$-th highest score in the contest.
+To do this, you can ask questions: you can choose a country (Finland or Sweden) and an integer $i$ and you will be told the $i$-th highest score for the chosen country.
+
+\vspace{0.3cm}\noindent\textbf{Interaction}
+
+This is an interactive problem. Your code will interact with the grader using standard input and output. You should start by reading two integers $n$ and $k$.
+On your turn, you can print one of the following:
+
+\textbullet\ "$\mathrm{F}\ i$", where $1 \le i \le n$: ask the $i$-th highest score for Finland.
+\textbullet\ "$\mathrm{S}\ i$", where $1 \le i \le n$: ask the $i$-th highest score for Sweden.
+\textbullet\ "$!\ s$": report that the $k$-th highest score is $s$. Your program must terminate after this.
+
+Each line should be followed by a line break. You must make sure the output gets flushed after printing each line.
+
+\vspace{0.3cm}\noindent\textbf{Constraints}
+
+\textbullet\ $1 \le n \le 10^5$
+\textbullet\ $1 \le k \le 2n$
+\textbullet\ each score is between $1$ and $10^9$
+\textbullet\ you can ask at most $100$ queries of the first two types in total

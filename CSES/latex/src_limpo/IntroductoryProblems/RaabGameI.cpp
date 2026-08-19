@@ -60,8 +60,3 @@ void solve() {
     for(int i = a + b + 1; i <= n; i++) cout << i << ' ';
     cout << '\n';
 }
-
-signed main() { _
-    int t; cin >> t; while(t--)
-    solve();
-}

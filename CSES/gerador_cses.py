@@ -194,7 +194,7 @@ latex = [
     r"    \vspace{1.5cm}",
     r"    {\fontsize{20}{24}\selectfont \textbf{CSES Problem Set} \par}",
     r"    \vspace{1cm}",
-    r"    {\fontsize{14}{18}\selectfont Pedro Assunção, Pedro Mesquita, Yvens Porto \par}",
+    r"    {\fontsize{14}{18}\selectfont Pedro Assunção, Pedro Ferreira, Yvens Porto \par}",
     r"    \vfill",
     r"    {\fontsize{12}{14}\selectfont 2026-08-18 \par}",
     r"\end{titlepage}",

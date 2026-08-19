@@ -1,0 +1,22 @@
+You are given an $n \times n$ grid representing the map of a forest. Each square is either empty or has a tree. Your task is to process $q$ queries of the following types:
+
+Change the state (empty/tree) of a square.
+How many trees are inside a rectangle in the forest?
+
+\vspace{0.3cm}\noindent\textbf{Input}
+
+The first input line has two integers $n$ and $q$: the size of the forest and the number of queries.
+Then, there are $n$ lines describing the forest. Each line has $n$ characters: . is an empty square and * is a tree.
+Finally, there are $q$ lines describing the queries. The format of each line is either "$1$ $y$ $x$" or "2 $y_1$ $x_1$ $y_2$ $x_2$".
+
+\vspace{0.3cm}\noindent\textbf{Output}
+
+Print the answer to each query of the second type.
+
+\vspace{0.3cm}\noindent\textbf{Constraints}
+
+\textbullet\ $1 \le n \le 1000$
+\textbullet\ $1 \le q \le 2 \cdot 10^5$
+\textbullet\ $1 \le y,x \le n$
+\textbullet\ $1 \le y_1 \le y_2 \le n$
+\textbullet\ $1 \le x_1 \le x_2 \le n$

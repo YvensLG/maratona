@@ -5,8 +5,8 @@ Official competitive programming library repository for the team **Enemy Leo use
 This project contains our C++ solutions for the [CSES Problem Set](https://cses.fi/problemset/) and an automated generator that builds a PDF notebook.
 
 ## Team
-* Pedro Assunção
-* Pedro Mesquita
+* Pedro Assunção (Pikachu)
+* Pedro Ferreira (Passinho)
 * Yvens Porto
 
 ## How it works?

@@ -105,3 +105,85 @@ signed main() {
     solve();
     return 0;
 }
+
+// Pikachu :
+
+#include <bits/stdc++.h>
+using namespace std;
+ 
+#pragma GCC target ("avx2")
+#pragma GCC optimize ("O3")
+#pragma GCC optimize ("unroll-loops")
+ 
+using pii = pair<int, int>;
+using ll = long long;
+ 
+const int maxn = 500 + 10;
+ 
+int v[maxn], mat[maxn][maxn];
+ 
+pii front[maxn], back[maxn];
+int pf = -1, pb = -1;
+ 
+inline void refresh(){
+  while( pb >= 0 ){
+    int x = back[pb].first;
+    int OR = (( pf < 0 ) ? 0 : front[pf].second );
+ 
+    front[++pf] = pii( x, OR|x );
+    pb--;
+  }
+}
+inline void push( int x ){
+  int OR = (( pb < 0 ) ? 0 : back[pb].second );
+  back[++pb] = pii( x, OR|x );
+}
+ 
+inline void pop(){
+  if( pf < 0 ) refresh();
+  if( pf >= 0 ) pf--;
+}
+ 
+inline int get_or(){
+  return ((( pf < 0 ) ? 0 : front[pf].second )|(( pb < 0 ) ? 0 : back[pb].second ));
+}
+ 
+inline bool empty(){
+  return pf < 0 && pb < 0;
+}
+ 
+inline void clear(){
+  while( !empty() ) pop();
+}
+ 
+int main(){
+  ios::sync_with_stdio(false); cin.tie(NULL);
+  int n, k; cin >> n >> k;
+ 
+  for( int i = 0; i < n; i++ )
+    for( int j = 0; j < n; j++ ){
+      char c; cin >> c;
+      mat[i][j] = (1<<(c - 'A'));
+    }
+ 
+  ll resp = 0;
+ 
+  for( int i1 = 0; i1 < n; i1++ ){
+    fill( v, v + n, 0 );
+    for( int i2 = i1; i2 < n; i2++ ){
+      clear();
+      for( int j = 0; j < n; j++ ) v[j] |= mat[i2][j];
+ 
+      for( int j1 = 0, j2 = -1; j1 < n; j1++ ){
+        while( j2 + 1 < n && get_or() != (1<<k) - 1 ) push(v[++j2]);
+        if( get_or() != (1<<k) - 1 ) break;
+ 
+        resp += n - j2;
+        pop();
+      }
+    }
+  }
+ 
+  cout << resp << endl;
+ 
+}

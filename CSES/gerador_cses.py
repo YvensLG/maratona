@@ -98,21 +98,23 @@ for lista_tarefas in soup.find_all('ul', class_='task-list'):
 
 ORDEM_CSES = [
     "IntroductoryProblems",
-    "SortingandSearching",
+    "SortingAndSearching",
     "DynamicProgramming",
     "GraphAlgorithms",
     "RangeQueries",
     "TreeAlgorithms",
     "Mathematics",
     "StringAlgorithms",
+    "Geometry",
     "AdvancedTechniques",
-    "AdditionalProblemsI",
-    "AdditionalProblemsII",
-    "AdvancedGraphProblems",
+    "SlidingWindowProblems"
+    "InteractiveProblems"
     "BitwiseOperations",
     "ConstructionProblems",
+    "AdvancedGraphProblems",
     "CountingProblems",
-    "SlidingWindowProblems"
+    "AdditionalProblemsI",
+    "AdditionalProblemsII",
 ]
 
 def obter_ordem(nome):
@@ -242,6 +244,7 @@ try:
                 nome_normalizado = normalizar_nome(nome_base)
                 
                 titulo_bruto = re.sub(r'([a-z])([A-Z])', r'\1 \2', nome_base)
+                titulo_bruto = re.sub(r'([A-Z])([A-Z][a-z])', r'\1 \2', titulo_bruto)
                 titulo_exibicao = escapar_latex(titulo_bruto).replace('_', '\\_') 
                 
                 caminho_arquivo_enunciado = os.path.join(pasta_destino_enunciado, f"{nome_base}.tex")

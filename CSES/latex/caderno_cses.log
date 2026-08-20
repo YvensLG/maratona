@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2026.3.23)  19 AUG 2026 17:07
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2026.3.23)  19 AUG 2026 23:18
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -897,7 +897,7 @@ Package hyperref Info: Link coloring OFF on input line 60.
 \@outlinefile=\write4
 \openout4 = `caderno_cses.out'.
 
-<../assets/unicamp.png, id=1265, 1204.5pt x 1276.77pt>
+<../assets/unicamp.png, id=1627, 1204.5pt x 1276.77pt>
 File: ../assets/unicamp.png Graphic file (type png)
 <use ../assets/unicamp.png>
 Package pdftex.def Info: ../assets/unicamp.png  used on input line 65.
@@ -938,11 +938,11 @@ been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.165 ...{6.35}Throwing Dice}{65}{subsection.6.35}
-                                                  % [1])
+                                                  % [1] [2])
 \tf@toc=\write5
 \openout5 = `caderno_cses.toc'.
 
- [2] [3]
+ [3]
 (../enunciados/IntroductoryProblems/AppleDivision.tex)
 Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
 nput line 92.
@@ -1308,243 +1308,449 @@ Package amsmath Warning: Foreign command \atopwithdelims;
 (./src_limpo/Mathematics/ThrowingDice.cpp [65])
 (../enunciados/Mathematics/TriangleNumberSums.tex)
 (./src_limpo/Mathematics/TriangleNumberSums.cpp) [66]
+(../enunciados/StringAlgorithms/AllPalindromes.tex)
+(./src_limpo/StringAlgorithms/AllPalindromes.cpp)
 (../enunciados/StringAlgorithms/CountingPatterns.tex)
+
+Package tcolorbox Warning: Using nobreak failed. Try to enlarge `lines before b
+reak' or set page breaks manually on input line 1245.
+
 (./src_limpo/StringAlgorithms/CountingPatterns.cpp)
+(../enunciados/StringAlgorithms/DistinctSubsequences.tex)
+(./src_limpo/StringAlgorithms/DistinctSubsequences.cpp)
 (../enunciados/StringAlgorithms/DistinctSubstrings.tex)
-(./src_limpo/StringAlgorithms/DistinctSubstrings.cpp)
+(./src_limpo/StringAlgorithms/DistinctSubstrings.cpp [67])
 (../enunciados/StringAlgorithms/FindingBorders.tex)
 (./src_limpo/StringAlgorithms/FindingBorders.cpp)
-(../enunciados/StringAlgorithms/InverseSuffixArray.tex) [67]
+(../enunciados/StringAlgorithms/FindingPatterns.tex)
+(./src_limpo/StringAlgorithms/FindingPatterns.cpp [68])
+(../enunciados/StringAlgorithms/FindingPeriods.tex)
+(./src_limpo/StringAlgorithms/FindingPeriods.cpp)
+(../enunciados/StringAlgorithms/InverseSuffixArray.tex)
 (./src_limpo/StringAlgorithms/InverseSuffixArray.cpp)
 (../enunciados/StringAlgorithms/LongestPalindrome.tex)
-(./src_limpo/StringAlgorithms/LongestPalindrome.cpp)
-(../enunciados/StringAlgorithms/RepeatingSubstring.tex)
+(./src_limpo/StringAlgorithms/LongestPalindrome.cpp [69])
+(../enunciados/StringAlgorithms/MinimalRotation.tex)
+(./src_limpo/StringAlgorithms/MinimalRotation.cpp)
+(../enunciados/StringAlgorithms/PalindromeQueries.tex)
+
+Package tcolorbox Warning: Using nobreak failed. Try to enlarge `lines before b
+reak' or set page breaks manually on input line 1308.
+
+(./src_limpo/StringAlgorithms/PalindromeQueries.cpp [70])
+(../enunciados/StringAlgorithms/PatternPositions.tex)
+(./src_limpo/StringAlgorithms/PatternPositions.cpp)
+(../enunciados/StringAlgorithms/RepeatingSubstring.tex) [71]
 (./src_limpo/StringAlgorithms/RepeatingSubstring.cpp)
-(../enunciados/StringAlgorithms/StringFunctions.tex) [68]
+(../enunciados/StringAlgorithms/RequiredSubstring.tex)
+(./src_limpo/StringAlgorithms/RequiredSubstring.cpp)
+(../enunciados/StringAlgorithms/StringFunctions.tex)
 (./src_limpo/StringAlgorithms/StringFunctions.cpp)
-(../enunciados/StringAlgorithms/StringMatching.tex)
+(../enunciados/StringAlgorithms/StringMatching.tex) [72]
 (./src_limpo/StringAlgorithms/StringMatching.cpp)
 (../enunciados/StringAlgorithms/StringTransform.tex)
 (./src_limpo/StringAlgorithms/StringTransform.cpp)
-(../enunciados/StringAlgorithms/SubstringOrderI.tex)
-(./src_limpo/StringAlgorithms/SubstringOrderI.cpp [69])
+(../enunciados/StringAlgorithms/SubstringDistribution.tex)
+(./src_limpo/StringAlgorithms/SubstringDistribution.cpp)
+(../enunciados/StringAlgorithms/SubstringOrderI.tex) [73]
+(./src_limpo/StringAlgorithms/SubstringOrderI.cpp)
 (../enunciados/StringAlgorithms/SubstringOrderII.tex)
-(./src_limpo/StringAlgorithms/SubstringOrderII.cpp) [70]
+(./src_limpo/StringAlgorithms/SubstringOrderII.cpp)
+(../enunciados/StringAlgorithms/WordCombinations.tex)
+(./src_limpo/StringAlgorithms/WordCombinations.cpp [74]) [75]
+(../enunciados/AdvancedTechniques/ApplesAndBananas.tex)
+(./src_limpo/AdvancedTechniques/ApplesAndBananas.cpp)
+(../enunciados/AdvancedTechniques/CornerSubgridCheck.tex)
+(./src_limpo/AdvancedTechniques/CornerSubgridCheck.cpp)
+(../enunciados/AdvancedTechniques/CornerSubgridCount.tex)
+(./src_limpo/AdvancedTechniques/CornerSubgridCount.cpp)
+(../enunciados/AdvancedTechniques/CutAndPaste.tex) [76]
+(./src_limpo/AdvancedTechniques/CutAndPaste.cpp)
 (../enunciados/AdvancedTechniques/DistinctRoutesII.tex)
-(./src_limpo/AdvancedTechniques/DistinctRoutesII.cpp)
-(../enunciados/AdvancedTechniques/EulerianSubgraphs.tex)
+(./src_limpo/AdvancedTechniques/DistinctRoutesII.cpp [77])
+(../enunciados/AdvancedTechniques/DynamicConnectivity.tex)
+(./src_limpo/AdvancedTechniques/DynamicConnectivity.cpp)
+(../enunciados/AdvancedTechniques/EulerianSubgraphs.tex) [78]
 (./src_limpo/AdvancedTechniques/EulerianSubgraphs.cpp)
-(../enunciados/AdvancedTechniques/HousesAndSchools.tex) [71]
+(../enunciados/AdvancedTechniques/HammingDistance.tex)
+(./src_limpo/AdvancedTechniques/HammingDistance.cpp)
+(../enunciados/AdvancedTechniques/HousesAndSchools.tex)
 (./src_limpo/AdvancedTechniques/HousesAndSchools.cpp)
+(../enunciados/AdvancedTechniques/KnuthDivision.tex)
+(./src_limpo/AdvancedTechniques/KnuthDivision.cpp [79])
+(../enunciados/AdvancedTechniques/MeetInTheMiddle.tex)
+(./src_limpo/AdvancedTechniques/MeetInTheMiddle.cpp)
 (../enunciados/AdvancedTechniques/MonsterGameI.tex)
 (./src_limpo/AdvancedTechniques/MonsterGameI.cpp)
-(../enunciados/AdvancedTechniques/MonsterGameII.tex) [72]
-(./src_limpo/AdvancedTechniques/MonsterGameII.cpp)
+(../enunciados/AdvancedTechniques/MonsterGameII.tex)
+(./src_limpo/AdvancedTechniques/MonsterGameII.cpp [80])
 (../enunciados/AdvancedTechniques/NecessaryCities.tex)
 (./src_limpo/AdvancedTechniques/NecessaryCities.cpp)
 (../enunciados/AdvancedTechniques/NecessaryRoads.tex)
 
 Package tcolorbox Warning: Using nobreak failed. Try to enlarge `lines before b
-reak' or set page breaks manually on input line 1362.
+reak' or set page breaks manually on input line 1488.
 
-[73] (./src_limpo/AdvancedTechniques/NecessaryRoads.cpp)
+[81] (./src_limpo/AdvancedTechniques/NecessaryRoads.cpp)
+(../enunciados/AdvancedTechniques/NewRoadsQueries.tex)
+(./src_limpo/AdvancedTechniques/NewRoadsQueries.cpp)
+(../enunciados/AdvancedTechniques/OneBitPositions.tex) [82]
+(./src_limpo/AdvancedTechniques/OneBitPositions.cpp)
 (../enunciados/AdvancedTechniques/ParcelDelivery.tex)
-(./src_limpo/AdvancedTechniques/ParcelDelivery.cpp [74])
+(./src_limpo/AdvancedTechniques/ParcelDelivery.cpp [83])
+(../enunciados/AdvancedTechniques/ReachabilityQueries.tex)
+(./src_limpo/AdvancedTechniques/ReachabilityQueries.cpp)
+(../enunciados/AdvancedTechniques/ReachableNodes.tex)
+(./src_limpo/AdvancedTechniques/ReachableNodes.cpp [84])
+(../enunciados/AdvancedTechniques/ReversalsAndSums.tex)
+(./src_limpo/AdvancedTechniques/ReversalsAndSums.cpp)
 (../enunciados/AdvancedTechniques/SignalProcessing.tex)
-(./src_limpo/AdvancedTechniques/SignalProcessing.cpp)
+(./src_limpo/AdvancedTechniques/SignalProcessing.cpp [85])
 (../enunciados/AdvancedTechniques/SubarraySquares.tex)
-(./src_limpo/AdvancedTechniques/SubarraySquares.cpp [75]) [76]
+(./src_limpo/AdvancedTechniques/SubarraySquares.cpp)
+(../enunciados/AdvancedTechniques/SubstringReversals.tex)
+(./src_limpo/AdvancedTechniques/SubstringReversals.cpp [86])
+(../enunciados/AdvancedTechniques/TaskAssignment.tex)
+(./src_limpo/AdvancedTechniques/TaskAssignment.cpp) [87]
+(../enunciados/AdditionalProblemsI/Advertisement.tex)
+(./src_limpo/AdditionalProblemsI/Advertisement.cpp)
 (../enunciados/AdditionalProblemsI/BeautifulPermutationII.tex)
 (./src_limpo/AdditionalProblemsI/BeautifulPermutationII.cpp)
-(../enunciados/AdditionalProblemsI/DistinctValuesSum.tex)
+(../enunciados/AdditionalProblemsI/BitInversions.tex)
+(./src_limpo/AdditionalProblemsI/BitInversions.cpp [88])
+(../enunciados/AdditionalProblemsI/BubbleSortRoundsI.tex)
+(./src_limpo/AdditionalProblemsI/BubbleSortRoundsI.cpp)
+(../enunciados/AdditionalProblemsI/BubbleSortRoundsII.tex)
+(./src_limpo/AdditionalProblemsI/BubbleSortRoundsII.cpp)
+(../enunciados/AdditionalProblemsI/CountingLcmArrays.tex) [89]
+(./src_limpo/AdditionalProblemsI/CountingLcmArrays.cpp)
+(../enunciados/AdditionalProblemsI/CyclicArray.tex)
+(./src_limpo/AdditionalProblemsI/CyclicArray.cpp)
+(../enunciados/AdditionalProblemsI/DistinctValuesSplits.tex)
+(./src_limpo/AdditionalProblemsI/DistinctValuesSplits.cpp)
+(../enunciados/AdditionalProblemsI/DistinctValuesSum.tex) [90]
 (./src_limpo/AdditionalProblemsI/DistinctValuesSum.cpp)
 (../enunciados/AdditionalProblemsI/MaximumAverageSubarrays.tex)
-(./src_limpo/AdditionalProblemsI/MaximumAverageSubarrays.cpp [77])
+(./src_limpo/AdditionalProblemsI/MaximumAverageSubarrays.cpp)
 (../enunciados/AdditionalProblemsI/MaximumBuildingI.tex)
-(./src_limpo/AdditionalProblemsI/MaximumBuildingI.cpp)
+(./src_limpo/AdditionalProblemsI/MaximumBuildingI.cpp [91])
+(../enunciados/AdditionalProblemsI/MultiplicationTable.tex)
+(./src_limpo/AdditionalProblemsI/MultiplicationTable.cpp)
 (../enunciados/AdditionalProblemsI/NearestCampsitesI.tex)
-(./src_limpo/AdditionalProblemsI/NearestCampsitesI.cpp [78])
-(../enunciados/AdditionalProblemsI/NearestCampsitesII.tex)
+(./src_limpo/AdditionalProblemsI/NearestCampsitesI.cpp)
+(../enunciados/AdditionalProblemsI/NearestCampsitesII.tex) [92]
 (./src_limpo/AdditionalProblemsI/NearestCampsitesII.cpp)
 (../enunciados/AdditionalProblemsI/PermutationSubsequence.tex)
-(./src_limpo/AdditionalProblemsI/PermutationSubsequence.cpp [79])
+(./src_limpo/AdditionalProblemsI/PermutationSubsequence.cpp)
+(../enunciados/AdditionalProblemsI/PyramidArray.tex)
+
+Package tcolorbox Warning: Using nobreak failed. Try to enlarge `lines before b
+reak' or set page breaks manually on input line 1675.
+
+[93] (./src_limpo/AdditionalProblemsI/PyramidArray.cpp)
+(../enunciados/AdditionalProblemsI/ShortestSubsequence.tex)
+(./src_limpo/AdditionalProblemsI/ShortestSubsequence.cpp)
 (../enunciados/AdditionalProblemsI/SortingMethods.tex)
-(./src_limpo/AdditionalProblemsI/SortingMethods.cpp)
+(./src_limpo/AdditionalProblemsI/SortingMethods.cpp [94])
+(../enunciados/AdditionalProblemsI/SpecialSubstrings.tex)
+(./src_limpo/AdditionalProblemsI/SpecialSubstrings.cpp)
+(../enunciados/AdditionalProblemsI/SquareSubsets.tex)
+(./src_limpo/AdditionalProblemsI/SquareSubsets.cpp [95])
+(../enunciados/AdditionalProblemsI/StackWeights.tex)
+(./src_limpo/AdditionalProblemsI/StackWeights.cpp)
+(../enunciados/AdditionalProblemsI/SubarraySumConstraints.tex)
+(./src_limpo/AdditionalProblemsI/SubarraySumConstraints.cpp [96])
+(../enunciados/AdditionalProblemsI/SubsetsWithFixedAverage.tex)
+(./src_limpo/AdditionalProblemsI/SubsetsWithFixedAverage.cpp)
 (../enunciados/AdditionalProblemsI/SwapGame.tex)
-(./src_limpo/AdditionalProblemsI/SwapGame.cpp [80])
+(./src_limpo/AdditionalProblemsI/SwapGame.cpp)
+(../enunciados/AdditionalProblemsI/TwoArrayAverage.tex)
+(./src_limpo/AdditionalProblemsI/TwoArrayAverage.cpp [97])
 (../enunciados/AdditionalProblemsI/WaterContainersMoves.tex)
-(./src_limpo/AdditionalProblemsI/WaterContainersMoves.cpp)
-(../enunciados/AdditionalProblemsI/WritingNumbers.tex) [81]
-(./src_limpo/AdditionalProblemsI/WritingNumbers.cpp) [82]
+(./src_limpo/AdditionalProblemsI/WaterContainersMoves.cpp [98])
+(../enunciados/AdditionalProblemsI/WaterContainersQueries.tex)
+(./src_limpo/AdditionalProblemsI/WaterContainersQueries.cpp)
+(../enunciados/AdditionalProblemsI/WritingNumbers.tex)
+(./src_limpo/AdditionalProblemsI/WritingNumbers.cpp) [99]
 (../enunciados/AdditionalProblemsII/BinarySubsequences.tex)
 (./src_limpo/AdditionalProblemsII/BinarySubsequences.cpp)
+(../enunciados/AdditionalProblemsII/BitSubstrings.tex)
+(./src_limpo/AdditionalProblemsII/BitSubstrings.cpp)
 (../enunciados/AdditionalProblemsII/BookShopII.tex)
-(./src_limpo/AdditionalProblemsII/BookShopII.cpp)
+(./src_limpo/AdditionalProblemsII/BookShopII.cpp [100])
+(../enunciados/AdditionalProblemsII/BouncingBallSteps.tex)
+(./src_limpo/AdditionalProblemsII/BouncingBallSteps.cpp)
+(../enunciados/AdditionalProblemsII/CodingCompany.tex)
+(./src_limpo/AdditionalProblemsII/CodingCompany.cpp)
+(../enunciados/AdditionalProblemsII/CoinGrid.tex)
+(./src_limpo/AdditionalProblemsII/CoinGrid.cpp [101])
 (../enunciados/AdditionalProblemsII/FoodDivision.tex)
 (./src_limpo/AdditionalProblemsII/FoodDivision.cpp)
+(../enunciados/AdditionalProblemsII/GcdSubsets.tex)
+(./src_limpo/AdditionalProblemsII/GcdSubsets.cpp)
 (../enunciados/AdditionalProblemsII/GridColoringII.tex)
-(./src_limpo/AdditionalProblemsII/GridColoringII.cpp [83])
+(./src_limpo/AdditionalProblemsII/GridColoringII.cpp [102])
+(../enunciados/AdditionalProblemsII/GridPuzzleI.tex)
+(./src_limpo/AdditionalProblemsII/GridPuzzleI.cpp [103])
+(../enunciados/AdditionalProblemsII/GridPuzzleII.tex)
+(./src_limpo/AdditionalProblemsII/GridPuzzleII.cpp)
 (../enunciados/AdditionalProblemsII/IncreasingArrayII.tex)
 (./src_limpo/AdditionalProblemsII/IncreasingArrayII.cpp)
-(../enunciados/AdditionalProblemsII/KSubsetSumsI.tex)
-(./src_limpo/AdditionalProblemsII/KSubsetSumsI.cpp [84])
+(../enunciados/AdditionalProblemsII/KSubsetSumsI.tex) [104]
+(./src_limpo/AdditionalProblemsII/KSubsetSumsI.cpp)
 (../enunciados/AdditionalProblemsII/KSubsetSumsII.tex)
 (./src_limpo/AdditionalProblemsII/KSubsetSumsII.cpp)
 (../enunciados/AdditionalProblemsII/KnightMovesQueries.tex)
 (./src_limpo/AdditionalProblemsII/KnightMovesQueries.cpp)
 (../enunciados/AdditionalProblemsII/MaximumBuildingII.tex)
-(./src_limpo/AdditionalProblemsII/MaximumBuildingII.cpp [85])
+
+Package tcolorbox Warning: Using nobreak failed. Try to enlarge `lines before b
+reak' or set page breaks manually on input line 1876.
+
+[105] (./src_limpo/AdditionalProblemsII/MaximumBuildingII.cpp)
 (../enunciados/AdditionalProblemsII/MexGridQueries.tex)
 (./src_limpo/AdditionalProblemsII/MexGridQueries.cpp)
 (../enunciados/AdditionalProblemsII/MinimumCostPairs.tex)
-(./src_limpo/AdditionalProblemsII/MinimumCostPairs.cpp)
-(../enunciados/AdditionalProblemsII/ProgrammersAndArtists.tex) [86]
-(./src_limpo/AdditionalProblemsII/ProgrammersAndArtists.cpp)
+(./src_limpo/AdditionalProblemsII/MinimumCostPairs.cpp [106])
+(../enunciados/AdditionalProblemsII/ProgrammersAndArtists.tex)
+(./src_limpo/AdditionalProblemsII/ProgrammersAndArtists.cpp [107])
+(../enunciados/AdditionalProblemsII/RemovingDigitsII.tex)
+(./src_limpo/AdditionalProblemsII/RemovingDigitsII.cpp)
+(../enunciados/AdditionalProblemsII/ReplaceWithDifference.tex)
+(./src_limpo/AdditionalProblemsII/ReplaceWithDifference.cpp)
+(../enunciados/AdditionalProblemsII/ReversalSorting.tex) [108]
+(./src_limpo/AdditionalProblemsII/ReversalSorting.cpp)
 (../enunciados/AdditionalProblemsII/SameSumSubsets.tex)
-(./src_limpo/AdditionalProblemsII/SameSumSubsets.cpp [87])
+
+Package tcolorbox Warning: Using nobreak failed. Try to enlarge `lines before b
+reak' or set page breaks manually on input line 1925.
+
+(./src_limpo/AdditionalProblemsII/SameSumSubsets.cpp [109])
 (../enunciados/AdditionalProblemsII/SchoolExcursion.tex)
-(./src_limpo/AdditionalProblemsII/SchoolExcursion.cpp) [88]
+(./src_limpo/AdditionalProblemsII/SchoolExcursion.cpp)
+(../enunciados/AdditionalProblemsII/StickDivisions.tex)
+(./src_limpo/AdditionalProblemsII/StickDivisions.cpp)
+(../enunciados/AdditionalProblemsII/SwapRoundSorting.tex) [110]
+(./src_limpo/AdditionalProblemsII/SwapRoundSorting.cpp)
+(../enunciados/AdditionalProblemsII/TwoStacksSorting.tex)
+(./src_limpo/AdditionalProblemsII/TwoStacksSorting.cpp [111]) [112]
 (../enunciados/AdvancedGraphProblems/AcyclicGraphEdges.tex)
 (./src_limpo/AdvancedGraphProblems/AcyclicGraphEdges.cpp)
+(../enunciados/AdvancedGraphProblems/BusCompanies.tex)
+(./src_limpo/AdvancedGraphProblems/BusCompanies.cpp)
 (../enunciados/AdvancedGraphProblems/CourseScheduleII.tex)
 (./src_limpo/AdvancedGraphProblems/CourseScheduleII.cpp)
+(../enunciados/AdvancedGraphProblems/CreatingOffices.tex) [113]
+(./src_limpo/AdvancedGraphProblems/CreatingOffices.cpp)
+(../enunciados/AdvancedGraphProblems/CriticalCities.tex)
+(./src_limpo/AdvancedGraphProblems/CriticalCities.cpp)
 (../enunciados/AdvancedGraphProblems/EvenOutdegreeEdges.tex)
-(./src_limpo/AdvancedGraphProblems/EvenOutdegreeEdges.cpp)
-(../enunciados/AdvancedGraphProblems/GraphColoring.tex) [89]
+(./src_limpo/AdvancedGraphProblems/EvenOutdegreeEdges.cpp [114])
+(../enunciados/AdvancedGraphProblems/FixedLengthWalkQueries.tex)
+(./src_limpo/AdvancedGraphProblems/FixedLengthWalkQueries.cpp)
+(../enunciados/AdvancedGraphProblems/FlightRouteRequests.tex)
+(./src_limpo/AdvancedGraphProblems/FlightRouteRequests.cpp)
+(../enunciados/AdvancedGraphProblems/ForbiddenCities.tex) [115]
+(./src_limpo/AdvancedGraphProblems/ForbiddenCities.cpp)
+(../enunciados/AdvancedGraphProblems/GraphColoring.tex)
 (./src_limpo/AdvancedGraphProblems/GraphColoring.cpp)
-(../enunciados/AdvancedGraphProblems/NearestShops.tex)
+(../enunciados/AdvancedGraphProblems/GraphGirth.tex) [116]
+(./src_limpo/AdvancedGraphProblems/GraphGirth.cpp)
+(../enunciados/AdvancedGraphProblems/MSTEdgeCost.tex)
+(./src_limpo/AdvancedGraphProblems/MSTEdgeCost.cpp [117])
+(../enunciados/AdvancedGraphProblems/MstEdgeCheck.tex)
+(./src_limpo/AdvancedGraphProblems/MstEdgeCheck.cpp)
+(../enunciados/AdvancedGraphProblems/MstEdgeSetCheck.tex)
+(./src_limpo/AdvancedGraphProblems/MstEdgeSetCheck.cpp)
+(../enunciados/AdvancedGraphProblems/NearestShops.tex) [118]
 (./src_limpo/AdvancedGraphProblems/NearestShops.cpp)
-(../enunciados/AdvancedGraphProblems/SplitIntoTwoPaths.tex) [90]
-(./src_limpo/AdvancedGraphProblems/SplitIntoTwoPaths.cpp)
+(../enunciados/AdvancedGraphProblems/NetworkBreakdown.tex)
+(./src_limpo/AdvancedGraphProblems/NetworkBreakdown.cpp [119])
+(../enunciados/AdvancedGraphProblems/NetworkRenovation.tex)
+(./src_limpo/AdvancedGraphProblems/NetworkRenovation.cpp)
+(../enunciados/AdvancedGraphProblems/NewFlightRoutes.tex)
+(./src_limpo/AdvancedGraphProblems/NewFlightRoutes.cpp [120])
+(../enunciados/AdvancedGraphProblems/PruferCode.tex)
+(./src_limpo/AdvancedGraphProblems/PruferCode.cpp)
+(../enunciados/AdvancedGraphProblems/SplitIntoTwoPaths.tex)
+(./src_limpo/AdvancedGraphProblems/SplitIntoTwoPaths.cpp [121])
 (../enunciados/AdvancedGraphProblems/StronglyConnectedEdges.tex)
-(./src_limpo/AdvancedGraphProblems/StronglyConnectedEdges.cpp [91])
+(./src_limpo/AdvancedGraphProblems/StronglyConnectedEdges.cpp)
+(../enunciados/AdvancedGraphProblems/TransferSpeedsSum.tex) [122]
+(./src_limpo/AdvancedGraphProblems/TransferSpeedsSum.cpp)
 (../enunciados/AdvancedGraphProblems/TreeCoinCollectingI.tex)
 (./src_limpo/AdvancedGraphProblems/TreeCoinCollectingI.cpp)
-(../enunciados/AdvancedGraphProblems/TreeCoinCollectingII.tex)
-(./src_limpo/AdvancedGraphProblems/TreeCoinCollectingII.cpp [92])
+(../enunciados/AdvancedGraphProblems/TreeCoinCollectingII.tex) [123]
+(./src_limpo/AdvancedGraphProblems/TreeCoinCollectingII.cpp)
+(../enunciados/AdvancedGraphProblems/TreeIsomorphismI.tex)
+(./src_limpo/AdvancedGraphProblems/TreeIsomorphismI.cpp)
+(../enunciados/AdvancedGraphProblems/TreeIsomorphismII.tex)
+(./src_limpo/AdvancedGraphProblems/TreeIsomorphismII.cpp [124])
 (../enunciados/AdvancedGraphProblems/TreeTraversals.tex)
-(./src_limpo/AdvancedGraphProblems/TreeTraversals.cpp) [93]
+
+Package tcolorbox Warning: Using nobreak failed. Try to enlarge `lines before b
+reak' or set page breaks manually on input line 2147.
+
+(./src_limpo/AdvancedGraphProblems/TreeTraversals.cpp)
+(../enunciados/AdvancedGraphProblems/VisitingCities.tex)
+(./src_limpo/AdvancedGraphProblems/VisitingCities.cpp [125]) [126]
 (../enunciados/BitwiseOperations/AllSubarrayXors.tex)
 (./src_limpo/BitwiseOperations/AllSubarrayXors.cpp)
 (../enunciados/BitwiseOperations/AndSubsetCount.tex)
 (./src_limpo/BitwiseOperations/AndSubsetCount.cpp)
 (../enunciados/BitwiseOperations/CountingBits.tex)
-(./src_limpo/BitwiseOperations/CountingBits.cpp [94])
+(./src_limpo/BitwiseOperations/CountingBits.cpp [127])
 (../enunciados/BitwiseOperations/KSubsetXors.tex)
 (./src_limpo/BitwiseOperations/KSubsetXors.cpp)
 (../enunciados/BitwiseOperations/MaximumXorSubarray.tex)
 
 Package tcolorbox Warning: Using nobreak failed. Try to enlarge `lines before b
-reak' or set page breaks manually on input line 1683.
+reak' or set page breaks manually on input line 2194.
 
 (./src_limpo/BitwiseOperations/MaximumXorSubarray.cpp)
-(../enunciados/BitwiseOperations/MaximumXorSubset.tex) [95]
+(../enunciados/BitwiseOperations/MaximumXorSubset.tex) [128]
 (./src_limpo/BitwiseOperations/MaximumXorSubset.cpp)
 (../enunciados/BitwiseOperations/NumberofSubsetXors.tex)
-(./src_limpo/BitwiseOperations/NumberofSubsetXors.cpp [96])
+(./src_limpo/BitwiseOperations/NumberofSubsetXors.cpp [129])
 (../enunciados/BitwiseOperations/SOSBitProblem.tex)
 (./src_limpo/BitwiseOperations/SOSBitProblem.cpp)
 (../enunciados/BitwiseOperations/XorPyramidDiagonal.tex)
 (./src_limpo/BitwiseOperations/XorPyramidDiagonal.cpp)
 (../enunciados/BitwiseOperations/XorPyramidPeak.tex)
 (./src_limpo/BitwiseOperations/XorPyramidPeak.cpp)
-(../enunciados/BitwiseOperations/XorPyramidRow.tex) [97]
-(./src_limpo/BitwiseOperations/XorPyramidRow.cpp) [98]
+(../enunciados/BitwiseOperations/XorPyramidRow.tex) [130]
+(./src_limpo/BitwiseOperations/XorPyramidRow.cpp) [131]
 (../enunciados/ConstructionProblems/ChessTournament.tex)
 (./src_limpo/ConstructionProblems/ChessTournament.cpp)
-(../enunciados/ConstructionProblems/InverseInversions.tex)
+(../enunciados/ConstructionProblems/FillingTrominos.tex)
 
 Package tcolorbox Warning: Using nobreak failed. Try to enlarge `lines before b
-reak' or set page breaks manually on input line 1744.
+reak' or set page breaks manually on input line 2255.
 
-(./src_limpo/ConstructionProblems/InverseInversions.cpp) [99]
+(./src_limpo/ConstructionProblems/FillingTrominos.cpp)
+(../enunciados/ConstructionProblems/InverseInversions.tex)
+(./src_limpo/ConstructionProblems/InverseInversions.cpp) [132]
+(../enunciados/ConstructionProblems/MonotoneSubsequences.tex)
+(./src_limpo/ConstructionProblems/MonotoneSubsequences.cpp)
+(../enunciados/ConstructionProblems/PermutationPrimeSums.tex)
+(./src_limpo/ConstructionProblems/PermutationPrimeSums.cpp)
+(../enunciados/ConstructionProblems/ThirdPermutation.tex)
+(./src_limpo/ConstructionProblems/ThirdPermutation.cpp [133]) [134]
 (../enunciados/CountingProblems/AllLetterSubgridCountI.tex)
 (./src_limpo/CountingProblems/AllLetterSubgridCountI.cpp)
 (../enunciados/CountingProblems/AllLetterSubgridCountII.tex)
-(./src_limpo/CountingProblems/AllLetterSubgridCountII.cpp)
-(../enunciados/CountingProblems/CountingSequences.tex) [100]
+(./src_limpo/CountingProblems/AllLetterSubgridCountII.cpp [135])
+(../enunciados/CountingProblems/BorderSubgridCountI.tex)
+(./src_limpo/CountingProblems/BorderSubgridCountI.cpp)
+(../enunciados/CountingProblems/BorderSubgridCountII.tex)
+(./src_limpo/CountingProblems/BorderSubgridCountII.cpp [136])
+(../enunciados/CountingProblems/CountingPermutations.tex)
+(./src_limpo/CountingProblems/CountingPermutations.cpp)
+(../enunciados/CountingProblems/CountingSequences.tex)
 (./src_limpo/CountingProblems/CountingSequences.cpp)
 (../enunciados/CountingProblems/EmptyString.tex)
-(./src_limpo/CountingProblems/EmptyString.cpp)
+(./src_limpo/CountingProblems/EmptyString.cpp [137])
+(../enunciados/CountingProblems/FilledSubgridCountI.tex)
+(./src_limpo/CountingProblems/FilledSubgridCountI.cpp)
+(../enunciados/CountingProblems/FilledSubgridCountII.tex)
+(./src_limpo/CountingProblems/FilledSubgridCountII.cpp)
 (../enunciados/CountingProblems/GridPathsII.tex)
-(./src_limpo/CountingProblems/GridPathsII.cpp [101])
+(./src_limpo/CountingProblems/GridPathsII.cpp [138])
 (../enunciados/CountingProblems/PermutationInversions.tex)
 (./src_limpo/CountingProblems/PermutationInversions.cpp)
 (../enunciados/CountingProblems/RaabGameII.tex)
 (./src_limpo/CountingProblems/RaabGameII.cpp)
 (../enunciados/CountingProblems/TournamentGraphDistribution.tex)
-(./src_limpo/CountingProblems/TournamentGraphDistribution.cpp [102]) [103]
+(./src_limpo/CountingProblems/TournamentGraphDistribution.cpp [139]) [140]
+(../enunciados/SlidingWindowProblems/SlidingWindowAdvertisement.tex)
+(./src_limpo/SlidingWindowProblems/SlidingWindowAdvertisement.cpp)
 (../enunciados/SlidingWindowProblems/SlidingWindowCost.tex)
-(./src_limpo/SlidingWindowProblems/SlidingWindowCost.cpp)
+(./src_limpo/SlidingWindowProblems/SlidingWindowCost.cpp [141])
 (../enunciados/SlidingWindowProblems/SlidingWindowDistinctValues.tex)
 (./src_limpo/SlidingWindowProblems/SlidingWindowDistinctValues.cpp)
+(../enunciados/SlidingWindowProblems/SlidingWindowInversions.tex)
+(./src_limpo/SlidingWindowProblems/SlidingWindowInversions.cpp)
 (../enunciados/SlidingWindowProblems/SlidingWindowMedian.tex)
-(./src_limpo/SlidingWindowProblems/SlidingWindowMedian.cpp [104])
+(./src_limpo/SlidingWindowProblems/SlidingWindowMedian.cpp [142])
 (../enunciados/SlidingWindowProblems/SlidingWindowMex.tex)
 (./src_limpo/SlidingWindowProblems/SlidingWindowMex.cpp)
 (../enunciados/SlidingWindowProblems/SlidingWindowMinimum.tex)
 (./src_limpo/SlidingWindowProblems/SlidingWindowMinimum.cpp)
 (../enunciados/SlidingWindowProblems/SlidingWindowMode.tex)
+
+Package tcolorbox Warning: Using nobreak failed. Try to enlarge `lines before b
+reak' or set page breaks manually on input line 2440.
+
 (./src_limpo/SlidingWindowProblems/SlidingWindowMode.cpp)
-(../enunciados/SlidingWindowProblems/SlidingWindowOr.tex) [105]
+(../enunciados/SlidingWindowProblems/SlidingWindowOr.tex) [143]
 (./src_limpo/SlidingWindowProblems/SlidingWindowOr.cpp)
 (../enunciados/SlidingWindowProblems/SlidingWindowSum.tex)
 (./src_limpo/SlidingWindowProblems/SlidingWindowSum.cpp)
 (../enunciados/SlidingWindowProblems/SlidingWindowXor.tex)
-(./src_limpo/SlidingWindowProblems/SlidingWindowXor.cpp) [106]
+(./src_limpo/SlidingWindowProblems/SlidingWindowXor.cpp [144]) [145]
 (../enunciados/Geometry/AllManhattanDistances.tex)
 (./src_limpo/Geometry/AllManhattanDistances.cpp)
+(../enunciados/Geometry/AreaOfRectangles.tex)
+(./src_limpo/Geometry/AreaOfRectangles.cpp)
+(../enunciados/Geometry/ConvexHull.tex) [146]
+(./src_limpo/Geometry/ConvexHull.cpp)
+(../enunciados/Geometry/IntersectionPoints.tex)
+(./src_limpo/Geometry/IntersectionPoints.cpp)
 (../enunciados/Geometry/LineSegmentIntersection.tex)
-(./src_limpo/Geometry/LineSegmentIntersection.cpp)
+(./src_limpo/Geometry/LineSegmentIntersection.cpp [147])
 (../enunciados/Geometry/LineSegmentsTraceI.tex)
-(./src_limpo/Geometry/LineSegmentsTraceI.cpp [107])
+(./src_limpo/Geometry/LineSegmentsTraceI.cpp)
 (../enunciados/Geometry/LinesAndQueriesI.tex)
-(./src_limpo/Geometry/LinesAndQueriesI.cpp)
+(./src_limpo/Geometry/LinesAndQueriesI.cpp [148])
 (../enunciados/Geometry/MaximumManhattanDistances.tex)
+(./src_limpo/Geometry/MaximumManhattanDistances.cpp)
+(../enunciados/Geometry/MinimumEuclideanDistance.tex)
+(./src_limpo/Geometry/MinimumEuclideanDistance.cpp)
+(../enunciados/Geometry/PointInPolygon.tex)
+(./src_limpo/Geometry/PointInPolygon.cpp [149])
+(../enunciados/Geometry/PointLocationTest.tex)
 
 Package tcolorbox Warning: Using nobreak failed. Try to enlarge `lines before b
-reak' or set page breaks manually on input line 1913.
+reak' or set page breaks manually on input line 2543.
 
-(./src_limpo/Geometry/MaximumManhattanDistances.cpp)
-(../enunciados/Geometry/PointInPolygon.tex) [108]
-(./src_limpo/Geometry/PointInPolygon.cpp)
-(../enunciados/Geometry/PointLocationTest.tex)
 (./src_limpo/Geometry/PointLocationTest.cpp)
-(../enunciados/Geometry/PolygonArea.tex) [109]
-(./src_limpo/Geometry/PolygonArea.cpp)
+(../enunciados/Geometry/PolygonArea.tex) (./src_limpo/Geometry/PolygonArea.cpp)
 (../enunciados/Geometry/PolygonLatticePoints.tex)
-(./src_limpo/Geometry/PolygonLatticePoints.cpp) [110]
-(../enunciados/InteractiveProblems/ColoredChairs.tex)
+(./src_limpo/Geometry/PolygonLatticePoints.cpp [150])
+(../enunciados/Geometry/RobotPath.tex) (./src_limpo/Geometry/RobotPath.cpp
+[151]) [152] (../enunciados/InteractiveProblems/ColoredChairs.tex)
 (./src_limpo/InteractiveProblems/ColoredChairs.cpp)
 (../enunciados/InteractiveProblems/HiddenInteger.tex)
 (./src_limpo/InteractiveProblems/HiddenInteger.cpp)
 (../enunciados/InteractiveProblems/HiddenPermutation.tex)
 
 Package tcolorbox Warning: Using nobreak failed. Try to enlarge `lines before b
-reak' or set page breaks manually on input line 1967.
+reak' or set page breaks manually on input line 2590.
 
 (./src_limpo/InteractiveProblems/HiddenPermutation.cpp)
-(../enunciados/InteractiveProblems/K-thHighestScore.tex) [111]
-(./src_limpo/InteractiveProblems/K-thHighestScore.cpp)
+(../enunciados/InteractiveProblems/InversionSorting.tex) [153]
+(./src_limpo/InteractiveProblems/InversionSorting.cpp)
+(../enunciados/InteractiveProblems/K-thHighestScore.tex)
+(./src_limpo/InteractiveProblems/K-thHighestScore.cpp [154])
 (../enunciados/InteractiveProblems/PermutedBinaryStrings.tex)
-(./src_limpo/InteractiveProblems/PermutedBinaryStrings.cpp [112]) [113]
+(./src_limpo/InteractiveProblems/PermutedBinaryStrings.cpp) [155]
 (../enunciados/SortingAndSearching/Apartments.tex)
 (./src_limpo/SortingAndSearching/Apartments.cpp)
 (../enunciados/SortingAndSearching/ArrayDivision.tex)
 
 Package tcolorbox Warning: Using nobreak failed. Try to enlarge `lines before b
-reak' or set page breaks manually on input line 2000.
+reak' or set page breaks manually on input line 2630.
 
 (./src_limpo/SortingAndSearching/ArrayDivision.cpp)
 (../enunciados/SortingAndSearching/CollectingNumbers.tex)
 (./src_limpo/SortingAndSearching/CollectingNumbers.cpp)
 (../enunciados/SortingAndSearching/CollectingNumbersII.tex)
-(./src_limpo/SortingAndSearching/CollectingNumbersII.cpp [114])
+(./src_limpo/SortingAndSearching/CollectingNumbersII.cpp [156])
 (../enunciados/SortingAndSearching/ConcertTickets.tex)
 (./src_limpo/SortingAndSearching/ConcertTickets.cpp)
 (../enunciados/SortingAndSearching/DistinctNumbers.tex)
 (./src_limpo/SortingAndSearching/DistinctNumbers.cpp)
-(../enunciados/SortingAndSearching/DistinctValuesSubarrays.tex) [115]
+(../enunciados/SortingAndSearching/DistinctValuesSubarrays.tex) [157]
 (./src_limpo/SortingAndSearching/DistinctValuesSubarrays.cpp)
 (../enunciados/SortingAndSearching/DistinctValuesSubarraysII.tex)
 (./src_limpo/SortingAndSearching/DistinctValuesSubarraysII.cpp)
@@ -1552,7 +1758,7 @@ reak' or set page breaks manually on input line 2000.
 (./src_limpo/SortingAndSearching/DistinctValuesSubsequences.cpp)
 (../enunciados/SortingAndSearching/FactoryMachines.tex)
 (./src_limpo/SortingAndSearching/FactoryMachines.cpp)
-(../enunciados/SortingAndSearching/FerrisWheel.tex) [116]
+(../enunciados/SortingAndSearching/FerrisWheel.tex) [158]
 (./src_limpo/SortingAndSearching/FerrisWheel.cpp)
 (../enunciados/SortingAndSearching/JosephusProblemI.tex)
 (./src_limpo/SortingAndSearching/JosephusProblemI.cpp)
@@ -1560,7 +1766,7 @@ reak' or set page breaks manually on input line 2000.
 (./src_limpo/SortingAndSearching/JosephusProblemII.cpp)
 (../enunciados/SortingAndSearching/MaximumSubarraySum.tex)
 (./src_limpo/SortingAndSearching/MaximumSubarraySum.cpp)
-(../enunciados/SortingAndSearching/MaximumSubarraySumII.tex) [117]
+(../enunciados/SortingAndSearching/MaximumSubarraySumII.tex) [159]
 (./src_limpo/SortingAndSearching/MaximumSubarraySumII.cpp)
 (../enunciados/SortingAndSearching/MissingCoinSum.tex)
 (./src_limpo/SortingAndSearching/MissingCoinSum.cpp)
@@ -1569,21 +1775,21 @@ reak' or set page breaks manually on input line 2000.
 (../enunciados/SortingAndSearching/MovieFestivalII.tex)
 
 Package tcolorbox Warning: Using nobreak failed. Try to enlarge `lines before b
-reak' or set page breaks manually on input line 2112.
+reak' or set page breaks manually on input line 2742.
 
 (./src_limpo/SortingAndSearching/MovieFestivalII.cpp)
 (../enunciados/SortingAndSearching/NearestSmallerValues.tex)
 
 Package tcolorbox Warning: Using nobreak failed. Try to enlarge `lines before b
-reak' or set page breaks manually on input line 2119.
+reak' or set page breaks manually on input line 2749.
 
-[118] (./src_limpo/SortingAndSearching/NearestSmallerValues.cpp)
+[160] (./src_limpo/SortingAndSearching/NearestSmallerValues.cpp)
 (../enunciados/SortingAndSearching/NestedRangesCheck.tex)
 (./src_limpo/SortingAndSearching/NestedRangesCheck.cpp)
-(../enunciados/SortingAndSearching/NestedRangesCount.tex) [119]
+(../enunciados/SortingAndSearching/NestedRangesCount.tex) [161]
 
 Package tcolorbox Warning: Using nobreak failed. Try to enlarge `lines before b
-reak' or set page breaks manually on input line 2133.
+reak' or set page breaks manually on input line 2763.
 
 (./src_limpo/SortingAndSearching/NestedRangesCount.cpp)
 (../enunciados/SortingAndSearching/Playlist.tex)
@@ -1591,36 +1797,36 @@ reak' or set page breaks manually on input line 2133.
 (../enunciados/SortingAndSearching/ReadingBooks.tex)
 
 Package tcolorbox Warning: Using nobreak failed. Try to enlarge `lines before b
-reak' or set page breaks manually on input line 2147.
+reak' or set page breaks manually on input line 2777.
 
-[120] (./src_limpo/SortingAndSearching/ReadingBooks.cpp)
+[162] (./src_limpo/SortingAndSearching/ReadingBooks.cpp)
 (../enunciados/SortingAndSearching/RestaurantCustomers.tex)
 (./src_limpo/SortingAndSearching/RestaurantCustomers.cpp)
-(./src_limpo/SortingAndSearching/RoomAlocation.cpp [121])
+(./src_limpo/SortingAndSearching/RoomAlocation.cpp [163])
 (../enunciados/SortingAndSearching/StickLengths.tex)
 (./src_limpo/SortingAndSearching/StickLengths.cpp)
 (../enunciados/SortingAndSearching/SubarrayDivisibility.tex)
 (./src_limpo/SortingAndSearching/SubarrayDivisibility.cpp)
 (../enunciados/SortingAndSearching/SubarraySumsI.tex)
-(./src_limpo/SortingAndSearching/SubarraySumsI.cpp [122])
+(./src_limpo/SortingAndSearching/SubarraySumsI.cpp [164])
 (../enunciados/SortingAndSearching/SubarraySumsII.tex)
 (./src_limpo/SortingAndSearching/SubarraySumsII.cpp)
 (../enunciados/SortingAndSearching/SumOfFourValues.tex)
 (./src_limpo/SortingAndSearching/SumOfFourValues.cpp)
 (../enunciados/SortingAndSearching/SumOfThreeValues.tex)
-(./src_limpo/SortingAndSearching/SumOfThreeValues.cpp [123])
+(./src_limpo/SortingAndSearching/SumOfThreeValues.cpp [165])
 (../enunciados/SortingAndSearching/SumOfTwoValues.tex)
 (./src_limpo/SortingAndSearching/SumOfTwoValues.cpp)
 (../enunciados/SortingAndSearching/TasksandDeadlines.tex)
 
 Package tcolorbox Warning: Using nobreak failed. Try to enlarge `lines before b
-reak' or set page breaks manually on input line 2215.
+reak' or set page breaks manually on input line 2845.
 
 (./src_limpo/SortingAndSearching/TasksandDeadlines.cpp)
 (../enunciados/SortingAndSearching/Towers.tex)
 (./src_limpo/SortingAndSearching/Towers.cpp)
 (../enunciados/SortingAndSearching/TrafficLights.tex)
-(./src_limpo/SortingAndSearching/TrafficLights.cpp [124]) [125]
+(./src_limpo/SortingAndSearching/TrafficLights.cpp [166]) [167]
 (./caderno_cses.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
@@ -1632,13 +1838,13 @@ LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 1.28pt have occurred.
 
 Package rerunfilecheck Info: File `caderno_cses.out' has not changed.
-(rerunfilecheck)             Checksum: AA65B4755379994B2F92FC25DB6BC91E;46377.
+(rerunfilecheck)             Checksum: 07EE36C21177CF81B2F07B1176D7CED5;60199.
  ) 
 Here is how much of TeX's memory you used:
- 48140 strings out of 474222
- 973939 string characters out of 5748733
+ 55215 strings out of 474222
+ 1125803 string characters out of 5748733
  3030975 words of memory out of 5000000
- 53499 multiletter control sequences out of 15000+600000
+ 54692 multiletter control sequences out of 15000+600000
  573559 words of font info for 68 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  89i,12n,94p,446b,2189s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -1659,10 +1865,10 @@ onts/type1/public/cm-super/sfbx1095.pfb></usr/share/texmf/fonts/type1/public/cm
 nts/type1/public/cm-super/sfrm1200.pfb></usr/share/texmf/fonts/type1/public/cm-
 super/sfrm1440.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1728.pfb><
 /usr/share/texmf/fonts/type1/public/cm-super/sftt0800.pfb>
-Output written on caderno_cses.pdf (126 pages, 1546949 bytes).
+Output written on caderno_cses.pdf (168 pages, 1964756 bytes).
 PDF statistics:
- 19950 PDF objects out of 22161 (max. 8388607)
- 19558 compressed objects within 196 object streams
- 14960 named destinations out of 15390 (max. 500000)
- 2522 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 27032 PDF objects out of 31911 (max. 8388607)
+ 26528 compressed objects within 266 object streams
+ 20392 named destinations out of 22161 (max. 500000)
+ 3242 words of extra memory for PDF output out of 10000 (max. 10000000)
 

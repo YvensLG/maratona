@@ -1,0 +1,16 @@
+A computer network has $n$ computers and $n-1$ connections between two computers. Information can be exchanged between every pair of computers using the connections.
+Each connection has a certain transfer speed. Let $d(a,b)$ denote the transfer speed between computers $a$ and $b$, which is the speed of the slowest connection on the route between $a$ and $b$. Your task is to compute the sum of transfer speeds between all pairs of computers.
+
+\vspace{0.3cm}\noindent\textbf{Input}
+
+The first line contains the integer $n$: the number of computers. The computers are numbered $1,2,\dots,n$.
+After this, there are $n-1$ lines, which describe the connections. Each line has three integers $a$, $b$ and $x$: there is a connection between computers $a$ and $b$ with transfer speed $x$.
+
+\vspace{0.3cm}\noindent\textbf{Output}
+
+Print one integer: the sum of transfer speeds.
+
+\vspace{0.3cm}\noindent\textbf{Constraints}
+
+\textbullet\ $1 \le n \le 2 \cdot 10^5$
+\textbullet\ $1 \le x \le 10^6$

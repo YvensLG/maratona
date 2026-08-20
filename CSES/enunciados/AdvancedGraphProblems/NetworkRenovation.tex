@@ -1,0 +1,16 @@
+Syrjälä's network consists of $n$ computers and $n-1$ connections between them. It is possible to send data between any two computers.
+However, if any connection breaks down, it will no longer be possible to send data between some computers. Your task is to add the minimum number of new connections in such a way that you can still send data between any two computers even if any single connection breaks down.
+
+\vspace{0.3cm}\noindent\textbf{Input}
+
+The first input line has an integer $n$: the number of computers. The computers are numbered $1,2,\dots,n$.
+After this, there are $n-1$ lines describing the connections. Each line has two integers $a$ and $b$: there is a connection between computers $a$ and $b$.
+
+\vspace{0.3cm}\noindent\textbf{Output}
+
+First print an integer $k$: the minimum number of new connections. After this, print $k$ lines describing the connections. You can print any valid solution.
+
+\vspace{0.3cm}\noindent\textbf{Constraints}
+
+\textbullet\ $3 \le n \le 10^5$
+\textbullet\ $1 \le a,b \le n$

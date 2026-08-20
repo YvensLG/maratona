@@ -1,0 +1,21 @@
+You are given a string that consists of $n$ characters between a–z. The positions of the string are indexed $1,2,\dots,n$.
+Your task is to process $m$ operations of the following types:
+
+Change the character at position $k$ to $x$
+Check if the substring from position $a$ to position $b$ is a palindrome
+
+\vspace{0.3cm}\noindent\textbf{Input}
+
+The first input line has two integers $n$ and $m$: the length of the string and the number of operations.
+The next line has a string that consists of $n$ characters.
+Finally, there are $m$ lines that describe the operations. Each line is of the form "1 $k$ $x$" or "2 $a$ $b$".
+
+\vspace{0.3cm}\noindent\textbf{Output}
+
+For each operation 2, print YES if the substring is a palindrome and NO otherwise.
+
+\vspace{0.3cm}\noindent\textbf{Constraints}
+
+\textbullet\ $1 \le n, m \le 2 \cdot 10^5$
+\textbullet\ $1 \le k \le n$
+\textbullet\ $1 \le a \le b \le n$

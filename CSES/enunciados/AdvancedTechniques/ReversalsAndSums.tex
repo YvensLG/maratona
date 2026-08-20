@@ -1,0 +1,21 @@
+Given an array of $n$ integers, you have to process following operations:
+
+reverse a subarray
+calculate the sum of values in a subarray
+
+\vspace{0.3cm}\noindent\textbf{Input}
+
+The first input line has two integers $n$ and $m$: the size of the array and the number of operations. The array elements are numbered $1,2,\dots,n$.
+The next line as $n$ integers $x_1,x_2,\dots,x_n$: the contents of the array.
+Finally, there are $m$ lines that describe the operations. Each line has three integers $t$, $a$ and $b$. If $t=1$, you should reverse a subarray from $a$ to $b$. If $t=2$, you should calculate the sum of values from $a$ to $b$.
+
+\vspace{0.3cm}\noindent\textbf{Output}
+
+Print the answer to each operation where $t=2$.
+
+\vspace{0.3cm}\noindent\textbf{Constraints}
+
+\textbullet\ $1 \le n \le 2 \cdot 10^5$
+\textbullet\ $1 \le m \le 10^5$
+\textbullet\ $0 \le x_i \le 10^9$
+\textbullet\ $1 \le a \le b \le n$

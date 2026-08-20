@@ -2,6 +2,7 @@ import os
 import re
 import time
 import requests
+import unicodedata
 from bs4 import BeautifulSoup
 
 # --- CONFIGURAÇÕES ---
@@ -14,7 +15,9 @@ HEADERS = {
 }
 
 def normalizar_nome(texto):
-    return re.sub(r'[^a-zA-Z0-9]', '', texto).lower()
+    # Remove os acentos/tremas antes de limpar os caracteres
+    texto_sem_acento = unicodedata.normalize('NFKD', texto).encode('ASCII', 'ignore').decode('utf-8')
+    return re.sub(r'[^a-zA-Z0-9]', '', texto_sem_acento).lower()
 
 def escapar_latex(texto):
     texto = texto.replace('\\%', '%').replace('\\#', '#').replace('\\&', '&')

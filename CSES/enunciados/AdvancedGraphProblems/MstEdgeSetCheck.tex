@@ -1,0 +1,19 @@
+Given an undirected weighted graph and edge sets, determine for each set if the edges can be included in a minimum spanning tree.
+
+\vspace{0.3cm}\noindent\textbf{Input}
+
+The first line has three integers $n$,  $m$ and $q$: the number of nodes, edges and edge sets. The nodes are numbered $1,2,\dots,n$.
+The following $m$ lines describe the edges. Each line has three integers $a$, $b$, $w$: there is an edge between nodes $a$ and $b$ with weight $w$. The edges are numbered $1,2,\dots,m$ in the input order.
+The following $2q$ lines describe the edge sets. For each set, the first line contains its size and the second line contains its edges. The total number of edges in all sets is at most $m$.
+You can assume that the graph is connected and simple and each edge appears at most once in the graph.
+
+\vspace{0.3cm}\noindent\textbf{Output}
+
+For each edge set, print YES if the edges can be included in the minimum spanning tree and NO otherwise.
+
+\vspace{0.3cm}\noindent\textbf{Constraints}
+
+\textbullet\ $1 \le n \le 10^5$
+\textbullet\ $1 \le m, q \le 2 \cdot 10^5$
+\textbullet\ $1 \le a,b \le n$
+\textbullet\ $1 \le w \le 10^9$

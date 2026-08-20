@@ -1,0 +1,21 @@
+There is an $n \times n$ grid whose each square has some number of coins in it.
+You know for each row and column how many squares you must choose from that row or column. You get all coins from every square you choose. What is the maximum number of coins you can collect and how could you choose the squares so that the given conditions are satisfied?
+
+\vspace{0.3cm}\noindent\textbf{Input}
+
+The first input line has an integer $n$: the size of the grid. The rows and columns are numbered $1,2,\dots,n$.
+The next line has $n$ integers $a_1,a_2,\ldots,a_n$: You must choose exactly $a_i$ squares from the $i$th row.
+The next line has $n$ integers $b_1,b_2,\ldots,b_n$: You must choose exactly $b_j$ squares from the $j$th column.
+Finally, there are $n$ lines describing the grid. You can assume that the sums of $a_1,a_2,\ldots,a_n$ and $b_1,b_2,\ldots,b_n$ are equal.
+
+\vspace{0.3cm}\noindent\textbf{Output}
+
+First print an integer $k$: the maximum number of coins you can collect. After this print $n$ lines describing which squares you choose (X means that you choose a square, . means that you don't choose it).
+If it is not possible to satisfy the conditions print only $-1$.
+
+\vspace{0.3cm}\noindent\textbf{Constraints}
+
+\textbullet\ $1 \le n \le 50$
+\textbullet\ $0 \le a_i \le n$
+\textbullet\ $0 \le b_j \le n$
+\textbullet\ $0 \le c_{ij} \le 1000$

@@ -1,0 +1,13 @@
+There is a hidden permutation $a_1, a_2,\dots, a_n$ of integers $1, 2,\dots, n$. Your task is to sort the permutation by reversing subarrays.
+On each turn, you can reverse a subarray of the permutation. After that, you will be reported the number of inversions in the permutation. If the number of inversions is $0$ (i.e., the permutation is sorted), you win.
+
+\vspace{0.3cm}\noindent\textbf{Interaction}
+
+This is an interactive problem. Your code will interact with the grader using standard input and output. You should start by reading a single integer $n$: the length of the permutation.
+On your turn, print two integers $i$ and $j$: reverse the subarray between indices $i$ and $j$.
+After this, the next input line has a single integer: the number of inversions after the operation. If the number is $0$, you win and your program must terminate after this.
+
+\vspace{0.3cm}\noindent\textbf{Constraints}
+
+\textbullet\ $1\leq n\leq 1000$
+\textbullet\ you can make at most $4n$ operations

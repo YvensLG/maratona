@@ -1,0 +1,16 @@
+You have $n$ coins, each of which has a distinct weight.
+There are two stacks which are initially empty. On each step you move one coin to a stack. You never remove a coin from a stack.
+After each move, your task is to determine which stack is heavier (if we can be sure that either stack is heavier).
+
+\vspace{0.3cm}\noindent\textbf{Input}
+
+The first input line has an integer $n$: the number of coins. The coins are numbered $1,2,\dots,n$. You know that coin $i$ is always heavier than coin $i-1$, but you don't know their exact weights.
+After this, there are $n$ lines that describe the moves. Each line has two integers $c$ and $s$: move coin $c$ to stack $s$ (1 = left, 2 = right).
+
+\vspace{0.3cm}\noindent\textbf{Output}
+
+After each move, print $<$ if the right stack is heavier, $>$ if the left stack is heavier, and ? if we can't know which stack is heavier.
+
+\vspace{0.3cm}\noindent\textbf{Constraints}
+
+\textbullet\ $1 \le n \le 2 \cdot 10^5$

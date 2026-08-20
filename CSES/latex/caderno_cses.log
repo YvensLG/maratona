@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2026.3.23)  19 AUG 2026 23:18
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2026.3.23)  19 AUG 2026 23:27
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1032,27 +1032,32 @@ reak' or set page breaks manually on input line 251.
 (./src_limpo/DynamicProgramming/CoinCombinationsII.cpp)
 (../enunciados/DynamicProgramming/CountingNumbers.tex)
 (./src_limpo/DynamicProgramming/CountingNumbers.cpp)
-(./src_limpo/DynamicProgramming/CountingTiling.cpp [13])
+(../enunciados/DynamicProgramming/CountingTilings.tex)
+(./src_limpo/DynamicProgramming/CountingTilings.cpp [13])
 (../enunciados/DynamicProgramming/CountingTowers.tex)
 (./src_limpo/DynamicProgramming/CountingTowers.cpp)
 (../enunciados/DynamicProgramming/DiceCombinations.tex)
 (./src_limpo/DynamicProgramming/DiceCombinations.cpp)
 (../enunciados/DynamicProgramming/EditDistance.tex)
-(./src_limpo/DynamicProgramming/EditDistance.cpp)
-(../enunciados/DynamicProgramming/ElevatorRides.tex) [14]
+(./src_limpo/DynamicProgramming/EditDistance.cpp [14])
+(../enunciados/DynamicProgramming/ElevatorRides.tex)
 (./src_limpo/DynamicProgramming/ElevatorRides.cpp)
 (../enunciados/DynamicProgramming/GridPathsI.tex)
 (./src_limpo/DynamicProgramming/GridPathsI.cpp)
 (../enunciados/DynamicProgramming/IncreasingSubsequence.tex)
 (./src_limpo/DynamicProgramming/IncreasingSubsequence.cpp)
-(../enunciados/DynamicProgramming/IncreasingSubsequenceII.tex)
-(./src_limpo/DynamicProgramming/IncreasingSubsequenceII.cpp [15])
+(../enunciados/DynamicProgramming/IncreasingSubsequenceII.tex) [15]
+(./src_limpo/DynamicProgramming/IncreasingSubsequenceII.cpp)
 (../enunciados/DynamicProgramming/LongestCommonSubsequence.tex)
 (./src_limpo/DynamicProgramming/LongestCommonSubsequence.cpp)
 (../enunciados/DynamicProgramming/MinimalGridPath.tex)
 (./src_limpo/DynamicProgramming/MinimalGridPath.cpp)
 (../enunciados/DynamicProgramming/MinimizingCoins.tex)
-(./src_limpo/DynamicProgramming/MinimizingCoins.cpp [16])
+
+Package tcolorbox Warning: Using nobreak failed. Try to enlarge `lines before b
+reak' or set page breaks manually on input line 368.
+
+[16] (./src_limpo/DynamicProgramming/MinimizingCoins.cpp)
 (../enunciados/DynamicProgramming/MoneySums.tex)
 (./src_limpo/DynamicProgramming/MoneySums.cpp)
 (../enunciados/DynamicProgramming/MountainRange.tex)
@@ -1062,7 +1067,7 @@ reak' or set page breaks manually on input line 251.
 (../enunciados/DynamicProgramming/RectangleCutting.tex)
 
 Package tcolorbox Warning: Using nobreak failed. Try to enlarge `lines before b
-reak' or set page breaks manually on input line 394.
+reak' or set page breaks manually on input line 396.
 
 (./src_limpo/DynamicProgramming/RectangleCutting.cpp)
 (../enunciados/DynamicProgramming/RemovalGame.tex)
@@ -1182,7 +1187,7 @@ reak' or set page breaks manually on input line 394.
 (../enunciados/RangeQueries/RangeXorQueries.tex)
 
 Package tcolorbox Warning: Using nobreak failed. Try to enlarge `lines before b
-reak' or set page breaks manually on input line 810.
+reak' or set page breaks manually on input line 812.
 
 [43] (./src_limpo/RangeQueries/RangeXorQueries.cpp)
 (../enunciados/RangeQueries/SalaryQueries.tex)
@@ -1313,7 +1318,7 @@ Package amsmath Warning: Foreign command \atopwithdelims;
 (../enunciados/StringAlgorithms/CountingPatterns.tex)
 
 Package tcolorbox Warning: Using nobreak failed. Try to enlarge `lines before b
-reak' or set page breaks manually on input line 1245.
+reak' or set page breaks manually on input line 1247.
 
 (./src_limpo/StringAlgorithms/CountingPatterns.cpp)
 (../enunciados/StringAlgorithms/DistinctSubsequences.tex)
@@ -1335,7 +1340,7 @@ reak' or set page breaks manually on input line 1245.
 (../enunciados/StringAlgorithms/PalindromeQueries.tex)
 
 Package tcolorbox Warning: Using nobreak failed. Try to enlarge `lines before b
-reak' or set page breaks manually on input line 1308.
+reak' or set page breaks manually on input line 1310.
 
 (./src_limpo/StringAlgorithms/PalindromeQueries.cpp [70])
 (../enunciados/StringAlgorithms/PatternPositions.tex)
@@ -1389,7 +1394,7 @@ reak' or set page breaks manually on input line 1308.
 (../enunciados/AdvancedTechniques/NecessaryRoads.tex)
 
 Package tcolorbox Warning: Using nobreak failed. Try to enlarge `lines before b
-reak' or set page breaks manually on input line 1488.
+reak' or set page breaks manually on input line 1490.
 
 [81] (./src_limpo/AdvancedTechniques/NecessaryRoads.cpp)
 (../enunciados/AdvancedTechniques/NewRoadsQueries.tex)
@@ -1445,7 +1450,7 @@ reak' or set page breaks manually on input line 1488.
 (../enunciados/AdditionalProblemsI/PyramidArray.tex)
 
 Package tcolorbox Warning: Using nobreak failed. Try to enlarge `lines before b
-reak' or set page breaks manually on input line 1675.
+reak' or set page breaks manually on input line 1677.
 
 [93] (./src_limpo/AdditionalProblemsI/PyramidArray.cpp)
 (../enunciados/AdditionalProblemsI/ShortestSubsequence.tex)
@@ -1505,7 +1510,7 @@ reak' or set page breaks manually on input line 1675.
 (../enunciados/AdditionalProblemsII/MaximumBuildingII.tex)
 
 Package tcolorbox Warning: Using nobreak failed. Try to enlarge `lines before b
-reak' or set page breaks manually on input line 1876.
+reak' or set page breaks manually on input line 1878.
 
 [105] (./src_limpo/AdditionalProblemsII/MaximumBuildingII.cpp)
 (../enunciados/AdditionalProblemsII/MexGridQueries.tex)
@@ -1523,7 +1528,7 @@ reak' or set page breaks manually on input line 1876.
 (../enunciados/AdditionalProblemsII/SameSumSubsets.tex)
 
 Package tcolorbox Warning: Using nobreak failed. Try to enlarge `lines before b
-reak' or set page breaks manually on input line 1925.
+reak' or set page breaks manually on input line 1927.
 
 (./src_limpo/AdditionalProblemsII/SameSumSubsets.cpp [109])
 (../enunciados/AdditionalProblemsII/SchoolExcursion.tex)
@@ -1589,7 +1594,7 @@ reak' or set page breaks manually on input line 1925.
 (../enunciados/AdvancedGraphProblems/TreeTraversals.tex)
 
 Package tcolorbox Warning: Using nobreak failed. Try to enlarge `lines before b
-reak' or set page breaks manually on input line 2147.
+reak' or set page breaks manually on input line 2149.
 
 (./src_limpo/AdvancedGraphProblems/TreeTraversals.cpp)
 (../enunciados/AdvancedGraphProblems/VisitingCities.tex)
@@ -1605,7 +1610,7 @@ reak' or set page breaks manually on input line 2147.
 (../enunciados/BitwiseOperations/MaximumXorSubarray.tex)
 
 Package tcolorbox Warning: Using nobreak failed. Try to enlarge `lines before b
-reak' or set page breaks manually on input line 2194.
+reak' or set page breaks manually on input line 2196.
 
 (./src_limpo/BitwiseOperations/MaximumXorSubarray.cpp)
 (../enunciados/BitwiseOperations/MaximumXorSubset.tex) [128]
@@ -1625,7 +1630,7 @@ reak' or set page breaks manually on input line 2194.
 (../enunciados/ConstructionProblems/FillingTrominos.tex)
 
 Package tcolorbox Warning: Using nobreak failed. Try to enlarge `lines before b
-reak' or set page breaks manually on input line 2255.
+reak' or set page breaks manually on input line 2257.
 
 (./src_limpo/ConstructionProblems/FillingTrominos.cpp)
 (../enunciados/ConstructionProblems/InverseInversions.tex)
@@ -1679,7 +1684,7 @@ reak' or set page breaks manually on input line 2255.
 (../enunciados/SlidingWindowProblems/SlidingWindowMode.tex)
 
 Package tcolorbox Warning: Using nobreak failed. Try to enlarge `lines before b
-reak' or set page breaks manually on input line 2440.
+reak' or set page breaks manually on input line 2442.
 
 (./src_limpo/SlidingWindowProblems/SlidingWindowMode.cpp)
 (../enunciados/SlidingWindowProblems/SlidingWindowOr.tex) [143]
@@ -1711,7 +1716,7 @@ reak' or set page breaks manually on input line 2440.
 (../enunciados/Geometry/PointLocationTest.tex)
 
 Package tcolorbox Warning: Using nobreak failed. Try to enlarge `lines before b
-reak' or set page breaks manually on input line 2543.
+reak' or set page breaks manually on input line 2545.
 
 (./src_limpo/Geometry/PointLocationTest.cpp)
 (../enunciados/Geometry/PolygonArea.tex) (./src_limpo/Geometry/PolygonArea.cpp)
@@ -1725,7 +1730,7 @@ reak' or set page breaks manually on input line 2543.
 (../enunciados/InteractiveProblems/HiddenPermutation.tex)
 
 Package tcolorbox Warning: Using nobreak failed. Try to enlarge `lines before b
-reak' or set page breaks manually on input line 2590.
+reak' or set page breaks manually on input line 2592.
 
 (./src_limpo/InteractiveProblems/HiddenPermutation.cpp)
 (../enunciados/InteractiveProblems/InversionSorting.tex) [153]
@@ -1739,7 +1744,7 @@ reak' or set page breaks manually on input line 2590.
 (../enunciados/SortingAndSearching/ArrayDivision.tex)
 
 Package tcolorbox Warning: Using nobreak failed. Try to enlarge `lines before b
-reak' or set page breaks manually on input line 2630.
+reak' or set page breaks manually on input line 2632.
 
 (./src_limpo/SortingAndSearching/ArrayDivision.cpp)
 (../enunciados/SortingAndSearching/CollectingNumbers.tex)
@@ -1775,13 +1780,13 @@ reak' or set page breaks manually on input line 2630.
 (../enunciados/SortingAndSearching/MovieFestivalII.tex)
 
 Package tcolorbox Warning: Using nobreak failed. Try to enlarge `lines before b
-reak' or set page breaks manually on input line 2742.
+reak' or set page breaks manually on input line 2744.
 
 (./src_limpo/SortingAndSearching/MovieFestivalII.cpp)
 (../enunciados/SortingAndSearching/NearestSmallerValues.tex)
 
 Package tcolorbox Warning: Using nobreak failed. Try to enlarge `lines before b
-reak' or set page breaks manually on input line 2749.
+reak' or set page breaks manually on input line 2751.
 
 [160] (./src_limpo/SortingAndSearching/NearestSmallerValues.cpp)
 (../enunciados/SortingAndSearching/NestedRangesCheck.tex)
@@ -1789,7 +1794,7 @@ reak' or set page breaks manually on input line 2749.
 (../enunciados/SortingAndSearching/NestedRangesCount.tex) [161]
 
 Package tcolorbox Warning: Using nobreak failed. Try to enlarge `lines before b
-reak' or set page breaks manually on input line 2763.
+reak' or set page breaks manually on input line 2765.
 
 (./src_limpo/SortingAndSearching/NestedRangesCount.cpp)
 (../enunciados/SortingAndSearching/Playlist.tex)
@@ -1797,18 +1802,19 @@ reak' or set page breaks manually on input line 2763.
 (../enunciados/SortingAndSearching/ReadingBooks.tex)
 
 Package tcolorbox Warning: Using nobreak failed. Try to enlarge `lines before b
-reak' or set page breaks manually on input line 2777.
+reak' or set page breaks manually on input line 2779.
 
 [162] (./src_limpo/SortingAndSearching/ReadingBooks.cpp)
 (../enunciados/SortingAndSearching/RestaurantCustomers.tex)
 (./src_limpo/SortingAndSearching/RestaurantCustomers.cpp)
-(./src_limpo/SortingAndSearching/RoomAlocation.cpp [163])
+(../enunciados/SortingAndSearching/RoomAllocation.tex)
+(./src_limpo/SortingAndSearching/RoomAllocation.cpp [163])
 (../enunciados/SortingAndSearching/StickLengths.tex)
 (./src_limpo/SortingAndSearching/StickLengths.cpp)
 (../enunciados/SortingAndSearching/SubarrayDivisibility.tex)
 (./src_limpo/SortingAndSearching/SubarrayDivisibility.cpp)
-(../enunciados/SortingAndSearching/SubarraySumsI.tex)
-(./src_limpo/SortingAndSearching/SubarraySumsI.cpp [164])
+(../enunciados/SortingAndSearching/SubarraySumsI.tex) [164]
+(./src_limpo/SortingAndSearching/SubarraySumsI.cpp)
 (../enunciados/SortingAndSearching/SubarraySumsII.tex)
 (./src_limpo/SortingAndSearching/SubarraySumsII.cpp)
 (../enunciados/SortingAndSearching/SumOfFourValues.tex)
@@ -1818,16 +1824,11 @@ reak' or set page breaks manually on input line 2777.
 (../enunciados/SortingAndSearching/SumOfTwoValues.tex)
 (./src_limpo/SortingAndSearching/SumOfTwoValues.cpp)
 (../enunciados/SortingAndSearching/TasksandDeadlines.tex)
-
-Package tcolorbox Warning: Using nobreak failed. Try to enlarge `lines before b
-reak' or set page breaks manually on input line 2845.
-
 (./src_limpo/SortingAndSearching/TasksandDeadlines.cpp)
 (../enunciados/SortingAndSearching/Towers.tex)
 (./src_limpo/SortingAndSearching/Towers.cpp)
-(../enunciados/SortingAndSearching/TrafficLights.tex)
-(./src_limpo/SortingAndSearching/TrafficLights.cpp [166]) [167]
-(./caderno_cses.aux)
+(../enunciados/SortingAndSearching/TrafficLights.tex) [166]
+(./src_limpo/SortingAndSearching/TrafficLights.cpp) [167] (./caderno_cses.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-22>
@@ -1838,13 +1839,13 @@ LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 1.28pt have occurred.
 
 Package rerunfilecheck Info: File `caderno_cses.out' has not changed.
-(rerunfilecheck)             Checksum: 07EE36C21177CF81B2F07B1176D7CED5;60199.
+(rerunfilecheck)             Checksum: 26F127C981058B9084E700F45FF86B69;60209.
  ) 
 Here is how much of TeX's memory you used:
- 55215 strings out of 474222
- 1125803 string characters out of 5748733
- 3030975 words of memory out of 5000000
- 54692 multiletter control sequences out of 15000+600000
+ 55224 strings out of 474222
+ 1126368 string characters out of 5748733
+ 3029975 words of memory out of 5000000
+ 54697 multiletter control sequences out of 15000+600000
  573559 words of font info for 68 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  89i,12n,94p,446b,2189s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -1865,7 +1866,7 @@ onts/type1/public/cm-super/sfbx1095.pfb></usr/share/texmf/fonts/type1/public/cm
 nts/type1/public/cm-super/sfrm1200.pfb></usr/share/texmf/fonts/type1/public/cm-
 super/sfrm1440.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1728.pfb><
 /usr/share/texmf/fonts/type1/public/cm-super/sftt0800.pfb>
-Output written on caderno_cses.pdf (168 pages, 1964756 bytes).
+Output written on caderno_cses.pdf (168 pages, 1965039 bytes).
 PDF statistics:
  27032 PDF objects out of 31911 (max. 8388607)
  26528 compressed objects within 266 object streams

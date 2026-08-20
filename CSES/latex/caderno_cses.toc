@@ -29,7 +29,7 @@
 \contentsline {subsection}{\numberline {2.3}Coin Combinations I}{12}{subsection.2.3}%
 \contentsline {subsection}{\numberline {2.4}Coin Combinations II}{12}{subsection.2.4}%
 \contentsline {subsection}{\numberline {2.5}Counting Numbers}{13}{subsection.2.5}%
-\contentsline {subsection}{\numberline {2.6}Counting Tiling}{13}{subsection.2.6}%
+\contentsline {subsection}{\numberline {2.6}Counting Tilings}{13}{subsection.2.6}%
 \contentsline {subsection}{\numberline {2.7}Counting Towers}{14}{subsection.2.7}%
 \contentsline {subsection}{\numberline {2.8}Dice Combinations}{14}{subsection.2.8}%
 \contentsline {subsection}{\numberline {2.9}Edit Distance}{14}{subsection.2.9}%
@@ -390,14 +390,14 @@
 \contentsline {subsection}{\numberline {18.22}Playlist}{163}{subsection.18.22}%
 \contentsline {subsection}{\numberline {18.23}Reading Books}{163}{subsection.18.23}%
 \contentsline {subsection}{\numberline {18.24}Restaurant Customers}{163}{subsection.18.24}%
-\contentsline {subsection}{\numberline {18.25}Room Alocation}{164}{subsection.18.25}%
+\contentsline {subsection}{\numberline {18.25}Room Allocation}{164}{subsection.18.25}%
 \contentsline {subsection}{\numberline {18.26}Stick Lengths}{164}{subsection.18.26}%
 \contentsline {subsection}{\numberline {18.27}Subarray Divisibility}{164}{subsection.18.27}%
-\contentsline {subsection}{\numberline {18.28}Subarray Sums I}{164}{subsection.18.28}%
+\contentsline {subsection}{\numberline {18.28}Subarray Sums I}{165}{subsection.18.28}%
 \contentsline {subsection}{\numberline {18.29}Subarray Sums II}{165}{subsection.18.29}%
 \contentsline {subsection}{\numberline {18.30}Sum Of Four Values}{165}{subsection.18.30}%
 \contentsline {subsection}{\numberline {18.31}Sum Of Three Values}{165}{subsection.18.31}%
 \contentsline {subsection}{\numberline {18.32}Sum Of Two Values}{166}{subsection.18.32}%
 \contentsline {subsection}{\numberline {18.33}Tasksand Deadlines}{166}{subsection.18.33}%
 \contentsline {subsection}{\numberline {18.34}Towers}{166}{subsection.18.34}%
-\contentsline {subsection}{\numberline {18.35}Traffic Lights}{167}{subsection.18.35}%
+\contentsline {subsection}{\numberline {18.35}Traffic Lights}{166}{subsection.18.35}%

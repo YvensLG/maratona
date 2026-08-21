@@ -49,7 +49,7 @@ The following ones are missing:
 - Counting Bishops 
 - Grid Completion
 - Counting Reorders
-- Functional Graph Distribution
+- Functional Graph Distribution (TLE)
 - Letter Pair Move Game
 - Bouncing Ball Cycle
 - Coin Arrangement

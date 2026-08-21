@@ -10,7 +10,6 @@ using namespace std;
 const int M = 1e9 + 7;
 const int MAX = 5008;
 int fat[MAX], invfat[MAX];
-int dp[MAX][MAX]; 
 
 int fexp(int b, int e) {
     int ans = 1;
@@ -27,29 +26,35 @@ int choose(int a, int b) {
     if(b < 0 || b > a) return 0;
     return fat[a] * (invfat[b] * invfat[a - b] % M) % M;
 }
+
+// dp[n][k] = numero de formas de fazer k ciclos com n elementos (Numeros de Stirling)
+// dp[n][k] = dp[n - 1][k - 1] + (n - 1)dp[n - 1][k]
+// n faz o proprio ciclo ou adiciona em um existente
+int dp[MAX][MAX]; 
  
+// T(n, k) = sum dp[j][k] * (n choose j) * j * n^(n-j-1)
+// numero de ciclos * permutacoes * numero de arvores enraizadas em j caras
 void solve() {
     int n; cin >> n;
 
     dp[1][1] = 1;
     for(int i = 2; i <= n; i++) {
-        dp[i][i] = 1;
-        int sum = 1;
-        for(int k = 2; k < i; k++) {
-            for(int j = 1; j < i; j++) {
-                dp[i][k] += dp[i - j][k - 1] * dp[j][1] * choose(i - 1, j - 1);
-            }
-            sum += dp[i][k];
+        for(int k = 1; k <= i; k++) {
+            dp[i][k] = (dp[i - 1][k - 1] + (i - 1) * dp[i - 1][k]) % M;
         }
-        dp[i][1] = fexp(i, i) - sum;
     }
 
-    for(int i = 1; i <= n; i++) {
-        for(int j = 1; j <= i; j++) {
-            cout << dp[i][j] << ' ';
+    for(int k = 1; k <= n; k++) {
+        int ans = 0;
+        int pot = 1;
+        for(int j = n; j >= k; j--) {
+            ans = (ans + dp[j][k] * (choose(n - 1, j - 1) * pot % M)) % M;
+            pot = (pot * n) % M;
         }
-        cout << '\n';
+
+        cout << ans << '\n';
     }
+
 }
  
 signed main() {

@@ -41,7 +41,7 @@ make clean
 
 ### Progress
 
-Currently we have 390/400 CSES problems in this lib.
+Currently we have 391/400 CSES problems in this lib.
 The following ones are missing:
 
 - Border Subgrid Count I (TLE)
@@ -49,7 +49,6 @@ The following ones are missing:
 - Counting Bishops 
 - Grid Completion
 - Counting Reorders
-- Functional Graph Distribution (TLE)
 - Letter Pair Move Game
 - Bouncing Ball Cycle
 - Coin Arrangement

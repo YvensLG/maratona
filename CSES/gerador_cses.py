@@ -15,7 +15,6 @@ HEADERS = {
 }
 
 def normalizar_nome(texto):
-    # Remove os acentos/tremas antes de limpar os caracteres
     texto_sem_acento = unicodedata.normalize('NFKD', texto).encode('ASCII', 'ignore').decode('utf-8')
     return re.sub(r'[^a-zA-Z0-9]', '', texto_sem_acento).lower()
 
@@ -68,7 +67,6 @@ def limpar_codigo_cpp(caminho_original, caminho_novo):
             miolo_limpo = re.sub(r'int\s+t\s*;\s*cin\s*>>\s*t\s*;\s*(?:for|while)\s*\([^)]+\)', '', miolo_limpo)
             miolo_limpo = re.sub(r'solve\(\)\s*;', '', miolo_limpo) 
             miolo_limpo = re.sub(r'return\s+0\s*;', '', miolo_limpo) 
-            # --- NOVO: Remove a macro de fast I/O isolada (com ou sem ponto e vírgula) ---
             miolo_limpo = re.sub(r'\b_\b\s*;?', '', miolo_limpo) 
             miolo_limpo = miolo_limpo.replace('{', '').replace('}', '') 
             
@@ -107,8 +105,8 @@ ORDEM_CSES = [
     "StringAlgorithms",
     "Geometry",
     "AdvancedTechniques",
-    "SlidingWindowProblems"
-    "InteractiveProblems"
+    "SlidingWindowProblems",
+    "InteractiveProblems",
     "BitwiseOperations",
     "ConstructionProblems",
     "AdvancedGraphProblems",
@@ -135,6 +133,7 @@ latex = [
     r"\usepackage{multicol}",
     r"\usepackage{tocloft}",
     r"\usepackage[many]{tcolorbox}",
+    r"\usepackage{needspace}",
     r"\usepackage{fancyhdr}",
     r"\pagestyle{fancy}",
     r"\fancyhf{}", 
@@ -161,6 +160,7 @@ latex = [
     r"    boxrule=0.5pt,",
     r"    left=4pt, right=4pt, top=4pt, bottom=4pt,",
     r"    breakable,",
+    r"    lines before break=1,",
     r"    before skip=0.2cm, after skip=0.2cm",
     r"}",
     r"",
@@ -182,7 +182,7 @@ latex = [
     r"    literate={á}{{\'a}}1 {ã}{{\~a}}1 {é}{{\'e}}1 {í}{{\'i}}1 {ó}{{\'o}}1 {õ}{{\~o}}1 {ú}{{\'u}}1 {ç}{{\c{c}}}1 {Á}{{\'A}}1 {É}{{\'E}}1 {Í}{{\'I}}1 {Ó}{{\'O}}1 {Ú}{{\'U}}1 {Ç}{{\c{C}}}1 {Ã}{{\~A}}1 {Õ}{{\~O}}1",
     r"}",
     r"",
-    r"\usepackage[hidelinks]{hyperref}", # <-- PACOTE MÁGICO ADICIONADO AQUI
+    r"\usepackage[hidelinks]{hyperref}", 
     r"",
     r"\begin{document}",
     r"\raggedbottom",
@@ -249,7 +249,8 @@ try:
                 
                 caminho_arquivo_enunciado = os.path.join(pasta_destino_enunciado, f"{nome_base}.tex")
                 
-                latex.append(f"\n\\subsection{{{titulo_exibicao}}}") 
+                latex.append(f"\n\\needspace{{6\\baselineskip}}")
+                latex.append(f"\\subsection{{{titulo_exibicao}}}") 
                 
                 if os.path.exists(caminho_arquivo_enunciado) and os.path.getsize(caminho_arquivo_enunciado) > 0:
                     print(f"  [Cache] Lendo enunciado salvo: {titulo_bruto}")
@@ -326,15 +327,12 @@ try:
                     latex.append("Enunciado não encontrado no site.")
 
                 latex.append(r"\vspace{0.3cm}")
-                # latex.append(r"\noindent\textbf{Código-fonte:}")
                 
-                # --- A MÁGICA ACONTECE AQUI ---
                 caminho_original_cpp = f"{DIRETORIO_CSES}/{nome_pasta}/{nome_arquivo}"
                 caminho_cpp_limpo = f"latex/src_limpo/{nome_pasta}/{nome_arquivo}"
                 
                 limpar_codigo_cpp(caminho_original_cpp, caminho_cpp_limpo)
                 
-                # O LaTeX lê o código limpo ao invés do original
                 latex.append(f"\\lstinputlisting{{src_limpo/{nome_pasta}/{nome_arquivo}}}")
 
 except KeyboardInterrupt:

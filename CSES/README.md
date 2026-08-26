@@ -41,12 +41,11 @@ make clean
 
 ### Progress
 
-Currently we have 392/400 CSES problems in this lib.
+Currently we have 393/400 CSES problems in this lib.
 The following ones are missing:
 
 - Border Subgrid Count I (TLE)
 - Grid Path Construction (WA)
-- Grid Completion
 - Counting Reorders
 - Letter Pair Move Game
 - Bouncing Ball Cycle

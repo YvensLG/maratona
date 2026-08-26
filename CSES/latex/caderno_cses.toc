@@ -309,100 +309,105 @@
 \contentsline {subsection}{\numberline {13.2}All Letter Subgrid Count II}{126}{subsection.13.2}%
 \contentsline {subsection}{\numberline {13.3}Border Subgrid Count I}{127}{subsection.13.3}%
 \contentsline {subsection}{\numberline {13.4}Border Subgrid Count II}{127}{subsection.13.4}%
-\contentsline {subsection}{\numberline {13.5}Counting Permutations}{128}{subsection.13.5}%
-\contentsline {subsection}{\numberline {13.6}Counting Sequences}{128}{subsection.13.6}%
-\contentsline {subsection}{\numberline {13.7}Empty String}{128}{subsection.13.7}%
-\contentsline {subsection}{\numberline {13.8}Filled Subgrid Count I}{129}{subsection.13.8}%
-\contentsline {subsection}{\numberline {13.9}Filled Subgrid Count II}{129}{subsection.13.9}%
-\contentsline {subsection}{\numberline {13.10}Grid Paths II}{129}{subsection.13.10}%
-\contentsline {subsection}{\numberline {13.11}Permutation Inversions}{130}{subsection.13.11}%
-\contentsline {subsection}{\numberline {13.12}Raab Game II}{130}{subsection.13.12}%
-\contentsline {subsection}{\numberline {13.13}Tournament Graph Distribution}{130}{subsection.13.13}%
-\contentsline {section}{\numberline {14}Additional Problems I}{132}{section.14}%
-\contentsline {subsection}{\numberline {14.1}Advertisement}{132}{subsection.14.1}%
-\contentsline {subsection}{\numberline {14.2}Beautiful Permutation II}{132}{subsection.14.2}%
-\contentsline {subsection}{\numberline {14.3}Bit Inversions}{132}{subsection.14.3}%
-\contentsline {subsection}{\numberline {14.4}Bubble Sort Rounds I}{133}{subsection.14.4}%
-\contentsline {subsection}{\numberline {14.5}Bubble Sort Rounds II}{133}{subsection.14.5}%
-\contentsline {subsection}{\numberline {14.6}Counting Lcm Arrays}{133}{subsection.14.6}%
-\contentsline {subsection}{\numberline {14.7}Cyclic Array}{134}{subsection.14.7}%
-\contentsline {subsection}{\numberline {14.8}Distinct Values Splits}{134}{subsection.14.8}%
-\contentsline {subsection}{\numberline {14.9}Distinct Values Sum}{135}{subsection.14.9}%
-\contentsline {subsection}{\numberline {14.10}Maximum Average Subarrays}{135}{subsection.14.10}%
-\contentsline {subsection}{\numberline {14.11}Maximum Building I}{135}{subsection.14.11}%
-\contentsline {subsection}{\numberline {14.12}Multiplication Table}{136}{subsection.14.12}%
-\contentsline {subsection}{\numberline {14.13}Nearest Campsites I}{136}{subsection.14.13}%
-\contentsline {subsection}{\numberline {14.14}Nearest Campsites II}{137}{subsection.14.14}%
-\contentsline {subsection}{\numberline {14.15}Permutation Subsequence}{137}{subsection.14.15}%
-\contentsline {subsection}{\numberline {14.16}Pyramid Array}{138}{subsection.14.16}%
-\contentsline {subsection}{\numberline {14.17}Shortest Subsequence}{138}{subsection.14.17}%
-\contentsline {subsection}{\numberline {14.18}Sorting Methods}{139}{subsection.14.18}%
-\contentsline {subsection}{\numberline {14.19}Special Substrings}{139}{subsection.14.19}%
-\contentsline {subsection}{\numberline {14.20}Square Subsets}{139}{subsection.14.20}%
-\contentsline {subsection}{\numberline {14.21}Stack Weights}{140}{subsection.14.21}%
-\contentsline {subsection}{\numberline {14.22}Subarray Sum Constraints}{140}{subsection.14.22}%
-\contentsline {subsection}{\numberline {14.23}Subsets With Fixed Average}{141}{subsection.14.23}%
-\contentsline {subsection}{\numberline {14.24}Swap Game}{141}{subsection.14.24}%
-\contentsline {subsection}{\numberline {14.25}Two Array Average}{141}{subsection.14.25}%
-\contentsline {subsection}{\numberline {14.26}Water Containers Moves}{142}{subsection.14.26}%
-\contentsline {subsection}{\numberline {14.27}Water Containers Queries}{143}{subsection.14.27}%
-\contentsline {subsection}{\numberline {14.28}Writing Numbers}{143}{subsection.14.28}%
-\contentsline {section}{\numberline {15}Additional Problems II}{144}{section.15}%
-\contentsline {subsection}{\numberline {15.1}Binary Subsequences}{144}{subsection.15.1}%
-\contentsline {subsection}{\numberline {15.2}Bit Substrings}{144}{subsection.15.2}%
-\contentsline {subsection}{\numberline {15.3}Book Shop II}{144}{subsection.15.3}%
-\contentsline {subsection}{\numberline {15.4}Bouncing Ball Steps}{145}{subsection.15.4}%
-\contentsline {subsection}{\numberline {15.5}Coding Company}{145}{subsection.15.5}%
-\contentsline {subsection}{\numberline {15.6}Coin Grid}{145}{subsection.15.6}%
-\contentsline {subsection}{\numberline {15.7}Food Division}{146}{subsection.15.7}%
-\contentsline {subsection}{\numberline {15.8}Gcd Subsets}{146}{subsection.15.8}%
-\contentsline {subsection}{\numberline {15.9}Grid Coloring II}{146}{subsection.15.9}%
-\contentsline {subsection}{\numberline {15.10}Grid Puzzle I}{147}{subsection.15.10}%
-\contentsline {subsection}{\numberline {15.11}Grid Puzzle II}{148}{subsection.15.11}%
-\contentsline {subsection}{\numberline {15.12}Increasing Array II}{148}{subsection.15.12}%
-\contentsline {subsection}{\numberline {15.13}K Subset Sums I}{149}{subsection.15.13}%
-\contentsline {subsection}{\numberline {15.14}K Subset Sums II}{149}{subsection.15.14}%
-\contentsline {subsection}{\numberline {15.15}Knight Moves Queries}{149}{subsection.15.15}%
-\contentsline {subsection}{\numberline {15.16}Maximum Building II}{150}{subsection.15.16}%
-\contentsline {subsection}{\numberline {15.17}Mex Grid Queries}{150}{subsection.15.17}%
-\contentsline {subsection}{\numberline {15.18}Minimum Cost Pairs}{151}{subsection.15.18}%
-\contentsline {subsection}{\numberline {15.19}Programmers And Artists}{151}{subsection.15.19}%
-\contentsline {subsection}{\numberline {15.20}Removing Digits II}{152}{subsection.15.20}%
-\contentsline {subsection}{\numberline {15.21}Replace With Difference}{152}{subsection.15.21}%
-\contentsline {subsection}{\numberline {15.22}Reversal Sorting}{152}{subsection.15.22}%
-\contentsline {subsection}{\numberline {15.23}Same Sum Subsets}{153}{subsection.15.23}%
-\contentsline {subsection}{\numberline {15.24}School Excursion}{154}{subsection.15.24}%
-\contentsline {subsection}{\numberline {15.25}Stick Divisions}{154}{subsection.15.25}%
-\contentsline {subsection}{\numberline {15.26}Swap Round Sorting}{155}{subsection.15.26}%
-\contentsline {subsection}{\numberline {15.27}Two Stacks Sorting}{155}{subsection.15.27}%
-\contentsline {section}{\numberline {16}Bitwise Operations}{157}{section.16}%
-\contentsline {subsection}{\numberline {16.1}All Subarray Xors}{157}{subsection.16.1}%
-\contentsline {subsection}{\numberline {16.2}And Subset Count}{157}{subsection.16.2}%
-\contentsline {subsection}{\numberline {16.3}Counting Bits}{157}{subsection.16.3}%
-\contentsline {subsection}{\numberline {16.4}K Subset Xors}{158}{subsection.16.4}%
-\contentsline {subsection}{\numberline {16.5}Maximum Xor Subarray}{158}{subsection.16.5}%
-\contentsline {subsection}{\numberline {16.6}Maximum Xor Subset}{159}{subsection.16.6}%
-\contentsline {subsection}{\numberline {16.7}Numberof Subset Xors}{159}{subsection.16.7}%
-\contentsline {subsection}{\numberline {16.8}SOS Bit Problem}{160}{subsection.16.8}%
-\contentsline {subsection}{\numberline {16.9}Xor Pyramid Diagonal}{160}{subsection.16.9}%
-\contentsline {subsection}{\numberline {16.10}Xor Pyramid Peak}{160}{subsection.16.10}%
-\contentsline {subsection}{\numberline {16.11}Xor Pyramid Row}{160}{subsection.16.11}%
-\contentsline {section}{\numberline {17}Interactive Problems}{162}{section.17}%
-\contentsline {subsection}{\numberline {17.1}Colored Chairs}{162}{subsection.17.1}%
-\contentsline {subsection}{\numberline {17.2}Hidden Integer}{162}{subsection.17.2}%
-\contentsline {subsection}{\numberline {17.3}Hidden Permutation}{162}{subsection.17.3}%
-\contentsline {subsection}{\numberline {17.4}Inversion Sorting}{163}{subsection.17.4}%
-\contentsline {subsection}{\numberline {17.5}K-th Highest Score}{163}{subsection.17.5}%
-\contentsline {subsection}{\numberline {17.6}Permuted Binary Strings}{164}{subsection.17.6}%
-\contentsline {section}{\numberline {18}Sliding Window Problems}{165}{section.18}%
-\contentsline {subsection}{\numberline {18.1}Sliding Window Advertisement}{165}{subsection.18.1}%
-\contentsline {subsection}{\numberline {18.2}Sliding Window Cost}{165}{subsection.18.2}%
-\contentsline {subsection}{\numberline {18.3}Sliding Window Distinct Values}{166}{subsection.18.3}%
-\contentsline {subsection}{\numberline {18.4}Sliding Window Inversions}{166}{subsection.18.4}%
-\contentsline {subsection}{\numberline {18.5}Sliding Window Median}{166}{subsection.18.5}%
-\contentsline {subsection}{\numberline {18.6}Sliding Window Mex}{167}{subsection.18.6}%
-\contentsline {subsection}{\numberline {18.7}Sliding Window Minimum}{167}{subsection.18.7}%
-\contentsline {subsection}{\numberline {18.8}Sliding Window Mode}{167}{subsection.18.8}%
-\contentsline {subsection}{\numberline {18.9}Sliding Window Or}{168}{subsection.18.9}%
-\contentsline {subsection}{\numberline {18.10}Sliding Window Sum}{168}{subsection.18.10}%
-\contentsline {subsection}{\numberline {18.11}Sliding Window Xor}{168}{subsection.18.11}%
+\contentsline {subsection}{\numberline {13.5}Collecting Numbers Distribution}{128}{subsection.13.5}%
+\contentsline {subsection}{\numberline {13.6}Counting Bishops}{128}{subsection.13.6}%
+\contentsline {subsection}{\numberline {13.7}Counting Permutations}{128}{subsection.13.7}%
+\contentsline {subsection}{\numberline {13.8}Counting Sequences}{129}{subsection.13.8}%
+\contentsline {subsection}{\numberline {13.9}Empty String}{129}{subsection.13.9}%
+\contentsline {subsection}{\numberline {13.10}Filled Subgrid Count I}{129}{subsection.13.10}%
+\contentsline {subsection}{\numberline {13.11}Filled Subgrid Count II}{130}{subsection.13.11}%
+\contentsline {subsection}{\numberline {13.12}Functional Graph Distribution}{130}{subsection.13.12}%
+\contentsline {subsection}{\numberline {13.13}Grid Completion}{130}{subsection.13.13}%
+\contentsline {subsection}{\numberline {13.14}Grid Paths II}{131}{subsection.13.14}%
+\contentsline {subsection}{\numberline {13.15}Permutation Inversions}{131}{subsection.13.15}%
+\contentsline {subsection}{\numberline {13.16}Raab Game II}{132}{subsection.13.16}%
+\contentsline {subsection}{\numberline {13.17}Tournament Graph Distribution}{132}{subsection.13.17}%
+\contentsline {section}{\numberline {14}Additional Problems I}{134}{section.14}%
+\contentsline {subsection}{\numberline {14.1}Advertisement}{134}{subsection.14.1}%
+\contentsline {subsection}{\numberline {14.2}Beautiful Permutation II}{134}{subsection.14.2}%
+\contentsline {subsection}{\numberline {14.3}Bit Inversions}{134}{subsection.14.3}%
+\contentsline {subsection}{\numberline {14.4}Bubble Sort Rounds I}{135}{subsection.14.4}%
+\contentsline {subsection}{\numberline {14.5}Bubble Sort Rounds II}{135}{subsection.14.5}%
+\contentsline {subsection}{\numberline {14.6}Counting Lcm Arrays}{135}{subsection.14.6}%
+\contentsline {subsection}{\numberline {14.7}Cyclic Array}{136}{subsection.14.7}%
+\contentsline {subsection}{\numberline {14.8}Distinct Values Splits}{136}{subsection.14.8}%
+\contentsline {subsection}{\numberline {14.9}Distinct Values Sum}{137}{subsection.14.9}%
+\contentsline {subsection}{\numberline {14.10}List Of Sums}{137}{subsection.14.10}%
+\contentsline {subsection}{\numberline {14.11}Maximum Average Subarrays}{137}{subsection.14.11}%
+\contentsline {subsection}{\numberline {14.12}Maximum Building I}{138}{subsection.14.12}%
+\contentsline {subsection}{\numberline {14.13}Multiplication Table}{138}{subsection.14.13}%
+\contentsline {subsection}{\numberline {14.14}Nearest Campsites I}{138}{subsection.14.14}%
+\contentsline {subsection}{\numberline {14.15}Nearest Campsites II}{139}{subsection.14.15}%
+\contentsline {subsection}{\numberline {14.16}Permutation Subsequence}{139}{subsection.14.16}%
+\contentsline {subsection}{\numberline {14.17}Pyramid Array}{140}{subsection.14.17}%
+\contentsline {subsection}{\numberline {14.18}Shortest Subsequence}{141}{subsection.14.18}%
+\contentsline {subsection}{\numberline {14.19}Sorting Methods}{141}{subsection.14.19}%
+\contentsline {subsection}{\numberline {14.20}Special Substrings}{141}{subsection.14.20}%
+\contentsline {subsection}{\numberline {14.21}Square Subsets}{142}{subsection.14.21}%
+\contentsline {subsection}{\numberline {14.22}Stack Weights}{142}{subsection.14.22}%
+\contentsline {subsection}{\numberline {14.23}Subarray Sum Constraints}{143}{subsection.14.23}%
+\contentsline {subsection}{\numberline {14.24}Subsets With Fixed Average}{143}{subsection.14.24}%
+\contentsline {subsection}{\numberline {14.25}Swap Game}{143}{subsection.14.25}%
+\contentsline {subsection}{\numberline {14.26}Two Array Average}{144}{subsection.14.26}%
+\contentsline {subsection}{\numberline {14.27}Water Containers Moves}{144}{subsection.14.27}%
+\contentsline {subsection}{\numberline {14.28}Water Containers Queries}{145}{subsection.14.28}%
+\contentsline {subsection}{\numberline {14.29}Writing Numbers}{145}{subsection.14.29}%
+\contentsline {section}{\numberline {15}Additional Problems II}{147}{section.15}%
+\contentsline {subsection}{\numberline {15.1}Binary Subsequences}{147}{subsection.15.1}%
+\contentsline {subsection}{\numberline {15.2}Bit Substrings}{147}{subsection.15.2}%
+\contentsline {subsection}{\numberline {15.3}Book Shop II}{147}{subsection.15.3}%
+\contentsline {subsection}{\numberline {15.4}Bouncing Ball Steps}{148}{subsection.15.4}%
+\contentsline {subsection}{\numberline {15.5}Coding Company}{148}{subsection.15.5}%
+\contentsline {subsection}{\numberline {15.6}Coin Grid}{148}{subsection.15.6}%
+\contentsline {subsection}{\numberline {15.7}Food Division}{149}{subsection.15.7}%
+\contentsline {subsection}{\numberline {15.8}Gcd Subsets}{149}{subsection.15.8}%
+\contentsline {subsection}{\numberline {15.9}Grid Coloring II}{149}{subsection.15.9}%
+\contentsline {subsection}{\numberline {15.10}Grid Puzzle I}{150}{subsection.15.10}%
+\contentsline {subsection}{\numberline {15.11}Grid Puzzle II}{151}{subsection.15.11}%
+\contentsline {subsection}{\numberline {15.12}Increasing Array II}{151}{subsection.15.12}%
+\contentsline {subsection}{\numberline {15.13}K Subset Sums I}{152}{subsection.15.13}%
+\contentsline {subsection}{\numberline {15.14}K Subset Sums II}{152}{subsection.15.14}%
+\contentsline {subsection}{\numberline {15.15}Knight Moves Queries}{152}{subsection.15.15}%
+\contentsline {subsection}{\numberline {15.16}Maximum Building II}{153}{subsection.15.16}%
+\contentsline {subsection}{\numberline {15.17}Mex Grid Queries}{153}{subsection.15.17}%
+\contentsline {subsection}{\numberline {15.18}Minimum Cost Pairs}{154}{subsection.15.18}%
+\contentsline {subsection}{\numberline {15.19}Programmers And Artists}{154}{subsection.15.19}%
+\contentsline {subsection}{\numberline {15.20}Removing Digits II}{155}{subsection.15.20}%
+\contentsline {subsection}{\numberline {15.21}Replace With Difference}{155}{subsection.15.21}%
+\contentsline {subsection}{\numberline {15.22}Reversal Sorting}{155}{subsection.15.22}%
+\contentsline {subsection}{\numberline {15.23}Same Sum Subsets}{156}{subsection.15.23}%
+\contentsline {subsection}{\numberline {15.24}School Excursion}{157}{subsection.15.24}%
+\contentsline {subsection}{\numberline {15.25}Stick Divisions}{157}{subsection.15.25}%
+\contentsline {subsection}{\numberline {15.26}Swap Round Sorting}{158}{subsection.15.26}%
+\contentsline {subsection}{\numberline {15.27}Two Stacks Sorting}{158}{subsection.15.27}%
+\contentsline {section}{\numberline {16}Bitwise Operations}{160}{section.16}%
+\contentsline {subsection}{\numberline {16.1}All Subarray Xors}{160}{subsection.16.1}%
+\contentsline {subsection}{\numberline {16.2}And Subset Count}{160}{subsection.16.2}%
+\contentsline {subsection}{\numberline {16.3}Counting Bits}{160}{subsection.16.3}%
+\contentsline {subsection}{\numberline {16.4}K Subset Xors}{161}{subsection.16.4}%
+\contentsline {subsection}{\numberline {16.5}Maximum Xor Subarray}{161}{subsection.16.5}%
+\contentsline {subsection}{\numberline {16.6}Maximum Xor Subset}{162}{subsection.16.6}%
+\contentsline {subsection}{\numberline {16.7}Numberof Subset Xors}{162}{subsection.16.7}%
+\contentsline {subsection}{\numberline {16.8}SOS Bit Problem}{163}{subsection.16.8}%
+\contentsline {subsection}{\numberline {16.9}Xor Pyramid Diagonal}{163}{subsection.16.9}%
+\contentsline {subsection}{\numberline {16.10}Xor Pyramid Peak}{163}{subsection.16.10}%
+\contentsline {subsection}{\numberline {16.11}Xor Pyramid Row}{163}{subsection.16.11}%
+\contentsline {section}{\numberline {17}Interactive Problems}{165}{section.17}%
+\contentsline {subsection}{\numberline {17.1}Colored Chairs}{165}{subsection.17.1}%
+\contentsline {subsection}{\numberline {17.2}Hidden Integer}{165}{subsection.17.2}%
+\contentsline {subsection}{\numberline {17.3}Hidden Permutation}{165}{subsection.17.3}%
+\contentsline {subsection}{\numberline {17.4}Inversion Sorting}{166}{subsection.17.4}%
+\contentsline {subsection}{\numberline {17.5}K-th Highest Score}{166}{subsection.17.5}%
+\contentsline {subsection}{\numberline {17.6}Permuted Binary Strings}{167}{subsection.17.6}%
+\contentsline {section}{\numberline {18}Sliding Window Problems}{168}{section.18}%
+\contentsline {subsection}{\numberline {18.1}Sliding Window Advertisement}{168}{subsection.18.1}%
+\contentsline {subsection}{\numberline {18.2}Sliding Window Cost}{168}{subsection.18.2}%
+\contentsline {subsection}{\numberline {18.3}Sliding Window Distinct Values}{169}{subsection.18.3}%
+\contentsline {subsection}{\numberline {18.4}Sliding Window Inversions}{169}{subsection.18.4}%
+\contentsline {subsection}{\numberline {18.5}Sliding Window Median}{169}{subsection.18.5}%
+\contentsline {subsection}{\numberline {18.6}Sliding Window Mex}{170}{subsection.18.6}%
+\contentsline {subsection}{\numberline {18.7}Sliding Window Minimum}{170}{subsection.18.7}%
+\contentsline {subsection}{\numberline {18.8}Sliding Window Mode}{170}{subsection.18.8}%
+\contentsline {subsection}{\numberline {18.9}Sliding Window Or}{171}{subsection.18.9}%
+\contentsline {subsection}{\numberline {18.10}Sliding Window Sum}{171}{subsection.18.10}%
+\contentsline {subsection}{\numberline {18.11}Sliding Window Xor}{171}{subsection.18.11}%

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2026.3.23)  26 AUG 2026 11:19
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2026.3.23)  26 AUG 2026 12:57
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1647,12 +1647,12 @@ reak' or set page breaks manually on input line 2189.
 (./src_limpo/CountingProblems/FilledSubgridCountII.cpp)
 (../enunciados/CountingProblems/FunctionalGraphDistribution.tex)
 (./src_limpo/CountingProblems/FunctionalGraphDistribution.cpp)
-(../enunciados/CountingProblems/GridCompletion.tex)
-(./src_limpo/CountingProblems/GridCompletion.cpp [130])
+(../enunciados/CountingProblems/GridCompletion.tex) [130]
+(./src_limpo/CountingProblems/GridCompletion.cpp)
 (../enunciados/CountingProblems/GridPathsII.tex)
 (./src_limpo/CountingProblems/GridPathsII.cpp)
-(../enunciados/CountingProblems/PermutationInversions.tex)
-(./src_limpo/CountingProblems/PermutationInversions.cpp [131])
+(../enunciados/CountingProblems/PermutationInversions.tex) [131]
+(./src_limpo/CountingProblems/PermutationInversions.cpp)
 (../enunciados/CountingProblems/RaabGameII.tex)
 (./src_limpo/CountingProblems/RaabGameII.cpp)
 (../enunciados/CountingProblems/TournamentGraphDistribution.tex)
@@ -1863,13 +1863,13 @@ Package rerunfilecheck Info: File `caderno_cses.out' has not changed.
 (rerunfilecheck)             Checksum: 1B253976F86A86A6E44C4948DEEAC12F;61941.
  ) 
 Here is how much of TeX's memory you used:
- 56025 strings out of 474222
- 1144349 string characters out of 5748733
- 3030975 words of memory out of 5000000
- 54834 multiletter control sequences out of 15000+600000
+ 56071 strings out of 474222
+ 1145088 string characters out of 5748733
+ 3051975 words of memory out of 5000000
+ 54839 multiletter control sequences out of 15000+600000
  573559 words of font info for 68 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 89i,12n,94p,446b,2193s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 89i,12n,94p,446b,2136s stack positions out of 10000i,1000n,20000p,200000b,200000s
  </home/yvens/.texlive2023/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm4299.600
 pk></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex8.pfb
 ></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/
@@ -1887,10 +1887,10 @@ onts/type1/public/cm-super/sfbx1095.pfb></usr/share/texmf/fonts/type1/public/cm
 nts/type1/public/cm-super/sfrm1200.pfb></usr/share/texmf/fonts/type1/public/cm-
 super/sfrm1440.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1728.pfb><
 /usr/share/texmf/fonts/type1/public/cm-super/sftt0800.pfb>
-Output written on caderno_cses.pdf (173 pages, 2009183 bytes).
+Output written on caderno_cses.pdf (173 pages, 2012635 bytes).
 PDF statistics:
- 27833 PDF objects out of 31911 (max. 8388607)
- 27316 compressed objects within 274 object streams
- 21006 named destinations out of 22161 (max. 500000)
+ 27882 PDF objects out of 31911 (max. 8388607)
+ 27365 compressed objects within 274 object streams
+ 21047 named destinations out of 22161 (max. 500000)
  3322 words of extra memory for PDF output out of 10000 (max. 10000000)
 

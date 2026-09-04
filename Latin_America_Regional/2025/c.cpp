@@ -45,19 +45,6 @@ pll min_frac(pll a, pll b) {
     else return b;
 }
 
-// SegTree
-//
-// Recursiva com Lazy Propagation
-// Query: soma do range [a, b]
-// Update: soma x em cada elemento do range [a, b]
-// Pode usar a seguinte funcao para indexar os nohs:
-// f(l, r) = (l+r)|(l!=r), usando 2N de memoria
-//
-// Complexidades:
-// build - O(n)
-// query - O(log(n))
-// update - O(log(n))
-
 namespace seg {
 	pll seg[4*MAX];
 	int n, *v;
@@ -86,6 +73,8 @@ namespace seg {
 
 	pll update(int a, pll x, int p=1, int l=0, int r=n-1) {
 		if (a <= l and r <= a) {
+            seg[p].F += x.F;
+            seg[p].S += x.S;
 			return seg[p];
 		}
 		if (a < l or r < a) return seg[p];
@@ -96,12 +85,10 @@ namespace seg {
 
     void ativa(int x, int sig) {
         int pos = lower_bound(all(ord), make_pair(h[x], x)) - ord.begin();
-        int si = (K / h[x]);
+        ll si = (K / h[x]);
         update(pos, {sig * si, sig * si * h[x]});
     }
 
-    // Se tiver uma seg de soma sobre um array nao negativo v, da pra
-    // descobrir em O(log(n)) o maior j tal que v[i]+v[i+1]+...+v[j-1] < val
     int lower_bound(int i, pll& val, int p, int l, int r) {
         if (r < i) return n;
         if (i <= l and seg[p] < val) {
@@ -121,9 +108,8 @@ namespace seg {
         if(j == n) return LINF;
 
         auto [s, sh] = query(0, j - 1);
-        auto [s_nxt, sh_nxt] = query(0, j);
-        ll h = sh_nxt / s_nxt;
 
+        ll h = ord[j].F;
         return (S - s) * h + sh;
     }
 };
@@ -139,7 +125,7 @@ void solve(){
         act.push_back(-i);
     }
 
-    sort(all(h));
+    sort(all(ord));
     sort(all(act), comp);
 
     seg::build(n + 1);
@@ -154,6 +140,7 @@ void solve(){
 
         pll c = {l[x] / __gcd(l[x], h[x]), h[x] / __gcd(l[x], h[x])};
         pll ans = {seg::query_problem(), 1};
+        if(ans.F == LINF) continue;
 
         ans = {c.F * ans.F, c.S * ans.S};
         ll mdc = __gcd(ans.F, ans.S);
